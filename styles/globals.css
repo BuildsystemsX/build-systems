@@ -105,3 +105,19 @@ a {
     color-scheme: dark;
   }
 }
+
+@font-face {
+  font-family: 'Medium';
+  src: url('/fonts/ABCDiatype-Medium.woff2') format('woff2'), url('/fonts/ABCDiatype-Medium.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mono Medium';
+  src: url('/fonts/ABCDiatypeMono-Medium.woff2') format('woff2'), url('/fonts/ABCDiatypeMono-Medium.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
