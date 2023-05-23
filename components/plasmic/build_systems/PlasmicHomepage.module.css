@@ -6,6 +6,7 @@
   align-content: flex-start;
   justify-items: center;
   background: var(--token-gvQcXRBmf);
+  overflow: visible;
   min-width: 0;
   min-height: 0;
   grid-template-columns:
@@ -161,7 +162,6 @@
   align-content: stretch;
   justify-content: flex-start;
   flex-shrink: 1;
-  overflow: auto;
   grid-column-start: 1;
   grid-column-end: -1;
 }
