@@ -57,6 +57,7 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicHomepage__OverridesType = {
   root?: p.Flex<"div">;
+  img?: p.Flex<typeof p.PlasmicImg>;
   svg?: p.Flex<"svg">;
   buttonExternalLink?: p.Flex<typeof ButtonExternalLink>;
   mailButton?: p.Flex<typeof Button>;
@@ -138,6 +139,30 @@ function PlasmicHomepage__RenderFunc(props: {
                 )}
               >
                 {"Build Systems"}
+              </div>
+              <div className={classNames(projectcss.all, sty.freeBox__lmyxT)}>
+                <p.PlasmicImg
+                  data-plasmic-name={"img"}
+                  data-plasmic-override={overrides.img}
+                  alt={""}
+                  className={classNames(sty.img)}
+                  displayHeight={"auto" as const}
+                  displayMaxHeight={"none" as const}
+                  displayMaxWidth={"none" as const}
+                  displayMinHeight={"0" as const}
+                  displayMinWidth={"0" as const}
+                  displayWidth={"100%" as const}
+                  src={{
+                    src: "/plasmic/build_systems/images/desktopRenderingjpg.jpg",
+                    fullWidth: 3146,
+                    fullHeight: 2000,
+                    aspectRatio: undefined
+                  }}
+                />
+
+                <div
+                  className={classNames(projectcss.all, sty.freeBox__mxjIn)}
+                />
               </div>
             </div>
           ) : null}
@@ -258,7 +283,8 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "svg", "buttonExternalLink", "mailButton"],
+  root: ["root", "img", "svg", "buttonExternalLink", "mailButton"],
+  img: ["img"],
   svg: ["svg"],
   buttonExternalLink: ["buttonExternalLink"],
   mailButton: ["mailButton"]
@@ -268,6 +294,7 @@ type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
+  img: typeof p.PlasmicImg;
   svg: "svg";
   buttonExternalLink: typeof ButtonExternalLink;
   mailButton: typeof Button;
@@ -333,6 +360,7 @@ export const PlasmicHomepage = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    img: makeNodeComponent("img"),
     svg: makeNodeComponent("svg"),
     buttonExternalLink: makeNodeComponent("buttonExternalLink"),
     mailButton: makeNodeComponent("mailButton"),

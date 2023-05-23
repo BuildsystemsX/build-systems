@@ -44,6 +44,8 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_build_systems.module.css"; // plasmic-import: jENqvBHbRPXMByDQmRe4G7/projectcss
 import sty from "./PlasmicImpressum.module.css"; // plasmic-import: JDL-U0BO7f/css
 
+import CancelsvgIcon from "./icons/PlasmicIcon__Cancelsvg"; // plasmic-import: yF6Z1QiQ9q/icon
+
 export type PlasmicImpressum__VariantMembers = {};
 export type PlasmicImpressum__VariantsArgs = {};
 type VariantPropType = keyof PlasmicImpressum__VariantsArgs;
@@ -55,6 +57,7 @@ export const PlasmicImpressum__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicImpressum__OverridesType = {
   root?: p.Flex<"div">;
+  svg?: p.Flex<"svg">;
 };
 
 export interface DefaultImpressumProps {}
@@ -139,6 +142,95 @@ function PlasmicImpressum__RenderFunc(props: {
               </div>
             </div>
             <div className={classNames(projectcss.all, sty.freeBox__cFwm8)}>
+              <CancelsvgIcon
+                data-plasmic-name={"svg"}
+                data-plasmic-override={overrides.svg}
+                className={classNames(projectcss.all, sty.svg)}
+                onClick={async event => {
+                  const $steps = {};
+                  $steps["goToHomepage"] = true
+                    ? (() => {
+                        const actionArgs = {
+                          destination: __wrapUserFunction(
+                            {
+                              type: "InteractionArgLoc",
+                              actionName: "navigation",
+                              interactionUuid: "aNi8M80XB",
+                              componentUuid: "JDL-U0BO7f",
+                              argName: "destination"
+                            },
+                            () => `/`
+                          )
+                        };
+                        return __wrapUserFunction(
+                          {
+                            type: "InteractionLoc",
+                            actionName: "navigation",
+                            interactionUuid: "aNi8M80XB",
+                            componentUuid: "JDL-U0BO7f"
+                          },
+                          () =>
+                            (({ destination }) => {
+                              __nextRouter?.push(destination);
+                            })?.apply(null, [actionArgs]),
+                          actionArgs
+                        );
+                      })()
+                    : undefined;
+                  if (
+                    typeof $steps["goToHomepage"] === "object" &&
+                    typeof $steps["goToHomepage"].then === "function"
+                  ) {
+                    $steps["goToHomepage"] = await __wrapUserPromise(
+                      {
+                        type: "InteractionLoc",
+                        actionName: "navigation",
+                        interactionUuid: "aNi8M80XB",
+                        componentUuid: "JDL-U0BO7f"
+                      },
+                      $steps["goToHomepage"]
+                    );
+                  }
+                  $steps["updateStateVariable"] = true
+                    ? (() => {
+                        const actionArgs = {};
+                        return __wrapUserFunction(
+                          {
+                            type: "InteractionLoc",
+                            actionName: "updateVariable",
+                            interactionUuid: "FQkwr3qWe",
+                            componentUuid: "JDL-U0BO7f"
+                          },
+                          () =>
+                            (({ variable, value, startIndex, deleteCount }) => {
+                              if (!variable) {
+                                return;
+                              }
+                              const { objRoot, variablePath } = variable;
+                              undefined;
+                            })?.apply(null, [actionArgs]),
+                          actionArgs
+                        );
+                      })()
+                    : undefined;
+                  if (
+                    typeof $steps["updateStateVariable"] === "object" &&
+                    typeof $steps["updateStateVariable"].then === "function"
+                  ) {
+                    $steps["updateStateVariable"] = await __wrapUserPromise(
+                      {
+                        type: "InteractionLoc",
+                        actionName: "updateVariable",
+                        interactionUuid: "FQkwr3qWe",
+                        componentUuid: "JDL-U0BO7f"
+                      },
+                      $steps["updateStateVariable"]
+                    );
+                  }
+                }}
+                role={"img"}
+              />
+
               <div
                 className={classNames(
                   projectcss.all,
@@ -159,13 +251,15 @@ function PlasmicImpressum__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root"]
+  root: ["root", "svg"],
+  svg: ["svg"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
+  svg: "svg";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -228,6 +322,7 @@ export const PlasmicImpressum = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    svg: makeNodeComponent("svg"),
 
     // Metadata about props expected for PlasmicImpressum
     internalVariantProps: PlasmicImpressum__VariantProps,

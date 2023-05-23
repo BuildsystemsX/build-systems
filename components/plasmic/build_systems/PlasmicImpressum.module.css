@@ -72,6 +72,20 @@
   min-width: 0;
   padding: 10px;
 }
+.svg {
+  position: fixed;
+  object-fit: cover;
+  max-width: 100%;
+  color: var(--token-Mq_qSd0gm);
+  left: auto;
+  top: 20px;
+  z-index: 1;
+  right: 20px;
+  cursor: pointer;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+}
 .text__ujQbW {
   position: relative;
   width: 100%;

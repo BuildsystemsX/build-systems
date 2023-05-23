@@ -36,39 +36,20 @@
   left: auto;
   top: auto;
   z-index: 1;
-  flex-grow: 0;
-  background: linear-gradient(
-        0deg,
-        #2c2c2c 0%,
-        #2c2c2cf0 22%,
-        #2c2c2c00 33%,
-        #56b9ff00 100%
-      )
-      0% 0% / 100% 100% repeat,
-    url("/plasmic/build_systems/images/desktopRenderingjpg.jpg") left 0% top 0% / 100% 80% no-repeat padding-box
-      border-box;
+  flex-grow: 1;
+  background: none;
   grid-column-start: 1;
   grid-column-end: -1;
   padding: 0px;
 }
 @media (max-width: 640px) {
   .freeBox___2Np4F {
-    background: linear-gradient(
-          0deg,
-          #2c2c2c 0%,
-          #2c2c2cf0 22%,
-          #2c2c2c00 33%,
-          #56b9ff00 100%
-        )
-        0% 0% / 100% 100% repeat,
-      url("/plasmic/build_systems/images/handyRenderingjpg.jpg") left 0% top 0% / 100% 80% no-repeat padding-box
-        border-box;
+    background: none;
   }
 }
 .text__eOBwI {
   display: block;
   font-size: 5.5em;
-  font-family: "Helvetica";
   font-weight: 400;
   letter-spacing: 0em;
   line-height: 100%;
@@ -79,12 +60,13 @@
   width: 100%;
   flex-grow: 0;
   text-align: center;
-  z-index: 7;
   box-shadow: none;
   filter: none;
   transform: none;
   height: auto;
   flex-shrink: 1;
+  font-family: "Almarai", sans-serif;
+  z-index: 1;
   min-width: 0;
   padding: 20px;
   margin: 0px;
@@ -93,6 +75,75 @@
   .text__eOBwI {
     font-size: 3.3em;
   }
+}
+.freeBox__lmyxT {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100vh;
+  max-width: 100%;
+  left: 0px;
+  top: 0px;
+  margin-bottom: 0px;
+  overflow: hidden;
+  min-width: 0;
+  flex-shrink: 0;
+  padding: 0em;
+}
+.img {
+  position: relative;
+  object-fit: cover;
+  flex-grow: 1;
+  flex-shrink: 0;
+  left: auto;
+  top: auto;
+  width: 100%;
+  min-width: 0;
+}
+.img > picture > img {
+  object-fit: cover;
+}
+.img > :global(.__wab_img-spacer) > img {
+  object-fit: cover;
+}
+@media (max-width: 640px) {
+  .img {
+    object-position: 60% 50%;
+  }
+}
+@media (max-width: 640px) {
+  .img > picture > img {
+    object-position: 60% 50%;
+  }
+}
+@media (max-width: 640px) {
+  .img > :global(.__wab_img-spacer) > img {
+    object-position: 60% 50%;
+  }
+}
+.freeBox__mxjIn {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 20em;
+  left: 0px;
+  top: auto;
+  background: linear-gradient(
+      0deg,
+      #2c2c2c 0%,
+      #2c2c2ceb 15%,
+      #2c2c2c00 50%,
+      #2c2c2c00 79%
+    )
+    0% 0% / 100% 100% repeat;
+  overflow: visible;
+  bottom: 0px;
+  min-width: 0;
+  flex-shrink: 0;
+  padding: 0px;
 }
 .freeBox__bVlAj {
   background: none;

@@ -7,7 +7,7 @@
   },
   "style": {
     "scheme": "css-modules",
-    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.module.css"
   },
   "images": {
     "scheme": "public-files",
@@ -38,7 +38,8 @@
           "name": "EmbedCss",
           "componentImportPath": "@plasmicpkgs/plasmic-embed-css"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "kS7YGZfVr6mU43XDQjXELc",
@@ -57,7 +58,8 @@
           "name": "SimpleChart",
           "componentImportPath": "@plasmicpkgs/react-chartjs-2"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "jENqvBHbRPXMByDQmRe4G7",
@@ -124,6 +126,11 @@
           "id": "BTPZhvPYEY",
           "name": "Linie65Icon",
           "moduleFilePath": "plasmic/build_systems/icons/PlasmicIcon__Linie65.tsx"
+        },
+        {
+          "id": "yF6Z1QiQ9q",
+          "name": "CancelsvgIcon",
+          "moduleFilePath": "plasmic/build_systems/icons/PlasmicIcon__Cancelsvg.tsx"
         }
       ],
       "images": [
