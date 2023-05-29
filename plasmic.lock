@@ -37,8 +37,8 @@
       "projectId": "jENqvBHbRPXMByDQmRe4G7",
       "version": "latest",
       "dependencies": {
-        "kS7YGZfVr6mU43XDQjXELc": "0.6.0",
-        "8PtdGodUbexNYgkuyBUcWu": "3.14.0"
+        "kS7YGZfVr6mU43XDQjXELc": "0.7.0",
+        "8PtdGodUbexNYgkuyBUcWu": "3.15.0"
       },
       "lang": "ts",
       "fileLocks": [
@@ -55,42 +55,42 @@
         {
           "type": "renderModule",
           "assetId": "ElJN5a6f1p8n",
-          "checksum": "b99e3fc4e528ab399f58ea8df49acef7"
+          "checksum": "dfee982b90a1e59407e256ab915f619f"
         },
         {
           "type": "cssRules",
           "assetId": "ElJN5a6f1p8n",
-          "checksum": "b99e3fc4e528ab399f58ea8df49acef7"
+          "checksum": "dfee982b90a1e59407e256ab915f619f"
         },
         {
           "type": "renderModule",
           "assetId": "oBQk-f5Twc",
-          "checksum": "865cf45006f9d5ad0f7539757b87fdd4"
+          "checksum": "307ac7506ee54355a5a81cf63a0671e6"
         },
         {
           "type": "cssRules",
           "assetId": "oBQk-f5Twc",
-          "checksum": "865cf45006f9d5ad0f7539757b87fdd4"
+          "checksum": "307ac7506ee54355a5a81cf63a0671e6"
         },
         {
           "type": "renderModule",
           "assetId": "noJZH-4dRr",
-          "checksum": "381752987251554ccd27b16a0fbe3977"
+          "checksum": "79c184909409848e6ae7b92837ce3cbd"
         },
         {
           "type": "cssRules",
           "assetId": "noJZH-4dRr",
-          "checksum": "381752987251554ccd27b16a0fbe3977"
+          "checksum": "79c184909409848e6ae7b92837ce3cbd"
         },
         {
           "type": "renderModule",
           "assetId": "JDL-U0BO7f",
-          "checksum": "8278663b11ee11266601def72436988e"
+          "checksum": "e3fbdf592e97b1022eef6ff573171f7d"
         },
         {
           "type": "cssRules",
           "assetId": "JDL-U0BO7f",
-          "checksum": "8278663b11ee11266601def72436988e"
+          "checksum": "e3fbdf592e97b1022eef6ff573171f7d"
         },
         {
           "type": "icon",

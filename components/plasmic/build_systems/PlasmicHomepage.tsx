@@ -39,6 +39,8 @@ import {
 import ButtonExternalLink from "../../ButtonExternalLink"; // plasmic-import: noJZH-4dRr/component
 import Button from "../../Button"; // plasmic-import: oBQk-f5Twc/component
 
+import { useScreenVariants as useScreenVariantsjnTclXkDzSl7V } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: jnTCLXkDZSl7V/globalVariant
+
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import projectcss from "./plasmic_build_systems.module.css"; // plasmic-import: jENqvBHbRPXMByDQmRe4G7/projectcss
@@ -99,7 +101,12 @@ function PlasmicHomepage__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
+
   const [$queries, setDollarQueries] = React.useState({});
+
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariantsjnTclXkDzSl7V()
+  });
 
   return (
     <React.Fragment>
@@ -138,7 +145,9 @@ function PlasmicHomepage__RenderFunc(props: {
                   "blend" as const
                 )}
               >
-                {"Build Systems"}
+                {hasVariant(globalVariants, "screen", "mobile")
+                  ? "Build Systems"
+                  : "Build Systems"}
               </div>
               <div className={classNames(projectcss.all, sty.freeBox__lmyxT)}>
                 <p.PlasmicImg
@@ -181,9 +190,9 @@ function PlasmicHomepage__RenderFunc(props: {
                 sty.text___62N6U
               )}
             >
-              {
-                "Build Systems entwickelt individuelle Smart Sustainability Roadmaps (Nachhaltigkeits-fahrpläne). Hierfür stellen wir Nachhaltigkeitsanforderungen der individuellen Projektentwicklung ökonomischen Indikatoren gegenüber. Wir unterstützen Immobilienentwickler:innen in einer frühen Phase der Planung Investitionsentscheidungen zu treffen."
-              }
+              {hasVariant(globalVariants, "screen", "mobile")
+                ? "Build Systems entwickelt individuelle Smart Sustainability Roadmaps (Nachhaltigkeits-fahrpläne). Hierfür stellen wir Nachhaltigkeitsanforderungen der individuellen Projektentwicklung ökonomischen Indikatoren gegenüber. Wir unterstützen Immobilienentwickler:innen in einer frühen Phase der Planung Investitionsentscheidungen zu treffen."
+                : "Build Systems entwickelt individuelle Smart Sustainability Roadmaps (Nachhaltigkeits-fahrpläne). Hierfür stellen wir Nachhaltigkeitsanforderungen der individuellen Projektentwicklung ökonomischen Indikatoren gegenüber. Wir unterstützen Immobilienentwickler:innen in einer frühen Phase der Planung Investitionsentscheidungen zu treffen."}
             </div>
             <div className={classNames(projectcss.all, sty.freeBox__zqs6K)}>
               <p.Stack
@@ -199,7 +208,15 @@ function PlasmicHomepage__RenderFunc(props: {
                     sty.buttonExternalLink
                   )}
                 >
-                  {"Download Leistungspaket"}
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__cffrM
+                    )}
+                  >
+                    {"Download Leistungspaket"}
+                  </div>
                 </ButtonExternalLink>
                 {true ? (
                   <Button
