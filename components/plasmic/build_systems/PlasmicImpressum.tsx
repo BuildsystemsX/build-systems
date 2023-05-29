@@ -105,7 +105,20 @@ function PlasmicImpressum__RenderFunc(props: {
 
   return (
     <React.Fragment>
-      <Head></Head>
+      <Head>
+        <meta name="twitter:card" content="summary" />
+        <title key="title">{PlasmicImpressum.pageMetadata.title}</title>
+        <meta
+          key="og:title"
+          property="og:title"
+          content={PlasmicImpressum.pageMetadata.title}
+        />
+        <meta
+          key="twitter:title"
+          name="twitter:title"
+          content={PlasmicImpressum.pageMetadata.title}
+        />
+      </Head>
 
       <style>{`
         body {
@@ -331,7 +344,7 @@ export const PlasmicImpressum = Object.assign(
 
     // Page metadata
     pageMetadata: {
-      title: "",
+      title: "Build Systems",
       description: "",
       ogImageSrc: "",
       canonical: ""

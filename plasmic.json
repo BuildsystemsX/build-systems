@@ -39,7 +39,8 @@
           "displayName": "global-embed-css",
           "componentImportPath": "@plasmicpkgs/plasmic-embed-css"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "kS7YGZfVr6mU43XDQjXELc",
@@ -59,7 +60,8 @@
           "displayName": "hostless-react-chartjs-2-simple-chart",
           "componentImportPath": "@plasmicpkgs/react-chartjs-2"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "jENqvBHbRPXMByDQmRe4G7",
