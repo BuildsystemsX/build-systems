@@ -6,6 +6,7 @@ import GlobalContextsProvider from "../components/plasmic/build_systems/PlasmicG
 import { ScreenVariantProvider } from "../components/plasmic/build_systems/PlasmicGlobalVariant__Screen";
 import { PlasmicImpressum } from "../components/plasmic/build_systems/PlasmicImpressum";
 import { useRouter } from "next/router";
+import '../styles/globals.css';
 
 function Impressum() {
   // Use PlasmicImpressum to render this component as it was
