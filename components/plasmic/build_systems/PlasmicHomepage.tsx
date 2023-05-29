@@ -147,18 +147,40 @@ function PlasmicHomepage__RenderFunc(props: {
             <div
               className={classNames(projectcss.all, sty.freeBox___2Np4F, ``)}
             >
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__eOBwI,
-                  "blend" as const
-                )}
-              >
-                {hasVariant(globalVariants, "screen", "mobile")
-                  ? "Build Systems"
-                  : "Build Systems"}
-              </div>
+              {true ? (
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    sty.freeBox__uq0Dc,
+                    "blend" as const
+                  )}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__eOBwI,
+                      "blend" as const
+                    )}
+                  >
+                    {hasVariant(globalVariants, "screen", "mobile")
+                      ? "Build Systems"
+                      : "Build"}
+                  </div>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text___54D3O,
+                      ``
+                    )}
+                  >
+                    {hasVariant(globalVariants, "screen", "mobile")
+                      ? "Build Systems"
+                      : "Systems"}
+                  </div>
+                </div>
+              ) : null}
               <div className={classNames(projectcss.all, sty.freeBox__lmyxT)}>
                 <p.PlasmicImg
                   data-plasmic-name={"img"}
