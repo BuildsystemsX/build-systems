@@ -161,6 +161,12 @@
           "name": "Fetcher",
           "displayName": "plasmic-data-source-fetcher",
           "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
+        },
+        {
+          "id": "TFTNepLxwb",
+          "name": "HelloWorld",
+          "displayName": "HelloWorld",
+          "componentImportPath": "./components/HelloWorld"
         }
       ]
     }
