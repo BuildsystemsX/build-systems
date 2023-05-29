@@ -108,14 +108,14 @@ a {
 
 @font-face {
   font-family: 'Medium';
-  src: url('/fonts/ABCDiatype-Medium.woff') format('woff');
+  src: url('/fonts/ABCDiatype-Medium.woff2') format('woff2');
   font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Mono Medium';
-  src: url('/fonts/ABCDiatypeMono-Medium.woff') format('woff');
+  src: url('/fonts/ABCDiatypeMono-Medium.woff2') format('woff2');
   font-weight: 900;
   font-style: normal;
 }
