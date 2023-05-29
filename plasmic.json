@@ -36,10 +36,10 @@
         {
           "id": "qF0uJxFztB",
           "name": "EmbedCss",
+          "displayName": "global-embed-css",
           "componentImportPath": "@plasmicpkgs/plasmic-embed-css"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "kS7YGZfVr6mU43XDQjXELc",
@@ -56,10 +56,10 @@
         {
           "id": "0Qywk3bhW-8",
           "name": "SimpleChart",
+          "displayName": "hostless-react-chartjs-2-simple-chart",
           "componentImportPath": "@plasmicpkgs/react-chartjs-2"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "jENqvBHbRPXMByDQmRe4G7",
@@ -151,11 +151,13 @@
         {
           "id": "BpEyfKS2H9rxA",
           "name": "PlasmicHead",
+          "displayName": "hostless-plasmic-head",
           "componentImportPath": "@plasmicapp/react-web"
         },
         {
           "id": "la2cCBGN8Ev8G",
           "name": "Fetcher",
+          "displayName": "plasmic-data-source-fetcher",
           "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
         }
       ]
@@ -175,6 +177,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.284",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.284/dist/plasmic.schema.json"
+  "cliVersion": "0.1.286",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.286/dist/plasmic.schema.json"
 }
