@@ -37,7 +37,6 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import ButtonExternalLink from "../../ButtonExternalLink"; // plasmic-import: noJZH-4dRr/component
-import Button from "../../Button"; // plasmic-import: oBQk-f5Twc/component
 
 import { useScreenVariants as useScreenVariantsjnTclXkDzSl7V } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: jnTCLXkDZSl7V/globalVariant
 
@@ -61,8 +60,6 @@ export type PlasmicHomepage__OverridesType = {
   root?: p.Flex<"div">;
   img?: p.Flex<typeof p.PlasmicImg>;
   svg?: p.Flex<"svg">;
-  buttonExternalLink?: p.Flex<typeof ButtonExternalLink>;
-  mailButton?: p.Flex<typeof Button>;
 };
 
 export interface DefaultHomepageProps {}
@@ -201,40 +198,41 @@ function PlasmicHomepage__RenderFunc(props: {
                 className={classNames(projectcss.all, sty.freeBox__nm1I3)}
               >
                 <ButtonExternalLink
-                  data-plasmic-name={"buttonExternalLink"}
-                  data-plasmic-override={overrides.buttonExternalLink}
                   className={classNames(
                     "__wab_instance",
-                    sty.buttonExternalLink
+                    sty.buttonExternalLink___8Mscj
                   )}
+                  destinationLink={
+                    "https://drive.google.com/file/d/1X6XCNF57644OC2sUVvwzV2s-3dAliHi0/view?usp=sharing" as const
+                  }
                 >
                   <div
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text__cffrM
+                      sty.text__kxars
                     )}
                   >
                     {"Download Leistungspaket"}
                   </div>
                 </ButtonExternalLink>
-                {true ? (
-                  <Button
-                    data-plasmic-name={"mailButton"}
-                    data-plasmic-override={overrides.mailButton}
-                    className={classNames("__wab_instance", sty.mailButton)}
+                <ButtonExternalLink
+                  className={classNames(
+                    "__wab_instance",
+                    sty.buttonExternalLink___33Cst
+                  )}
+                  destinationLink={"mailto:mail@buildsystems.de" as const}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__tj8GQ
+                    )}
                   >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text___8V0YQ
-                      )}
-                    >
-                      {"Schreiben Sie uns eine E-Mail"}
-                    </div>
-                  </Button>
-                ) : null}
+                    {"Schreiben Sie uns eine E-mail"}
+                  </div>
+                </ButtonExternalLink>
                 <div
                   className={classNames(
                     projectcss.all,
@@ -300,11 +298,9 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "img", "svg", "buttonExternalLink", "mailButton"],
+  root: ["root", "img", "svg"],
   img: ["img"],
-  svg: ["svg"],
-  buttonExternalLink: ["buttonExternalLink"],
-  mailButton: ["mailButton"]
+  svg: ["svg"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -313,8 +309,6 @@ type NodeDefaultElementType = {
   root: "div";
   img: typeof p.PlasmicImg;
   svg: "svg";
-  buttonExternalLink: typeof ButtonExternalLink;
-  mailButton: typeof Button;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -379,8 +373,6 @@ export const PlasmicHomepage = Object.assign(
     // Helper components rendering sub-elements
     img: makeNodeComponent("img"),
     svg: makeNodeComponent("svg"),
-    buttonExternalLink: makeNodeComponent("buttonExternalLink"),
-    mailButton: makeNodeComponent("mailButton"),
 
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,

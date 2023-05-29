@@ -49,10 +49,12 @@ export const PlasmicButtonExternalLink__VariantProps =
   new Array<VariantPropType>();
 
 export type PlasmicButtonExternalLink__ArgsType = {
+  destinationLink?: string;
   children?: React.ReactNode;
 };
 type ArgPropType = keyof PlasmicButtonExternalLink__ArgsType;
 export const PlasmicButtonExternalLink__ArgProps = new Array<ArgPropType>(
+  "destinationLink",
   "children"
 );
 
@@ -62,6 +64,7 @@ export type PlasmicButtonExternalLink__OverridesType = {
 };
 
 export interface DefaultButtonExternalLinkProps {
+  destinationLink?: string;
   children?: React.ReactNode;
   className?: string;
 }
@@ -123,9 +126,7 @@ function PlasmicButtonExternalLink__RenderFunc(props: {
         data-plasmic-override={overrides.link}
         className={classNames(projectcss.all, projectcss.a, sty.link)}
         component={Link}
-        href={
-          "https://drive.google.com/file/d/1X6XCNF57644OC2sUVvwzV2s-3dAliHi0/view?usp=sharing" as const
-        }
+        href={args.destinationLink}
         platform={"nextjs"}
         target={"_blank" as const}
       >

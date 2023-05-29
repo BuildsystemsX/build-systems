@@ -38,11 +38,7 @@ function Button_(props: ButtonProps, ref: HTMLElementRefOf<"div">) {
   // By default, we are just piping all ButtonProps here, but feel free
   // to do whatever works for you.
 
-  return <PlasmicButton root={{
-    onClick: () => {
-      window.location.href = "mailto:mail@buildsystems.de";
-    }
-  }} {...props} />;
+  return <PlasmicButton root={{ ref }} {...props} />;
 }
 
 const Button = React.forwardRef(Button_);
