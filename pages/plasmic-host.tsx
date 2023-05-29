@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { PlasmicCanvasHost, registerComponent } from '@plasmicapp/react-web/lib/host';
+import {HelloWorld} from "@/components/HelloWorld";
 
 // You can register any code components that you want to use here; see
 // https://docs.plasmic.app/learn/code-components-ref/
@@ -9,6 +10,15 @@ import { PlasmicCanvasHost, registerComponent } from '@plasmicapp/react-web/lib/
 // https://docs.plasmic.app/learn/app-hosting/#set-a-plasmic-project-to-use-your-app-host
 
 // registerComponent(...)
+
+registerComponent(HelloWorld, {
+  name: 'HelloWorld',
+  props: {
+    verbose: 'boolean',
+    children: 'slot'
+  },
+  importPath: './components/HelloWorld'
+});
 
 export default function PlasmicHost() {
   return <PlasmicCanvasHost />;
