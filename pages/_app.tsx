@@ -5,7 +5,10 @@ import Head from "next/head";
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <PlasmicRootProvider Head={Head}>
+    <PlasmicRootProvider >
+        <Head>
+            <title>Build Systems</title>
+        </Head>
       <Component {...pageProps} />
     </PlasmicRootProvider>
   );
