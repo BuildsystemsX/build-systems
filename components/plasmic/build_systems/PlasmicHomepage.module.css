@@ -47,7 +47,6 @@
 @media (max-width: 640px) {
   .freeBox___2Np4F {
     background: none;
-    height: 110vh;
   }
 }
 .freeBox__uq0Dc {
@@ -203,6 +202,11 @@
   grid-column-end: -1;
   padding: 20px 0px 0px;
   margin: 0px;
+}
+@media (max-width: 640px) {
+  .freeBox__bVlAj {
+    height: 85vh;
+  }
 }
 .svg {
   position: relative;
