@@ -58,6 +58,7 @@
   position: relative;
   color: var(--token-Mq_qSd0gm);
   width: 100%;
+  font-family: var(‑-DiatypeMedium);
   min-width: 0;
 }
 .freeBox__cFwm8 {
@@ -92,5 +93,6 @@
   height: auto;
   max-width: 100%;
   color: var(--token-Mq_qSd0gm);
+  font-family: var(‑-DiatypeMedium);
   min-width: 0;
 }

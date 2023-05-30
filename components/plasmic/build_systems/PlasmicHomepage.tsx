@@ -164,7 +164,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     )}
                   >
                     {hasVariant(globalVariants, "screen", "mobile")
-                      ? "Build Systems"
+                      ? "Build "
                       : "Build"}
                   </div>
                   <div
@@ -176,7 +176,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     )}
                   >
                     {hasVariant(globalVariants, "screen", "mobile")
-                      ? "Build Systems"
+                      ? "Systems"
                       : "Systems"}
                   </div>
                 </div>
