@@ -57,6 +57,7 @@ export const PlasmicImpressum__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicImpressum__OverridesType = {
   root?: p.Flex<"div">;
+  httpsabheu?: p.Flex<"a"> & Partial<LinkProps>;
   svg?: p.Flex<"svg">;
 };
 
@@ -176,12 +177,14 @@ function PlasmicImpressum__RenderFunc(props: {
                           <React.Fragment>{""}</React.Fragment>
                           {
                             <p.PlasmicLink
+                              data-plasmic-name={"httpsabheu"}
+                              data-plasmic-override={overrides.httpsabheu}
                               className={classNames(
                                 projectcss.all,
                                 projectcss.a,
                                 projectcss.__wab_text,
                                 projectcss.plasmic_default__inline,
-                                sty.link__l6Urx
+                                sty.httpsabheu
                               )}
                               component={Link}
                               href={"https://abh.eu/" as const}
@@ -336,7 +339,8 @@ function PlasmicImpressum__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "svg"],
+  root: ["root", "httpsabheu", "svg"],
+  httpsabheu: ["httpsabheu"],
   svg: ["svg"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -344,6 +348,7 @@ type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
+  httpsabheu: "a";
   svg: "svg";
 };
 
@@ -407,6 +412,7 @@ export const PlasmicImpressum = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    httpsabheu: makeNodeComponent("httpsabheu"),
     svg: makeNodeComponent("svg"),
 
     // Metadata about props expected for PlasmicImpressum
