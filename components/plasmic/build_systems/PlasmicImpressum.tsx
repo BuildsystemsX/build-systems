@@ -172,7 +172,27 @@ function PlasmicImpressum__RenderFunc(props: {
                         href={"www.abh.eu" as const}
                         platform={"nextjs"}
                       >
-                        {"alisch berlec hönow"}
+                        <React.Fragment>
+                          <React.Fragment>{""}</React.Fragment>
+                          {
+                            <p.PlasmicLink
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.a,
+                                projectcss.__wab_text,
+                                projectcss.plasmic_default__inline,
+                                sty.link__l6Urx
+                              )}
+                              component={Link}
+                              href={"https://www.abh.eu" as const}
+                              platform={"nextjs"}
+                              target={"_blank" as const}
+                            >
+                              {"alisch berlec hönow"}
+                            </p.PlasmicLink>
+                          }
+                          <React.Fragment>{""}</React.Fragment>
+                        </React.Fragment>
                       </p.PlasmicLink>
                     }
                     <React.Fragment>
@@ -192,6 +212,7 @@ function PlasmicImpressum__RenderFunc(props: {
                         component={Link}
                         href={"https://ec.europa.eu/consumers/odr" as const}
                         platform={"nextjs"}
+                        target={"_blank" as const}
                       >
                         {"https://ec.europa.eu/consumers/odr"}
                       </p.PlasmicLink>
