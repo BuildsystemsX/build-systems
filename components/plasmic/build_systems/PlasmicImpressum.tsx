@@ -156,8 +156,27 @@ function PlasmicImpressum__RenderFunc(props: {
                   <React.Fragment>
                     <React.Fragment>
                       {
-                        "Imprint\n\n\t\tVerantwortlich i.S.d. § 55 Abs. 2 RStV:\n\t\tMartin Bittmann\n\t\tc/o Venture Lab Built Environment\n\t\tTechnical University of Munich (TUM)\n\t\tArcisstraße 21\n\t\tD-80333 Munich\n\t\n\t\tE-Mail: mail(at)buildsystems.com\n\t\n\t\tGrafik- und Kommunikationsdesign: "
+                        "Imprint\n\n\t\tVerantwortlich i.S.d. § 55 Abs. 2 RStV:\n\t\tMartin Bittmann\n\t\tc/o Venture Lab Built Environment\n\t\tTechnical University of Munich (TUM)\n\t\tArcisstraße 21\n\t\tD-80333 Munich\n\t\n\t\tE-Mail: "
                       }
+                    </React.Fragment>
+                    {
+                      <p.PlasmicLink
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.a,
+                          projectcss.__wab_text,
+                          projectcss.plasmic_default__inline,
+                          sty.link__mh873
+                        )}
+                        component={Link}
+                        href={"mailto:mail@buildsystems.com" as const}
+                        platform={"nextjs"}
+                      >
+                        {"mail(at)buildsystems.com"}
+                      </p.PlasmicLink>
+                    }
+                    <React.Fragment>
+                      {"\n\t\n\t\tGrafik- und Kommunikationsdesign: "}
                     </React.Fragment>
                     {
                       <p.PlasmicLink
