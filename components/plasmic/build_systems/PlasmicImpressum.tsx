@@ -187,7 +187,7 @@ function PlasmicImpressum__RenderFunc(props: {
                                 sty.httpsabheu
                               )}
                               component={Link}
-                              href={"https://abh.eu/" as const}
+                              href={"https://www.abh.eu/" as const}
                               platform={"nextjs"}
                               target={"_blank" as const}
                             >
@@ -209,7 +209,7 @@ function PlasmicImpressum__RenderFunc(props: {
                           sty.link__vU6Uq
                         )}
                         component={Link}
-                        href={"https://www.google.de/" as const}
+                        href={"https://www.abh.eu/" as const}
                         platform={"nextjs"}
                       >
                         {"Schutzrechte Dritter"}
