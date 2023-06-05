@@ -29,6 +29,9 @@ export default function MyApp({ Component, pageProps }: AppProps) {
     }, []);
   return (
     <PlasmicRootProvider Head={Head}>
+        <Head>
+            <link rel="icon" href="/black-logo.svg" sizes="any" />
+        </Head>
       <Component {...pageProps} />
     </PlasmicRootProvider>
   );
