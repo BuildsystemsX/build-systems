@@ -133,6 +133,11 @@
           "id": "yF6Z1QiQ9q",
           "name": "CancelsvgIcon",
           "moduleFilePath": "plasmic/build_systems/icons/PlasmicIcon__Cancelsvg.tsx"
+        },
+        {
+          "id": "jhsDipGX05",
+          "name": "CloseSvgrepoComsvgIcon",
+          "moduleFilePath": "plasmic/build_systems/icons/PlasmicIcon__CloseSvgrepoComsvg.tsx"
         }
       ],
       "images": [
@@ -185,6 +190,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.286",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.286/dist/plasmic.schema.json"
+  "cliVersion": "0.1.290",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.290/dist/plasmic.schema.json"
 }

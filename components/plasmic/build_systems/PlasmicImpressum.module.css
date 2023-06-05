@@ -61,6 +61,14 @@
   font-family: var(‑-DiatypeMedium);
   min-width: 0;
 }
+.link___0Eje6 {
+  color: var(--token-Mq_qSd0gm);
+  font-family: var(‑-DiatypeMedium);
+}
+.link__kMIav {
+  color: var(--token-Mq_qSd0gm);
+  font-family: var(‑-DiatypeMedium);
+}
 .freeBox__cFwm8 {
   display: flex;
   position: relative;
@@ -83,8 +91,8 @@
   z-index: 1;
   right: 20px;
   cursor: pointer;
-  width: 1em;
-  height: 1em;
+  width: 24px;
+  height: 24px;
   flex-shrink: 0;
 }
 .text__ujQbW {

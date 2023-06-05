@@ -206,6 +206,7 @@
 @media (max-width: 640px) {
   .freeBox__bVlAj {
     height: 85vh;
+    padding-top: 0px;
   }
 }
 .svg {
@@ -220,10 +221,17 @@
   left: auto;
   transition-property: all;
   transition-duration: 1s;
+  min-width: 4px;
+  flex-grow: 1;
   min-height: 0;
   -webkit-transition-property: all;
   -webkit-transition-duration: 1s;
   margin: 0px;
+}
+@media (max-width: 640px) {
+  .svg {
+    min-width: 4px;
+  }
 }
 .text___62N6U {
   position: relative;

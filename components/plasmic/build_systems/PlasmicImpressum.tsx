@@ -44,7 +44,7 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_build_systems.module.css"; // plasmic-import: jENqvBHbRPXMByDQmRe4G7/projectcss
 import sty from "./PlasmicImpressum.module.css"; // plasmic-import: JDL-U0BO7f/css
 
-import CancelsvgIcon from "./icons/PlasmicIcon__Cancelsvg"; // plasmic-import: yF6Z1QiQ9q/icon
+import CloseSvgrepoComsvgIcon from "./icons/PlasmicIcon__CloseSvgrepoComsvg"; // plasmic-import: jhsDipGX05/icon
 
 export type PlasmicImpressum__VariantMembers = {};
 export type PlasmicImpressum__VariantsArgs = {};
@@ -150,13 +150,63 @@ function PlasmicImpressum__RenderFunc(props: {
                   sty.text__mlAuA
                 )}
               >
-                {hasVariant(globalVariants, "screen", "mobile")
-                  ? "Imprint\n\n\t\tVerantwortlich i.S.d. § 55 Abs. 2 RStV:\n\t\tMartin Bittmann\n\t\tc/o Venture Lab Built Environment\n\t\tTechnical University of Munich (TUM)\n\t\tArcisstraße 21\n\t\tD-80333 Munich\n\t\n\t\tE-Mail: mail(at)buildsystems.com\n\t\n\t\tGrafik- und Kommunikationsdesign: \nalisch berlec hönow\n\t\n\t\n\n\n\n\n\t\tSchutzrechte Dritter\n\n\t\tBuild Systems nimmt Schutzrechte \nDritter sehr ernst. Selbstverständlich stellen wir \nbewusst weder rechtsverletzende Inhalte auf \nunseren Seiten ein, noch verlinken wir auf solche. \nDennoch kann es sein, dass sich Inhalte auf \nexternen Seiten verändern, ohne dass wir hierauf \nEinfluss hätten oder dies ständig überprüfen zu \nkönnen. Sollten Sie feststellen, dass einer unserer \nLinks auf ein rechtswidriges Angebot verweist, \nbitten wir darum, uns dies mitzuteilen. Wir \nwerden dies dann umgehend prüfen und den Link \ngegebenenfalls entfernen.\n\t\n\t\tInhalt\n\n\t\tDie Inhalte dieser Webseite wurden \nsorgfältig geprüft und nach bestem Wissen \nerstellt. Dennoch wird für die hier dargebotenen \nInformationen kein Anspruch auf Vollständigkeit, \nAktualität, Qualität und Richtigkeit erhoben. Für \nSchäden, die durch das Vertrauen auf die Inhalte \ndieser Website oder deren Gebrauch entstehen, \nhaften wir nicht, es sei denn, sie wurden durch \nBuild Systems oder unsere Mitarbeiter \nvorsätzlich oder grob fahrlässig verursacht. \nGesetzliche Ansprüche aus dem \nProdukthaftungsgesetz sind von dieser \nHaftungsbeschränkung ausgenommen.\n\t\n\t\tAlternative Streitbeilegung gemäß Art. 14 \nAbs. 1 ODR-VO und § 36 VSBG\n\n\t\tDie Europäische Kommission stellt eine \nPlattform zur Online-Streitbeilegung (OS) bereit, \ndie Sie unter <a class=„privacy“ target=„_blank“ \nhref=„https://ec.europa.eu/consumers/odr/main/\nindex.cfm?\nevent=main.home.chooseLanguage“>https://\nec.europa.eu/consumers/odr</a> finden. Zur \nTeilnahme an einem Streitbeilegungsverfahren \nvor einer Verbraucherschlichtungsstelle sind wir \nnicht verpflichtet und nicht bereit."
-                  : "Imprint\n\n\t\tVerantwortlich i.S.d. § 55 Abs. 2 RStV:\n\t\tMartin Bittmann\n\t\tc/o Venture Lab Built Environment\n\t\tTechnical University of Munich (TUM)\n\t\tArcisstraße 21\n\t\tD-80333 Munich\n\t\n\t\tE-Mail: mail(at)buildsystems.com\n\t\n\t\tGrafik- und Kommunikationsdesign: alisch berlec hönow\n\n\n\n\n\n\n\n\n\n\n\t\tSchutzrechte Dritter\n\n\t\tBuild Systems nimmt Schutzrechte Dritter sehr ernst. Selbstverständlich stellen wir bewusst weder rechtsverletzende Inhalte auf unseren Seiten ein, noch verlinken wir auf solche. Dennoch kann es sein, dass sich Inhalte auf externen Seiten verändern, ohne dass wir hierauf Einfluss hätten oder dies ständig überprüfen zu können. Sollten Sie feststellen, dass einer unserer Links auf ein rechtswidriges Angebot verweist, bitten wir darum, uns dies mitzuteilen. Wir werden dies dann umgehend prüfen und den Link gegebenenfalls entfernen.\n\t\n\t\tInhalt\n\n\t\tDie Inhalte dieser Webseite wurden sorgfältig geprüft und nach bestem Wissen erstellt. Dennoch wird für die hier dargebotenen Informationen kein Anspruch auf Vollständigkeit, Aktualität, Qualität und Richtigkeit erhoben. Für Schäden, die durch das Vertrauen auf die Inhalte dieser Website oder deren Gebrauch entstehen, haften wir nicht, es sei denn, sie wurden durch Build Systems oder unsere Mitarbeiter vorsätzlich oder grob fahrlässig verursacht. Gesetzliche Ansprüche aus dem Produkthaftungsgesetz sind von dieser Haftungsbeschränkung ausgenommen.\n\t\n\t\tAlternative Streitbeilegung gemäß Art. 14 Abs. 1 ODR-VO und § 36 VSBG\n\n\t\tDie Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit, die Sie unter <a class=„privacy“ target=„_blank“ href=„https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home.chooseLanguage“>https://ec.europa.eu/consumers/odr</a> finden. Zur Teilnahme an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle sind wir nicht verpflichtet und nicht bereit."}
+                {hasVariant(globalVariants, "screen", "mobile") ? (
+                  "Imprint\n\n\t\tVerantwortlich i.S.d. § 55 Abs. 2 RStV:\n\t\tMartin Bittmann\n\t\tc/o Venture Lab Built Environment\n\t\tTechnical University of Munich (TUM)\n\t\tArcisstraße 21\n\t\tD-80333 Munich\n\t\n\t\tE-Mail: mail(at)buildsystems.com\n\t\n\t\tGrafik- und Kommunikationsdesign: \nalisch berlec hönow\n\t\n\t\n\n\n\n\n\t\tSchutzrechte Dritter\n\n\t\tBuild Systems nimmt Schutzrechte \nDritter sehr ernst. Selbstverständlich stellen wir \nbewusst weder rechtsverletzende Inhalte auf \nunseren Seiten ein, noch verlinken wir auf solche. \nDennoch kann es sein, dass sich Inhalte auf \nexternen Seiten verändern, ohne dass wir hierauf \nEinfluss hätten oder dies ständig überprüfen zu \nkönnen. Sollten Sie feststellen, dass einer unserer \nLinks auf ein rechtswidriges Angebot verweist, \nbitten wir darum, uns dies mitzuteilen. Wir \nwerden dies dann umgehend prüfen und den Link \ngegebenenfalls entfernen.\n\t\n\t\tInhalt\n\n\t\tDie Inhalte dieser Webseite wurden \nsorgfältig geprüft und nach bestem Wissen \nerstellt. Dennoch wird für die hier dargebotenen \nInformationen kein Anspruch auf Vollständigkeit, \nAktualität, Qualität und Richtigkeit erhoben. Für \nSchäden, die durch das Vertrauen auf die Inhalte \ndieser Website oder deren Gebrauch entstehen, \nhaften wir nicht, es sei denn, sie wurden durch \nBuild Systems oder unsere Mitarbeiter \nvorsätzlich oder grob fahrlässig verursacht. \nGesetzliche Ansprüche aus dem \nProdukthaftungsgesetz sind von dieser \nHaftungsbeschränkung ausgenommen.\n\t\n\t\tAlternative Streitbeilegung gemäß Art. 14 \nAbs. 1 ODR-VO und § 36 VSBG\n\n\t\tDie Europäische Kommission stellt eine \nPlattform zur Online-Streitbeilegung (OS) bereit, \ndie Sie unter <a class=„privacy“ target=„_blank“ \nhref=„https://ec.europa.eu/consumers/odr/main/\nindex.cfm?\nevent=main.home.chooseLanguage“>https://\nec.europa.eu/consumers/odr</a> finden. Zur \nTeilnahme an einem Streitbeilegungsverfahren \nvor einer Verbraucherschlichtungsstelle sind wir \nnicht verpflichtet und nicht bereit."
+                ) : (
+                  <React.Fragment>
+                    <React.Fragment>
+                      {
+                        "Imprint\n\n\t\tVerantwortlich i.S.d. § 55 Abs. 2 RStV:\n\t\tMartin Bittmann\n\t\tc/o Venture Lab Built Environment\n\t\tTechnical University of Munich (TUM)\n\t\tArcisstraße 21\n\t\tD-80333 Munich\n\t\n\t\tE-Mail: mail(at)buildsystems.com\n\t\n\t\tGrafik- und Kommunikationsdesign: "
+                      }
+                    </React.Fragment>
+                    {
+                      <p.PlasmicLink
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.a,
+                          projectcss.__wab_text,
+                          projectcss.plasmic_default__inline,
+                          sty.link___0Eje6
+                        )}
+                        component={Link}
+                        href={"www.abh.eu" as const}
+                        platform={"nextjs"}
+                      >
+                        {"alisch berlec hönow"}
+                      </p.PlasmicLink>
+                    }
+                    <React.Fragment>
+                      {
+                        "\n\n\n\n\n\n\n\n\n\n\n\t\tSchutzrechte Dritter\n\n\t\tBuild Systems nimmt Schutzrechte Dritter sehr ernst. Selbstverständlich stellen wir bewusst weder rechtsverletzende Inhalte auf unseren Seiten ein, noch verlinken wir auf solche. Dennoch kann es sein, dass sich Inhalte auf externen Seiten verändern, ohne dass wir hierauf Einfluss hätten oder dies ständig überprüfen zu können. Sollten Sie feststellen, dass einer unserer Links auf ein rechtswidriges Angebot verweist, bitten wir darum, uns dies mitzuteilen. Wir werden dies dann umgehend prüfen und den Link gegebenenfalls entfernen.\n\t\n\t\tInhalt\n\n\t\tDie Inhalte dieser Webseite wurden sorgfältig geprüft und nach bestem Wissen erstellt. Dennoch wird für die hier dargebotenen Informationen kein Anspruch auf Vollständigkeit, Aktualität, Qualität und Richtigkeit erhoben. Für Schäden, die durch das Vertrauen auf die Inhalte dieser Website oder deren Gebrauch entstehen, haften wir nicht, es sei denn, sie wurden durch Build Systems oder unsere Mitarbeiter vorsätzlich oder grob fahrlässig verursacht. Gesetzliche Ansprüche aus dem Produkthaftungsgesetz sind von dieser Haftungsbeschränkung ausgenommen.\n\t\n\t\tAlternative Streitbeilegung gemäß Art. 14 Abs. 1 ODR-VO und § 36 VSBG\n\n\t\tDie Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit, die Sie unter "
+                      }
+                    </React.Fragment>
+                    {
+                      <p.PlasmicLink
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.a,
+                          projectcss.__wab_text,
+                          projectcss.plasmic_default__inline,
+                          sty.link__kMIav
+                        )}
+                        component={Link}
+                        href={"https://ec.europa.eu/consumers/odr" as const}
+                        platform={"nextjs"}
+                      >
+                        {"https://ec.europa.eu/consumers/odr"}
+                      </p.PlasmicLink>
+                    }
+                    <React.Fragment>
+                      {
+                        " finden. Zur Teilnahme an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle sind wir nicht verpflichtet und nicht bereit."
+                      }
+                    </React.Fragment>
+                  </React.Fragment>
+                )}
               </div>
             </div>
             <div className={classNames(projectcss.all, sty.freeBox__cFwm8)}>
-              <CancelsvgIcon
+              <CloseSvgrepoComsvgIcon
                 data-plasmic-name={"svg"}
                 data-plasmic-override={overrides.svg}
                 className={classNames(projectcss.all, sty.svg)}
