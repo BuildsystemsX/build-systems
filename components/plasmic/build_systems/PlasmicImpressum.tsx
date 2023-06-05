@@ -184,7 +184,7 @@ function PlasmicImpressum__RenderFunc(props: {
                                 sty.link__l6Urx
                               )}
                               component={Link}
-                              href={"https://www.abh.eu" as const}
+                              href={"https://abh.eu" as const}
                               platform={"nextjs"}
                               target={"_blank" as const}
                             >
