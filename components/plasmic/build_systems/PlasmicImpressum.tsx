@@ -57,7 +57,6 @@ export const PlasmicImpressum__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicImpressum__OverridesType = {
   root?: p.Flex<"div">;
-  httpsabheu?: p.Flex<"a"> & Partial<LinkProps>;
   svg?: p.Flex<"svg">;
 };
 
@@ -167,35 +166,30 @@ function PlasmicImpressum__RenderFunc(props: {
                           projectcss.a,
                           projectcss.__wab_text,
                           projectcss.plasmic_default__inline,
+                          sty.link__uRwnt
+                        )}
+                        component={Link}
+                        href={"https://www.abh.eu/" as const}
+                        platform={"nextjs"}
+                      >
+                        {"alisch berlec hönow"}
+                      </p.PlasmicLink>
+                    }
+                    <React.Fragment>{""}</React.Fragment>
+                    {
+                      <p.PlasmicLink
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.a,
+                          projectcss.__wab_text,
+                          projectcss.plasmic_default__inline,
                           sty.link___0Eje6
                         )}
                         component={Link}
                         href={"www.abh.eu" as const}
                         platform={"nextjs"}
                       >
-                        <React.Fragment>
-                          <React.Fragment>{""}</React.Fragment>
-                          {
-                            <p.PlasmicLink
-                              data-plasmic-name={"httpsabheu"}
-                              data-plasmic-override={overrides.httpsabheu}
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.a,
-                                projectcss.__wab_text,
-                                projectcss.plasmic_default__inline,
-                                sty.httpsabheu
-                              )}
-                              component={Link}
-                              href={"https://www.abh.eu/" as const}
-                              platform={"nextjs"}
-                              target={"_blank" as const}
-                            >
-                              {"alisch berlec hönow"}
-                            </p.PlasmicLink>
-                          }
-                          <React.Fragment>{""}</React.Fragment>
-                        </React.Fragment>
+                        {""}
                       </p.PlasmicLink>
                     }
                     <React.Fragment>{"\n\n\n\n\t\t"}</React.Fragment>
@@ -356,8 +350,7 @@ function PlasmicImpressum__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "httpsabheu", "svg"],
-  httpsabheu: ["httpsabheu"],
+  root: ["root", "svg"],
   svg: ["svg"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -365,7 +358,6 @@ type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
-  httpsabheu: "a";
   svg: "svg";
 };
 
@@ -429,7 +421,6 @@ export const PlasmicImpressum = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    httpsabheu: makeNodeComponent("httpsabheu"),
     svg: makeNodeComponent("svg"),
 
     // Metadata about props expected for PlasmicImpressum
