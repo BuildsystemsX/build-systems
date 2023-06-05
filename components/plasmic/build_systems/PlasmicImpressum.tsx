@@ -166,7 +166,7 @@ function PlasmicImpressum__RenderFunc(props: {
                           projectcss.a,
                           projectcss.__wab_text,
                           projectcss.plasmic_default__inline,
-                          sty.link__uRwnt
+                          sty.link__ydc5C
                         )}
                         component={Link}
                         href={"https://www.abh.eu/" as const}
@@ -175,43 +175,9 @@ function PlasmicImpressum__RenderFunc(props: {
                         {"alisch berlec hönow"}
                       </p.PlasmicLink>
                     }
-                    <React.Fragment>{""}</React.Fragment>
-                    {
-                      <p.PlasmicLink
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.a,
-                          projectcss.__wab_text,
-                          projectcss.plasmic_default__inline,
-                          sty.link___0Eje6
-                        )}
-                        component={Link}
-                        href={"www.abh.eu" as const}
-                        platform={"nextjs"}
-                      >
-                        {""}
-                      </p.PlasmicLink>
-                    }
-                    <React.Fragment>{"\n\n\n\n\t\t"}</React.Fragment>
-                    {
-                      <p.PlasmicLink
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.a,
-                          projectcss.__wab_text,
-                          projectcss.plasmic_default__inline,
-                          sty.link__vU6Uq
-                        )}
-                        component={Link}
-                        href={"https://www.abh.eu/" as const}
-                        platform={"nextjs"}
-                      >
-                        {"Schutzrechte Dritter"}
-                      </p.PlasmicLink>
-                    }
                     <React.Fragment>
                       {
-                        "\n\n\t\tBuild Systems nimmt Schutzrechte Dritter sehr ernst. Selbstverständlich stellen wir bewusst weder rechtsverletzende Inhalte auf unseren Seiten ein, noch verlinken wir auf solche. Dennoch kann es sein, dass sich Inhalte auf externen Seiten verändern, ohne dass wir hierauf Einfluss hätten oder dies ständig überprüfen zu können. Sollten Sie feststellen, dass einer unserer Links auf ein rechtswidriges Angebot verweist, bitten wir darum, uns dies mitzuteilen. Wir werden dies dann umgehend prüfen und den Link gegebenenfalls entfernen.\n\t\n\t\tInhalt\n\n\t\tDie Inhalte dieser Webseite wurden sorgfältig geprüft und nach bestem Wissen erstellt. Dennoch wird für die hier dargebotenen Informationen kein Anspruch auf Vollständigkeit, Aktualität, Qualität und Richtigkeit erhoben. Für Schäden, die durch das Vertrauen auf die Inhalte dieser Website oder deren Gebrauch entstehen, haften wir nicht, es sei denn, sie wurden durch Build Systems oder unsere Mitarbeiter vorsätzlich oder grob fahrlässig verursacht. Gesetzliche Ansprüche aus dem Produkthaftungsgesetz sind von dieser Haftungsbeschränkung ausgenommen.\n\t\n\t\tAlternative Streitbeilegung gemäß Art. 14 Abs. 1 ODR-VO und § 36 VSBG\n\n\t\tDie Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit, die Sie unter "
+                        "\n\n\n\n\t\tSchutzrechte Dritter\n\n\t\tBuild Systems nimmt Schutzrechte Dritter sehr ernst. Selbstverständlich stellen wir bewusst weder rechtsverletzende Inhalte auf unseren Seiten ein, noch verlinken wir auf solche. Dennoch kann es sein, dass sich Inhalte auf externen Seiten verändern, ohne dass wir hierauf Einfluss hätten oder dies ständig überprüfen zu können. Sollten Sie feststellen, dass einer unserer Links auf ein rechtswidriges Angebot verweist, bitten wir darum, uns dies mitzuteilen. Wir werden dies dann umgehend prüfen und den Link gegebenenfalls entfernen.\n\t\n\t\tInhalt\n\n\t\tDie Inhalte dieser Webseite wurden sorgfältig geprüft und nach bestem Wissen erstellt. Dennoch wird für die hier dargebotenen Informationen kein Anspruch auf Vollständigkeit, Aktualität, Qualität und Richtigkeit erhoben. Für Schäden, die durch das Vertrauen auf die Inhalte dieser Website oder deren Gebrauch entstehen, haften wir nicht, es sei denn, sie wurden durch Build Systems oder unsere Mitarbeiter vorsätzlich oder grob fahrlässig verursacht. Gesetzliche Ansprüche aus dem Produkthaftungsgesetz sind von dieser Haftungsbeschränkung ausgenommen.\n\t\n\t\tAlternative Streitbeilegung gemäß Art. 14 Abs. 1 ODR-VO und § 36 VSBG\n\n\t\tDie Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit, die Sie unter "
                       }
                     </React.Fragment>
                     {
