@@ -59,7 +59,8 @@
   color: var(--token-Mq_qSd0gm);
   width: 100%;
   font-family: "ABC Diatype";
-  line-height: 1.2;
+  line-height: 17px;
+  letter-spacing: -0.01em;
   min-width: 0;
 }
 .link__mh873 {
@@ -105,6 +106,7 @@
   max-width: 100%;
   color: var(--token-Mq_qSd0gm);
   font-family: "ABC Diatype";
-  line-height: 1.2;
+  line-height: 17px;
+  letter-spacing: -0.01em;
   min-width: 0;
 }
