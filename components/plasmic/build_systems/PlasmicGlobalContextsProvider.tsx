@@ -26,7 +26,7 @@ export default function GlobalContextsProvider(
       css={
         embedCssProps && "css" in embedCssProps
           ? embedCssProps.css!
-          : (".blend {\n  mix-blend-mode: difference;\n}" as const)
+          : ("@import url( 'https://assets.buildsystems.de/font.css' );\n\n.blend {\n  mix-blend-mode: difference;\n}" as const)
       }
     >
       {children}
