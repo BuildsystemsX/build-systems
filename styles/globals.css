@@ -108,16 +108,16 @@ a {
 
 @font-face {
   font-family: 'ABC Diatype 2';
-  src: 	url( 'font/ABCDiatype-Medium.woff2' ) format( 'woff2' ),
-  url( 'font/ABCDiatype-Medium.woff' ) format( 'woff' );
+  src: 	url('/fonts/ABCDiatype-Medium.woff2') format( 'woff2' ),
+  url('/fonts/ABCDiatype-Medium.woff') format( 'woff' );
   font-weight: 500;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'ABC Diatype Mono 2';
-  src: 	url( 'font/ABCDiatypeMono-Medium.woff2' ) format( 'woff2' ),
-  url( 'font/ABCDiatypeMono-Medium.woff' ) format( 'woff' );
+  src: 	url('/fonts/ABCDiatypeMono-Medium.woff2') format( 'woff2' ),
+  url('/fonts/ABCDiatypeMono-Medium.woff') format( 'woff' );
   font-weight: 500;
   font-display: swap;
 }

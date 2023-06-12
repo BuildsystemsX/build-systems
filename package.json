@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@next/font": "^13.4.4",
     "@plasmicapp/cli": "^0.1.292",
     "@plasmicapp/react-web": "^0.2.223",
     "@plasmicpkgs/plasmic-embed-css": "^0.1.127",
