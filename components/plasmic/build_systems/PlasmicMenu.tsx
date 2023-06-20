@@ -219,6 +219,68 @@ function PlasmicMenu__RenderFunc(props: {
                     ? `/New`
                     : undefined
                 }
+                onClick={async event => {
+                  const $steps = {};
+                  $steps["updateExpanded"] = true
+                    ? (() => {
+                        const actionArgs = {
+                          vgroup: __wrapUserFunction(
+                            {
+                              type: "InteractionArgLoc",
+                              actionName: "updateVariant",
+                              interactionUuid: "-m7R7WGR6",
+                              componentUuid: "5tZNLUygwX",
+                              argName: "vgroup"
+                            },
+                            () => "expanded"
+                          ),
+                          operation: __wrapUserFunction(
+                            {
+                              type: "InteractionArgLoc",
+                              actionName: "updateVariant",
+                              interactionUuid: "-m7R7WGR6",
+                              componentUuid: "5tZNLUygwX",
+                              argName: "operation"
+                            },
+                            () => 2
+                          )
+                        };
+                        return __wrapUserFunction(
+                          {
+                            type: "InteractionLoc",
+                            actionName: "updateVariant",
+                            interactionUuid: "-m7R7WGR6",
+                            componentUuid: "5tZNLUygwX"
+                          },
+                          () =>
+                            (({ vgroup, value }) => {
+                              if (typeof value === "string") {
+                                value = [value];
+                              }
+
+                              const oldValue = p.get($state, vgroup);
+                              p.set($state, vgroup, !oldValue);
+                              return !oldValue;
+                            })?.apply(null, [actionArgs]),
+                          actionArgs
+                        );
+                      })()
+                    : undefined;
+                  if (
+                    typeof $steps["updateExpanded"] === "object" &&
+                    typeof $steps["updateExpanded"].then === "function"
+                  ) {
+                    $steps["updateExpanded"] = await __wrapUserPromise(
+                      {
+                        type: "InteractionLoc",
+                        actionName: "updateVariant",
+                        interactionUuid: "-m7R7WGR6",
+                        componentUuid: "5tZNLUygwX"
+                      },
+                      $steps["updateExpanded"]
+                    );
+                  }
+                }}
                 platform={"nextjs"}
               >
                 {(
@@ -281,6 +343,68 @@ function PlasmicMenu__RenderFunc(props: {
                     ? `/services`
                     : undefined
                 }
+                onClick={async event => {
+                  const $steps = {};
+                  $steps["updateExpanded"] = true
+                    ? (() => {
+                        const actionArgs = {
+                          vgroup: __wrapUserFunction(
+                            {
+                              type: "InteractionArgLoc",
+                              actionName: "updateVariant",
+                              interactionUuid: "BDiMWkbCC",
+                              componentUuid: "5tZNLUygwX",
+                              argName: "vgroup"
+                            },
+                            () => "expanded"
+                          ),
+                          operation: __wrapUserFunction(
+                            {
+                              type: "InteractionArgLoc",
+                              actionName: "updateVariant",
+                              interactionUuid: "BDiMWkbCC",
+                              componentUuid: "5tZNLUygwX",
+                              argName: "operation"
+                            },
+                            () => 2
+                          )
+                        };
+                        return __wrapUserFunction(
+                          {
+                            type: "InteractionLoc",
+                            actionName: "updateVariant",
+                            interactionUuid: "BDiMWkbCC",
+                            componentUuid: "5tZNLUygwX"
+                          },
+                          () =>
+                            (({ vgroup, value }) => {
+                              if (typeof value === "string") {
+                                value = [value];
+                              }
+
+                              const oldValue = p.get($state, vgroup);
+                              p.set($state, vgroup, !oldValue);
+                              return !oldValue;
+                            })?.apply(null, [actionArgs]),
+                          actionArgs
+                        );
+                      })()
+                    : undefined;
+                  if (
+                    typeof $steps["updateExpanded"] === "object" &&
+                    typeof $steps["updateExpanded"].then === "function"
+                  ) {
+                    $steps["updateExpanded"] = await __wrapUserPromise(
+                      {
+                        type: "InteractionLoc",
+                        actionName: "updateVariant",
+                        interactionUuid: "BDiMWkbCC",
+                        componentUuid: "5tZNLUygwX"
+                      },
+                      $steps["updateExpanded"]
+                    );
+                  }
+                }}
                 platform={"nextjs"}
               >
                 {(
@@ -343,6 +467,68 @@ function PlasmicMenu__RenderFunc(props: {
                     ? `/projekte`
                     : undefined
                 }
+                onClick={async event => {
+                  const $steps = {};
+                  $steps["updateExpanded"] = true
+                    ? (() => {
+                        const actionArgs = {
+                          vgroup: __wrapUserFunction(
+                            {
+                              type: "InteractionArgLoc",
+                              actionName: "updateVariant",
+                              interactionUuid: "rTxFejjws",
+                              componentUuid: "5tZNLUygwX",
+                              argName: "vgroup"
+                            },
+                            () => "expanded"
+                          ),
+                          operation: __wrapUserFunction(
+                            {
+                              type: "InteractionArgLoc",
+                              actionName: "updateVariant",
+                              interactionUuid: "rTxFejjws",
+                              componentUuid: "5tZNLUygwX",
+                              argName: "operation"
+                            },
+                            () => 2
+                          )
+                        };
+                        return __wrapUserFunction(
+                          {
+                            type: "InteractionLoc",
+                            actionName: "updateVariant",
+                            interactionUuid: "rTxFejjws",
+                            componentUuid: "5tZNLUygwX"
+                          },
+                          () =>
+                            (({ vgroup, value }) => {
+                              if (typeof value === "string") {
+                                value = [value];
+                              }
+
+                              const oldValue = p.get($state, vgroup);
+                              p.set($state, vgroup, !oldValue);
+                              return !oldValue;
+                            })?.apply(null, [actionArgs]),
+                          actionArgs
+                        );
+                      })()
+                    : undefined;
+                  if (
+                    typeof $steps["updateExpanded"] === "object" &&
+                    typeof $steps["updateExpanded"].then === "function"
+                  ) {
+                    $steps["updateExpanded"] = await __wrapUserPromise(
+                      {
+                        type: "InteractionLoc",
+                        actionName: "updateVariant",
+                        interactionUuid: "rTxFejjws",
+                        componentUuid: "5tZNLUygwX"
+                      },
+                      $steps["updateExpanded"]
+                    );
+                  }
+                }}
                 platform={"nextjs"}
               >
                 {(
@@ -405,6 +591,68 @@ function PlasmicMenu__RenderFunc(props: {
                     ? `/personen`
                     : undefined
                 }
+                onClick={async event => {
+                  const $steps = {};
+                  $steps["updateExpanded"] = true
+                    ? (() => {
+                        const actionArgs = {
+                          vgroup: __wrapUserFunction(
+                            {
+                              type: "InteractionArgLoc",
+                              actionName: "updateVariant",
+                              interactionUuid: "d8TzXIrD2",
+                              componentUuid: "5tZNLUygwX",
+                              argName: "vgroup"
+                            },
+                            () => "expanded"
+                          ),
+                          operation: __wrapUserFunction(
+                            {
+                              type: "InteractionArgLoc",
+                              actionName: "updateVariant",
+                              interactionUuid: "d8TzXIrD2",
+                              componentUuid: "5tZNLUygwX",
+                              argName: "operation"
+                            },
+                            () => 2
+                          )
+                        };
+                        return __wrapUserFunction(
+                          {
+                            type: "InteractionLoc",
+                            actionName: "updateVariant",
+                            interactionUuid: "d8TzXIrD2",
+                            componentUuid: "5tZNLUygwX"
+                          },
+                          () =>
+                            (({ vgroup, value }) => {
+                              if (typeof value === "string") {
+                                value = [value];
+                              }
+
+                              const oldValue = p.get($state, vgroup);
+                              p.set($state, vgroup, !oldValue);
+                              return !oldValue;
+                            })?.apply(null, [actionArgs]),
+                          actionArgs
+                        );
+                      })()
+                    : undefined;
+                  if (
+                    typeof $steps["updateExpanded"] === "object" &&
+                    typeof $steps["updateExpanded"].then === "function"
+                  ) {
+                    $steps["updateExpanded"] = await __wrapUserPromise(
+                      {
+                        type: "InteractionLoc",
+                        actionName: "updateVariant",
+                        interactionUuid: "d8TzXIrD2",
+                        componentUuid: "5tZNLUygwX"
+                      },
+                      $steps["updateExpanded"]
+                    );
+                  }
+                }}
                 platform={"nextjs"}
               >
                 {(

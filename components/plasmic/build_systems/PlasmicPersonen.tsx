@@ -165,7 +165,7 @@ function PlasmicPersonen__RenderFunc(props: {
               data-plasmic-name={"menu"}
               data-plasmic-override={overrides.menu}
               className={classNames("__wab_instance", sty.menu)}
-              test={[]}
+              test={["personen"]}
             />
           </div>
           {true ? (
