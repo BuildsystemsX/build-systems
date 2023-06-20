@@ -3,7 +3,7 @@
     {
       "name": "Green",
       "type": "color",
-      "value": "#56BD77",
+      "value": "#56BD7700",
       "category": "color",
       "meta": {
         "projectId": "jENqvBHbRPXMByDQmRe4G7",
@@ -23,7 +23,7 @@
     {
       "name": "Text",
       "type": "color",
-      "value": "#CECECE",
+      "value": "#D9D9D9",
       "category": "color",
       "meta": {
         "projectId": "jENqvBHbRPXMByDQmRe4G7",

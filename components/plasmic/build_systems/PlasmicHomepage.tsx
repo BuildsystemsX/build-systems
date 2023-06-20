@@ -36,7 +36,7 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
-import ButtonExternalLink from "../../ButtonExternalLink"; // plasmic-import: noJZH-4dRr/component
+import OldButtonExternalLink from "../../OldButtonExternalLink"; // plasmic-import: noJZH-4dRr/component
 
 import { useScreenVariants as useScreenVariantsjnTclXkDzSl7V } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: jnTCLXkDZSl7V/globalVariant
 
@@ -119,6 +119,21 @@ function PlasmicHomepage__RenderFunc(props: {
           key="twitter:title"
           name="twitter:title"
           content={PlasmicHomepage.pageMetadata.title}
+        />
+        <meta
+          key="description"
+          name="description"
+          content={PlasmicHomepage.pageMetadata.description}
+        />
+        <meta
+          key="og:description"
+          property="og:description"
+          content={PlasmicHomepage.pageMetadata.description}
+        />
+        <meta
+          key="twitter:description"
+          name="twitter:description"
+          content={PlasmicHomepage.pageMetadata.description}
         />
       </Head>
 
@@ -232,10 +247,10 @@ function PlasmicHomepage__RenderFunc(props: {
                 hasGap={true}
                 className={classNames(projectcss.all, sty.freeBox__nm1I3)}
               >
-                <ButtonExternalLink
+                <OldButtonExternalLink
                   className={classNames(
                     "__wab_instance",
-                    sty.buttonExternalLink___8Mscj
+                    sty.oldButtonExternalLink___8Mscj
                   )}
                   destinationLink={
                     "https://drive.google.com/file/d/1X6XCNF57644OC2sUVvwzV2s-3dAliHi0/view?usp=sharing" as const
@@ -250,11 +265,11 @@ function PlasmicHomepage__RenderFunc(props: {
                   >
                     {"Download Leistungspaket"}
                   </div>
-                </ButtonExternalLink>
-                <ButtonExternalLink
+                </OldButtonExternalLink>
+                <OldButtonExternalLink
                   className={classNames(
                     "__wab_instance",
-                    sty.buttonExternalLink___33Cst
+                    sty.oldButtonExternalLink___33Cst
                   )}
                   destinationLink={"mailto:mail@buildsystems.de" as const}
                 >
@@ -267,7 +282,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   >
                     {"Schreiben Sie uns eine E-mail"}
                   </div>
-                </ButtonExternalLink>
+                </OldButtonExternalLink>
                 <div
                   className={classNames(
                     projectcss.all,
@@ -416,7 +431,8 @@ export const PlasmicHomepage = Object.assign(
     // Page metadata
     pageMetadata: {
       title: "Build Systems",
-      description: "",
+      description:
+        "Build Systems entwickelt individuelle Smart Sustainability Roadmaps (Nachhaltigkeits-fahrpläne).  Wir unterstützen Immobilienentwickler:innen in einer frühen Phase der Planung.",
       ogImageSrc: "",
       canonical: ""
     }
