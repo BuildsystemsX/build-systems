@@ -237,7 +237,7 @@ function PlasmicHomepage2__RenderFunc(props: {
               )}
             >
               {
-                "stellt Nachhaltigkeitsanforderungen und ökonomische Indikatoren gegenüber"
+                "stellt Nachhaltigkeitsanforderungen und \u00f6konomische Indikatoren gegen\u00fcber"
               }
             </div>
             {true ? (
@@ -250,8 +250,8 @@ function PlasmicHomepage2__RenderFunc(props: {
                   )}
                 >
                   {hasVariant(globalVariants, "screen", "mobile")
-                    ? "Build Systems entwickelt individuelle Smart Sustainability Roadmaps (Nachhaltigkeits-fahrpläne). Hierfür stellen wir Nachhaltigkeitsanforderungen der individuellen Projektentwicklung ökonomischen Indikatoren gegenüber. Wir unterstützen Immobilienentwickler:innen in einer frühen Phase der Planung Investitionsentscheidungen zu treffen."
-                    : "Impact Intelligence steht für einen smarten Umgang mit technischen und sozioökonomischen Maßnahmen, die nachhaltigen Impact schaffen. Unsere Smart Sustainability Roadmaps helfen, Ihre Wirkkraft intelligent auszuschöpfen und Ihren Impact in der Gebäudeentwicklung zu skalieren."}
+                    ? "Build Systems entwickelt individuelle Smart Sustainability Roadmaps (Nachhaltigkeits-fahrpl\u00e4ne). Hierf\u00fcr stellen wir Nachhaltigkeitsanforderungen der individuellen Projektentwicklung \u00f6konomischen Indikatoren gegen\u00fcber. Wir unterst\u00fctzen Immobilienentwickler:innen in einer fr\u00fchen Phase der Planung Investitionsentscheidungen zu treffen."
+                    : "Impact Intelligence steht f\u00fcr einen smarten Umgang mit technischen und sozio\u00f6konomischen Ma\u00dfnahmen, die nachhaltigen Impact schaffen. Unsere Smart Sustainability Roadmaps helfen, Ihre Wirkkraft intelligent auszusch\u00f6pfen und Ihren Impact in der Geb\u00e4udeentwicklung zu skalieren."}
                 </div>
                 <SmallButton
                   className={classNames(
@@ -282,7 +282,7 @@ function PlasmicHomepage2__RenderFunc(props: {
                 sty.text__a2N3
               )}
             >
-              {"macht Ihre Projekte grün"}
+              {"macht Ihre Projekte gr\u00fcn"}
             </div>
             {true ? (
               <div className={classNames(projectcss.all, sty.freeBox__tnKeH)}>
@@ -294,8 +294,8 @@ function PlasmicHomepage2__RenderFunc(props: {
                   )}
                 >
                   {hasVariant(globalVariants, "screen", "mobile")
-                    ? "Build Systems entwickelt individuelle Smart Sustainability Roadmaps (Nachhaltigkeits-fahrpläne). Hierfür stellen wir Nachhaltigkeitsanforderungen der individuellen Projektentwicklung ökonomischen Indikatoren gegenüber. Wir unterstützen Immobilienentwickler:innen in einer frühen Phase der Planung Investitionsentscheidungen zu treffen."
-                    : "Unsere Nachhaltigkeitsfahrpläne unterstützt die individuelle Projektentwicklung in einer frühen Phase der Planung, Investitionsentscheidungen zu treffen, Projekte ganzheitlich aufzugleisen und nachhaltige\nWertstabilität zu schaffen."}
+                    ? "Build Systems entwickelt individuelle Smart Sustainability Roadmaps (Nachhaltigkeits-fahrpl\u00e4ne). Hierf\u00fcr stellen wir Nachhaltigkeitsanforderungen der individuellen Projektentwicklung \u00f6konomischen Indikatoren gegen\u00fcber. Wir unterst\u00fctzen Immobilienentwickler:innen in einer fr\u00fchen Phase der Planung Investitionsentscheidungen zu treffen."
+                    : "Unsere Nachhaltigkeitsfahrpl\u00e4ne unterst\u00fctzt die individuelle Projektentwicklung in einer fr\u00fchen Phase der Planung, Investitionsentscheidungen zu treffen, Projekte ganzheitlich aufzugleisen und nachhaltige\nWertstabilit\u00e4t zu schaffen."}
                 </div>
                 <SmallButton
                   className={classNames(

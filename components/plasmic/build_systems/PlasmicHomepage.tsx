@@ -238,8 +238,8 @@ function PlasmicHomepage__RenderFunc(props: {
               )}
             >
               {hasVariant(globalVariants, "screen", "mobile")
-                ? "Build Systems entwickelt individuelle Smart Sustainability Roadmaps (Nachhaltigkeits-fahrpläne). Hierfür stellen wir Nachhaltigkeitsanforderungen der individuellen Projektentwicklung ökonomischen Indikatoren gegenüber. Wir unterstützen Immobilienentwickler:innen in einer frühen Phase der Planung Investitionsentscheidungen zu treffen."
-                : "Build Systems entwickelt individuelle Smart Sustainability Roadmaps (Nachhaltigkeitsfahrpläne). Hierfür stellen wir Nachhaltigkeitsanforderungen der individuellen Projektentwicklung ökonomischen Indikatoren gegenüber. Wir unterstützen Immobilienentwickler:innen in einer frühen Phase der Planung Investitionsentscheidungen zu treffen."}
+                ? "Build Systems entwickelt individuelle Smart Sustainability Roadmaps (Nachhaltigkeits-fahrpl\u00e4ne). Hierf\u00fcr stellen wir Nachhaltigkeitsanforderungen der individuellen Projektentwicklung \u00f6konomischen Indikatoren gegen\u00fcber. Wir unterst\u00fctzen Immobilienentwickler:innen in einer fr\u00fchen Phase der Planung Investitionsentscheidungen zu treffen."
+                : "Build Systems entwickelt individuelle Smart Sustainability Roadmaps (Nachhaltigkeitsfahrpl\u00e4ne). Hierf\u00fcr stellen wir Nachhaltigkeitsanforderungen der individuellen Projektentwicklung \u00f6konomischen Indikatoren gegen\u00fcber. Wir unterst\u00fctzen Immobilienentwickler:innen in einer fr\u00fchen Phase der Planung Investitionsentscheidungen zu treffen."}
             </div>
             <div className={classNames(projectcss.all, sty.freeBox__zqs6K)}>
               <p.Stack

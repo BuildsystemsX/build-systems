@@ -126,7 +126,7 @@ function PlasmicFooter__RenderFunc(props: {
               )}
             >
               {
-                "Build Systems\nc/o Venture Lab Built Environment\nTechnical University of Munich\nArcisstraße 21, D-80333 Munich"
+                "Build Systems\nc/o Venture Lab Built Environment\nTechnical University of Munich\nArcisstra\u00dfe 21, D-80333 Munich"
               }
             </div>
             <div className={classNames(projectcss.all, sty.freeBox__k0Uz)}>
@@ -183,7 +183,7 @@ function PlasmicFooter__RenderFunc(props: {
                   }
                 }}
               >
-                {"Impressum\nDatenschutzerklärung"}
+                {"Impressum\nDatenschutzerkl\u00e4rung"}
               </div>
               <p.Stack
                 as={"div"}
