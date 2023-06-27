@@ -4,15 +4,19 @@
   align-items: center;
   justify-content: center;
   width: auto;
-  max-width: 100%;
   background: #ffffff;
   cursor: pointer;
   position: relative;
   height: auto;
   justify-self: flex-start;
   margin-left: 100px;
+  flex-grow: 0;
+  flex-shrink: 0;
   border-radius: 2px;
-  padding: 2px 5px 2px 2px;
+  padding: 2px;
+}
+.rootnoLeftSiteShift {
+  margin-left: 0px;
 }
 .root:hover {
   background: var(--token-phK4XmCXj);
@@ -21,10 +25,10 @@
   position: relative;
   object-fit: cover;
   max-width: 100%;
-  width: 100%;
+  width: 1em;
   color: var(--token-gvQcXRBmf);
   margin-right: 5px;
-  min-width: 0;
+  flex-shrink: 0;
   height: 1em;
 }
 .root:hover .svg {

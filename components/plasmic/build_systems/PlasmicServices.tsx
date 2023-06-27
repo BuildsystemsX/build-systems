@@ -361,38 +361,112 @@ function PlasmicServices__RenderFunc(props: {
             >
               {"steigerte durch abgestimmte Prozesse baulichen Mehrwert"}
             </div>
+            <div className={classNames(projectcss.all, sty.freeBox___8DGj8)} />
+
             {true ? (
               <div className={classNames(projectcss.all, sty.freeBox__sWrzx)}>
-                <div
-                  className={classNames(projectcss.all, sty.freeBox__d8Ixw)}
-                />
-
                 <div className={classNames(projectcss.all, sty.freeBox__awa6Y)}>
                   <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text___1EpLg
-                    )}
+                    className={classNames(projectcss.all, sty.columns___3IkF)}
                   >
-                    {"Wo die Reise hingeht:"}
+                    <div
+                      className={classNames(projectcss.all, sty.column__aPdgw)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text___1EpLg
+                        )}
+                      >
+                        {"Entscheidungen treffen"}
+                      </div>
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.column__b7Oju)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text___3Mdbh
+                        )}
+                      >
+                        {hasVariant(globalVariants, "screen", "mobile")
+                          ? "Build Systems entwickelt individuelle Smart Sustainability Roadmaps (Nachhaltigkeits-fahrpl\u00e4ne). Hierf\u00fcr stellen wir Nachhaltigkeitsanforderungen der individuellen Projektentwicklung \u00f6konomischen Indikatoren gegen\u00fcber. Wir unterst\u00fctzen Immobilienentwickler:innen in einer fr\u00fchen Phase der Planung Investitionsentscheidungen zu treffen."
+                          : "\u25cf Definieren Sie klare Ziele und Erfolgskriterien. Stellen Sie die Entwicklung zum gru\u0308nen Asset mit Blick auf Reporting-Anforderungen sicher.\n\u25cf Pru\u0308fen Sie anhand der Simulation von Variantenstudien, die Wirkkraft der gew\u00e4hlten Ma\u00dfnahmen und optimieren Sie anhand dezidierter Indikatoren.\n\u25cf Legen Sie Ihren Nachhaltigkeitsfahrplan und entsprechende Benchmarks fu\u0308r den weiteren Planungsverlauf fest."}
+                      </div>
+                    </div>
                   </div>
                   <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text___3Mdbh
-                    )}
+                    className={classNames(projectcss.all, sty.columns__hl13E)}
                   >
-                    {hasVariant(globalVariants, "screen", "mobile")
-                      ? "Build Systems entwickelt individuelle Smart Sustainability Roadmaps (Nachhaltigkeits-fahrpl\u00e4ne). Hierf\u00fcr stellen wir Nachhaltigkeitsanforderungen der individuellen Projektentwicklung \u00f6konomischen Indikatoren gegen\u00fcber. Wir unterst\u00fctzen Immobilienentwickler:innen in einer fr\u00fchen Phase der Planung Investitionsentscheidungen zu treffen."
-                      : "Sie m\u00f6chten fr\u00fchzeitig im Prozess die entscheidenden Weichen stellen und Umplanungen vermeiden? Durch integrale Planung bilden wir technische Rahmenbedingungen bis zu einer Detailtiefe des Wandaufbaus ab und \u00fcbersetzen Anforderungen und Benchmarks in realistische Umsetzungsstrategien."}
+                    <div
+                      className={classNames(projectcss.all, sty.column__iwTbR)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__bAwd4
+                        )}
+                      >
+                        {"Verantwortbar handeln"}
+                      </div>
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.column___719Tm)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text___5Ft3Q
+                        )}
+                      >
+                        {hasVariant(globalVariants, "screen", "mobile")
+                          ? "Build Systems entwickelt individuelle Smart Sustainability Roadmaps (Nachhaltigkeits-fahrpl\u00e4ne). Hierf\u00fcr stellen wir Nachhaltigkeitsanforderungen der individuellen Projektentwicklung \u00f6konomischen Indikatoren gegen\u00fcber. Wir unterst\u00fctzen Immobilienentwickler:innen in einer fr\u00fchen Phase der Planung Investitionsentscheidungen zu treffen."
+                          : "\u25cf Vereinfachen Sie die Kommunikation mit anschaulichen Reports und verantworten Sie Entscheidungen anhand eindeutiger Indikatoren.\n\u25cf Tracken Sie den Fortschritt im weiteren Verlauf und iterieren Sie effizient bei n\u00f6tigen Anpassungen."}
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.columns__kGhJg)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.column__dsWWl)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__oKgqe
+                        )}
+                      >
+                        {"Finanzierung sicherstellen"}
+                      </div>
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.column__iUows)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__vjDPk
+                        )}
+                      >
+                        {hasVariant(globalVariants, "screen", "mobile")
+                          ? "Build Systems entwickelt individuelle Smart Sustainability Roadmaps (Nachhaltigkeits-fahrpl\u00e4ne). Hierf\u00fcr stellen wir Nachhaltigkeitsanforderungen der individuellen Projektentwicklung \u00f6konomischen Indikatoren gegen\u00fcber. Wir unterst\u00fctzen Immobilienentwickler:innen in einer fr\u00fchen Phase der Planung Investitionsentscheidungen zu treffen."
+                          : "\u25cf Stellen Sie die Machbarkeit mit einer integralen Herangehensweise sicher und minimieren Sie planerisches Risiko.\n\u25cf Beherrschen Sie fru\u0308hzeitig Kosten und Finanzbedarf. Gew\u00e4hrleisten Sie Konformit\u00e4t mit F\u00f6rderkriterien durch Vordimensionierung und Real-Time-Bewertung.\n\u25cf Legen Sie anhand der Leitindikatoren"}
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             ) : null}
           </div>
-          <div className={classNames(projectcss.all, sty.freeBox___8DGj8)} />
+          <div className={classNames(projectcss.all, sty.freeBox___3A3If)} />
 
           {true ? (
             <div className={classNames(projectcss.all, sty.freeBox__wnaUs, ``)}>

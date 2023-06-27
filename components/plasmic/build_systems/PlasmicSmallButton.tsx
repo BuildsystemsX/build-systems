@@ -44,10 +44,16 @@ import sty from "./PlasmicSmallButton.module.css"; // plasmic-import: jdWzZYnBO3
 
 import ArrowRightAltSvgrepoComsvgIcon from "./icons/PlasmicIcon__ArrowRightAltSvgrepoComsvg"; // plasmic-import: Lch1PnsAGx/icon
 
-export type PlasmicSmallButton__VariantMembers = {};
-export type PlasmicSmallButton__VariantsArgs = {};
+export type PlasmicSmallButton__VariantMembers = {
+  noLeftSiteShift: "noLeftSiteShift";
+};
+export type PlasmicSmallButton__VariantsArgs = {
+  noLeftSiteShift?: SingleBooleanChoiceArg<"noLeftSiteShift">;
+};
 type VariantPropType = keyof PlasmicSmallButton__VariantsArgs;
-export const PlasmicSmallButton__VariantProps = new Array<VariantPropType>();
+export const PlasmicSmallButton__VariantProps = new Array<VariantPropType>(
+  "noLeftSiteShift"
+);
 
 export type PlasmicSmallButton__ArgsType = {
   children?: React.ReactNode;
@@ -62,6 +68,7 @@ export type PlasmicSmallButton__OverridesType = {
 
 export interface DefaultSmallButtonProps {
   children?: React.ReactNode;
+  noLeftSiteShift?: SingleBooleanChoiceArg<"noLeftSiteShift">;
   className?: string;
 }
 
@@ -102,6 +109,19 @@ function PlasmicSmallButton__RenderFunc(props: {
 
   const [$queries, setDollarQueries] = React.useState({});
 
+  const stateSpecs = React.useMemo(
+    () => [
+      {
+        path: "noLeftSiteShift",
+        type: "private",
+        variableType: "variant",
+        initFunc: ({ $props, $state, $queries, $ctx }) => $props.noLeftSiteShift
+      }
+    ],
+    [$props, $ctx]
+  );
+  const $state = p.useDollarState(stateSpecs, { $props, $ctx, $queries });
+
   return (
     <div
       data-plasmic-name={"root"}
@@ -114,7 +134,14 @@ function PlasmicSmallButton__RenderFunc(props: {
         projectcss.plasmic_default_styles,
         projectcss.plasmic_mixins,
         projectcss.plasmic_tokens,
-        sty.root
+        sty.root,
+        {
+          [sty.rootnoLeftSiteShift]: hasVariant(
+            $state,
+            "noLeftSiteShift",
+            "noLeftSiteShift"
+          )
+        }
       )}
     >
       <ArrowRightAltSvgrepoComsvgIcon

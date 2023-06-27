@@ -37,6 +37,7 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import Menu from "../../Menu"; // plasmic-import: 5tZNLUygwX/component
+import SmallButton from "../../SmallButton"; // plasmic-import: jdWzZYnBO3/component
 import ButtonExternalLink from "../../ButtonExternalLink"; // plasmic-import: zlKX0iG_vm/component
 import Footer from "../../Footer"; // plasmic-import: hB94XRzTpm/component
 
@@ -59,7 +60,6 @@ export const PlasmicProjekte__ArgProps = new Array<ArgPropType>();
 export type PlasmicProjekte__OverridesType = {
   root?: p.Flex<"div">;
   menu?: p.Flex<typeof Menu>;
-  img?: p.Flex<typeof p.PlasmicImg>;
   buttonExternalLink?: p.Flex<typeof ButtonExternalLink>;
   footer?: p.Flex<typeof Footer>;
 };
@@ -214,194 +214,232 @@ function PlasmicProjekte__RenderFunc(props: {
                 >
                   {hasVariant(globalVariants, "screen", "mobile")
                     ? "Build Systems entwickelt individuelle Smart Sustainability Roadmaps (Nachhaltigkeits-fahrpl\u00e4ne). Hierf\u00fcr stellen wir Nachhaltigkeitsanforderungen der individuellen Projektentwicklung \u00f6konomischen Indikatoren gegen\u00fcber. Wir unterst\u00fctzen Immobilienentwickler:innen in einer fr\u00fchen Phase der Planung Investitionsentscheidungen zu treffen."
-                    : "Wie viel Nachhaltigkeit m\u00f6chten Sie planen und umsetzen?\n       Wir stellen die relevanten Entscheidungsgrundlagen bereit, damit Sie den effizientesten\nEntwicklungspfad w\u00e4hlen, schlagkr\u00e4ftige Ma\u00dfnahmen ansto\u00dfen und Stakeholder koordinieren k\u00f6nnen."}
+                    : "Wir sind u\u0308berzeugt: Wenn die Projektentwicklung den Zusammenhang von \u00f6kologischen Ma\u00dfnahmen, Wertbest\u00e4ndigkeit und Zukunftsf\u00e4higkeit nachvollziehen und ebenso darlegen kann, werden Klimaschutzma\u00dfnahmen zur immanenten Motivation. So entsteht neben Reporting-Zw\u00e4ngen und regulatorisch vorgeschriebenen Benchmarks eine inkrementelle Wandlung zur nachhaltigen Baut\u00e4tigkeit."}
                 </div>
               </div>
             ) : null}
           </div>
-          <div className={classNames(projectcss.all, sty.freeBox__joj1B)} />
-
           <div className={classNames(projectcss.all, sty.freeBox___7Ju0Z)}>
-            <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text__oOtS
-              )}
-            >
-              {"beh\u00e4lt Bedarfe im Blick."}
-            </div>
             {true ? (
-              <div className={classNames(projectcss.all, sty.freeBox___1Rbvf)}>
-                <div
-                  className={classNames(projectcss.all, sty.freeBox__yDqAx)}
-                />
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox___1Rbvf)}
+              >
+                <div className={classNames(projectcss.all, sty.freeBox__yDqAx)}>
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img___1IeQk)}
+                    displayHeight={"auto" as const}
+                    displayMaxHeight={"none" as const}
+                    displayMaxWidth={"100%" as const}
+                    displayMinHeight={"0" as const}
+                    displayMinWidth={"0" as const}
+                    displayWidth={"auto" as const}
+                    loading={"lazy" as const}
+                    src={{
+                      src: "/plasmic/build_systems/images/image.png",
+                      fullWidth: 760,
+                      fullHeight: 507,
+                      aspectRatio: undefined
+                    }}
+                  />
 
-                <div
-                  className={classNames(projectcss.all, sty.freeBox___0UNlN)}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text___3FqJk
-                    )}
-                  >
-                    {"Worauf Sie ein Auge haben sollten."}
-                  </div>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__zl0Ru
-                    )}
-                  >
-                    {hasVariant(globalVariants, "screen", "mobile")
-                      ? "Build Systems entwickelt individuelle Smart Sustainability Roadmaps (Nachhaltigkeits-fahrpl\u00e4ne). Hierf\u00fcr stellen wir Nachhaltigkeitsanforderungen der individuellen Projektentwicklung \u00f6konomischen Indikatoren gegen\u00fcber. Wir unterst\u00fctzen Immobilienentwickler:innen in einer fr\u00fchen Phase der Planung Investitionsentscheidungen zu treffen."
-                      : "Wir identifizieren die wichtigsten Stellschrauben und zeigen auf, welche Kriterien zu vernachl\u00e4ssigen sind. Sie schaffen Trade-offs in der Emissionsreduktion und w\u00e4hlen die effektivsten Ma\u00dfnahmen.\n      Das ist unser systemischer Ansatz: Sie wissen genau, worauf Sie sich einlassen, welche Akteure im weiteren Verlauf zu beteiligen sind und welche Geb\u00e4udeeigenschaften Ihre Planung herstellen muss."}
-                  </div>
+                  {true ? (
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__ljdEt)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text___3FqJk
+                        )}
+                      >
+                        {"Schumacher Quartier"}
+                      </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__zl0Ru
+                        )}
+                      >
+                        {hasVariant(globalVariants, "screen", "mobile")
+                          ? "Build Systems entwickelt individuelle Smart Sustainability Roadmaps (Nachhaltigkeits-fahrpl\u00e4ne). Hierf\u00fcr stellen wir Nachhaltigkeitsanforderungen der individuellen Projektentwicklung \u00f6konomischen Indikatoren gegen\u00fcber. Wir unterst\u00fctzen Immobilienentwickler:innen in einer fr\u00fchen Phase der Planung Investitionsentscheidungen zu treffen."
+                          : "Das Schumacher Quartier soll als reines Holzbauaurtier auf dem Gel\u00e4nde des ehemaligen Flughafen Tegel in Berlin entstehen. Das Modellquartier steht fu\u0308r \u00f6kologischen Neubau, Nutzungsmischung und innovative Mobilita\u0308tskonzepte sowie energetisch vorbildliche Geba\u0308ude innerhalb eines autoarmen Wohngebiets, das die ausreichende Gru\u0308nversorgung sicherstellt. "}
+                      </div>
+                      <SmallButton
+                        className={classNames(
+                          "__wab_instance",
+                          sty.smallButton___4YhS2
+                        )}
+                        noLeftSiteShift={true}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__m4Nso
+                          )}
+                        >
+                          {"mehr Erfahren"}
+                        </div>
+                      </SmallButton>
+                    </div>
+                  ) : null}
                 </div>
-              </div>
+                <div className={classNames(projectcss.all, sty.freeBox__dEzr)}>
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__uxT6W)}
+                    displayHeight={"auto" as const}
+                    displayMaxHeight={"none" as const}
+                    displayMaxWidth={"100%" as const}
+                    displayMinHeight={"0" as const}
+                    displayMinWidth={"0" as const}
+                    displayWidth={"auto" as const}
+                    loading={"lazy" as const}
+                    src={{
+                      src: "/plasmic/build_systems/images/image.png",
+                      fullWidth: 760,
+                      fullHeight: 507,
+                      aspectRatio: undefined
+                    }}
+                  />
+
+                  {true ? (
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__u8F0G)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__gjzQa
+                        )}
+                      >
+                        {"Urban Scale Timber"}
+                      </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text___7Soc
+                        )}
+                      >
+                        {hasVariant(globalVariants, "screen", "mobile")
+                          ? "Build Systems entwickelt individuelle Smart Sustainability Roadmaps (Nachhaltigkeits-fahrpl\u00e4ne). Hierf\u00fcr stellen wir Nachhaltigkeitsanforderungen der individuellen Projektentwicklung \u00f6konomischen Indikatoren gegen\u00fcber. Wir unterst\u00fctzen Immobilienentwickler:innen in einer fr\u00fchen Phase der Planung Investitionsentscheidungen zu treffen."
+                          : "Der urbane Holzbau ist ein Schlu\u0308sselfaktor auf dem Weg zu klimaneutralen St\u00e4dten. Der Baustoff kann durch sein Potenzial als Kohlenstoffspeicher signifikant zur Reduzierung des 38%-Anteils des Bausektors an den globalen CO2-Emissionen beitragen. Urban Scale Timber bietet ein Tool fu\u0308r automatisierte holzbauspezifische Machbarkeitsstudien fu\u0308r private und \u00f6ffentliche Projektentwickler und Planerinnen und macht entsprechendes Fachwissen greifbar, um den Entwicklungsprozess von Holzbauprojekten zu skalieren, zu verbessern und zu beschleunigen. "}
+                      </div>
+                      <SmallButton
+                        className={classNames(
+                          "__wab_instance",
+                          sty.smallButton__oghGj
+                        )}
+                        noLeftSiteShift={true}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__pMslZ
+                          )}
+                        >
+                          {"mehr Erfahren"}
+                        </div>
+                      </SmallButton>
+                    </div>
+                  ) : null}
+                </div>
+              </p.Stack>
             ) : null}
           </div>
-          <div className={classNames(projectcss.all, sty.freeBox__zncCq)} />
-
-          <div className={classNames(projectcss.all, sty.freeBox__waug1)}>
-            <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text__kzA69
-              )}
-            >
-              {"arbeitet mit dezidierte Benchmarks die bew\u00e4hrt sind."}
-            </div>
+          <div className={classNames(projectcss.all, sty.freeBox__r398)}>
             {true ? (
-              <div className={classNames(projectcss.all, sty.freeBox__bNJw7)}>
-                <div className={classNames(projectcss.all, sty.freeBox__geR9R)}>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__fuIkf
-                    )}
-                  >
-                    {"Wissen, was wirklich hilft!"}
-                  </div>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__myIco
-                    )}
-                  >
-                    {hasVariant(globalVariants, "screen", "mobile")
-                      ? "Build Systems entwickelt individuelle Smart Sustainability Roadmaps (Nachhaltigkeits-fahrpl\u00e4ne). Hierf\u00fcr stellen wir Nachhaltigkeitsanforderungen der individuellen Projektentwicklung \u00f6konomischen Indikatoren gegen\u00fcber. Wir unterst\u00fctzen Immobilienentwickler:innen in einer fr\u00fchen Phase der Planung Investitionsentscheidungen zu treffen."
-                      : "Sie legen Zielvereinbarungen fest. Wir vergleichen Szenarien zu Bedarfsplanung und Energiebetrachtung und pr\u00fcfen Planungsans\u00e4tze hinsichtlich ihrer ESG-Performance. Wir legen die jeweiligen Aussichten auf Zertifizierungen und F\u00f6rderungen nachvollziehbar dar und zeigen Pfade zu Emissions- und\nKostenzielen auf."}
-                  </div>
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__tjNfh)}
+              >
+                <div className={classNames(projectcss.all, sty.freeBox__cNy85)}>
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__mgHu1)}
+                    displayHeight={"auto" as const}
+                    displayMaxHeight={"none" as const}
+                    displayMaxWidth={"100%" as const}
+                    displayMinHeight={"0" as const}
+                    displayMinWidth={"0" as const}
+                    displayWidth={"auto" as const}
+                    loading={"lazy" as const}
+                    src={{
+                      src: "/plasmic/build_systems/images/image.png",
+                      fullWidth: 760,
+                      fullHeight: 507,
+                      aspectRatio: undefined
+                    }}
+                  />
+
+                  {true ? (
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        sty.freeBox___2OhR7
+                      )}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__veMxA
+                        )}
+                      >
+                        {"Schumacher Quartier"}
+                      </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text___5Tc0W
+                        )}
+                      >
+                        {hasVariant(globalVariants, "screen", "mobile")
+                          ? "Build Systems entwickelt individuelle Smart Sustainability Roadmaps (Nachhaltigkeits-fahrpl\u00e4ne). Hierf\u00fcr stellen wir Nachhaltigkeitsanforderungen der individuellen Projektentwicklung \u00f6konomischen Indikatoren gegen\u00fcber. Wir unterst\u00fctzen Immobilienentwickler:innen in einer fr\u00fchen Phase der Planung Investitionsentscheidungen zu treffen."
+                          : "Das Schumacher Quartier soll als reines Holzbauaurtier auf dem Gel\u00e4nde des ehemaligen Flughafen Tegel in Berlin entstehen. Das Modellquartier steht fu\u0308r \u00f6kologischen Neubau, Nutzungsmischung und innovative Mobilita\u0308tskonzepte sowie energetisch vorbildliche Geba\u0308ude innerhalb eines autoarmen Wohngebiets, das die ausreichende Gru\u0308nversorgung sicherstellt. "}
+                      </div>
+                      <SmallButton
+                        className={classNames(
+                          "__wab_instance",
+                          sty.smallButton__phTyw
+                        )}
+                        noLeftSiteShift={true}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__jylPj
+                          )}
+                        >
+                          {"mehr Erfahren"}
+                        </div>
+                      </SmallButton>
+                    </div>
+                  ) : null}
                 </div>
                 <div
-                  className={classNames(projectcss.all, sty.freeBox___8P12K)}
+                  className={classNames(projectcss.all, sty.freeBox___8JO2Q)}
                 />
-              </div>
+              </p.Stack>
             ) : null}
           </div>
-          <div className={classNames(projectcss.all, sty.freeBox__bza1F)} />
-
-          <div className={classNames(projectcss.all, sty.freeBox___1BCe)}>
-            <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text__w7WU
-              )}
-            >
-              {"erstellt Vordimensionierungen zu #Anlagentechnik."}
-            </div>
-            {true ? (
-              <div className={classNames(projectcss.all, sty.freeBox___01G1C)}>
-                <div
-                  className={classNames(projectcss.all, sty.freeBox___45NO)}
-                />
-
-                <div className={classNames(projectcss.all, sty.freeBox__wwFi)}>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text___3DAvc
-                    )}
-                  >
-                    {"Wo die Reise hingeht:"}
-                  </div>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text___7UGbo
-                    )}
-                  >
-                    {hasVariant(globalVariants, "screen", "mobile")
-                      ? "Build Systems entwickelt individuelle Smart Sustainability Roadmaps (Nachhaltigkeits-fahrpl\u00e4ne). Hierf\u00fcr stellen wir Nachhaltigkeitsanforderungen der individuellen Projektentwicklung \u00f6konomischen Indikatoren gegen\u00fcber. Wir unterst\u00fctzen Immobilienentwickler:innen in einer fr\u00fchen Phase der Planung Investitionsentscheidungen zu treffen."
-                      : "Sie m\u00f6chten fr\u00fchzeitig im Prozess die entscheidenden Weichen stellen und Umplanungen vermeiden? Durch integrale Planung bilden wir technische Rahmenbedingungen bis zu einer Detailtiefe des Wandaufbaus ab und \u00fcbersetzen Anforderungen und Benchmarks in realistische Umsetzungsstrategien."}
-                  </div>
-                </div>
-              </div>
-            ) : null}
-          </div>
-          <div className={classNames(projectcss.all, sty.freeBox__k2Js7)} />
-
-          <div className={classNames(projectcss.all, sty.freeBox__utoOc)}>
-            <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text__jbiaA
-              )}
-            >
-              {"steigerte durch abgestimmte Prozesse baulichen Mehrwert"}
-            </div>
-            {true ? (
-              <div className={classNames(projectcss.all, sty.freeBox__pp7Rp)}>
-                <div
-                  className={classNames(projectcss.all, sty.freeBox__pbqBv)}
-                />
-
-                <div className={classNames(projectcss.all, sty.freeBox__dOc2)}>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__muU5O
-                    )}
-                  >
-                    {"Wo die Reise hingeht:"}
-                  </div>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__kwBke
-                    )}
-                  >
-                    {hasVariant(globalVariants, "screen", "mobile")
-                      ? "Build Systems entwickelt individuelle Smart Sustainability Roadmaps (Nachhaltigkeits-fahrpl\u00e4ne). Hierf\u00fcr stellen wir Nachhaltigkeitsanforderungen der individuellen Projektentwicklung \u00f6konomischen Indikatoren gegen\u00fcber. Wir unterst\u00fctzen Immobilienentwickler:innen in einer fr\u00fchen Phase der Planung Investitionsentscheidungen zu treffen."
-                      : "Sie m\u00f6chten fr\u00fchzeitig im Prozess die entscheidenden Weichen stellen und Umplanungen vermeiden? Durch integrale Planung bilden wir technische Rahmenbedingungen bis zu einer Detailtiefe des Wandaufbaus ab und \u00fcbersetzen Anforderungen und Benchmarks in realistische Umsetzungsstrategien."}
-                  </div>
-                </div>
-              </div>
-            ) : null}
-          </div>
-          <div className={classNames(projectcss.all, sty.freeBox__zuP9R)} />
-
           {true ? (
             <div className={classNames(projectcss.all, sty.freeBox__qnFVu, ``)}>
               <div className={classNames(projectcss.all, sty.freeBox__ugd56)}>
                 <p.PlasmicImg
-                  data-plasmic-name={"img"}
-                  data-plasmic-override={overrides.img}
                   alt={""}
-                  className={classNames(sty.img)}
+                  className={classNames(sty.img__tuBh4)}
                   displayHeight={"auto" as const}
                   displayMaxHeight={"none" as const}
                   displayMaxWidth={"none" as const}
@@ -461,9 +499,8 @@ function PlasmicProjekte__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "menu", "img", "buttonExternalLink", "footer"],
+  root: ["root", "menu", "buttonExternalLink", "footer"],
   menu: ["menu"],
-  img: ["img"],
   buttonExternalLink: ["buttonExternalLink"],
   footer: ["footer"]
 } as const;
@@ -473,7 +510,6 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   menu: typeof Menu;
-  img: typeof p.PlasmicImg;
   buttonExternalLink: typeof ButtonExternalLink;
   footer: typeof Footer;
 };
@@ -539,7 +575,6 @@ export const PlasmicProjekte = Object.assign(
   {
     // Helper components rendering sub-elements
     menu: makeNodeComponent("menu"),
-    img: makeNodeComponent("img"),
     buttonExternalLink: makeNodeComponent("buttonExternalLink"),
     footer: makeNodeComponent("footer"),
 

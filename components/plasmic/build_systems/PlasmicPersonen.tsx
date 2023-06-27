@@ -204,6 +204,19 @@ function PlasmicPersonen__RenderFunc(props: {
           ) : null}
           <div className={classNames(projectcss.all, sty.freeBox__riity)}>
             {true ? (
+              <div className={classNames(projectcss.all, sty.freeBox__zN7O3)}>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__rZeUa
+                  )}
+                >
+                  {"denkt #vernetzt."}
+                </div>
+              </div>
+            ) : null}
+            {true ? (
               <div className={classNames(projectcss.all, sty.freeBox__pBnt6)}>
                 <div
                   className={classNames(
@@ -214,7 +227,7 @@ function PlasmicPersonen__RenderFunc(props: {
                 >
                   {hasVariant(globalVariants, "screen", "mobile")
                     ? "Build Systems entwickelt individuelle Smart Sustainability Roadmaps (Nachhaltigkeits-fahrpl\u00e4ne). Hierf\u00fcr stellen wir Nachhaltigkeitsanforderungen der individuellen Projektentwicklung \u00f6konomischen Indikatoren gegen\u00fcber. Wir unterst\u00fctzen Immobilienentwickler:innen in einer fr\u00fchen Phase der Planung Investitionsentscheidungen zu treffen."
-                    : "Wie viel Nachhaltigkeit m\u00f6chten Sie planen und umsetzen?\n       Wir stellen die relevanten Entscheidungsgrundlagen bereit, damit Sie den effizientesten\nEntwicklungspfad w\u00e4hlen, schlagkr\u00e4ftige Ma\u00dfnahmen ansto\u00dfen und Stakeholder koordinieren k\u00f6nnen."}
+                    : "Wir vertreten nicht nur einen integralen Prozess in der Planung, wir leben Interdisziplinarit\u00e4t im Team: Jeder bringt einen Baustein der ganzheitlichen Betrachtung mit ein. Gemeinsam erfassen wir \u00f6kologische Anforderungen auf allen Ebenen und setzen die Gesamtwirkung der Ma\u00dfnahmen zur Emissionsreduktion in den sozio\u00f6konomischen Fokus."}
                 </div>
               </div>
             ) : null}

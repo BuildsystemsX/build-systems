@@ -297,6 +297,11 @@
           "id": "UYlkKvgY0",
           "name": "handy-rendering.jpg",
           "filePath": "../public/plasmic/build_systems/images/handyRenderingjpg.jpg"
+        },
+        {
+          "id": "yW1wcs8Qp",
+          "name": "image",
+          "filePath": "../public/plasmic/build_systems/images/image.png"
         }
       ],
       "indirect": false,
