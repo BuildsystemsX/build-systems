@@ -30,6 +30,6 @@
   flex-direction: row;
 }
 .slotTargetChildren {
-  font-family: "ABC Diatype";
+  font-family: var(--token-murZRIrJA);
   color: var(--token-gvQcXRBmf);
 }

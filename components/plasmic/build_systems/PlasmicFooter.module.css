@@ -43,7 +43,7 @@
   height: auto;
   max-width: 100%;
   font-size: 10px;
-  font-family: "ABC Diatype";
+  font-family: var(--token-murZRIrJA);
   margin-right: 10px;
   color: var(--token-Y1kFl7CJ7);
 }
@@ -65,7 +65,7 @@
   height: auto;
   max-width: 100%;
   font-size: 10px;
-  font-family: "ABC Diatype";
+  font-family: var(--token-murZRIrJA);
   color: var(--token-Y1kFl7CJ7);
   cursor: pointer;
   min-width: 0;

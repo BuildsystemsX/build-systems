@@ -320,7 +320,15 @@ function PlasmicMenu__RenderFunc(props: {
                       )
                     })}
                   >
-                    {"Start"}
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__a0ZUk
+                      )}
+                    >
+                      {"Start"}
+                    </div>
                   </MenuButton>
                 ) : null}
               </p.PlasmicLink>
@@ -444,7 +452,27 @@ function PlasmicMenu__RenderFunc(props: {
                       )
                     })}
                   >
-                    {"Services"}
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__omAu,
+                        {
+                          [sty.textexpanded__omAuhsN1X]: hasVariant(
+                            $state,
+                            "expanded",
+                            "expanded"
+                          ),
+                          [sty.texttest_services__omAu7Laf7]: hasVariant(
+                            $state,
+                            "test",
+                            "services"
+                          )
+                        }
+                      )}
+                    >
+                      {"Services"}
+                    </div>
                   </MenuButton>
                 ) : null}
               </p.PlasmicLink>
@@ -568,7 +596,22 @@ function PlasmicMenu__RenderFunc(props: {
                       )
                     })}
                   >
-                    {"Projekte"}
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__owMXq,
+                        {
+                          [sty.textexpanded__owMXqhsN1X]: hasVariant(
+                            $state,
+                            "expanded",
+                            "expanded"
+                          )
+                        }
+                      )}
+                    >
+                      {"Projekte"}
+                    </div>
                   </MenuButton>
                 ) : null}
               </p.PlasmicLink>
@@ -692,7 +735,22 @@ function PlasmicMenu__RenderFunc(props: {
                       )
                     })}
                   >
-                    {"Personen"}
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__fwoKn,
+                        {
+                          [sty.textexpanded__fwoKnhsN1X]: hasVariant(
+                            $state,
+                            "expanded",
+                            "expanded"
+                          )
+                        }
+                      )}
+                    >
+                      {"Personen"}
+                    </div>
                   </MenuButton>
                 ) : null}
               </p.PlasmicLink>

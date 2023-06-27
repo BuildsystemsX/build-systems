@@ -272,9 +272,17 @@ function PlasmicPersonen__RenderFunc(props: {
                   className={classNames("__wab_instance", sty.personBox__sbHWq)}
                   slot={"Daniel Dieren"}
                 >
-                  {
-                    "M.Sc. Bauingenieur, M.Sc. Architektur\n\nNachhaltiges Konstruieren, Ingenieurholzbau, Integrale Planung, Lebenszyklusbetrachtung"
-                  }
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text___8YBaf
+                    )}
+                  >
+                    {
+                      "M.Sc. Bauingenieur, M.Sc. Architektur\n\nNachhaltiges Konstruieren, Ingenieurholzbau, Integrale Planung, Lebenszyklusbetrachtung"
+                    }
+                  </div>
                 </PersonBox>
                 <PersonBox
                   className={classNames(

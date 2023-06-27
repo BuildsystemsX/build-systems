@@ -56,7 +56,6 @@ export const PlasmicImageFooter__ArgProps = new Array<ArgPropType>();
 export type PlasmicImageFooter__OverridesType = {
   root?: p.Flex<"div">;
   img?: p.Flex<typeof p.PlasmicImg>;
-  text?: p.Flex<"div">;
   buttonExternalLink?: p.Flex<typeof ButtonExternalLink>;
   footer?: p.Flex<typeof Footer>;
 };
@@ -144,15 +143,13 @@ function PlasmicImageFooter__RenderFunc(props: {
           <div className={classNames(projectcss.all, sty.freeBox__nln9Q)}>
             <div className={classNames(projectcss.all, sty.freeBox__l623P)}>
               <div
-                data-plasmic-name={"text"}
-                data-plasmic-override={overrides.text}
                 className={classNames(
                   projectcss.all,
                   projectcss.__wab_text,
-                  sty.text
+                  sty.text__zRpag
                 )}
               >
-                {"Sie haben eine weitere Frage?"}
+                {"Sie haben weitere Fragen?"}
               </div>
               <ButtonExternalLink
                 data-plasmic-name={"buttonExternalLink"}
@@ -160,7 +157,15 @@ function PlasmicImageFooter__RenderFunc(props: {
                 className={classNames("__wab_instance", sty.buttonExternalLink)}
                 link={"mailto:mail@buildsystems.de" as const}
               >
-                {"Schreiben Sie uns eine Mail!"}
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__paGq3
+                  )}
+                >
+                  {"Schreiben Sie uns eine Mail!"}
+                </div>
               </ButtonExternalLink>
             </div>
           </div>
@@ -176,9 +181,8 @@ function PlasmicImageFooter__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "img", "text", "buttonExternalLink", "footer"],
+  root: ["root", "img", "buttonExternalLink", "footer"],
   img: ["img"],
-  text: ["text"],
   buttonExternalLink: ["buttonExternalLink"],
   footer: ["footer"]
 } as const;
@@ -188,7 +192,6 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   img: typeof p.PlasmicImg;
-  text: "div";
   buttonExternalLink: typeof ButtonExternalLink;
   footer: typeof Footer;
 };
@@ -254,7 +257,6 @@ export const PlasmicImageFooter = Object.assign(
   {
     // Helper components rendering sub-elements
     img: makeNodeComponent("img"),
-    text: makeNodeComponent("text"),
     buttonExternalLink: makeNodeComponent("buttonExternalLink"),
     footer: makeNodeComponent("footer"),
 

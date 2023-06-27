@@ -13,7 +13,7 @@
   flex-grow: 0;
   flex-shrink: 0;
   border-radius: 2px;
-  padding: 2px;
+  padding: 2px 4px 2px 2px;
 }
 .rootnoLeftSiteShift {
   margin-left: 0px;
@@ -41,8 +41,8 @@
   color: var(--token-Y1kFl7CJ7);
 }
 .slotTargetChildren {
-  font-family: "ABC Diatype";
-  font-size: 14px;
+  font-family: var(--token-murZRIrJA);
+  font-size: var(--token-2m3Ogv_Oh);
   font-weight: 400;
   color: var(--token-gvQcXRBmf);
   line-height: 100%;

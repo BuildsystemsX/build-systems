@@ -153,8 +153,8 @@
   color: var(--token-Y1kFl7CJ7);
   width: auto;
   text-align: left;
-  font-size: 20px;
-  font-family: "ABC Diatype";
+  font-size: var(--token-8Bjial1Fj);
+  font-family: var(--token-murZRIrJA);
   line-height: 21px;
   letter-spacing: 0.01em;
   padding: 10px;
@@ -214,8 +214,8 @@
   width: auto;
   height: auto;
   max-width: 100%;
-  font-family: "ABC Diatype";
-  font-size: 25px;
+  font-family: var(--token-murZRIrJA);
+  font-size: var(--token-fJm1K7aY_);
   padding-left: 0px;
   color: var(--token-Y1kFl7CJ7);
 }
@@ -263,20 +263,20 @@
   width: auto;
   height: auto;
   max-width: 100%;
-  font-family: "ABC Diatype";
-  font-size: 25px;
+  font-family: var(--token-murZRIrJA);
+  font-size: var(--token-QMRM6lPQw);
   padding-left: 0px;
   color: var(--token-Y1kFl7CJ7);
 }
 .text__x6O2E {
   color: var(--token-Y1kFl7CJ7);
   text-align: left;
-  font-size: 20px;
-  font-family: "ABC Diatype";
+  font-size: var(--token-1iVBmJGwv);
+  font-family: var(--token-murZRIrJA);
   line-height: 21px;
   letter-spacing: 0.01em;
   width: auto;
-  padding: 10px;
+  padding: 8px 8px 8px 0px;
 }
 @media (max-width: 640px) {
   .text__x6O2E {
@@ -333,8 +333,8 @@
   width: auto;
   height: auto;
   max-width: 100%;
-  font-family: "ABC Diatype";
-  font-size: 25px;
+  font-family: var(--token-murZRIrJA);
+  font-size: var(--token-fJm1K7aY_);
   padding-left: 0px;
   color: var(--token-Y1kFl7CJ7);
 }
@@ -369,20 +369,20 @@
   width: auto;
   height: auto;
   max-width: 100%;
-  font-family: "ABC Diatype";
-  font-size: 25px;
+  font-family: var(--token-murZRIrJA);
+  font-size: var(--token-QMRM6lPQw);
   padding-left: 0px;
   color: var(--token-Y1kFl7CJ7);
 }
 .text__cQv9 {
   color: var(--token-Y1kFl7CJ7);
   text-align: left;
-  font-size: 20px;
-  font-family: "ABC Diatype";
+  font-size: var(--token-1iVBmJGwv);
+  font-family: var(--token-murZRIrJA);
   line-height: 21px;
   letter-spacing: 0.01em;
   width: auto;
-  padding: 10px;
+  padding: 8px 8px 8px 0px;
 }
 @media (max-width: 640px) {
   .text__cQv9 {
@@ -452,8 +452,8 @@
   width: auto;
   height: auto;
   max-width: 100%;
-  font-family: "ABC Diatype";
-  font-size: 25px;
+  font-family: var(--token-murZRIrJA);
+  font-size: var(--token-fJm1K7aY_);
   padding-left: 0px;
   color: var(--token-Y1kFl7CJ7);
 }
@@ -501,20 +501,20 @@
   width: auto;
   height: auto;
   max-width: 100%;
-  font-family: "ABC Diatype";
-  font-size: 25px;
+  font-family: var(--token-murZRIrJA);
+  font-size: var(--token-QMRM6lPQw);
   padding-left: 0px;
   color: var(--token-Y1kFl7CJ7);
 }
 .text__zl2Ek {
   color: var(--token-Y1kFl7CJ7);
   text-align: left;
-  font-size: 20px;
-  font-family: "ABC Diatype";
+  font-size: var(--token-1iVBmJGwv);
+  font-family: var(--token-murZRIrJA);
   line-height: 21px;
   letter-spacing: 0.01em;
   width: auto;
-  padding: 10px;
+  padding: 8px 8px 8px 0px;
 }
 @media (max-width: 640px) {
   .text__zl2Ek {
@@ -571,8 +571,8 @@
   width: auto;
   height: auto;
   max-width: 100%;
-  font-family: "ABC Diatype";
-  font-size: 25px;
+  font-family: var(--token-murZRIrJA);
+  font-size: var(--token-fJm1K7aY_);
   padding-left: 0px;
   color: var(--token-Y1kFl7CJ7);
 }
@@ -631,10 +631,10 @@
   padding: 16px 0px;
 }
 .columns___3IkF > :nth-child(2n + 1) {
-  width: calc((100% - 2 * var(--plsmc-rc-col-gap, 0px)) * 6 / 12);
+  width: calc((100% - 2 * var(--plsmc-rc-col-gap, 0px)) * 4 / 12);
 }
 .columns___3IkF > :nth-child(2n + 2) {
-  width: calc((100% - 2 * var(--plsmc-rc-col-gap, 0px)) * 6 / 12);
+  width: calc((100% - 2 * var(--plsmc-rc-col-gap, 0px)) * 8 / 12);
 }
 @media (max-width: 640px) {
   .columns___3IkF {
@@ -667,8 +667,8 @@
   width: auto;
   height: auto;
   max-width: 100%;
-  font-family: "ABC Diatype";
-  font-size: 25px;
+  font-family: var(--token-murZRIrJA);
+  font-size: var(--token-QMRM6lPQw);
   padding-left: 0px;
   color: var(--token-Y1kFl7CJ7);
 }
@@ -687,8 +687,8 @@
 .text___3Mdbh {
   color: var(--token-Y1kFl7CJ7);
   text-align: left;
-  font-size: 20px;
-  font-family: "ABC Diatype";
+  font-size: var(--token-1iVBmJGwv);
+  font-family: var(--token-murZRIrJA);
   line-height: 21px;
   letter-spacing: 0.01em;
   width: auto;
@@ -718,10 +718,10 @@
   padding: 16px 0px;
 }
 .columns__hl13E > :nth-child(2n + 1) {
-  width: calc((100% - 2 * var(--plsmc-rc-col-gap, 0px)) * 6 / 12);
+  width: calc((100% - 2 * var(--plsmc-rc-col-gap, 0px)) * 4 / 12);
 }
 .columns__hl13E > :nth-child(2n + 2) {
-  width: calc((100% - 2 * var(--plsmc-rc-col-gap, 0px)) * 6 / 12);
+  width: calc((100% - 2 * var(--plsmc-rc-col-gap, 0px)) * 8 / 12);
 }
 @media (max-width: 640px) {
   .columns__hl13E {
@@ -754,8 +754,8 @@
   width: auto;
   height: auto;
   max-width: 100%;
-  font-family: "ABC Diatype";
-  font-size: 25px;
+  font-family: var(--token-murZRIrJA);
+  font-size: var(--token-QMRM6lPQw);
   padding-left: 0px;
   color: var(--token-Y1kFl7CJ7);
 }
@@ -774,8 +774,8 @@
 .text___5Ft3Q {
   color: var(--token-Y1kFl7CJ7);
   text-align: left;
-  font-size: 20px;
-  font-family: "ABC Diatype";
+  font-size: var(--token-1iVBmJGwv);
+  font-family: var(--token-murZRIrJA);
   line-height: 21px;
   letter-spacing: 0.01em;
   width: auto;
@@ -805,10 +805,10 @@
   padding: 16px 0px;
 }
 .columns__kGhJg > :nth-child(2n + 1) {
-  width: calc((100% - 2 * var(--plsmc-rc-col-gap, 0px)) * 6 / 12);
+  width: calc((100% - 2 * var(--plsmc-rc-col-gap, 0px)) * 4 / 12);
 }
 .columns__kGhJg > :nth-child(2n + 2) {
-  width: calc((100% - 2 * var(--plsmc-rc-col-gap, 0px)) * 6 / 12);
+  width: calc((100% - 2 * var(--plsmc-rc-col-gap, 0px)) * 8 / 12);
 }
 @media (max-width: 640px) {
   .columns__kGhJg {
@@ -841,8 +841,8 @@
   width: auto;
   height: auto;
   max-width: 100%;
-  font-family: "ABC Diatype";
-  font-size: 25px;
+  font-family: var(--token-murZRIrJA);
+  font-size: var(--token-QMRM6lPQw);
   padding-left: 0px;
   color: var(--token-Y1kFl7CJ7);
 }
@@ -861,8 +861,8 @@
 .text__vjDPk {
   color: var(--token-Y1kFl7CJ7);
   text-align: left;
-  font-size: 20px;
-  font-family: "ABC Diatype";
+  font-size: var(--token-1iVBmJGwv);
+  font-family: var(--token-murZRIrJA);
   line-height: 21px;
   letter-spacing: 0.01em;
   width: auto;

@@ -153,8 +153,8 @@
   color: var(--token-Y1kFl7CJ7);
   width: auto;
   text-align: left;
-  font-size: 20px;
-  font-family: "ABC Diatype";
+  font-size: var(--token-8Bjial1Fj);
+  font-family: var(--token-murZRIrJA);
   line-height: 21px;
   letter-spacing: 0.01em;
   padding: 10px;
@@ -170,7 +170,7 @@
 .freeBox___7Ju0Z {
   background: none;
   width: 100%;
-  height: 80vh;
+  height: auto;
   display: flex;
   position: relative;
   top: auto;
@@ -195,6 +195,29 @@
     left: auto;
     top: auto;
   }
+}
+.text___8H29R {
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  font-family: "ABC Diatype";
+  font-size: var(--token-fJm1K7aY_);
+  padding-left: 0px;
+  color: var(--token-Y1kFl7CJ7);
+}
+.freeBox__slJFt {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 20vh;
+  max-width: 100%;
+  min-width: 0;
+  flex-shrink: 0;
+  padding: 8px;
 }
 .freeBox___1Rbvf {
   display: flex;
@@ -259,22 +282,22 @@
   height: auto;
   max-width: 100%;
   min-width: 0;
-  padding: 8px 0px;
+  padding: 16px 0px 8px;
 }
 .text___3FqJk {
   width: auto;
   height: auto;
   max-width: 100%;
-  font-family: "ABC Diatype";
-  font-size: 25px;
+  font-family: var(--token-murZRIrJA);
+  font-size: var(--token-QMRM6lPQw);
   padding-left: 0px;
   color: var(--token-Y1kFl7CJ7);
 }
 .text__zl0Ru {
   color: var(--token-Y1kFl7CJ7);
   text-align: left;
-  font-size: 20px;
-  font-family: "ABC Diatype";
+  font-size: var(--token-1iVBmJGwv);
+  font-family: var(--token-murZRIrJA);
   line-height: 21px;
   letter-spacing: 0.01em;
   width: auto;
@@ -293,10 +316,10 @@
 .smallButton___4YhS2:global(.__wab_instance) {
   max-width: 100%;
   position: relative;
-  width: 89px;
+  width: 122px;
 }
 .text__m4Nso {
-  max-width: 64px;
+  max-width: 111px;
   width: 100%;
   min-width: 0;
 }
@@ -334,22 +357,22 @@
   height: auto;
   max-width: 100%;
   min-width: 0;
-  padding: 8px 0px;
+  padding: 16px 0px 8px;
 }
 .text__gjzQa {
   width: auto;
   height: auto;
   max-width: 100%;
-  font-family: "ABC Diatype";
-  font-size: 25px;
+  font-family: var(--token-murZRIrJA);
+  font-size: var(--token-QMRM6lPQw);
   padding-left: 0px;
   color: var(--token-Y1kFl7CJ7);
 }
 .text___7Soc {
   color: var(--token-Y1kFl7CJ7);
   text-align: left;
-  font-size: 20px;
-  font-family: "ABC Diatype";
+  font-size: var(--token-1iVBmJGwv);
+  font-family: var(--token-murZRIrJA);
   line-height: 21px;
   letter-spacing: 0.01em;
   width: auto;
@@ -368,10 +391,10 @@
 .smallButton__oghGj:global(.__wab_instance) {
   max-width: 100%;
   position: relative;
-  width: 89px;
+  width: 122px;
 }
 .text__pMslZ {
-  max-width: 64px;
+  max-width: 89px;
   width: 100%;
   min-width: 0;
 }
@@ -467,22 +490,22 @@
   height: auto;
   max-width: 100%;
   min-width: 0;
-  padding: 8px 0px;
+  padding: 16px 0px 8px;
 }
 .text__veMxA {
   width: auto;
   height: auto;
   max-width: 100%;
-  font-family: "ABC Diatype";
-  font-size: 25px;
+  font-family: var(--token-murZRIrJA);
+  font-size: var(--token-QMRM6lPQw);
   padding-left: 0px;
   color: var(--token-Y1kFl7CJ7);
 }
 .text___5Tc0W {
   color: var(--token-Y1kFl7CJ7);
   text-align: left;
-  font-size: 20px;
-  font-family: "ABC Diatype";
+  font-size: var(--token-1iVBmJGwv);
+  font-family: var(--token-murZRIrJA);
   line-height: 21px;
   letter-spacing: 0.01em;
   width: auto;
@@ -501,10 +524,10 @@
 .smallButton__phTyw:global(.__wab_instance) {
   max-width: 100%;
   position: relative;
-  width: 89px;
+  width: 122px;
 }
 .text__jylPj {
-  max-width: 64px;
+  max-width: 89px;
   width: 100%;
   min-width: 0;
 }

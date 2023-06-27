@@ -61,6 +61,10 @@
 .startexpanded:global(.__wab_instance) {
   display: flex;
 }
+.text__a0ZUk {
+  font-size: 20px;
+  font-family: var(--token-murZRIrJA);
+}
 .link__n149K {
   position: relative;
   display: flex;
@@ -87,6 +91,10 @@
 .servicesexpanded:global(.__wab_instance) {
   display: flex;
 }
+.textexpanded__omAuhsN1X {
+  font-size: 20px;
+  font-family: var(--token-murZRIrJA);
+}
 .link__qraVz {
   position: relative;
   display: flex;
@@ -112,6 +120,10 @@
 .projekteexpanded:global(.__wab_instance) {
   display: flex;
 }
+.textexpanded__owMXqhsN1X {
+  font-size: 20px;
+  font-family: var(--token-murZRIrJA);
+}
 .link__h4FSf {
   position: relative;
   display: flex;
@@ -136,6 +148,10 @@
 }
 .personenexpanded:global(.__wab_instance) {
   display: flex;
+}
+.textexpanded__fwoKnhsN1X {
+  font-family: var(--token-murZRIrJA);
+  font-size: 20px;
 }
 .freeBox__gn5HA {
   display: flex;

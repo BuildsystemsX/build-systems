@@ -78,9 +78,9 @@
   min-width: 0;
 }
 .slotTargetSlot {
-  font-size: 26px;
+  font-size: var(--token-QCK7Rc7zH);
   color: var(--token-Y1kFl7CJ7);
-  font-family: "ABC Diatype";
+  font-family: var(--token-murZRIrJA);
 }
 .freeBox__dFmZ3 {
   position: relative;
@@ -92,9 +92,9 @@
   min-width: 0;
 }
 .slotTargetChildren {
-  font-size: 18px;
+  font-size: var(--token-1iVBmJGwv);
   color: var(--token-Y1kFl7CJ7);
-  font-family: "ABC Diatype";
+  font-family: var(--token-murZRIrJA);
   line-height: 21px;
   letter-spacing: 0.01em;
 }

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter%3Aital%2Cwght%400%2C400%3B0%2C600%3B0%2C700&family=Inconsolata%3Aital%2Cwght%400%2C400%3B0%2C600%3B0%2C700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata%3Aital%2Cwght%400%2C400%3B0%2C600%3B0%2C700&display=swap");
 
 .plasmic_tokens {
   --token-gvQcXRBmf: #2c2c2c;
@@ -11,6 +11,20 @@
   --plasmic-token-white: var(--token-Y1kFl7CJ7);
   --token-Sh0WEr6N-: #bd565600;
   --plasmic-token-transparent: var(--token-Sh0WEr6N-);
+  --token-murZRIrJA: ABC Diatype;
+  --plasmic-token-bs-font: var(--token-murZRIrJA);
+  --token-8Bjial1Fj: 26px;
+  --plasmic-token-normal: var(--token-8Bjial1Fj);
+  --token-fJm1K7aY_: 45px;
+  --plasmic-token-subheader: var(--token-fJm1K7aY_);
+  --token-2m3Ogv_Oh: 14px;
+  --plasmic-token-small: var(--token-2m3Ogv_Oh);
+  --token-QMRM6lPQw: 32px;
+  --plasmic-token-paragraph-header: var(--token-QMRM6lPQw);
+  --token-1iVBmJGwv: 18px;
+  --plasmic-token-paragraph-medium: var(--token-1iVBmJGwv);
+  --token-QCK7Rc7zH: 26px;
+  --plasmic-token-paragraph-large: var(--token-QCK7Rc7zH);
 }
 
 .plasmic_tokens {
@@ -24,19 +38,18 @@
 }
 
 .plasmic_default_styles {
-  --mixin-On4OdmpvujpdJ_font-family: "Inter", sans-serif;
-  --mixin-On4OdmpvujpdJ_font-size: 16px;
+  --mixin-On4OdmpvujpdJ_font-family: "ABC Diatype";
+  --mixin-On4OdmpvujpdJ_font-size: 20px;
   --mixin-On4OdmpvujpdJ_font-weight: 400;
-  --mixin-On4OdmpvujpdJ_font-style: normal;
-  --mixin-On4OdmpvujpdJ_color: #535353;
+  --mixin-On4OdmpvujpdJ_color: var(--token-Y1kFl7CJ7);
   --mixin-On4OdmpvujpdJ_text-align: left;
   --mixin-On4OdmpvujpdJ_text-transform: none;
-  --mixin-On4OdmpvujpdJ_line-height: 1.5;
-  --mixin-On4OdmpvujpdJ_letter-spacing: normal;
+  --mixin-On4OdmpvujpdJ_line-height: 21px;
+  --mixin-On4OdmpvujpdJ_letter-spacing: 0.01em;
   --mixin-On4OdmpvujpdJ_white-space: pre-wrap;
   --mixin-On4OdmpvujpdJ_user-select: text;
   --mixin-On4OdmpvujpdJ_text-decoration-line: none;
-  --mixin-On4OdmpvujpdJ_text-overflow: clip;
+  --mixin-On4OdmpvujpdJ_font-style: normal;
   --mixin-8RpwkxDp14aAO_color: #000000;
   --mixin-8RpwkxDp14aAO_font-weight: 700;
   --mixin-8RpwkxDp14aAO_font-size: 64px;

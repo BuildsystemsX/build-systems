@@ -176,8 +176,8 @@
   color: var(--token-Y1kFl7CJ7);
   width: auto;
   text-align: left;
-  font-size: 26px;
-  font-family: "ABC Diatype";
+  font-size: var(--token-8Bjial1Fj);
+  font-family: var(--token-murZRIrJA);
   letter-spacing: 0.01em;
   padding: 10px;
 }
@@ -207,8 +207,8 @@
   width: auto;
   height: auto;
   max-width: 100%;
-  font-family: "ABC Diatype";
-  font-size: 46px;
+  font-family: var(--token-murZRIrJA);
+  font-size: var(--token-fJm1K7aY_);
   padding-left: 0px;
   color: var(--token-Y1kFl7CJ7);
 }
@@ -270,6 +270,10 @@
 .personBox__sbHWq:global(.__wab_instance) {
   max-width: 100%;
   position: relative;
+}
+.text___8YBaf {
+  line-height: 21px;
+  letter-spacing: 0.01em;
 }
 .personBox___55Hka:global(.__wab_instance) {
   max-width: 100%;

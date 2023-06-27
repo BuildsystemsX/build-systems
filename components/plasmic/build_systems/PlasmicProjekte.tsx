@@ -218,6 +218,17 @@ function PlasmicProjekte__RenderFunc(props: {
             ) : null}
           </div>
           <div className={classNames(projectcss.all, sty.freeBox___7Ju0Z)}>
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text___8H29R
+              )}
+            >
+              {"setzt Projekte von Anfang an #integral auf."}
+            </div>
+            <div className={classNames(projectcss.all, sty.freeBox__slJFt)} />
+
             {true ? (
               <p.Stack
                 as={"div"}
