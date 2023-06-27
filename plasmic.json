@@ -238,6 +238,32 @@
           "cssFilePath": "plasmic/build_systems/PlasmicPersonen.module.css",
           "scheme": "blackbox",
           "componentType": "page"
+        },
+        {
+          "id": "JED_FSQOoo",
+          "name": "PersonBox",
+          "type": "managed",
+          "projectId": "jENqvBHbRPXMByDQmRe4G7",
+          "renderModuleFilePath": "plasmic/build_systems/PlasmicPersonBox.tsx",
+          "importSpec": {
+            "modulePath": "PersonBox.tsx"
+          },
+          "cssFilePath": "plasmic/build_systems/PlasmicPersonBox.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "7Stlw3wb0O",
+          "name": "ImageFooter",
+          "type": "managed",
+          "projectId": "jENqvBHbRPXMByDQmRe4G7",
+          "renderModuleFilePath": "plasmic/build_systems/PlasmicImageFooter.tsx",
+          "importSpec": {
+            "modulePath": "ImageFooter.tsx"
+          },
+          "cssFilePath": "plasmic/build_systems/PlasmicImageFooter.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -302,6 +328,11 @@
           "id": "yW1wcs8Qp",
           "name": "image",
           "filePath": "../public/plasmic/build_systems/images/image.png"
+        },
+        {
+          "id": "NMBIj8QaV",
+          "name": "image 2",
+          "filePath": "../public/plasmic/build_systems/images/image2.png"
         }
       ],
       "indirect": false,

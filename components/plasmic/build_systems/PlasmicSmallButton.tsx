@@ -46,13 +46,16 @@ import ArrowRightAltSvgrepoComsvgIcon from "./icons/PlasmicIcon__ArrowRightAltSv
 
 export type PlasmicSmallButton__VariantMembers = {
   noLeftSiteShift: "noLeftSiteShift";
+  plus: "plus";
 };
 export type PlasmicSmallButton__VariantsArgs = {
   noLeftSiteShift?: SingleBooleanChoiceArg<"noLeftSiteShift">;
+  plus?: SingleBooleanChoiceArg<"plus">;
 };
 type VariantPropType = keyof PlasmicSmallButton__VariantsArgs;
 export const PlasmicSmallButton__VariantProps = new Array<VariantPropType>(
-  "noLeftSiteShift"
+  "noLeftSiteShift",
+  "plus"
 );
 
 export type PlasmicSmallButton__ArgsType = {
@@ -69,6 +72,7 @@ export type PlasmicSmallButton__OverridesType = {
 export interface DefaultSmallButtonProps {
   children?: React.ReactNode;
   noLeftSiteShift?: SingleBooleanChoiceArg<"noLeftSiteShift">;
+  plus?: SingleBooleanChoiceArg<"plus">;
   className?: string;
 }
 
@@ -116,6 +120,12 @@ function PlasmicSmallButton__RenderFunc(props: {
         type: "private",
         variableType: "variant",
         initFunc: ({ $props, $state, $queries, $ctx }) => $props.noLeftSiteShift
+      },
+      {
+        path: "plus",
+        type: "private",
+        variableType: "variant",
+        initFunc: ({ $props, $state, $queries, $ctx }) => $props.plus
       }
     ],
     [$props, $ctx]
@@ -140,21 +150,32 @@ function PlasmicSmallButton__RenderFunc(props: {
             $state,
             "noLeftSiteShift",
             "noLeftSiteShift"
-          )
+          ),
+          [sty.rootplus]: hasVariant($state, "plus", "plus")
         }
       )}
     >
-      <ArrowRightAltSvgrepoComsvgIcon
-        data-plasmic-name={"svg"}
-        data-plasmic-override={overrides.svg}
-        className={classNames(projectcss.all, sty.svg)}
-        role={"img"}
-      />
-
+      {(hasVariant($state, "plus", "plus") ? true : true) ? (
+        <ArrowRightAltSvgrepoComsvgIcon
+          data-plasmic-name={"svg"}
+          data-plasmic-override={overrides.svg}
+          className={classNames(projectcss.all, sty.svg, {
+            [sty.svgplus]: hasVariant($state, "plus", "plus")
+          })}
+          role={"img"}
+        />
+      ) : null}
       {p.renderPlasmicSlot({
-        defaultContents: "Action",
+        defaultContents: "+   mehr ",
         value: args.children,
-        className: classNames(sty.slotTargetChildren)
+        className: classNames(sty.slotTargetChildren, {
+          [sty.slotTargetChildrennoLeftSiteShift]: hasVariant(
+            $state,
+            "noLeftSiteShift",
+            "noLeftSiteShift"
+          ),
+          [sty.slotTargetChildrenplus]: hasVariant($state, "plus", "plus")
+        })
       })}
     </div>
   ) as React.ReactElement | null;

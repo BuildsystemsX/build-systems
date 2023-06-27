@@ -45,7 +45,7 @@
   font-size: 10px;
   font-family: "ABC Diatype";
   margin-right: 10px;
-  color: var(--token-Mq_qSd0gm);
+  color: var(--token-Y1kFl7CJ7);
 }
 .freeBox__k0Uz {
   display: flex;
@@ -66,7 +66,7 @@
   max-width: 100%;
   font-size: 10px;
   font-family: "ABC Diatype";
-  color: var(--token-Mq_qSd0gm);
+  color: var(--token-Y1kFl7CJ7);
   cursor: pointer;
   min-width: 0;
 }
@@ -100,7 +100,7 @@
   position: relative;
   object-fit: cover;
   max-width: 100%;
-  color: var(--token-Mq_qSd0gm);
+  color: var(--token-Y1kFl7CJ7);
   width: 10px;
   flex-shrink: 0;
   height: 1em;
@@ -109,7 +109,7 @@
   position: relative;
   object-fit: cover;
   max-width: 100%;
-  color: var(--token-Mq_qSd0gm);
+  color: var(--token-Y1kFl7CJ7);
   width: 1em;
   flex-shrink: 0;
   height: 1em;
@@ -118,7 +118,7 @@
   position: relative;
   object-fit: cover;
   max-width: 100%;
-  color: var(--token-Mq_qSd0gm);
+  color: var(--token-Y1kFl7CJ7);
   margin-left: calc(2px + 4px) !important;
   width: 1em;
   flex-shrink: 0;

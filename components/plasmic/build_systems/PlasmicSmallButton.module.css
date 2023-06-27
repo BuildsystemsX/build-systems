@@ -18,8 +18,11 @@
 .rootnoLeftSiteShift {
   margin-left: 0px;
 }
+.rootplus {
+  margin-left: 0px;
+}
 .root:hover {
-  background: var(--token-phK4XmCXj);
+  background: var(--token-Sh0WEr6N-);
 }
 .svg {
   position: relative;
@@ -31,17 +34,20 @@
   flex-shrink: 0;
   height: 1em;
 }
+.svgplus {
+  display: none;
+}
 .root:hover .svg {
-  color: var(--token-Mq_qSd0gm);
+  color: var(--token-Y1kFl7CJ7);
 }
 .slotTargetChildren {
   font-family: "ABC Diatype";
-  font-size: 10px;
+  font-size: 14px;
   font-weight: 400;
   color: var(--token-gvQcXRBmf);
   line-height: 100%;
   letter-spacing: 0em;
 }
 .root:hover .slotTargetChildren {
-  color: var(--token-Mq_qSd0gm);
+  color: var(--token-Y1kFl7CJ7);
 }

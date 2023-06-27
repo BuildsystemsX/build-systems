@@ -38,8 +38,7 @@ import {
 } from "@plasmicapp/react-web";
 import Menu from "../../Menu"; // plasmic-import: 5tZNLUygwX/component
 import SmallButton from "../../SmallButton"; // plasmic-import: jdWzZYnBO3/component
-import ButtonExternalLink from "../../ButtonExternalLink"; // plasmic-import: zlKX0iG_vm/component
-import Footer from "../../Footer"; // plasmic-import: hB94XRzTpm/component
+import ImageFooter from "../../ImageFooter"; // plasmic-import: 7Stlw3wb0O/component
 
 import { useScreenVariants as useScreenVariantsjnTclXkDzSl7V } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: jnTCLXkDZSl7V/globalVariant
 
@@ -60,8 +59,7 @@ export const PlasmicProjekte__ArgProps = new Array<ArgPropType>();
 export type PlasmicProjekte__OverridesType = {
   root?: p.Flex<"div">;
   menu?: p.Flex<typeof Menu>;
-  buttonExternalLink?: p.Flex<typeof ButtonExternalLink>;
-  footer?: p.Flex<typeof Footer>;
+  imageFooter?: p.Flex<typeof ImageFooter>;
 };
 
 export interface DefaultProjekteProps {}
@@ -435,62 +433,11 @@ function PlasmicProjekte__RenderFunc(props: {
             ) : null}
           </div>
           {true ? (
-            <div className={classNames(projectcss.all, sty.freeBox__qnFVu, ``)}>
-              <div className={classNames(projectcss.all, sty.freeBox__ugd56)}>
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img__tuBh4)}
-                  displayHeight={"auto" as const}
-                  displayMaxHeight={"none" as const}
-                  displayMaxWidth={"none" as const}
-                  displayMinHeight={"0" as const}
-                  displayMinWidth={"0" as const}
-                  displayWidth={"100%" as const}
-                  src={{
-                    src: "/plasmic/build_systems/images/desktopRenderingjpg.jpg",
-                    fullWidth: 3146,
-                    fullHeight: 2000,
-                    aspectRatio: undefined
-                  }}
-                />
-
-                <div
-                  className={classNames(projectcss.all, sty.freeBox__iLvjN)}
-                />
-
-                <div className={classNames(projectcss.all, sty.freeBox__pcmGv)}>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox___1AAp7)}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__kwO7A
-                      )}
-                    >
-                      {"Sie haben eine weitere Frage?"}
-                    </div>
-                    <ButtonExternalLink
-                      data-plasmic-name={"buttonExternalLink"}
-                      data-plasmic-override={overrides.buttonExternalLink}
-                      className={classNames(
-                        "__wab_instance",
-                        sty.buttonExternalLink
-                      )}
-                      link={"mailto:mail@buildsystems.de" as const}
-                    >
-                      {"Schreiben Sie uns eine Mail!"}
-                    </ButtonExternalLink>
-                  </div>
-                </div>
-              </div>
-              <Footer
-                data-plasmic-name={"footer"}
-                data-plasmic-override={overrides.footer}
-                className={classNames("__wab_instance", sty.footer)}
-              />
-            </div>
+            <ImageFooter
+              data-plasmic-name={"imageFooter"}
+              data-plasmic-override={overrides.imageFooter}
+              className={classNames("__wab_instance", sty.imageFooter)}
+            />
           ) : null}
         </div>
       </div>
@@ -499,10 +446,9 @@ function PlasmicProjekte__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "menu", "buttonExternalLink", "footer"],
+  root: ["root", "menu", "imageFooter"],
   menu: ["menu"],
-  buttonExternalLink: ["buttonExternalLink"],
-  footer: ["footer"]
+  imageFooter: ["imageFooter"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -510,8 +456,7 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   menu: typeof Menu;
-  buttonExternalLink: typeof ButtonExternalLink;
-  footer: typeof Footer;
+  imageFooter: typeof ImageFooter;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -575,8 +520,7 @@ export const PlasmicProjekte = Object.assign(
   {
     // Helper components rendering sub-elements
     menu: makeNodeComponent("menu"),
-    buttonExternalLink: makeNodeComponent("buttonExternalLink"),
-    footer: makeNodeComponent("footer"),
+    imageFooter: makeNodeComponent("imageFooter"),
 
     // Metadata about props expected for PlasmicProjekte
     internalVariantProps: PlasmicProjekte__VariantProps,

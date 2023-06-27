@@ -37,8 +37,8 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import Menu from "../../Menu"; // plasmic-import: 5tZNLUygwX/component
-import ButtonExternalLink from "../../ButtonExternalLink"; // plasmic-import: zlKX0iG_vm/component
-import Footer from "../../Footer"; // plasmic-import: hB94XRzTpm/component
+import PersonBox from "../../PersonBox"; // plasmic-import: JED_FSQOoo/component
+import ImageFooter from "../../ImageFooter"; // plasmic-import: 7Stlw3wb0O/component
 
 import { useScreenVariants as useScreenVariantsjnTclXkDzSl7V } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: jnTCLXkDZSl7V/globalVariant
 
@@ -59,9 +59,7 @@ export const PlasmicPersonen__ArgProps = new Array<ArgPropType>();
 export type PlasmicPersonen__OverridesType = {
   root?: p.Flex<"div">;
   menu?: p.Flex<typeof Menu>;
-  img?: p.Flex<typeof p.PlasmicImg>;
-  buttonExternalLink?: p.Flex<typeof ButtonExternalLink>;
-  footer?: p.Flex<typeof Footer>;
+  imageFooter?: p.Flex<typeof ImageFooter>;
 };
 
 export interface DefaultPersonenProps {}
@@ -232,243 +230,95 @@ function PlasmicPersonen__RenderFunc(props: {
               </div>
             ) : null}
           </div>
-          <div className={classNames(projectcss.all, sty.freeBox___0E0T)} />
-
-          <div className={classNames(projectcss.all, sty.freeBox___6NXyw)}>
+          <div className={classNames(projectcss.all, sty.freeBox__cYVnn)}>
             <div
               className={classNames(
                 projectcss.all,
                 projectcss.__wab_text,
-                sty.text___7Mndn
+                sty.text__msWiq
               )}
             >
-              {"beh\u00e4lt Bedarfe im Blick."}
+              {"fu\u0308hrt #Kompetenzen zusammen"}
             </div>
-            {true ? (
-              <div className={classNames(projectcss.all, sty.freeBox__yRxYx)}>
-                <div
-                  className={classNames(projectcss.all, sty.freeBox__sswZq)}
-                />
-
-                <div className={classNames(projectcss.all, sty.freeBox__cx6X8)}>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__rwEuw
-                    )}
-                  >
-                    {"Worauf Sie ein Auge haben sollten."}
-                  </div>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__g77Fq
-                    )}
-                  >
-                    {hasVariant(globalVariants, "screen", "mobile")
-                      ? "Build Systems entwickelt individuelle Smart Sustainability Roadmaps (Nachhaltigkeits-fahrpl\u00e4ne). Hierf\u00fcr stellen wir Nachhaltigkeitsanforderungen der individuellen Projektentwicklung \u00f6konomischen Indikatoren gegen\u00fcber. Wir unterst\u00fctzen Immobilienentwickler:innen in einer fr\u00fchen Phase der Planung Investitionsentscheidungen zu treffen."
-                      : "Wir identifizieren die wichtigsten Stellschrauben und zeigen auf, welche Kriterien zu vernachl\u00e4ssigen sind. Sie schaffen Trade-offs in der Emissionsreduktion und w\u00e4hlen die effektivsten Ma\u00dfnahmen.\n      Das ist unser systemischer Ansatz: Sie wissen genau, worauf Sie sich einlassen, welche Akteure im weiteren Verlauf zu beteiligen sind und welche Geb\u00e4udeeigenschaften Ihre Planung herstellen muss."}
-                  </div>
-                </div>
-              </div>
-            ) : null}
           </div>
-          <div className={classNames(projectcss.all, sty.freeBox__stMgr)} />
-
-          <div className={classNames(projectcss.all, sty.freeBox__x2Kt6)}>
-            <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text___3QJkp
-              )}
-            >
-              {"arbeitet mit dezidierte Benchmarks die bew\u00e4hrt sind."}
-            </div>
-            {true ? (
-              <div className={classNames(projectcss.all, sty.freeBox__rAKm)}>
-                <div className={classNames(projectcss.all, sty.freeBox__jgzIe)}>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__oxN2I
-                    )}
-                  >
-                    {"Wissen, was wirklich hilft!"}
-                  </div>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__xKaT9
-                    )}
-                  >
-                    {hasVariant(globalVariants, "screen", "mobile")
-                      ? "Build Systems entwickelt individuelle Smart Sustainability Roadmaps (Nachhaltigkeits-fahrpl\u00e4ne). Hierf\u00fcr stellen wir Nachhaltigkeitsanforderungen der individuellen Projektentwicklung \u00f6konomischen Indikatoren gegen\u00fcber. Wir unterst\u00fctzen Immobilienentwickler:innen in einer fr\u00fchen Phase der Planung Investitionsentscheidungen zu treffen."
-                      : "Sie legen Zielvereinbarungen fest. Wir vergleichen Szenarien zu Bedarfsplanung und Energiebetrachtung und pr\u00fcfen Planungsans\u00e4tze hinsichtlich ihrer ESG-Performance. Wir legen die jeweiligen Aussichten auf Zertifizierungen und F\u00f6rderungen nachvollziehbar dar und zeigen Pfade zu Emissions- und\nKostenzielen auf."}
-                  </div>
-                </div>
-                <div
-                  className={classNames(projectcss.all, sty.freeBox___9MEaR)}
-                />
-              </div>
-            ) : null}
-          </div>
-          <div className={classNames(projectcss.all, sty.freeBox__npX8F)} />
-
-          <div className={classNames(projectcss.all, sty.freeBox__f2Edz)}>
-            <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text__j6Fm
-              )}
-            >
-              {"erstellt Vordimensionierungen zu #Anlagentechnik."}
-            </div>
-            {true ? (
-              <div className={classNames(projectcss.all, sty.freeBox__sol6G)}>
-                <div
-                  className={classNames(projectcss.all, sty.freeBox__uA18H)}
-                />
-
-                <div className={classNames(projectcss.all, sty.freeBox__jwSf)}>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__fQyp0
-                    )}
-                  >
-                    {"Wo die Reise hingeht:"}
-                  </div>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__dc7Mh
-                    )}
-                  >
-                    {hasVariant(globalVariants, "screen", "mobile")
-                      ? "Build Systems entwickelt individuelle Smart Sustainability Roadmaps (Nachhaltigkeits-fahrpl\u00e4ne). Hierf\u00fcr stellen wir Nachhaltigkeitsanforderungen der individuellen Projektentwicklung \u00f6konomischen Indikatoren gegen\u00fcber. Wir unterst\u00fctzen Immobilienentwickler:innen in einer fr\u00fchen Phase der Planung Investitionsentscheidungen zu treffen."
-                      : "Sie m\u00f6chten fr\u00fchzeitig im Prozess die entscheidenden Weichen stellen und Umplanungen vermeiden? Durch integrale Planung bilden wir technische Rahmenbedingungen bis zu einer Detailtiefe des Wandaufbaus ab und \u00fcbersetzen Anforderungen und Benchmarks in realistische Umsetzungsstrategien."}
-                  </div>
-                </div>
-              </div>
-            ) : null}
-          </div>
-          <div className={classNames(projectcss.all, sty.freeBox__wXdd1)} />
-
           <div className={classNames(projectcss.all, sty.freeBox___3Ke2E)}>
-            <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text__j3Zho
-              )}
-            >
-              {"steigerte durch abgestimmte Prozesse baulichen Mehrwert"}
-            </div>
             {true ? (
               <div className={classNames(projectcss.all, sty.freeBox___1CKvB)}>
-                <div
-                  className={classNames(projectcss.all, sty.freeBox___732X3)}
-                />
-
-                <div
-                  className={classNames(projectcss.all, sty.freeBox___962MU)}
+                <PersonBox
+                  className={classNames("__wab_instance", sty.personBox__qjRtW)}
+                  slot={"Martin Bittmann"}
+                >
+                  {
+                    "Dipl.-Ing. Architektur\n\nArchitekt Bay. Architektenkammer, Energieeffizienz-Experte, Nachhaltiges Bauen in Holz, Energetische Betrachtungen, Projektmanagement & -entwicklung"
+                  }
+                </PersonBox>
+                <PersonBox
+                  className={classNames("__wab_instance", sty.personBox__dOy15)}
+                  slot={"Julia Dorn"}
                 >
                   <div
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text__eTBay
+                      sty.text__dm1D9
                     )}
                   >
-                    {"Wo die Reise hingeht:"}
+                    {
+                      "M.Sc. Urban Design, B.Sc. Architektur\n\nUrbane Transformation, Anforderungen EU Taxonomie und Nachhaltig-\nkeitsreporting, Kommunikation, Akteursmanagement & Moderation"
+                    }
                   </div>
+                </PersonBox>
+                <PersonBox
+                  className={classNames("__wab_instance", sty.personBox__sbHWq)}
+                  slot={"Daniel Dieren"}
+                >
+                  {
+                    "M.Sc. Bauingenieur, M.Sc. Architektur\n\nNachhaltiges Konstruieren, Ingenieurholzbau, Integrale Planung, Lebenszyklusbetrachtung"
+                  }
+                </PersonBox>
+                <PersonBox
+                  className={classNames(
+                    "__wab_instance",
+                    sty.personBox___55Hka
+                  )}
+                  slot={"Daniel Locatelli"}
+                >
+                  {
+                    "M.Sc. ITECH, Dipl. Architektur\n\nComputational Design, Parametrische Systeme, Entwicklung digitaler Tools und Workflows, Digitale Fabrikation"
+                  }
+                </PersonBox>
+                <PersonBox
+                  className={classNames("__wab_instance", sty.personBox__cDjn)}
+                  slot={"Vinzenz Trimborn"}
+                >
+                  {
+                    "B.Sc. Wirtschaftsinformatik\n\nSoftwareentwicklung, Digitale Planung, Implementierung digitale Workflows"
+                  }
+                </PersonBox>
+                <PersonBox
+                  className={classNames("__wab_instance", sty.personBox__vEf5N)}
+                  slot={"Andreas Thoma"}
+                >
                   <div
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text__argNm
+                      sty.text__hgfxB
                     )}
                   >
-                    {hasVariant(globalVariants, "screen", "mobile")
-                      ? "Build Systems entwickelt individuelle Smart Sustainability Roadmaps (Nachhaltigkeits-fahrpl\u00e4ne). Hierf\u00fcr stellen wir Nachhaltigkeitsanforderungen der individuellen Projektentwicklung \u00f6konomischen Indikatoren gegen\u00fcber. Wir unterst\u00fctzen Immobilienentwickler:innen in einer fr\u00fchen Phase der Planung Investitionsentscheidungen zu treffen."
-                      : "Sie m\u00f6chten fr\u00fchzeitig im Prozess die entscheidenden Weichen stellen und Umplanungen vermeiden? Durch integrale Planung bilden wir technische Rahmenbedingungen bis zu einer Detailtiefe des Wandaufbaus ab und \u00fcbersetzen Anforderungen und Benchmarks in realistische Umsetzungsstrategien."}
+                    {"M.Sc. Architektur"}
                   </div>
-                </div>
+                </PersonBox>
               </div>
             ) : null}
           </div>
-          <div className={classNames(projectcss.all, sty.freeBox__lg41I)} />
+          <div className={classNames(projectcss.all, sty.freeBox__l40T)} />
 
-          {true ? (
-            <div
-              className={classNames(projectcss.all, sty.freeBox___2YEhz, ``)}
-            >
-              <div className={classNames(projectcss.all, sty.freeBox___3DLvp)}>
-                <p.PlasmicImg
-                  data-plasmic-name={"img"}
-                  data-plasmic-override={overrides.img}
-                  alt={""}
-                  className={classNames(sty.img)}
-                  displayHeight={"auto" as const}
-                  displayMaxHeight={"none" as const}
-                  displayMaxWidth={"none" as const}
-                  displayMinHeight={"0" as const}
-                  displayMinWidth={"0" as const}
-                  displayWidth={"100%" as const}
-                  src={{
-                    src: "/plasmic/build_systems/images/desktopRenderingjpg.jpg",
-                    fullWidth: 3146,
-                    fullHeight: 2000,
-                    aspectRatio: undefined
-                  }}
-                />
-
-                <div
-                  className={classNames(projectcss.all, sty.freeBox___1Jczq)}
-                />
-
-                <div className={classNames(projectcss.all, sty.freeBox__eCDou)}>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__ntnNx)}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__erbVq
-                      )}
-                    >
-                      {"Sie haben eine weitere Frage?"}
-                    </div>
-                    <ButtonExternalLink
-                      data-plasmic-name={"buttonExternalLink"}
-                      data-plasmic-override={overrides.buttonExternalLink}
-                      className={classNames(
-                        "__wab_instance",
-                        sty.buttonExternalLink
-                      )}
-                      link={"mailto:mail@buildsystems.de" as const}
-                    >
-                      {"Schreiben Sie uns eine Mail!"}
-                    </ButtonExternalLink>
-                  </div>
-                </div>
-              </div>
-              <Footer
-                data-plasmic-name={"footer"}
-                data-plasmic-override={overrides.footer}
-                className={classNames("__wab_instance", sty.footer)}
-              />
-            </div>
-          ) : null}
+          <ImageFooter
+            data-plasmic-name={"imageFooter"}
+            data-plasmic-override={overrides.imageFooter}
+            className={classNames("__wab_instance", sty.imageFooter)}
+          />
         </div>
       </div>
     </React.Fragment>
@@ -476,11 +326,9 @@ function PlasmicPersonen__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "menu", "img", "buttonExternalLink", "footer"],
+  root: ["root", "menu", "imageFooter"],
   menu: ["menu"],
-  img: ["img"],
-  buttonExternalLink: ["buttonExternalLink"],
-  footer: ["footer"]
+  imageFooter: ["imageFooter"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -488,9 +336,7 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   menu: typeof Menu;
-  img: typeof p.PlasmicImg;
-  buttonExternalLink: typeof ButtonExternalLink;
-  footer: typeof Footer;
+  imageFooter: typeof ImageFooter;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -554,9 +400,7 @@ export const PlasmicPersonen = Object.assign(
   {
     // Helper components rendering sub-elements
     menu: makeNodeComponent("menu"),
-    img: makeNodeComponent("img"),
-    buttonExternalLink: makeNodeComponent("buttonExternalLink"),
-    footer: makeNodeComponent("footer"),
+    imageFooter: makeNodeComponent("imageFooter"),
 
     // Metadata about props expected for PlasmicPersonen
     internalVariantProps: PlasmicPersonen__VariantProps,

@@ -56,7 +56,7 @@
 }
 .text__mlAuA {
   position: relative;
-  color: var(--token-Mq_qSd0gm);
+  color: var(--token-Y1kFl7CJ7);
   width: 100%;
   font-family: "ABC Diatype";
   line-height: 17px;
@@ -64,14 +64,16 @@
   min-width: 0;
 }
 .link__mh873 {
-  color: var(--token-Mq_qSd0gm);
+  color: var(--token-Y1kFl7CJ7);
+  font-family: "ABC Diatype";
 }
 .link__ydc5C {
-  color: var(--token-Mq_qSd0gm);
+  color: var(--token-Y1kFl7CJ7);
+  font-family: "ABC Diatype";
 }
 .link__kMIav {
-  color: var(--token-Mq_qSd0gm);
-  font-family: var(‑-DiatypeMedium);
+  color: var(--token-Y1kFl7CJ7);
+  font-family: "ABC Diatype";
 }
 .freeBox__cFwm8 {
   display: flex;
@@ -104,7 +106,7 @@
   width: 100%;
   height: auto;
   max-width: 100%;
-  color: var(--token-Mq_qSd0gm);
+  color: var(--token-Y1kFl7CJ7);
   font-family: "ABC Diatype";
   line-height: 17px;
   letter-spacing: -0.01em;

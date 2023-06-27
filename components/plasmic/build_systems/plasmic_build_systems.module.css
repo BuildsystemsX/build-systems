@@ -3,10 +3,14 @@
 .plasmic_tokens {
   --token-gvQcXRBmf: #2c2c2c;
   --plasmic-token-main: var(--token-gvQcXRBmf);
-  --token-Mq_qSd0gm: #d9d9d9;
-  --plasmic-token-text: var(--token-Mq_qSd0gm);
+  --token-Mq_qSd0gm: #3c3c3c;
+  --plasmic-token-second: var(--token-Mq_qSd0gm);
   --token-phK4XmCXj: #56bd77;
   --plasmic-token-green: var(--token-phK4XmCXj);
+  --token-Y1kFl7CJ7: #eeeeee;
+  --plasmic-token-white: var(--token-Y1kFl7CJ7);
+  --token-Sh0WEr6N-: #bd565600;
+  --plasmic-token-transparent: var(--token-Sh0WEr6N-);
 }
 
 .plasmic_tokens {

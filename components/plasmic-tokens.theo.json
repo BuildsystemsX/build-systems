@@ -21,13 +21,33 @@
       }
     },
     {
-      "name": "Text",
+      "name": "Second",
       "type": "color",
-      "value": "#D9D9D9",
+      "value": "#3C3C3C",
       "category": "color",
       "meta": {
         "projectId": "jENqvBHbRPXMByDQmRe4G7",
         "id": "Mq_qSd0gm"
+      }
+    },
+    {
+      "name": "Transparent",
+      "type": "color",
+      "value": "#BD565600",
+      "category": "color",
+      "meta": {
+        "projectId": "jENqvBHbRPXMByDQmRe4G7",
+        "id": "Sh0WEr6N-"
+      }
+    },
+    {
+      "name": "White",
+      "type": "color",
+      "value": "#EEEEEE",
+      "category": "color",
+      "meta": {
+        "projectId": "jENqvBHbRPXMByDQmRe4G7",
+        "id": "Y1kFl7CJ7"
       }
     }
   ],
