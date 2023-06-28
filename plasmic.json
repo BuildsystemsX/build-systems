@@ -39,8 +39,7 @@
           "displayName": "global-embed-css",
           "componentImportPath": "@plasmicpkgs/plasmic-embed-css"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "kS7YGZfVr6mU43XDQjXELc",
@@ -60,8 +59,7 @@
           "displayName": "hostless-react-chartjs-2-simple-chart",
           "componentImportPath": "@plasmicpkgs/react-chartjs-2"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "jENqvBHbRPXMByDQmRe4G7",
@@ -393,9 +391,14 @@
           "name": "DataProvider",
           "displayName": "hostless-data-provider",
           "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        },
+        {
+          "id": "zlBHsvkFlN",
+          "name": "ConditionGuard",
+          "displayName": "hostless-condition-guard",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "58GpZjZCWTaJ8AUhpCwt2K",
@@ -415,8 +418,7 @@
           "displayName": "hostless-reveal",
           "componentImportPath": "@plasmicpkgs/react-awesome-reveal"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     }
   ],
   "globalVariants": {

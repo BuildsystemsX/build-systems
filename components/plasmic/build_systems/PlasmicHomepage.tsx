@@ -237,9 +237,20 @@ function PlasmicHomepage__RenderFunc(props: {
                 sty.text___62N6U
               )}
             >
-              {hasVariant(globalVariants, "screen", "mobile")
-                ? "Build Systems entwickelt individuelle Smart Sustainability Roadmaps (Nachhaltigkeits-fahrpl\u00e4ne). Hierf\u00fcr stellen wir Nachhaltigkeitsanforderungen der individuellen Projektentwicklung \u00f6konomischen Indikatoren gegen\u00fcber. Wir unterst\u00fctzen private und \u00f6ffentliche Immobilienentwickler:innen in einer fr\u00fchen Phase der Planung Investitionsentscheidungen zu treffen."
-                : "Build Systems entwickelt individuelle Smart Sustainability Roadmaps (Nachhaltigkeitsfahrpl\u00e4ne). Hierf\u00fcr stellen wir Nachhaltigkeitsanforderungen der individuellen Projektentwicklung \u00f6konomischen Indikatoren gegen\u00fcber. Wir unterst\u00fctzen private und \u00f6ffentliche Immobilienentwickler:innen in einer fr\u00fchen Phase der Planung Investitionsentscheidungen zu treffen."}
+              {hasVariant(globalVariants, "screen", "mobile") ? (
+                <React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ color: "#ECECEC" }}
+                  >
+                    {
+                      "Build Systems entwickelt individuelle Smart Sustainability Roadmaps (Nachhaltigkeits-fahrpl\u00e4ne). Hierf\u00fcr stellen wir Nachhaltigkeitsanforderungen der individuellen Projektentwicklung \u00f6konomischen Indikatoren gegen\u00fcber. Wir unterst\u00fctzen private und \u00f6ffentliche Immobilienentwickler:innen in einer fr\u00fchen Phase der Planung Investitionsentscheidungen zu treffen."
+                    }
+                  </span>
+                </React.Fragment>
+              ) : (
+                "Build Systems entwickelt individuelle Smart Sustainability Roadmaps (Nachhaltigkeitsfahrpl\u00e4ne). Hierf\u00fcr stellen wir Nachhaltigkeitsanforderungen der individuellen Projektentwicklung \u00f6konomischen Indikatoren gegen\u00fcber. Wir unterst\u00fctzen private und \u00f6ffentliche Immobilienentwickler:innen in einer fr\u00fchen Phase der Planung Investitionsentscheidungen zu treffen."
+              )}
             </div>
             <div className={classNames(projectcss.all, sty.freeBox__zqs6K)}>
               <p.Stack
@@ -336,7 +347,9 @@ function PlasmicHomepage__RenderFunc(props: {
                     }
                   }}
                 >
-                  {"Imprint, Privacy"}
+                  {hasVariant(globalVariants, "screen", "mobile")
+                    ? "Imprint, Privacy"
+                    : "Imprint, Privacy"}
                 </div>
               </p.Stack>
             </div>

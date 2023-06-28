@@ -2,7 +2,7 @@
   "projects": [
     {
       "projectId": "8PtdGodUbexNYgkuyBUcWu",
-      "version": "3.15.0",
+      "version": "3.16.0",
       "dependencies": {},
       "lang": "ts",
       "fileLocks": [
@@ -21,7 +21,7 @@
     },
     {
       "projectId": "kS7YGZfVr6mU43XDQjXELc",
-      "version": "0.7.0",
+      "version": "0.8.0",
       "dependencies": {},
       "lang": "ts",
       "fileLocks": [
@@ -37,10 +37,10 @@
       "projectId": "jENqvBHbRPXMByDQmRe4G7",
       "version": "latest",
       "dependencies": {
-        "kS7YGZfVr6mU43XDQjXELc": "0.7.0",
-        "8PtdGodUbexNYgkuyBUcWu": "3.15.0",
-        "caTPwKxj5ZrD9LQ7DMdK4Z": "3.19.0",
-        "58GpZjZCWTaJ8AUhpCwt2K": "3.16.0"
+        "kS7YGZfVr6mU43XDQjXELc": "0.8.0",
+        "8PtdGodUbexNYgkuyBUcWu": "3.16.0",
+        "caTPwKxj5ZrD9LQ7DMdK4Z": "3.20.0",
+        "58GpZjZCWTaJ8AUhpCwt2K": "3.17.0"
       },
       "lang": "ts",
       "fileLocks": [
@@ -57,12 +57,12 @@
         {
           "type": "renderModule",
           "assetId": "ElJN5a6f1p8n",
-          "checksum": "1adf4ff4200859a2971836d1f3497019"
+          "checksum": "655fbd0a8d50cee80447abf4e54524b1"
         },
         {
           "type": "cssRules",
           "assetId": "ElJN5a6f1p8n",
-          "checksum": "1adf4ff4200859a2971836d1f3497019"
+          "checksum": "655fbd0a8d50cee80447abf4e54524b1"
         },
         {
           "type": "renderModule",
@@ -279,21 +279,21 @@
     },
     {
       "projectId": "caTPwKxj5ZrD9LQ7DMdK4Z",
-      "version": "3.19.0",
+      "version": "3.20.0",
       "dependencies": {},
       "lang": "ts",
       "fileLocks": [
         {
           "assetId": "caTPwKxj5ZrD9LQ7DMdK4Z",
           "type": "projectCss",
-          "checksum": "9fe64c4dd8439ba4d2df6de161f0ad40"
+          "checksum": "e1ec850476829c38b0f9b6d4f7ac446a"
         }
       ],
       "codegenVersion": "0.0.1"
     },
     {
       "projectId": "58GpZjZCWTaJ8AUhpCwt2K",
-      "version": "3.16.0",
+      "version": "3.17.0",
       "dependencies": {},
       "lang": "ts",
       "fileLocks": [
