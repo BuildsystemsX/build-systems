@@ -468,7 +468,8 @@
           "displayName": "hostless-slider",
           "componentImportPath": "react-slick"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "84wxoth5npGrp6RRXPL88z",
@@ -494,7 +495,8 @@
           "displayName": "global-parallax-provider",
           "componentImportPath": "@plasmicpkgs/react-scroll-parallax"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     }
   ],
   "globalVariants": {

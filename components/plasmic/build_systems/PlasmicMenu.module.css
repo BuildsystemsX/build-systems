@@ -41,8 +41,8 @@
 .freeBox__zyI38 {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
+  align-items: flex-end;
+  justify-content: center;
   width: auto;
   height: auto;
   max-width: 100%;
