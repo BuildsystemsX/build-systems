@@ -36,7 +36,9 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
+import Cover from "../../Cover"; // plasmic-import: y8WKJEXfAa/component
 import Menu from "../../Menu"; // plasmic-import: 5tZNLUygwX/component
+import BuildSystemsHeadline from "../../BuildSystemsHeadline"; // plasmic-import: k0tLqKtuC3/component
 import SmallButton from "../../SmallButton"; // plasmic-import: jdWzZYnBO3/component
 import Footer from "../../Footer"; // plasmic-import: hB94XRzTpm/component
 
@@ -58,7 +60,9 @@ export const PlasmicHomepage2__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicHomepage2__OverridesType = {
   root?: p.Flex<"div">;
+  cover?: p.Flex<typeof Cover>;
   menu?: p.Flex<typeof Menu>;
+  buildSystemsHeadline?: p.Flex<typeof BuildSystemsHeadline>;
   img?: p.Flex<typeof p.PlasmicImg>;
   footer?: p.Flex<typeof Footer>;
 };
@@ -159,6 +163,12 @@ function PlasmicHomepage2__RenderFunc(props: {
             sty.root
           )}
         >
+          <Cover
+            data-plasmic-name={"cover"}
+            data-plasmic-override={overrides.cover}
+            className={classNames("__wab_instance", sty.cover)}
+          />
+
           <div className={classNames(projectcss.all, sty.freeBox___332Cd)}>
             <Menu
               data-plasmic-name={"menu"}
@@ -167,38 +177,11 @@ function PlasmicHomepage2__RenderFunc(props: {
             />
           </div>
           {true ? (
-            <div
-              className={classNames(
-                projectcss.all,
-                sty.freeBox__gGxbu,
-                "blend" as const
-              )}
-            >
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__hkgR,
-                  "blend" as const
-                )}
-              >
-                {hasVariant(globalVariants, "screen", "mobile")
-                  ? "Build "
-                  : "Build"}
-              </div>
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__x0LyZ,
-                  ``
-                )}
-              >
-                {hasVariant(globalVariants, "screen", "mobile")
-                  ? "Systems"
-                  : "Systems"}
-              </div>
-            </div>
+            <BuildSystemsHeadline
+              data-plasmic-name={"buildSystemsHeadline"}
+              data-plasmic-override={overrides.buildSystemsHeadline}
+              className={classNames("__wab_instance", sty.buildSystemsHeadline)}
+            />
           ) : null}
           {true ? (
             <div className={classNames(projectcss.all, sty.freeBox__q7Jq, ``)}>
@@ -295,7 +278,7 @@ function PlasmicHomepage2__RenderFunc(props: {
                 >
                   {hasVariant(globalVariants, "screen", "mobile")
                     ? "Build Systems entwickelt individuelle Smart Sustainability Roadmaps (Nachhaltigkeits-fahrpl\u00e4ne). Hierf\u00fcr stellen wir Nachhaltigkeitsanforderungen der individuellen Projektentwicklung \u00f6konomischen Indikatoren gegen\u00fcber. Wir unterst\u00fctzen Immobilienentwickler:innen in einer fr\u00fchen Phase der Planung Investitionsentscheidungen zu treffen."
-                    : "Unsere Nachhaltigkeitsfahrpl\u00e4ne unterst\u00fctzt die individuelle Projektentwicklung in einer fr\u00fchen Phase der Planung, Investitionsentscheidungen zu treffen, Projekte ganzheitlich aufzugleisen und nachhaltige\nWertstabilit\u00e4t zu schaffen."}
+                    : "Unsere Nachhaltigkeitsfahrpl\u00e4ne unterst\u00fctzt die individuelle Projektentwicklung in einer fr\u00fchen Phase der Planung, Investitionsentscheidungen zu treffen, Projekte ganzheitlich aufzugleisen und nachhaltige Wertstabilit\u00e4t zu schaffen."}
                 </div>
                 <SmallButton
                   className={classNames(
@@ -330,8 +313,10 @@ function PlasmicHomepage2__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "menu", "img", "footer"],
+  root: ["root", "cover", "menu", "buildSystemsHeadline", "img", "footer"],
+  cover: ["cover"],
   menu: ["menu"],
+  buildSystemsHeadline: ["buildSystemsHeadline"],
   img: ["img"],
   footer: ["footer"]
 } as const;
@@ -340,7 +325,9 @@ type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
+  cover: typeof Cover;
   menu: typeof Menu;
+  buildSystemsHeadline: typeof BuildSystemsHeadline;
   img: typeof p.PlasmicImg;
   footer: typeof Footer;
 };
@@ -405,7 +392,9 @@ export const PlasmicHomepage2 = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    cover: makeNodeComponent("cover"),
     menu: makeNodeComponent("menu"),
+    buildSystemsHeadline: makeNodeComponent("buildSystemsHeadline"),
     img: makeNodeComponent("img"),
     footer: makeNodeComponent("footer"),
 

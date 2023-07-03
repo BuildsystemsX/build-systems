@@ -144,7 +144,8 @@ function PlasmicPersonBox__RenderFunc(props: {
           projectcss.plasmic_default_styles,
           projectcss.plasmic_mixins,
           projectcss.plasmic_tokens,
-          sty.root
+          sty.root,
+          { [sty.rootexpanded]: hasVariant($state, "expanded", "expanded") }
         )}
       >
         <div className={classNames(projectcss.all, sty.freeBox__xTsx6)}>
@@ -172,12 +173,26 @@ function PlasmicPersonBox__RenderFunc(props: {
                 />
               </div>
             ) : null}
-            <div className={classNames(projectcss.all, sty.freeBox___5Lmv3)}>
+            <div
+              className={classNames(projectcss.all, sty.freeBox___5Lmv3, {
+                [sty.freeBoxexpanded___5Lmv3NnpJu]: hasVariant(
+                  $state,
+                  "expanded",
+                  "expanded"
+                )
+              })}
+            >
               <div className={classNames(projectcss.all, sty.freeBox__xqBtG)}>
                 {p.renderPlasmicSlot({
                   defaultContents: "First Name Last Name",
                   value: args.slot,
-                  className: classNames(sty.slotTargetSlot)
+                  className: classNames(sty.slotTargetSlot, {
+                    [sty.slotTargetSlotexpanded]: hasVariant(
+                      $state,
+                      "expanded",
+                      "expanded"
+                    )
+                  })
                 })}
               </div>
               <div className={classNames(projectcss.all, sty.freeBox__dFmZ3)}>
@@ -285,7 +300,14 @@ function PlasmicPersonBox__RenderFunc(props: {
                         data-plasmic-override={overrides.smallButton}
                         className={classNames(
                           "__wab_instance",
-                          sty.smallButton
+                          sty.smallButton,
+                          {
+                            [sty.smallButtonexpanded]: hasVariant(
+                              $state,
+                              "expanded",
+                              "expanded"
+                            )
+                          }
                         )}
                         plus={true}
                       >

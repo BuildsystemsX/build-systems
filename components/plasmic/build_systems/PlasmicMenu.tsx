@@ -44,6 +44,7 @@ import projectcss from "./plasmic_build_systems.module.css"; // plasmic-import: 
 import sty from "./PlasmicMenu.module.css"; // plasmic-import: 5tZNLUygwX/css
 
 import BurgerSimpleSvgrepoComsvgIcon from "./icons/PlasmicIcon__BurgerSimpleSvgrepoComsvg"; // plasmic-import: Hj5vDQofk6/icon
+import LineXlSvgrepoComsvgIcon from "./icons/PlasmicIcon__LineXlSvgrepoComsvg"; // plasmic-import: Nn_Pp4GgbS/icon
 
 export type PlasmicMenu__VariantMembers = {
   test: "services" | "projekte" | "personen";
@@ -148,7 +149,12 @@ function PlasmicMenu__RenderFunc(props: {
           projectcss.plasmic_mixins,
           projectcss.plasmic_tokens,
           sty.root,
-          { [sty.roottest_projekte]: hasVariant($state, "test", "projekte") }
+          {
+            [sty.rootexpanded]: hasVariant($state, "expanded", "expanded"),
+            [sty.roottest_personen]: hasVariant($state, "test", "personen"),
+            [sty.roottest_projekte]: hasVariant($state, "test", "projekte"),
+            [sty.roottest_services]: hasVariant($state, "test", "services")
+          }
         )}
       >
         <div
@@ -210,6 +216,11 @@ function PlasmicMenu__RenderFunc(props: {
                       $state,
                       "expanded",
                       "expanded"
+                    ),
+                    [sty.linktest_personen__tkhkdUi3Mn]: hasVariant(
+                      $state,
+                      "test",
+                      "personen"
                     )
                   }
                 )}
@@ -625,6 +636,11 @@ function PlasmicMenu__RenderFunc(props: {
                       $state,
                       "expanded",
                       "expanded"
+                    ),
+                    [sty.linktest_personen__h4FSfUi3Mn]: hasVariant(
+                      $state,
+                      "test",
+                      "personen"
                     )
                   }
                 )}
@@ -745,6 +761,11 @@ function PlasmicMenu__RenderFunc(props: {
                             $state,
                             "expanded",
                             "expanded"
+                          ),
+                          [sty.texttest_personen__fwoKnUi3Mn]: hasVariant(
+                            $state,
+                            "test",
+                            "personen"
                           )
                         }
                       )}
@@ -884,10 +905,17 @@ function PlasmicMenu__RenderFunc(props: {
                 }
               }}
             >
-              <BurgerSimpleSvgrepoComsvgIcon
+              <p.PlasmicIcon
                 data-plasmic-name={"svg"}
                 data-plasmic-override={overrides.svg}
-                className={classNames(projectcss.all, sty.svg)}
+                PlasmicIconType={
+                  hasVariant($state, "expanded", "expanded")
+                    ? LineXlSvgrepoComsvgIcon
+                    : BurgerSimpleSvgrepoComsvgIcon
+                }
+                className={classNames(projectcss.all, sty.svg, {
+                  [sty.svgexpanded]: hasVariant($state, "expanded", "expanded")
+                })}
                 role={"img"}
               />
             </div>

@@ -30,7 +30,7 @@
   height: auto;
   max-width: 100%;
   min-width: 0;
-  padding: 8px;
+  padding: 16px;
 }
 .freeBox__awoI9 {
   display: flex;
@@ -81,6 +81,7 @@
   font-size: var(--token-QCK7Rc7zH);
   color: var(--token-Y1kFl7CJ7);
   font-family: var(--token-murZRIrJA);
+  line-height: var(--token-fh3vEfQYh);
 }
 .freeBox__dFmZ3 {
   position: relative;
@@ -95,8 +96,8 @@
   font-size: var(--token-1iVBmJGwv);
   color: var(--token-Y1kFl7CJ7);
   font-family: var(--token-murZRIrJA);
-  line-height: 21px;
-  letter-spacing: 0.01em;
+  line-height: var(--token-iHG0XeWrr);
+  letter-spacing: -0.18px;
 }
 .freeBox__ppBiU {
   display: flex;
@@ -140,7 +141,7 @@
   position: absolute;
   left: 8px;
   top: 162px;
-  padding-left: 165px;
+  padding-left: 174px;
   padding-top: 32px;
   padding-bottom: 16px;
   display: none;
@@ -152,7 +153,7 @@
 .slotTargetChildren2 {
   font-size: 18px;
   color: var(--token-Y1kFl7CJ7);
-  font-family: "ABC Diatype";
-  line-height: 21px;
-  letter-spacing: 0.01em;
+  font-family: var(--token-murZRIrJA);
+  line-height: var(--token-iHG0XeWrr);
+  letter-spacing: -0.18px;
 }

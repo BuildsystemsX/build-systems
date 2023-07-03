@@ -25,6 +25,20 @@
   --plasmic-token-paragraph-medium: var(--token-1iVBmJGwv);
   --token-QCK7Rc7zH: 26px;
   --plasmic-token-paragraph-large: var(--token-QCK7Rc7zH);
+  --token-6GDvSmF-K: 45px;
+  --plasmic-token-subheader-h: var(--token-6GDvSmF-K);
+  --token-ud4wo3PCm: 28.6px;
+  --plasmic-token-normal-h: var(--token-ud4wo3PCm);
+  --token-TKjwOru-1: #ffffff;
+  --plasmic-token-build-white: var(--token-TKjwOru-1);
+  --token-RfG3rM2On: 24.2px;
+  --plasmic-token-small-h: var(--token-RfG3rM2On);
+  --token-fh3vEfQYh: 21px;
+  --plasmic-token-paragraph-large-h: var(--token-fh3vEfQYh);
+  --token-iHG0XeWrr: 19.8px;
+  --plasmic-token-paragraph-medium-h: var(--token-iHG0XeWrr);
+  --token-F2rqRnqW4: 36px;
+  --plasmic-token-paragraph-header-h: var(--token-F2rqRnqW4);
 }
 
 .plasmic_tokens {
@@ -45,7 +59,7 @@
   --mixin-On4OdmpvujpdJ_text-align: left;
   --mixin-On4OdmpvujpdJ_text-transform: none;
   --mixin-On4OdmpvujpdJ_line-height: 21px;
-  --mixin-On4OdmpvujpdJ_letter-spacing: 0.01em;
+  --mixin-On4OdmpvujpdJ_letter-spacing: -0.26px;
   --mixin-On4OdmpvujpdJ_white-space: pre-wrap;
   --mixin-On4OdmpvujpdJ_user-select: text;
   --mixin-On4OdmpvujpdJ_text-decoration-line: none;

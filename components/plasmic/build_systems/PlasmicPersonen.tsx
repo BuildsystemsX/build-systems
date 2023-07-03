@@ -37,6 +37,7 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import Menu from "../../Menu"; // plasmic-import: 5tZNLUygwX/component
+import BuildSystemsHeadline from "../../BuildSystemsHeadline"; // plasmic-import: k0tLqKtuC3/component
 import PersonBox from "../../PersonBox"; // plasmic-import: JED_FSQOoo/component
 import ImageFooter from "../../ImageFooter"; // plasmic-import: 7Stlw3wb0O/component
 
@@ -59,6 +60,7 @@ export const PlasmicPersonen__ArgProps = new Array<ArgPropType>();
 export type PlasmicPersonen__OverridesType = {
   root?: p.Flex<"div">;
   menu?: p.Flex<typeof Menu>;
+  buildSystemsHeadline?: p.Flex<typeof BuildSystemsHeadline>;
   imageFooter?: p.Flex<typeof ImageFooter>;
 };
 
@@ -166,40 +168,12 @@ function PlasmicPersonen__RenderFunc(props: {
               test={["personen"]}
             />
           </div>
-          {true ? (
-            <div
-              className={classNames(
-                projectcss.all,
-                sty.freeBox__a3Pcc,
-                "blend" as const
-              )}
-            >
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__zQdJg,
-                  "blend" as const
-                )}
-              >
-                {hasVariant(globalVariants, "screen", "mobile")
-                  ? "Build "
-                  : "Build"}
-              </div>
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__bbwxv,
-                  ``
-                )}
-              >
-                {hasVariant(globalVariants, "screen", "mobile")
-                  ? "Systems"
-                  : "Systems"}
-              </div>
-            </div>
-          ) : null}
+          <BuildSystemsHeadline
+            data-plasmic-name={"buildSystemsHeadline"}
+            data-plasmic-override={overrides.buildSystemsHeadline}
+            className={classNames("__wab_instance", sty.buildSystemsHeadline)}
+          />
+
           <div className={classNames(projectcss.all, sty.freeBox__riity)}>
             {true ? (
               <div className={classNames(projectcss.all, sty.freeBox__zN7O3)}>
@@ -334,8 +308,9 @@ function PlasmicPersonen__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "menu", "imageFooter"],
+  root: ["root", "menu", "buildSystemsHeadline", "imageFooter"],
   menu: ["menu"],
+  buildSystemsHeadline: ["buildSystemsHeadline"],
   imageFooter: ["imageFooter"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -344,6 +319,7 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   menu: typeof Menu;
+  buildSystemsHeadline: typeof BuildSystemsHeadline;
   imageFooter: typeof ImageFooter;
 };
 
@@ -408,6 +384,7 @@ export const PlasmicPersonen = Object.assign(
   {
     // Helper components rendering sub-elements
     menu: makeNodeComponent("menu"),
+    buildSystemsHeadline: makeNodeComponent("buildSystemsHeadline"),
     imageFooter: makeNodeComponent("imageFooter"),
 
     // Metadata about props expected for PlasmicPersonen

@@ -20,6 +20,9 @@
 }
 .rootplus {
   margin-left: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 4px;
 }
 .root:hover {
   background: var(--token-Sh0WEr6N-);
@@ -45,8 +48,8 @@
   font-size: var(--token-2m3Ogv_Oh);
   font-weight: 400;
   color: var(--token-gvQcXRBmf);
-  line-height: 100%;
-  letter-spacing: 0em;
+  line-height: var(--token-RfG3rM2On);
+  letter-spacing: -0.14px;
 }
 .root:hover .slotTargetChildren {
   color: var(--token-Y1kFl7CJ7);
