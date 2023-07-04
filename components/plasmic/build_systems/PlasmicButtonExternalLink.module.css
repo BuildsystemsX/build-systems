@@ -32,4 +32,5 @@
 .slotTargetChildren {
   font-family: var(--token-murZRIrJA);
   color: var(--token-gvQcXRBmf);
+  user-select: none;
 }

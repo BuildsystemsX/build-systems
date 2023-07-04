@@ -26,7 +26,7 @@
     grid-column: 4;
   }
 }
-.freeBox__yqGkF {
+.menuStack {
   display: flex;
   position: fixed;
   flex-direction: row;
@@ -37,7 +37,7 @@
   max-width: 100%;
   left: auto;
   top: 0;
-  z-index: 2;
+  z-index: 5;
   right: 0;
   justify-self: flex-start;
   padding: 8px;
@@ -51,12 +51,12 @@
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 1;
+  z-index: 5;
 }
 .freeBox__riity {
   background: none;
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   position: relative;
   top: auto;
@@ -69,6 +69,7 @@
   align-content: stretch;
   justify-content: space-between;
   flex-shrink: 1;
+  z-index: 1;
   grid-column-start: 1;
   grid-column-end: -1;
   padding: 0px 0px 0px 315px;
@@ -177,6 +178,7 @@
   align-content: stretch;
   justify-content: flex-start;
   flex-shrink: 1;
+  z-index: 2;
   grid-column-start: 1;
   grid-column-end: -1;
   min-height: 0;
@@ -255,4 +257,23 @@
 .imageFooter:global(.__wab_instance) {
   max-width: 100%;
   position: relative;
+  z-index: 3;
+}
+.hiderHeadlines {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 20vh;
+  max-width: 100%;
+  background: var(--token-gvQcXRBmf);
+  left: 0;
+  top: auto;
+  z-index: 1;
+  right: 0;
+  bottom: 0;
+  min-width: 0;
+  padding: 0px;
 }

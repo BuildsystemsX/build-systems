@@ -44,15 +44,11 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_build_systems.module.css"; // plasmic-import: jENqvBHbRPXMByDQmRe4G7/projectcss
 import sty from "./PlasmicBuildSystemsHeadline.module.css"; // plasmic-import: k0tLqKtuC3/css
 
-export type PlasmicBuildSystemsHeadline__VariantMembers = {
-  carousel: "unnamedVariant";
-};
-export type PlasmicBuildSystemsHeadline__VariantsArgs = {
-  carousel?: SingleChoiceArg<"unnamedVariant">;
-};
+export type PlasmicBuildSystemsHeadline__VariantMembers = {};
+export type PlasmicBuildSystemsHeadline__VariantsArgs = {};
 type VariantPropType = keyof PlasmicBuildSystemsHeadline__VariantsArgs;
 export const PlasmicBuildSystemsHeadline__VariantProps =
-  new Array<VariantPropType>("carousel");
+  new Array<VariantPropType>();
 
 export type PlasmicBuildSystemsHeadline__ArgsType = {};
 type ArgPropType = keyof PlasmicBuildSystemsHeadline__ArgsType;
@@ -63,7 +59,6 @@ export type PlasmicBuildSystemsHeadline__OverridesType = {
 };
 
 export interface DefaultBuildSystemsHeadlineProps {
-  carousel?: SingleChoiceArg<"unnamedVariant">;
   className?: string;
 }
 
@@ -104,19 +99,6 @@ function PlasmicBuildSystemsHeadline__RenderFunc(props: {
 
   const [$queries, setDollarQueries] = React.useState({});
 
-  const stateSpecs = React.useMemo(
-    () => [
-      {
-        path: "carousel",
-        type: "private",
-        variableType: "variant",
-        initFunc: ({ $props, $state, $queries, $ctx }) => $props.carousel
-      }
-    ],
-    [$props, $ctx]
-  );
-  const $state = p.useDollarState(stateSpecs, { $props, $ctx, $queries });
-
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsjnTclXkDzSl7V()
   });
@@ -135,313 +117,15 @@ function PlasmicBuildSystemsHeadline__RenderFunc(props: {
           projectcss.plasmic_mixins,
           projectcss.plasmic_tokens,
           sty.root,
-          "blend" as const,
-          {
-            [sty.rootcarousel_unnamedVariant]: hasVariant(
-              $state,
-              "carousel",
-              "unnamedVariant"
-            )
-          }
+          "blend" as const
         )}
-        onClick={async event => {
-          const $steps = {};
-          $steps["updateCarousel"] = true
-            ? (() => {
-                const actionArgs = {
-                  vgroup: __wrapUserFunction(
-                    {
-                      type: "InteractionArgLoc",
-                      actionName: "updateVariant",
-                      interactionUuid: "-5dRbqot5",
-                      componentUuid: "k0tLqKtuC3",
-                      argName: "vgroup"
-                    },
-                    () => "carousel"
-                  ),
-                  operation: __wrapUserFunction(
-                    {
-                      type: "InteractionArgLoc",
-                      actionName: "updateVariant",
-                      interactionUuid: "-5dRbqot5",
-                      componentUuid: "k0tLqKtuC3",
-                      argName: "operation"
-                    },
-                    () => 0
-                  ),
-                  value: __wrapUserFunction(
-                    {
-                      type: "InteractionArgLoc",
-                      actionName: "updateVariant",
-                      interactionUuid: "-5dRbqot5",
-                      componentUuid: "k0tLqKtuC3",
-                      argName: "value"
-                    },
-                    () => "unnamedVariant"
-                  )
-                };
-                return __wrapUserFunction(
-                  {
-                    type: "InteractionLoc",
-                    actionName: "updateVariant",
-                    interactionUuid: "-5dRbqot5",
-                    componentUuid: "k0tLqKtuC3"
-                  },
-                  () =>
-                    (({ vgroup, value }) => {
-                      if (typeof value === "string") {
-                        value = [value];
-                      }
-
-                      p.set($state, vgroup, value);
-                      return value;
-                    })?.apply(null, [actionArgs]),
-                  actionArgs
-                );
-              })()
-            : undefined;
-          if (
-            typeof $steps["updateCarousel"] === "object" &&
-            typeof $steps["updateCarousel"].then === "function"
-          ) {
-            $steps["updateCarousel"] = await __wrapUserPromise(
-              {
-                type: "InteractionLoc",
-                actionName: "updateVariant",
-                interactionUuid: "-5dRbqot5",
-                componentUuid: "k0tLqKtuC3"
-              },
-              $steps["updateCarousel"]
-            );
-          }
-        }}
-        onScroll={async event => {
-          const $steps = {};
-          $steps["updateCarousel"] = true
-            ? (() => {
-                const actionArgs = {
-                  vgroup: __wrapUserFunction(
-                    {
-                      type: "InteractionArgLoc",
-                      actionName: "updateVariant",
-                      interactionUuid: "rQZd8cN1d",
-                      componentUuid: "k0tLqKtuC3",
-                      argName: "vgroup"
-                    },
-                    () => "carousel"
-                  ),
-                  operation: __wrapUserFunction(
-                    {
-                      type: "InteractionArgLoc",
-                      actionName: "updateVariant",
-                      interactionUuid: "rQZd8cN1d",
-                      componentUuid: "k0tLqKtuC3",
-                      argName: "operation"
-                    },
-                    () => 0
-                  ),
-                  value: __wrapUserFunction(
-                    {
-                      type: "InteractionArgLoc",
-                      actionName: "updateVariant",
-                      interactionUuid: "rQZd8cN1d",
-                      componentUuid: "k0tLqKtuC3",
-                      argName: "value"
-                    },
-                    () => "unnamedVariant"
-                  )
-                };
-                return __wrapUserFunction(
-                  {
-                    type: "InteractionLoc",
-                    actionName: "updateVariant",
-                    interactionUuid: "rQZd8cN1d",
-                    componentUuid: "k0tLqKtuC3"
-                  },
-                  () =>
-                    (({ vgroup, value }) => {
-                      if (typeof value === "string") {
-                        value = [value];
-                      }
-
-                      p.set($state, vgroup, value);
-                      return value;
-                    })?.apply(null, [actionArgs]),
-                  actionArgs
-                );
-              })()
-            : undefined;
-          if (
-            typeof $steps["updateCarousel"] === "object" &&
-            typeof $steps["updateCarousel"].then === "function"
-          ) {
-            $steps["updateCarousel"] = await __wrapUserPromise(
-              {
-                type: "InteractionLoc",
-                actionName: "updateVariant",
-                interactionUuid: "rQZd8cN1d",
-                componentUuid: "k0tLqKtuC3"
-              },
-              $steps["updateCarousel"]
-            );
-          }
-        }}
-        onScrollCapture={async event => {
-          const $steps = {};
-          $steps["updateCarousel"] = true
-            ? (() => {
-                const actionArgs = {
-                  vgroup: __wrapUserFunction(
-                    {
-                      type: "InteractionArgLoc",
-                      actionName: "updateVariant",
-                      interactionUuid: "twuMbddZG",
-                      componentUuid: "k0tLqKtuC3",
-                      argName: "vgroup"
-                    },
-                    () => "carousel"
-                  ),
-                  operation: __wrapUserFunction(
-                    {
-                      type: "InteractionArgLoc",
-                      actionName: "updateVariant",
-                      interactionUuid: "twuMbddZG",
-                      componentUuid: "k0tLqKtuC3",
-                      argName: "operation"
-                    },
-                    () => 0
-                  ),
-                  value: __wrapUserFunction(
-                    {
-                      type: "InteractionArgLoc",
-                      actionName: "updateVariant",
-                      interactionUuid: "twuMbddZG",
-                      componentUuid: "k0tLqKtuC3",
-                      argName: "value"
-                    },
-                    () => "unnamedVariant"
-                  )
-                };
-                return __wrapUserFunction(
-                  {
-                    type: "InteractionLoc",
-                    actionName: "updateVariant",
-                    interactionUuid: "twuMbddZG",
-                    componentUuid: "k0tLqKtuC3"
-                  },
-                  () =>
-                    (({ vgroup, value }) => {
-                      if (typeof value === "string") {
-                        value = [value];
-                      }
-
-                      p.set($state, vgroup, value);
-                      return value;
-                    })?.apply(null, [actionArgs]),
-                  actionArgs
-                );
-              })()
-            : undefined;
-          if (
-            typeof $steps["updateCarousel"] === "object" &&
-            typeof $steps["updateCarousel"].then === "function"
-          ) {
-            $steps["updateCarousel"] = await __wrapUserPromise(
-              {
-                type: "InteractionLoc",
-                actionName: "updateVariant",
-                interactionUuid: "twuMbddZG",
-                componentUuid: "k0tLqKtuC3"
-              },
-              $steps["updateCarousel"]
-            );
-          }
-        }}
-        onWheel={async event => {
-          const $steps = {};
-          $steps["updateCarousel"] = true
-            ? (() => {
-                const actionArgs = {
-                  vgroup: __wrapUserFunction(
-                    {
-                      type: "InteractionArgLoc",
-                      actionName: "updateVariant",
-                      interactionUuid: "bDRC2jAsC",
-                      componentUuid: "k0tLqKtuC3",
-                      argName: "vgroup"
-                    },
-                    () => "carousel"
-                  ),
-                  operation: __wrapUserFunction(
-                    {
-                      type: "InteractionArgLoc",
-                      actionName: "updateVariant",
-                      interactionUuid: "bDRC2jAsC",
-                      componentUuid: "k0tLqKtuC3",
-                      argName: "operation"
-                    },
-                    () => 0
-                  ),
-                  value: __wrapUserFunction(
-                    {
-                      type: "InteractionArgLoc",
-                      actionName: "updateVariant",
-                      interactionUuid: "bDRC2jAsC",
-                      componentUuid: "k0tLqKtuC3",
-                      argName: "value"
-                    },
-                    () => "unnamedVariant"
-                  )
-                };
-                return __wrapUserFunction(
-                  {
-                    type: "InteractionLoc",
-                    actionName: "updateVariant",
-                    interactionUuid: "bDRC2jAsC",
-                    componentUuid: "k0tLqKtuC3"
-                  },
-                  () =>
-                    (({ vgroup, value }) => {
-                      if (typeof value === "string") {
-                        value = [value];
-                      }
-
-                      p.set($state, vgroup, value);
-                      return value;
-                    })?.apply(null, [actionArgs]),
-                  actionArgs
-                );
-              })()
-            : undefined;
-          if (
-            typeof $steps["updateCarousel"] === "object" &&
-            typeof $steps["updateCarousel"].then === "function"
-          ) {
-            $steps["updateCarousel"] = await __wrapUserPromise(
-              {
-                type: "InteractionLoc",
-                actionName: "updateVariant",
-                interactionUuid: "bDRC2jAsC",
-                componentUuid: "k0tLqKtuC3"
-              },
-              $steps["updateCarousel"]
-            );
-          }
-        }}
       >
         <div
           className={classNames(
             projectcss.all,
             projectcss.__wab_text,
             sty.text__hTv1W,
-            "blend" as const,
-            {
-              [sty.textcarousel_unnamedVariant__hTv1WGoNbo]: hasVariant(
-                $state,
-                "carousel",
-                "unnamedVariant"
-              )
-            }
+            "blend" as const
           )}
         >
           {hasVariant(globalVariants, "screen", "mobile") ? "Build " : "Build"}
@@ -451,14 +135,7 @@ function PlasmicBuildSystemsHeadline__RenderFunc(props: {
             projectcss.all,
             projectcss.__wab_text,
             sty.text___6XRo5,
-            ``,
-            {
-              [sty.textcarousel_unnamedVariant___6XRo5GoNbo]: hasVariant(
-                $state,
-                "carousel",
-                "unnamedVariant"
-              )
-            }
+            ``
           )}
         >
           {hasVariant(globalVariants, "screen", "mobile")

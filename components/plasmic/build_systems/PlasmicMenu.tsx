@@ -778,7 +778,13 @@ function PlasmicMenu__RenderFunc(props: {
             </div>
           ) : null}
           <div
-            className={classNames(projectcss.all, sty.freeBox__gn5HA)}
+            className={classNames(projectcss.all, sty.freeBox__gn5HA, {
+              [sty.freeBoxtest_services__gn5HA7Laf7]: hasVariant(
+                $state,
+                "test",
+                "services"
+              )
+            })}
             onClick={async event => {
               const $steps = {};
               $steps["updateStateVariable"] = true

@@ -6,7 +6,7 @@
   align-content: flex-start;
   justify-items: center;
   background: var(--token-gvQcXRBmf);
-  overflow: visible;
+  overflow: hidden;
   min-width: 0;
   min-height: 0;
   grid-template-columns:
@@ -25,9 +25,6 @@
   :where(.root > *) {
     grid-column: 4;
   }
-}
-.cover:global(.__wab_instance) {
-  position: relative;
 }
 .freeBox___332Cd {
   display: flex;

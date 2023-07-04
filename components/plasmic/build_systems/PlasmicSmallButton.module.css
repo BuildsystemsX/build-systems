@@ -50,6 +50,7 @@
   color: var(--token-gvQcXRBmf);
   line-height: var(--token-RfG3rM2On);
   letter-spacing: -0.14px;
+  user-select: none;
 }
 .root:hover .slotTargetChildren {
   color: var(--token-Y1kFl7CJ7);

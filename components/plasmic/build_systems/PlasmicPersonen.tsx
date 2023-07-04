@@ -59,9 +59,11 @@ export const PlasmicPersonen__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicPersonen__OverridesType = {
   root?: p.Flex<"div">;
+  menuStack?: p.Flex<"div">;
   menu?: p.Flex<typeof Menu>;
   buildSystemsHeadline?: p.Flex<typeof BuildSystemsHeadline>;
   imageFooter?: p.Flex<typeof ImageFooter>;
+  hiderHeadlines?: p.Flex<"div">;
 };
 
 export interface DefaultPersonenProps {}
@@ -160,7 +162,11 @@ function PlasmicPersonen__RenderFunc(props: {
             sty.root
           )}
         >
-          <div className={classNames(projectcss.all, sty.freeBox__yqGkF)}>
+          <div
+            data-plasmic-name={"menuStack"}
+            data-plasmic-override={overrides.menuStack}
+            className={classNames(projectcss.all, sty.menuStack)}
+          >
             <Menu
               data-plasmic-name={"menu"}
               data-plasmic-override={overrides.menu}
@@ -301,6 +307,12 @@ function PlasmicPersonen__RenderFunc(props: {
             data-plasmic-override={overrides.imageFooter}
             className={classNames("__wab_instance", sty.imageFooter)}
           />
+
+          <div
+            data-plasmic-name={"hiderHeadlines"}
+            data-plasmic-override={overrides.hiderHeadlines}
+            className={classNames(projectcss.all, sty.hiderHeadlines)}
+          />
         </div>
       </div>
     </React.Fragment>
@@ -308,19 +320,30 @@ function PlasmicPersonen__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "menu", "buildSystemsHeadline", "imageFooter"],
+  root: [
+    "root",
+    "menuStack",
+    "menu",
+    "buildSystemsHeadline",
+    "imageFooter",
+    "hiderHeadlines"
+  ],
+  menuStack: ["menuStack", "menu"],
   menu: ["menu"],
   buildSystemsHeadline: ["buildSystemsHeadline"],
-  imageFooter: ["imageFooter"]
+  imageFooter: ["imageFooter"],
+  hiderHeadlines: ["hiderHeadlines"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
+  menuStack: "div";
   menu: typeof Menu;
   buildSystemsHeadline: typeof BuildSystemsHeadline;
   imageFooter: typeof ImageFooter;
+  hiderHeadlines: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -383,9 +406,11 @@ export const PlasmicPersonen = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    menuStack: makeNodeComponent("menuStack"),
     menu: makeNodeComponent("menu"),
     buildSystemsHeadline: makeNodeComponent("buildSystemsHeadline"),
     imageFooter: makeNodeComponent("imageFooter"),
+    hiderHeadlines: makeNodeComponent("hiderHeadlines"),
 
     // Metadata about props expected for PlasmicPersonen
     internalVariantProps: PlasmicPersonen__VariantProps,

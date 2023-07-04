@@ -1,25 +1,53 @@
 .root {
   display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 120vh;
+  max-width: 100%;
+  overflow: auto;
+  min-width: 0;
+  padding: 8px;
+}
+.freeBox__fXbm {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 40vh;
+  max-width: 100%;
+  overflow-x: visible;
+  overflow-y: auto;
+  min-width: 0;
+  flex-shrink: 0;
+  padding: 0px;
+}
+.freeBox__ujo40 {
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 100vh;
+  width: 40vh;
+  height: 80vh;
   max-width: 100%;
-  position: relative;
-  grid-column-start: 1;
-  grid-column-end: -1;
-  padding: 8px;
+  overflow: hidden;
+  background: #611414;
+  flex-shrink: 0;
+  padding: 0px;
 }
-.rootcarousel_smart {
+.freeBoxcarousel_smart__ujo40Ras7R {
   align-items: center;
   justify-content: center;
 }
-.rootcarousel_sustainable {
+.freeBoxcarousel_sustainable__ujo40MfGii {
   align-items: center;
   justify-content: center;
 }
-.rootcarousel_systems {
+.freeBoxcarousel_systems__ujo40NbM {
   align-items: center;
   justify-content: center;
 }
@@ -30,7 +58,7 @@
   max-width: 100%;
   text-align: center;
   min-width: 0;
-  display: none;
+  display: block;
 }
 .textcarousel_smart__qJ50Bras7R {
   display: block;

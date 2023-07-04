@@ -36,7 +36,6 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
-import Cover from "../../Cover"; // plasmic-import: y8WKJEXfAa/component
 import Menu from "../../Menu"; // plasmic-import: 5tZNLUygwX/component
 import BuildSystemsHeadline from "../../BuildSystemsHeadline"; // plasmic-import: k0tLqKtuC3/component
 import SmallButton from "../../SmallButton"; // plasmic-import: jdWzZYnBO3/component
@@ -60,7 +59,6 @@ export const PlasmicHomepage2__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicHomepage2__OverridesType = {
   root?: p.Flex<"div">;
-  cover?: p.Flex<typeof Cover>;
   menu?: p.Flex<typeof Menu>;
   buildSystemsHeadline?: p.Flex<typeof BuildSystemsHeadline>;
   img?: p.Flex<typeof p.PlasmicImg>;
@@ -163,12 +161,6 @@ function PlasmicHomepage2__RenderFunc(props: {
             sty.root
           )}
         >
-          <Cover
-            data-plasmic-name={"cover"}
-            data-plasmic-override={overrides.cover}
-            className={classNames("__wab_instance", sty.cover)}
-          />
-
           <div className={classNames(projectcss.all, sty.freeBox___332Cd)}>
             <Menu
               data-plasmic-name={"menu"}
@@ -313,8 +305,7 @@ function PlasmicHomepage2__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "cover", "menu", "buildSystemsHeadline", "img", "footer"],
-  cover: ["cover"],
+  root: ["root", "menu", "buildSystemsHeadline", "img", "footer"],
   menu: ["menu"],
   buildSystemsHeadline: ["buildSystemsHeadline"],
   img: ["img"],
@@ -325,7 +316,6 @@ type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
-  cover: typeof Cover;
   menu: typeof Menu;
   buildSystemsHeadline: typeof BuildSystemsHeadline;
   img: typeof p.PlasmicImg;
@@ -392,7 +382,6 @@ export const PlasmicHomepage2 = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    cover: makeNodeComponent("cover"),
     menu: makeNodeComponent("menu"),
     buildSystemsHeadline: makeNodeComponent("buildSystemsHeadline"),
     img: makeNodeComponent("img"),

@@ -37,8 +37,8 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import Menu from "../../Menu"; // plasmic-import: 5tZNLUygwX/component
-import ImageFooter from "../../ImageFooter"; // plasmic-import: 7Stlw3wb0O/component
 import BuildSystemsHeadline from "../../BuildSystemsHeadline"; // plasmic-import: k0tLqKtuC3/component
+import ImageFooter from "../../ImageFooter"; // plasmic-import: 7Stlw3wb0O/component
 
 import { useScreenVariants as useScreenVariantsjnTclXkDzSl7V } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: jnTCLXkDZSl7V/globalVariant
 
@@ -58,9 +58,11 @@ export const PlasmicServices__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicServices__OverridesType = {
   root?: p.Flex<"div">;
+  menuStack?: p.Flex<"div">;
   menu?: p.Flex<typeof Menu>;
-  imageFooter?: p.Flex<typeof ImageFooter>;
   buildSystemsHeadline?: p.Flex<typeof BuildSystemsHeadline>;
+  imageFooter?: p.Flex<typeof ImageFooter>;
+  hiderHeadlines?: p.Flex<"div">;
 };
 
 export interface DefaultServicesProps {}
@@ -159,7 +161,11 @@ function PlasmicServices__RenderFunc(props: {
             sty.root
           )}
         >
-          <div className={classNames(projectcss.all, sty.freeBox__fegV8)}>
+          <div
+            data-plasmic-name={"menuStack"}
+            data-plasmic-override={overrides.menuStack}
+            className={classNames(projectcss.all, sty.menuStack)}
+          >
             <Menu
               data-plasmic-name={"menu"}
               data-plasmic-override={overrides.menu}
@@ -167,6 +173,12 @@ function PlasmicServices__RenderFunc(props: {
               test={["services"]}
             />
           </div>
+          <BuildSystemsHeadline
+            data-plasmic-name={"buildSystemsHeadline"}
+            data-plasmic-override={overrides.buildSystemsHeadline}
+            className={classNames("__wab_instance", sty.buildSystemsHeadline)}
+          />
+
           <div className={classNames(projectcss.all, sty.freeBox___12MOm)}>
             {true ? (
               <div className={classNames(projectcss.all, sty.freeBox__shUan)}>
@@ -184,9 +196,7 @@ function PlasmicServices__RenderFunc(props: {
               </div>
             ) : null}
           </div>
-          <div className={classNames(projectcss.all, sty.freeBox__wGxOd)} />
-
-          <div className={classNames(projectcss.all, sty.freeBox__wfs2Y)}>
+          <div className={classNames(projectcss.all, sty.freeBox__wGxOd)}>
             <div
               className={classNames(
                 projectcss.all,
@@ -196,6 +206,8 @@ function PlasmicServices__RenderFunc(props: {
             >
               {"beh\u00e4lt Bedarfe im Blick."}
             </div>
+          </div>
+          <div className={classNames(projectcss.all, sty.freeBox__wfs2Y)}>
             {true ? (
               <div className={classNames(projectcss.all, sty.freeBox__cjEXv)}>
                 <div
@@ -227,9 +239,7 @@ function PlasmicServices__RenderFunc(props: {
               </div>
             ) : null}
           </div>
-          <div className={classNames(projectcss.all, sty.freeBox__p9DFd)} />
-
-          <div className={classNames(projectcss.all, sty.freeBox__tjNMr)}>
+          <div className={classNames(projectcss.all, sty.freeBox__p9DFd)}>
             <div
               className={classNames(
                 projectcss.all,
@@ -239,6 +249,8 @@ function PlasmicServices__RenderFunc(props: {
             >
               {"arbeitet mit dezidierte Benchmarks die bew\u00e4hrt sind."}
             </div>
+          </div>
+          <div className={classNames(projectcss.all, sty.freeBox__tjNMr)}>
             {true ? (
               <div className={classNames(projectcss.all, sty.freeBox__onbqv)}>
                 <div className={classNames(projectcss.all, sty.freeBox__ysm2R)}>
@@ -269,9 +281,7 @@ function PlasmicServices__RenderFunc(props: {
               </div>
             ) : null}
           </div>
-          <div className={classNames(projectcss.all, sty.freeBox__hRhT)} />
-
-          <div className={classNames(projectcss.all, sty.freeBox___2S9Zv)}>
+          <div className={classNames(projectcss.all, sty.freeBox__hRhT)}>
             <div
               className={classNames(
                 projectcss.all,
@@ -281,6 +291,8 @@ function PlasmicServices__RenderFunc(props: {
             >
               {"erstellt Vordimensionierungen zu #Anlagentechnik."}
             </div>
+          </div>
+          <div className={classNames(projectcss.all, sty.freeBox___2S9Zv)}>
             {true ? (
               <div className={classNames(projectcss.all, sty.freeBox__aDpLn)}>
                 <div
@@ -314,9 +326,7 @@ function PlasmicServices__RenderFunc(props: {
               </div>
             ) : null}
           </div>
-          <div className={classNames(projectcss.all, sty.freeBox__ccPsu)} />
-
-          <div className={classNames(projectcss.all, sty.freeBox__cliNj)}>
+          <div className={classNames(projectcss.all, sty.freeBox__ccPsu)}>
             <div
               className={classNames(
                 projectcss.all,
@@ -326,6 +336,8 @@ function PlasmicServices__RenderFunc(props: {
             >
               {"steigerte durch abgestimmte Prozesse baulichen Mehrwert"}
             </div>
+          </div>
+          <div className={classNames(projectcss.all, sty.freeBox__cliNj)}>
             <div className={classNames(projectcss.all, sty.freeBox___8DGj8)} />
 
             {true ? (
@@ -439,10 +451,10 @@ function PlasmicServices__RenderFunc(props: {
             className={classNames("__wab_instance", sty.imageFooter)}
           />
 
-          <BuildSystemsHeadline
-            data-plasmic-name={"buildSystemsHeadline"}
-            data-plasmic-override={overrides.buildSystemsHeadline}
-            className={classNames("__wab_instance", sty.buildSystemsHeadline)}
+          <div
+            data-plasmic-name={"hiderHeadlines"}
+            data-plasmic-override={overrides.hiderHeadlines}
+            className={classNames(projectcss.all, sty.hiderHeadlines)}
           />
         </div>
       </div>
@@ -451,19 +463,30 @@ function PlasmicServices__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "menu", "imageFooter", "buildSystemsHeadline"],
+  root: [
+    "root",
+    "menuStack",
+    "menu",
+    "buildSystemsHeadline",
+    "imageFooter",
+    "hiderHeadlines"
+  ],
+  menuStack: ["menuStack", "menu"],
   menu: ["menu"],
+  buildSystemsHeadline: ["buildSystemsHeadline"],
   imageFooter: ["imageFooter"],
-  buildSystemsHeadline: ["buildSystemsHeadline"]
+  hiderHeadlines: ["hiderHeadlines"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
+  menuStack: "div";
   menu: typeof Menu;
-  imageFooter: typeof ImageFooter;
   buildSystemsHeadline: typeof BuildSystemsHeadline;
+  imageFooter: typeof ImageFooter;
+  hiderHeadlines: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -526,9 +549,11 @@ export const PlasmicServices = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    menuStack: makeNodeComponent("menuStack"),
     menu: makeNodeComponent("menu"),
-    imageFooter: makeNodeComponent("imageFooter"),
     buildSystemsHeadline: makeNodeComponent("buildSystemsHeadline"),
+    imageFooter: makeNodeComponent("imageFooter"),
+    hiderHeadlines: makeNodeComponent("hiderHeadlines"),
 
     // Metadata about props expected for PlasmicServices
     internalVariantProps: PlasmicServices__VariantProps,
