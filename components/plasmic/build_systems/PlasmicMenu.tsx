@@ -47,17 +47,17 @@ import BurgerSimpleSvgrepoComsvgIcon from "./icons/PlasmicIcon__BurgerSimpleSvgr
 import LineXlSvgrepoComsvgIcon from "./icons/PlasmicIcon__LineXlSvgrepoComsvg"; // plasmic-import: Nn_Pp4GgbS/icon
 
 export type PlasmicMenu__VariantMembers = {
-  test: "services" | "projekte" | "personen";
-  expanded: "expanded";
+  onSubSite: "services" | "projekte" | "personen";
+  expand: "expand";
 };
 export type PlasmicMenu__VariantsArgs = {
-  test?: MultiChoiceArg<"services" | "projekte" | "personen">;
-  expanded?: SingleBooleanChoiceArg<"expanded">;
+  onSubSite?: MultiChoiceArg<"services" | "projekte" | "personen">;
+  expand?: SingleBooleanChoiceArg<"expand">;
 };
 type VariantPropType = keyof PlasmicMenu__VariantsArgs;
 export const PlasmicMenu__VariantProps = new Array<VariantPropType>(
-  "test",
-  "expanded"
+  "onSubSite",
+  "expand"
 );
 
 export type PlasmicMenu__ArgsType = {};
@@ -67,6 +67,7 @@ export const PlasmicMenu__ArgProps = new Array<ArgPropType>();
 export type PlasmicMenu__OverridesType = {
   root?: p.Flex<"div">;
   start?: p.Flex<typeof MenuButton>;
+  text?: p.Flex<"div">;
   services?: p.Flex<typeof MenuButton>;
   projekte?: p.Flex<typeof MenuButton>;
   personen?: p.Flex<typeof MenuButton>;
@@ -74,8 +75,8 @@ export type PlasmicMenu__OverridesType = {
 };
 
 export interface DefaultMenuProps {
-  test?: MultiChoiceArg<"services" | "projekte" | "personen">;
-  expanded?: SingleBooleanChoiceArg<"expanded">;
+  onSubSite?: MultiChoiceArg<"services" | "projekte" | "personen">;
+  expand?: SingleBooleanChoiceArg<"expand">;
   className?: string;
 }
 
@@ -119,16 +120,16 @@ function PlasmicMenu__RenderFunc(props: {
   const stateSpecs = React.useMemo(
     () => [
       {
-        path: "test",
+        path: "onSubSite",
         type: "private",
         variableType: "variant",
-        initFunc: ({ $props, $state, $queries, $ctx }) => $props.test
+        initFunc: ({ $props, $state, $queries, $ctx }) => $props.onSubSite
       },
       {
-        path: "expanded",
+        path: "expand",
         type: "private",
         variableType: "variant",
-        initFunc: ({ $props, $state, $queries, $ctx }) => $props.expanded
+        initFunc: ({ $props, $state, $queries, $ctx }) => $props.expand
       }
     ],
     [$props, $ctx]
@@ -150,724 +151,160 @@ function PlasmicMenu__RenderFunc(props: {
           projectcss.plasmic_tokens,
           sty.root,
           {
-            [sty.rootexpanded]: hasVariant($state, "expanded", "expanded"),
-            [sty.roottest_personen]: hasVariant($state, "test", "personen"),
-            [sty.roottest_projekte]: hasVariant($state, "test", "projekte"),
-            [sty.roottest_services]: hasVariant($state, "test", "services")
-          }
-        )}
-      >
-        <div
-          className={classNames(projectcss.all, sty.freeBox__nVtRg, {
-            [sty.freeBoxexpanded__nVtRGhsN1X]: hasVariant(
+            [sty.rootexpand]: hasVariant($state, "expand", "expand"),
+            [sty.rootonSubSite_personen]: hasVariant(
               $state,
-              "expanded",
-              "expanded"
-            ),
-            [sty.freeBoxtest_personen__nVtRgUi3Mn]: hasVariant(
-              $state,
-              "test",
+              "onSubSite",
               "personen"
             ),
-            [sty.freeBoxtest_projekte__nVtRg0US2U]: hasVariant(
+            [sty.rootonSubSite_projekte]: hasVariant(
               $state,
-              "test",
+              "onSubSite",
               "projekte"
             ),
-            [sty.freeBoxtest_services__nVtRg7Laf7]: hasVariant(
+            [sty.rootonSubSite_services]: hasVariant(
               $state,
-              "test",
+              "onSubSite",
               "services"
             )
-          })}
-        >
-          {true ? (
-            <div
-              className={classNames(projectcss.all, sty.freeBox__zyI38, {
-                [sty.freeBoxexpanded__zyI38HsN1X]: hasVariant(
-                  $state,
-                  "expanded",
-                  "expanded"
-                ),
-                [sty.freeBoxtest_personen__zyI38Ui3Mn]: hasVariant(
-                  $state,
-                  "test",
-                  "personen"
-                ),
-                [sty.freeBoxtest_projekte__zyI380US2U]: hasVariant(
-                  $state,
-                  "test",
-                  "projekte"
-                ),
-                [sty.freeBoxtest_services__zyI387Laf7]: hasVariant(
-                  $state,
-                  "test",
-                  "services"
-                )
-              })}
-            >
-              <p.PlasmicLink
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  sty.link__tkhkd,
+          }
+        )}
+        onMouseLeave={async event => {
+          const $steps = {};
+          $steps["updateExpand"] = true
+            ? (() => {
+                const actionArgs = {
+                  vgroup: __wrapUserFunction(
+                    {
+                      type: "InteractionArgLoc",
+                      actionName: "updateVariant",
+                      interactionUuid: "40iWjAHdY",
+                      componentUuid: "5tZNLUygwX",
+                      argName: "vgroup"
+                    },
+                    () => "expand"
+                  ),
+                  operation: __wrapUserFunction(
+                    {
+                      type: "InteractionArgLoc",
+                      actionName: "updateVariant",
+                      interactionUuid: "40iWjAHdY",
+                      componentUuid: "5tZNLUygwX",
+                      argName: "operation"
+                    },
+                    () => 6
+                  )
+                };
+                return __wrapUserFunction(
                   {
-                    [sty.linkexpanded__tkhkdhsN1X]: hasVariant(
-                      $state,
-                      "expanded",
-                      "expanded"
-                    ),
-                    [sty.linktest_personen__tkhkdUi3Mn]: hasVariant(
-                      $state,
-                      "test",
-                      "personen"
-                    )
-                  }
-                )}
-                component={Link}
-                href={
-                  hasVariant($state, "expanded", "expanded")
-                    ? `/New`
-                    : undefined
-                }
-                onClick={async event => {
-                  const $steps = {};
-                  $steps["updateExpanded"] = true
-                    ? (() => {
-                        const actionArgs = {
-                          vgroup: __wrapUserFunction(
-                            {
-                              type: "InteractionArgLoc",
-                              actionName: "updateVariant",
-                              interactionUuid: "-m7R7WGR6",
-                              componentUuid: "5tZNLUygwX",
-                              argName: "vgroup"
-                            },
-                            () => "expanded"
-                          ),
-                          operation: __wrapUserFunction(
-                            {
-                              type: "InteractionArgLoc",
-                              actionName: "updateVariant",
-                              interactionUuid: "-m7R7WGR6",
-                              componentUuid: "5tZNLUygwX",
-                              argName: "operation"
-                            },
-                            () => 2
-                          )
-                        };
-                        return __wrapUserFunction(
-                          {
-                            type: "InteractionLoc",
-                            actionName: "updateVariant",
-                            interactionUuid: "-m7R7WGR6",
-                            componentUuid: "5tZNLUygwX"
-                          },
-                          () =>
-                            (({ vgroup, value }) => {
-                              if (typeof value === "string") {
-                                value = [value];
-                              }
+                    type: "InteractionLoc",
+                    actionName: "updateVariant",
+                    interactionUuid: "40iWjAHdY",
+                    componentUuid: "5tZNLUygwX"
+                  },
+                  () =>
+                    (({ vgroup, value }) => {
+                      if (typeof value === "string") {
+                        value = [value];
+                      }
 
-                              const oldValue = p.get($state, vgroup);
-                              p.set($state, vgroup, !oldValue);
-                              return !oldValue;
-                            })?.apply(null, [actionArgs]),
-                          actionArgs
-                        );
-                      })()
-                    : undefined;
-                  if (
-                    typeof $steps["updateExpanded"] === "object" &&
-                    typeof $steps["updateExpanded"].then === "function"
-                  ) {
-                    $steps["updateExpanded"] = await __wrapUserPromise(
-                      {
-                        type: "InteractionLoc",
-                        actionName: "updateVariant",
-                        interactionUuid: "-m7R7WGR6",
-                        componentUuid: "5tZNLUygwX"
-                      },
-                      $steps["updateExpanded"]
-                    );
-                  }
-                }}
-                platform={"nextjs"}
-              >
-                {(
-                  hasVariant($state, "expanded", "expanded")
-                    ? true
-                    : hasVariant($state, "test", "personen")
-                    ? true
-                    : hasVariant($state, "test", "projekte")
-                    ? true
-                    : hasVariant($state, "test", "services")
-                    ? true
-                    : true
-                ) ? (
-                  <MenuButton
-                    data-plasmic-name={"start"}
-                    data-plasmic-override={overrides.start}
-                    className={classNames("__wab_instance", sty.start, {
-                      [sty.startexpanded]: hasVariant(
-                        $state,
-                        "expanded",
-                        "expanded"
-                      ),
-                      [sty.starttest_personen]: hasVariant(
-                        $state,
-                        "test",
-                        "personen"
-                      ),
-                      [sty.starttest_projekte]: hasVariant(
-                        $state,
-                        "test",
-                        "projekte"
-                      ),
-                      [sty.starttest_services]: hasVariant(
-                        $state,
-                        "test",
-                        "services"
-                      )
-                    })}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__a0ZUk
-                      )}
-                    >
-                      {"Start"}
-                    </div>
-                  </MenuButton>
-                ) : null}
-              </p.PlasmicLink>
-              <p.PlasmicLink
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  sty.link__n149K,
-                  {
-                    [sty.linkexpanded__n149KhsN1X]: hasVariant(
-                      $state,
-                      "expanded",
-                      "expanded"
-                    )
-                  }
-                )}
-                component={Link}
-                href={
-                  hasVariant($state, "expanded", "expanded")
-                    ? `/services`
-                    : undefined
-                }
-                onClick={async event => {
-                  const $steps = {};
-                  $steps["updateExpanded"] = true
-                    ? (() => {
-                        const actionArgs = {
-                          vgroup: __wrapUserFunction(
-                            {
-                              type: "InteractionArgLoc",
-                              actionName: "updateVariant",
-                              interactionUuid: "BDiMWkbCC",
-                              componentUuid: "5tZNLUygwX",
-                              argName: "vgroup"
-                            },
-                            () => "expanded"
-                          ),
-                          operation: __wrapUserFunction(
-                            {
-                              type: "InteractionArgLoc",
-                              actionName: "updateVariant",
-                              interactionUuid: "BDiMWkbCC",
-                              componentUuid: "5tZNLUygwX",
-                              argName: "operation"
-                            },
-                            () => 2
-                          )
-                        };
-                        return __wrapUserFunction(
-                          {
-                            type: "InteractionLoc",
-                            actionName: "updateVariant",
-                            interactionUuid: "BDiMWkbCC",
-                            componentUuid: "5tZNLUygwX"
-                          },
-                          () =>
-                            (({ vgroup, value }) => {
-                              if (typeof value === "string") {
-                                value = [value];
-                              }
-
-                              const oldValue = p.get($state, vgroup);
-                              p.set($state, vgroup, !oldValue);
-                              return !oldValue;
-                            })?.apply(null, [actionArgs]),
-                          actionArgs
-                        );
-                      })()
-                    : undefined;
-                  if (
-                    typeof $steps["updateExpanded"] === "object" &&
-                    typeof $steps["updateExpanded"].then === "function"
-                  ) {
-                    $steps["updateExpanded"] = await __wrapUserPromise(
-                      {
-                        type: "InteractionLoc",
-                        actionName: "updateVariant",
-                        interactionUuid: "BDiMWkbCC",
-                        componentUuid: "5tZNLUygwX"
-                      },
-                      $steps["updateExpanded"]
-                    );
-                  }
-                }}
-                platform={"nextjs"}
-              >
-                {(
-                  hasVariant($state, "expanded", "expanded")
-                    ? true
-                    : hasVariant($state, "test", "personen")
-                    ? true
-                    : hasVariant($state, "test", "projekte")
-                    ? true
-                    : hasVariant($state, "test", "services")
-                    ? true
-                    : true
-                ) ? (
-                  <MenuButton
-                    data-plasmic-name={"services"}
-                    data-plasmic-override={overrides.services}
-                    className={classNames("__wab_instance", sty.services, {
-                      [sty.servicesexpanded]: hasVariant(
-                        $state,
-                        "expanded",
-                        "expanded"
-                      ),
-                      [sty.servicestest_personen]: hasVariant(
-                        $state,
-                        "test",
-                        "personen"
-                      ),
-                      [sty.servicestest_projekte]: hasVariant(
-                        $state,
-                        "test",
-                        "projekte"
-                      ),
-                      [sty.servicestest_services]: hasVariant(
-                        $state,
-                        "test",
-                        "services"
-                      )
-                    })}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__omAu,
-                        {
-                          [sty.textexpanded__omAuhsN1X]: hasVariant(
-                            $state,
-                            "expanded",
-                            "expanded"
-                          ),
-                          [sty.texttest_services__omAu7Laf7]: hasVariant(
-                            $state,
-                            "test",
-                            "services"
-                          )
-                        }
-                      )}
-                    >
-                      {"Services"}
-                    </div>
-                  </MenuButton>
-                ) : null}
-              </p.PlasmicLink>
-              <p.PlasmicLink
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  sty.link__qraVz,
-                  {
-                    [sty.linkexpanded__qraVzhsN1X]: hasVariant(
-                      $state,
-                      "expanded",
-                      "expanded"
-                    )
-                  }
-                )}
-                component={Link}
-                href={
-                  hasVariant($state, "expanded", "expanded")
-                    ? `/projekte`
-                    : undefined
-                }
-                onClick={async event => {
-                  const $steps = {};
-                  $steps["updateExpanded"] = true
-                    ? (() => {
-                        const actionArgs = {
-                          vgroup: __wrapUserFunction(
-                            {
-                              type: "InteractionArgLoc",
-                              actionName: "updateVariant",
-                              interactionUuid: "rTxFejjws",
-                              componentUuid: "5tZNLUygwX",
-                              argName: "vgroup"
-                            },
-                            () => "expanded"
-                          ),
-                          operation: __wrapUserFunction(
-                            {
-                              type: "InteractionArgLoc",
-                              actionName: "updateVariant",
-                              interactionUuid: "rTxFejjws",
-                              componentUuid: "5tZNLUygwX",
-                              argName: "operation"
-                            },
-                            () => 2
-                          )
-                        };
-                        return __wrapUserFunction(
-                          {
-                            type: "InteractionLoc",
-                            actionName: "updateVariant",
-                            interactionUuid: "rTxFejjws",
-                            componentUuid: "5tZNLUygwX"
-                          },
-                          () =>
-                            (({ vgroup, value }) => {
-                              if (typeof value === "string") {
-                                value = [value];
-                              }
-
-                              const oldValue = p.get($state, vgroup);
-                              p.set($state, vgroup, !oldValue);
-                              return !oldValue;
-                            })?.apply(null, [actionArgs]),
-                          actionArgs
-                        );
-                      })()
-                    : undefined;
-                  if (
-                    typeof $steps["updateExpanded"] === "object" &&
-                    typeof $steps["updateExpanded"].then === "function"
-                  ) {
-                    $steps["updateExpanded"] = await __wrapUserPromise(
-                      {
-                        type: "InteractionLoc",
-                        actionName: "updateVariant",
-                        interactionUuid: "rTxFejjws",
-                        componentUuid: "5tZNLUygwX"
-                      },
-                      $steps["updateExpanded"]
-                    );
-                  }
-                }}
-                platform={"nextjs"}
-              >
-                {(
-                  hasVariant($state, "expanded", "expanded")
-                    ? true
-                    : hasVariant($state, "test", "personen")
-                    ? true
-                    : hasVariant($state, "test", "projekte")
-                    ? true
-                    : hasVariant($state, "test", "services")
-                    ? true
-                    : true
-                ) ? (
-                  <MenuButton
-                    data-plasmic-name={"projekte"}
-                    data-plasmic-override={overrides.projekte}
-                    className={classNames("__wab_instance", sty.projekte, {
-                      [sty.projekteexpanded]: hasVariant(
-                        $state,
-                        "expanded",
-                        "expanded"
-                      ),
-                      [sty.projektetest_personen]: hasVariant(
-                        $state,
-                        "test",
-                        "personen"
-                      ),
-                      [sty.projektetest_projekte]: hasVariant(
-                        $state,
-                        "test",
-                        "projekte"
-                      ),
-                      [sty.projektetest_services]: hasVariant(
-                        $state,
-                        "test",
-                        "services"
-                      )
-                    })}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__owMXq,
-                        {
-                          [sty.textexpanded__owMXqhsN1X]: hasVariant(
-                            $state,
-                            "expanded",
-                            "expanded"
-                          )
-                        }
-                      )}
-                    >
-                      {"Projekte"}
-                    </div>
-                  </MenuButton>
-                ) : null}
-              </p.PlasmicLink>
-              <p.PlasmicLink
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  sty.link__h4FSf,
-                  {
-                    [sty.linkexpanded__h4FSfhsN1X]: hasVariant(
-                      $state,
-                      "expanded",
-                      "expanded"
-                    ),
-                    [sty.linktest_personen__h4FSfUi3Mn]: hasVariant(
-                      $state,
-                      "test",
-                      "personen"
-                    )
-                  }
-                )}
-                component={Link}
-                href={
-                  hasVariant($state, "expanded", "expanded")
-                    ? `/personen`
-                    : undefined
-                }
-                onClick={async event => {
-                  const $steps = {};
-                  $steps["updateExpanded"] = true
-                    ? (() => {
-                        const actionArgs = {
-                          vgroup: __wrapUserFunction(
-                            {
-                              type: "InteractionArgLoc",
-                              actionName: "updateVariant",
-                              interactionUuid: "d8TzXIrD2",
-                              componentUuid: "5tZNLUygwX",
-                              argName: "vgroup"
-                            },
-                            () => "expanded"
-                          ),
-                          operation: __wrapUserFunction(
-                            {
-                              type: "InteractionArgLoc",
-                              actionName: "updateVariant",
-                              interactionUuid: "d8TzXIrD2",
-                              componentUuid: "5tZNLUygwX",
-                              argName: "operation"
-                            },
-                            () => 2
-                          )
-                        };
-                        return __wrapUserFunction(
-                          {
-                            type: "InteractionLoc",
-                            actionName: "updateVariant",
-                            interactionUuid: "d8TzXIrD2",
-                            componentUuid: "5tZNLUygwX"
-                          },
-                          () =>
-                            (({ vgroup, value }) => {
-                              if (typeof value === "string") {
-                                value = [value];
-                              }
-
-                              const oldValue = p.get($state, vgroup);
-                              p.set($state, vgroup, !oldValue);
-                              return !oldValue;
-                            })?.apply(null, [actionArgs]),
-                          actionArgs
-                        );
-                      })()
-                    : undefined;
-                  if (
-                    typeof $steps["updateExpanded"] === "object" &&
-                    typeof $steps["updateExpanded"].then === "function"
-                  ) {
-                    $steps["updateExpanded"] = await __wrapUserPromise(
-                      {
-                        type: "InteractionLoc",
-                        actionName: "updateVariant",
-                        interactionUuid: "d8TzXIrD2",
-                        componentUuid: "5tZNLUygwX"
-                      },
-                      $steps["updateExpanded"]
-                    );
-                  }
-                }}
-                platform={"nextjs"}
-              >
-                {(
-                  hasVariant($state, "expanded", "expanded")
-                    ? true
-                    : hasVariant($state, "test", "personen")
-                    ? true
-                    : hasVariant($state, "test", "projekte")
-                    ? true
-                    : hasVariant($state, "test", "services")
-                    ? true
-                    : true
-                ) ? (
-                  <MenuButton
-                    data-plasmic-name={"personen"}
-                    data-plasmic-override={overrides.personen}
-                    className={classNames("__wab_instance", sty.personen, {
-                      [sty.personenexpanded]: hasVariant(
-                        $state,
-                        "expanded",
-                        "expanded"
-                      ),
-                      [sty.personentest_personen]: hasVariant(
-                        $state,
-                        "test",
-                        "personen"
-                      ),
-                      [sty.personentest_projekte]: hasVariant(
-                        $state,
-                        "test",
-                        "projekte"
-                      ),
-                      [sty.personentest_services]: hasVariant(
-                        $state,
-                        "test",
-                        "services"
-                      )
-                    })}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__fwoKn,
-                        {
-                          [sty.textexpanded__fwoKnhsN1X]: hasVariant(
-                            $state,
-                            "expanded",
-                            "expanded"
-                          ),
-                          [sty.texttest_personen__fwoKnUi3Mn]: hasVariant(
-                            $state,
-                            "test",
-                            "personen"
-                          )
-                        }
-                      )}
-                    >
-                      {"Personen"}
-                    </div>
-                  </MenuButton>
-                ) : null}
-              </p.PlasmicLink>
-            </div>
-          ) : null}
+                      p.set($state, vgroup, false);
+                      return false;
+                    })?.apply(null, [actionArgs]),
+                  actionArgs
+                );
+              })()
+            : undefined;
+          if (
+            typeof $steps["updateExpand"] === "object" &&
+            typeof $steps["updateExpand"].then === "function"
+          ) {
+            $steps["updateExpand"] = await __wrapUserPromise(
+              {
+                type: "InteractionLoc",
+                actionName: "updateVariant",
+                interactionUuid: "40iWjAHdY",
+                componentUuid: "5tZNLUygwX"
+              },
+              $steps["updateExpand"]
+            );
+          }
+        }}
+      >
+        {true ? (
           <div
-            className={classNames(projectcss.all, sty.freeBox__gn5HA, {
-              [sty.freeBoxtest_services__gn5HA7Laf7]: hasVariant(
+            className={classNames(projectcss.all, sty.freeBox__zyI38, {
+              [sty.freeBoxexpand__zyI38ByE14]: hasVariant(
                 $state,
-                "test",
+                "expand",
+                "expand"
+              ),
+              [sty.freeBoxonSubSite_personen__zyI38Ui3Mn]: hasVariant(
+                $state,
+                "onSubSite",
+                "personen"
+              ),
+              [sty.freeBoxonSubSite_projekte__zyI380US2U]: hasVariant(
+                $state,
+                "onSubSite",
+                "projekte"
+              ),
+              [sty.freeBoxonSubSite_services__zyI387Laf7]: hasVariant(
+                $state,
+                "onSubSite",
                 "services"
               )
             })}
-            onClick={async event => {
-              const $steps = {};
-              $steps["updateStateVariable"] = true
-                ? (() => {
-                    const actionArgs = {};
-                    return __wrapUserFunction(
-                      {
-                        type: "InteractionLoc",
-                        actionName: "updateVariable",
-                        interactionUuid: "GqCSh6tbG",
-                        componentUuid: "5tZNLUygwX"
-                      },
-                      () =>
-                        (({ variable, value, startIndex, deleteCount }) => {
-                          if (!variable) {
-                            return;
-                          }
-                          const { objRoot, variablePath } = variable;
-                          undefined;
-                        })?.apply(null, [actionArgs]),
-                      actionArgs
-                    );
-                  })()
-                : undefined;
-              if (
-                typeof $steps["updateStateVariable"] === "object" &&
-                typeof $steps["updateStateVariable"].then === "function"
-              ) {
-                $steps["updateStateVariable"] = await __wrapUserPromise(
-                  {
-                    type: "InteractionLoc",
-                    actionName: "updateVariable",
-                    interactionUuid: "GqCSh6tbG",
-                    componentUuid: "5tZNLUygwX"
-                  },
-                  $steps["updateStateVariable"]
-                );
-              }
-            }}
           >
-            <div
-              className={classNames(projectcss.all, sty.freeBox__ptCVk, {
-                [sty.freeBoxexpanded__ptCVkhsN1X]: hasVariant(
-                  $state,
-                  "expanded",
-                  "expanded"
-                ),
-                [sty.freeBoxtest_personen__ptCVkUi3Mn]: hasVariant(
-                  $state,
-                  "test",
-                  "personen"
-                ),
-                [sty.freeBoxtest_projekte__ptCVk0US2U]: hasVariant(
-                  $state,
-                  "test",
-                  "projekte"
-                ),
-                [sty.freeBoxtest_services__ptCVk7Laf7]: hasVariant(
-                  $state,
-                  "test",
-                  "services"
-                )
-              })}
+            <p.PlasmicLink
+              className={classNames(
+                projectcss.all,
+                projectcss.a,
+                sty.link__tkhkd,
+                {
+                  [sty.linkexpand__tkhkdByE14]: hasVariant(
+                    $state,
+                    "expand",
+                    "expand"
+                  ),
+                  [sty.linkonSubSite_personen__tkhkdUi3Mn]: hasVariant(
+                    $state,
+                    "onSubSite",
+                    "personen"
+                  ),
+                  [sty.linkonSubSite_projekte__tkhkd0US2U]: hasVariant(
+                    $state,
+                    "onSubSite",
+                    "projekte"
+                  ),
+                  [sty.linkonSubSite_services__tkhkd7Laf7]: hasVariant(
+                    $state,
+                    "onSubSite",
+                    "services"
+                  )
+                }
+              )}
+              component={Link}
               onClick={async event => {
                 const $steps = {};
-                $steps["updateServicesVariant"] = true
+                $steps["updateExpand"] = true
                   ? (() => {
                       const actionArgs = {
                         vgroup: __wrapUserFunction(
                           {
                             type: "InteractionArgLoc",
                             actionName: "updateVariant",
-                            interactionUuid: "yzY0AUoXw",
+                            interactionUuid: "-m7R7WGR6",
                             componentUuid: "5tZNLUygwX",
                             argName: "vgroup"
                           },
-                          () => "expanded"
+                          () => "expand"
                         ),
                         operation: __wrapUserFunction(
                           {
                             type: "InteractionArgLoc",
                             actionName: "updateVariant",
-                            interactionUuid: "yzY0AUoXw",
+                            interactionUuid: "-m7R7WGR6",
                             componentUuid: "5tZNLUygwX",
                             argName: "operation"
                           },
@@ -878,7 +315,7 @@ function PlasmicMenu__RenderFunc(props: {
                         {
                           type: "InteractionLoc",
                           actionName: "updateVariant",
-                          interactionUuid: "yzY0AUoXw",
+                          interactionUuid: "-m7R7WGR6",
                           componentUuid: "5tZNLUygwX"
                         },
                         () =>
@@ -896,35 +333,707 @@ function PlasmicMenu__RenderFunc(props: {
                     })()
                   : undefined;
                 if (
-                  typeof $steps["updateServicesVariant"] === "object" &&
-                  typeof $steps["updateServicesVariant"].then === "function"
+                  typeof $steps["updateExpand"] === "object" &&
+                  typeof $steps["updateExpand"].then === "function"
                 ) {
-                  $steps["updateServicesVariant"] = await __wrapUserPromise(
+                  $steps["updateExpand"] = await __wrapUserPromise(
                     {
                       type: "InteractionLoc",
                       actionName: "updateVariant",
-                      interactionUuid: "yzY0AUoXw",
+                      interactionUuid: "-m7R7WGR6",
                       componentUuid: "5tZNLUygwX"
                     },
-                    $steps["updateServicesVariant"]
+                    $steps["updateExpand"]
                   );
                 }
               }}
+              platform={"nextjs"}
             >
-              <p.PlasmicIcon
-                data-plasmic-name={"svg"}
-                data-plasmic-override={overrides.svg}
-                PlasmicIconType={
-                  hasVariant($state, "expanded", "expanded")
-                    ? LineXlSvgrepoComsvgIcon
-                    : BurgerSimpleSvgrepoComsvgIcon
+              {(
+                hasVariant($state, "onSubSite", "personen")
+                  ? true
+                  : hasVariant($state, "onSubSite", "projekte")
+                  ? true
+                  : hasVariant($state, "onSubSite", "services")
+                  ? true
+                  : true
+              ) ? (
+                <MenuButton
+                  data-plasmic-name={"start"}
+                  data-plasmic-override={overrides.start}
+                  className={classNames("__wab_instance", sty.start, {
+                    [sty.startexpand]: hasVariant($state, "expand", "expand"),
+                    [sty.startonSubSite_personen]: hasVariant(
+                      $state,
+                      "onSubSite",
+                      "personen"
+                    ),
+                    [sty.startonSubSite_projekte]: hasVariant(
+                      $state,
+                      "onSubSite",
+                      "projekte"
+                    ),
+                    [sty.startonSubSite_services]: hasVariant(
+                      $state,
+                      "onSubSite",
+                      "services"
+                    )
+                  })}
+                >
+                  <div
+                    data-plasmic-name={"text"}
+                    data-plasmic-override={overrides.text}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text
+                    )}
+                  >
+                    {"Start"}
+                  </div>
+                </MenuButton>
+              ) : null}
+            </p.PlasmicLink>
+            <p.PlasmicLink
+              className={classNames(
+                projectcss.all,
+                projectcss.a,
+                sty.link__n149K,
+                {
+                  [sty.linkexpand__n149KByE14]: hasVariant(
+                    $state,
+                    "expand",
+                    "expand"
+                  ),
+                  [sty.linkonSubSite_personen__n149KUi3Mn]: hasVariant(
+                    $state,
+                    "onSubSite",
+                    "personen"
+                  ),
+                  [sty.linkonSubSite_projekte__n149K0US2U]: hasVariant(
+                    $state,
+                    "onSubSite",
+                    "projekte"
+                  ),
+                  [sty.linkonSubSite_services__n149K7Laf7]: hasVariant(
+                    $state,
+                    "onSubSite",
+                    "services"
+                  )
                 }
-                className={classNames(projectcss.all, sty.svg, {
-                  [sty.svgexpanded]: hasVariant($state, "expanded", "expanded")
-                })}
-                role={"img"}
-              />
-            </div>
+              )}
+              component={Link}
+              onClick={async event => {
+                const $steps = {};
+                $steps["updateExpand"] = true
+                  ? (() => {
+                      const actionArgs = {
+                        vgroup: __wrapUserFunction(
+                          {
+                            type: "InteractionArgLoc",
+                            actionName: "updateVariant",
+                            interactionUuid: "BDiMWkbCC",
+                            componentUuid: "5tZNLUygwX",
+                            argName: "vgroup"
+                          },
+                          () => "expand"
+                        ),
+                        operation: __wrapUserFunction(
+                          {
+                            type: "InteractionArgLoc",
+                            actionName: "updateVariant",
+                            interactionUuid: "BDiMWkbCC",
+                            componentUuid: "5tZNLUygwX",
+                            argName: "operation"
+                          },
+                          () => 2
+                        )
+                      };
+                      return __wrapUserFunction(
+                        {
+                          type: "InteractionLoc",
+                          actionName: "updateVariant",
+                          interactionUuid: "BDiMWkbCC",
+                          componentUuid: "5tZNLUygwX"
+                        },
+                        () =>
+                          (({ vgroup, value }) => {
+                            if (typeof value === "string") {
+                              value = [value];
+                            }
+
+                            const oldValue = p.get($state, vgroup);
+                            p.set($state, vgroup, !oldValue);
+                            return !oldValue;
+                          })?.apply(null, [actionArgs]),
+                        actionArgs
+                      );
+                    })()
+                  : undefined;
+                if (
+                  typeof $steps["updateExpand"] === "object" &&
+                  typeof $steps["updateExpand"].then === "function"
+                ) {
+                  $steps["updateExpand"] = await __wrapUserPromise(
+                    {
+                      type: "InteractionLoc",
+                      actionName: "updateVariant",
+                      interactionUuid: "BDiMWkbCC",
+                      componentUuid: "5tZNLUygwX"
+                    },
+                    $steps["updateExpand"]
+                  );
+                }
+                $steps["goToServices"] = true
+                  ? (() => {
+                      const actionArgs = {
+                        destination: __wrapUserFunction(
+                          {
+                            type: "InteractionArgLoc",
+                            actionName: "navigation",
+                            interactionUuid: "EJLeqhi4-",
+                            componentUuid: "5tZNLUygwX",
+                            argName: "destination"
+                          },
+                          () => `/services`
+                        )
+                      };
+                      return __wrapUserFunction(
+                        {
+                          type: "InteractionLoc",
+                          actionName: "navigation",
+                          interactionUuid: "EJLeqhi4-",
+                          componentUuid: "5tZNLUygwX"
+                        },
+                        () =>
+                          (({ destination }) => {
+                            __nextRouter?.push(destination);
+                          })?.apply(null, [actionArgs]),
+                        actionArgs
+                      );
+                    })()
+                  : undefined;
+                if (
+                  typeof $steps["goToServices"] === "object" &&
+                  typeof $steps["goToServices"].then === "function"
+                ) {
+                  $steps["goToServices"] = await __wrapUserPromise(
+                    {
+                      type: "InteractionLoc",
+                      actionName: "navigation",
+                      interactionUuid: "EJLeqhi4-",
+                      componentUuid: "5tZNLUygwX"
+                    },
+                    $steps["goToServices"]
+                  );
+                }
+              }}
+              platform={"nextjs"}
+            >
+              {(
+                hasVariant($state, "onSubSite", "personen")
+                  ? true
+                  : hasVariant($state, "onSubSite", "projekte")
+                  ? true
+                  : hasVariant($state, "onSubSite", "services")
+                  ? true
+                  : true
+              ) ? (
+                <MenuButton
+                  data-plasmic-name={"services"}
+                  data-plasmic-override={overrides.services}
+                  className={classNames("__wab_instance", sty.services, {
+                    [sty.servicesexpand]: hasVariant(
+                      $state,
+                      "expand",
+                      "expand"
+                    ),
+                    [sty.servicesonSubSite_personen]: hasVariant(
+                      $state,
+                      "onSubSite",
+                      "personen"
+                    ),
+                    [sty.servicesonSubSite_projekte]: hasVariant(
+                      $state,
+                      "onSubSite",
+                      "projekte"
+                    ),
+                    [sty.servicesonSubSite_services]: hasVariant(
+                      $state,
+                      "onSubSite",
+                      "services"
+                    )
+                  })}
+                >
+                  {"Services"}
+                </MenuButton>
+              ) : null}
+            </p.PlasmicLink>
+            <p.PlasmicLink
+              className={classNames(
+                projectcss.all,
+                projectcss.a,
+                sty.link__qraVz,
+                {
+                  [sty.linkexpand__qraVzByE14]: hasVariant(
+                    $state,
+                    "expand",
+                    "expand"
+                  ),
+                  [sty.linkonSubSite_personen__qraVzUi3Mn]: hasVariant(
+                    $state,
+                    "onSubSite",
+                    "personen"
+                  ),
+                  [sty.linkonSubSite_projekte__qraVz0US2U]: hasVariant(
+                    $state,
+                    "onSubSite",
+                    "projekte"
+                  ),
+                  [sty.linkonSubSite_services__qraVz7Laf7]: hasVariant(
+                    $state,
+                    "onSubSite",
+                    "services"
+                  )
+                }
+              )}
+              component={Link}
+              onClick={async event => {
+                const $steps = {};
+                $steps["updateExpand"] = true
+                  ? (() => {
+                      const actionArgs = {
+                        vgroup: __wrapUserFunction(
+                          {
+                            type: "InteractionArgLoc",
+                            actionName: "updateVariant",
+                            interactionUuid: "rTxFejjws",
+                            componentUuid: "5tZNLUygwX",
+                            argName: "vgroup"
+                          },
+                          () => "expand"
+                        ),
+                        operation: __wrapUserFunction(
+                          {
+                            type: "InteractionArgLoc",
+                            actionName: "updateVariant",
+                            interactionUuid: "rTxFejjws",
+                            componentUuid: "5tZNLUygwX",
+                            argName: "operation"
+                          },
+                          () => 2
+                        )
+                      };
+                      return __wrapUserFunction(
+                        {
+                          type: "InteractionLoc",
+                          actionName: "updateVariant",
+                          interactionUuid: "rTxFejjws",
+                          componentUuid: "5tZNLUygwX"
+                        },
+                        () =>
+                          (({ vgroup, value }) => {
+                            if (typeof value === "string") {
+                              value = [value];
+                            }
+
+                            const oldValue = p.get($state, vgroup);
+                            p.set($state, vgroup, !oldValue);
+                            return !oldValue;
+                          })?.apply(null, [actionArgs]),
+                        actionArgs
+                      );
+                    })()
+                  : undefined;
+                if (
+                  typeof $steps["updateExpand"] === "object" &&
+                  typeof $steps["updateExpand"].then === "function"
+                ) {
+                  $steps["updateExpand"] = await __wrapUserPromise(
+                    {
+                      type: "InteractionLoc",
+                      actionName: "updateVariant",
+                      interactionUuid: "rTxFejjws",
+                      componentUuid: "5tZNLUygwX"
+                    },
+                    $steps["updateExpand"]
+                  );
+                }
+                $steps["goToProjekte"] = true
+                  ? (() => {
+                      const actionArgs = {
+                        destination: __wrapUserFunction(
+                          {
+                            type: "InteractionArgLoc",
+                            actionName: "navigation",
+                            interactionUuid: "7mcWyN_1q",
+                            componentUuid: "5tZNLUygwX",
+                            argName: "destination"
+                          },
+                          () => `/projekte`
+                        )
+                      };
+                      return __wrapUserFunction(
+                        {
+                          type: "InteractionLoc",
+                          actionName: "navigation",
+                          interactionUuid: "7mcWyN_1q",
+                          componentUuid: "5tZNLUygwX"
+                        },
+                        () =>
+                          (({ destination }) => {
+                            __nextRouter?.push(destination);
+                          })?.apply(null, [actionArgs]),
+                        actionArgs
+                      );
+                    })()
+                  : undefined;
+                if (
+                  typeof $steps["goToProjekte"] === "object" &&
+                  typeof $steps["goToProjekte"].then === "function"
+                ) {
+                  $steps["goToProjekte"] = await __wrapUserPromise(
+                    {
+                      type: "InteractionLoc",
+                      actionName: "navigation",
+                      interactionUuid: "7mcWyN_1q",
+                      componentUuid: "5tZNLUygwX"
+                    },
+                    $steps["goToProjekte"]
+                  );
+                }
+              }}
+              platform={"nextjs"}
+            >
+              {(
+                hasVariant($state, "onSubSite", "personen")
+                  ? true
+                  : hasVariant($state, "onSubSite", "projekte")
+                  ? true
+                  : hasVariant($state, "onSubSite", "services")
+                  ? true
+                  : true
+              ) ? (
+                <MenuButton
+                  data-plasmic-name={"projekte"}
+                  data-plasmic-override={overrides.projekte}
+                  className={classNames("__wab_instance", sty.projekte, {
+                    [sty.projekteonSubSite_personen]: hasVariant(
+                      $state,
+                      "onSubSite",
+                      "personen"
+                    ),
+                    [sty.projekteonSubSite_projekte]: hasVariant(
+                      $state,
+                      "onSubSite",
+                      "projekte"
+                    ),
+                    [sty.projekteonSubSite_services]: hasVariant(
+                      $state,
+                      "onSubSite",
+                      "services"
+                    )
+                  })}
+                >
+                  {"Projekte"}
+                </MenuButton>
+              ) : null}
+            </p.PlasmicLink>
+            <p.PlasmicLink
+              className={classNames(
+                projectcss.all,
+                projectcss.a,
+                sty.link__h4FSf,
+                {
+                  [sty.linkexpand__h4FSfByE14]: hasVariant(
+                    $state,
+                    "expand",
+                    "expand"
+                  ),
+                  [sty.linkonSubSite_personen__h4FSfUi3Mn]: hasVariant(
+                    $state,
+                    "onSubSite",
+                    "personen"
+                  ),
+                  [sty.linkonSubSite_projekte__h4FSf0US2U]: hasVariant(
+                    $state,
+                    "onSubSite",
+                    "projekte"
+                  ),
+                  [sty.linkonSubSite_services__h4FSf7Laf7]: hasVariant(
+                    $state,
+                    "onSubSite",
+                    "services"
+                  )
+                }
+              )}
+              component={Link}
+              onClick={async event => {
+                const $steps = {};
+                $steps["updateExpand"] = true
+                  ? (() => {
+                      const actionArgs = {
+                        vgroup: __wrapUserFunction(
+                          {
+                            type: "InteractionArgLoc",
+                            actionName: "updateVariant",
+                            interactionUuid: "d8TzXIrD2",
+                            componentUuid: "5tZNLUygwX",
+                            argName: "vgroup"
+                          },
+                          () => "expand"
+                        ),
+                        operation: __wrapUserFunction(
+                          {
+                            type: "InteractionArgLoc",
+                            actionName: "updateVariant",
+                            interactionUuid: "d8TzXIrD2",
+                            componentUuid: "5tZNLUygwX",
+                            argName: "operation"
+                          },
+                          () => 2
+                        )
+                      };
+                      return __wrapUserFunction(
+                        {
+                          type: "InteractionLoc",
+                          actionName: "updateVariant",
+                          interactionUuid: "d8TzXIrD2",
+                          componentUuid: "5tZNLUygwX"
+                        },
+                        () =>
+                          (({ vgroup, value }) => {
+                            if (typeof value === "string") {
+                              value = [value];
+                            }
+
+                            const oldValue = p.get($state, vgroup);
+                            p.set($state, vgroup, !oldValue);
+                            return !oldValue;
+                          })?.apply(null, [actionArgs]),
+                        actionArgs
+                      );
+                    })()
+                  : undefined;
+                if (
+                  typeof $steps["updateExpand"] === "object" &&
+                  typeof $steps["updateExpand"].then === "function"
+                ) {
+                  $steps["updateExpand"] = await __wrapUserPromise(
+                    {
+                      type: "InteractionLoc",
+                      actionName: "updateVariant",
+                      interactionUuid: "d8TzXIrD2",
+                      componentUuid: "5tZNLUygwX"
+                    },
+                    $steps["updateExpand"]
+                  );
+                }
+                $steps["goToPersonen"] = true
+                  ? (() => {
+                      const actionArgs = {
+                        destination: __wrapUserFunction(
+                          {
+                            type: "InteractionArgLoc",
+                            actionName: "navigation",
+                            interactionUuid: "84G1hXrmh",
+                            componentUuid: "5tZNLUygwX",
+                            argName: "destination"
+                          },
+                          () => `/personen`
+                        )
+                      };
+                      return __wrapUserFunction(
+                        {
+                          type: "InteractionLoc",
+                          actionName: "navigation",
+                          interactionUuid: "84G1hXrmh",
+                          componentUuid: "5tZNLUygwX"
+                        },
+                        () =>
+                          (({ destination }) => {
+                            __nextRouter?.push(destination);
+                          })?.apply(null, [actionArgs]),
+                        actionArgs
+                      );
+                    })()
+                  : undefined;
+                if (
+                  typeof $steps["goToPersonen"] === "object" &&
+                  typeof $steps["goToPersonen"].then === "function"
+                ) {
+                  $steps["goToPersonen"] = await __wrapUserPromise(
+                    {
+                      type: "InteractionLoc",
+                      actionName: "navigation",
+                      interactionUuid: "84G1hXrmh",
+                      componentUuid: "5tZNLUygwX"
+                    },
+                    $steps["goToPersonen"]
+                  );
+                }
+              }}
+              platform={"nextjs"}
+            >
+              {(
+                hasVariant($state, "onSubSite", "personen")
+                  ? true
+                  : hasVariant($state, "onSubSite", "projekte")
+                  ? true
+                  : hasVariant($state, "onSubSite", "services")
+                  ? true
+                  : true
+              ) ? (
+                <MenuButton
+                  data-plasmic-name={"personen"}
+                  data-plasmic-override={overrides.personen}
+                  className={classNames("__wab_instance", sty.personen, {
+                    [sty.personenonSubSite_personen]: hasVariant(
+                      $state,
+                      "onSubSite",
+                      "personen"
+                    ),
+                    [sty.personenonSubSite_projekte]: hasVariant(
+                      $state,
+                      "onSubSite",
+                      "projekte"
+                    ),
+                    [sty.personenonSubSite_services]: hasVariant(
+                      $state,
+                      "onSubSite",
+                      "services"
+                    )
+                  })}
+                >
+                  {"Personen"}
+                </MenuButton>
+              ) : null}
+            </p.PlasmicLink>
+          </div>
+        ) : null}
+        <div
+          className={classNames(projectcss.all, sty.freeBox__gn5HA, {
+            [sty.freeBoxexpand__gn5HAByE14]: hasVariant(
+              $state,
+              "expand",
+              "expand"
+            ),
+            [sty.freeBoxonSubSite_personen__gn5HAUi3Mn]: hasVariant(
+              $state,
+              "onSubSite",
+              "personen"
+            ),
+            [sty.freeBoxonSubSite_projekte__gn5HA0US2U]: hasVariant(
+              $state,
+              "onSubSite",
+              "projekte"
+            ),
+            [sty.freeBoxonSubSite_services__gn5HA7Laf7]: hasVariant(
+              $state,
+              "onSubSite",
+              "services"
+            )
+          })}
+        >
+          <div
+            className={classNames(projectcss.all, sty.freeBox__ptCVk, {
+              [sty.freeBoxexpand__ptCVkByE14]: hasVariant(
+                $state,
+                "expand",
+                "expand"
+              ),
+              [sty.freeBoxonSubSite_personen__ptCVkUi3Mn]: hasVariant(
+                $state,
+                "onSubSite",
+                "personen"
+              ),
+              [sty.freeBoxonSubSite_projekte__ptCVk0US2U]: hasVariant(
+                $state,
+                "onSubSite",
+                "projekte"
+              ),
+              [sty.freeBoxonSubSite_services__ptCVk7Laf7]: hasVariant(
+                $state,
+                "onSubSite",
+                "services"
+              )
+            })}
+            onClick={async event => {
+              const $steps = {};
+              $steps["updateServicesVariant"] = true
+                ? (() => {
+                    const actionArgs = {
+                      vgroup: __wrapUserFunction(
+                        {
+                          type: "InteractionArgLoc",
+                          actionName: "updateVariant",
+                          interactionUuid: "yzY0AUoXw",
+                          componentUuid: "5tZNLUygwX",
+                          argName: "vgroup"
+                        },
+                        () => "expand"
+                      ),
+                      operation: __wrapUserFunction(
+                        {
+                          type: "InteractionArgLoc",
+                          actionName: "updateVariant",
+                          interactionUuid: "yzY0AUoXw",
+                          componentUuid: "5tZNLUygwX",
+                          argName: "operation"
+                        },
+                        () => 2
+                      )
+                    };
+                    return __wrapUserFunction(
+                      {
+                        type: "InteractionLoc",
+                        actionName: "updateVariant",
+                        interactionUuid: "yzY0AUoXw",
+                        componentUuid: "5tZNLUygwX"
+                      },
+                      () =>
+                        (({ vgroup, value }) => {
+                          if (typeof value === "string") {
+                            value = [value];
+                          }
+
+                          const oldValue = p.get($state, vgroup);
+                          p.set($state, vgroup, !oldValue);
+                          return !oldValue;
+                        })?.apply(null, [actionArgs]),
+                      actionArgs
+                    );
+                  })()
+                : undefined;
+              if (
+                typeof $steps["updateServicesVariant"] === "object" &&
+                typeof $steps["updateServicesVariant"].then === "function"
+              ) {
+                $steps["updateServicesVariant"] = await __wrapUserPromise(
+                  {
+                    type: "InteractionLoc",
+                    actionName: "updateVariant",
+                    interactionUuid: "yzY0AUoXw",
+                    componentUuid: "5tZNLUygwX"
+                  },
+                  $steps["updateServicesVariant"]
+                );
+              }
+            }}
+          >
+            <p.PlasmicIcon
+              data-plasmic-name={"svg"}
+              data-plasmic-override={overrides.svg}
+              PlasmicIconType={
+                hasVariant($state, "expand", "expand")
+                  ? LineXlSvgrepoComsvgIcon
+                  : BurgerSimpleSvgrepoComsvgIcon
+              }
+              className={classNames(projectcss.all, sty.svg, {
+                [sty.svgexpand]: hasVariant($state, "expand", "expand")
+              })}
+              role={"img"}
+            />
           </div>
         </div>
       </div>
@@ -933,8 +1042,9 @@ function PlasmicMenu__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "start", "services", "projekte", "personen", "svg"],
-  start: ["start"],
+  root: ["root", "start", "text", "services", "projekte", "personen", "svg"],
+  start: ["start", "text"],
+  text: ["text"],
   services: ["services"],
   projekte: ["projekte"],
   personen: ["personen"],
@@ -946,6 +1056,7 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   start: typeof MenuButton;
+  text: "div";
   services: typeof MenuButton;
   projekte: typeof MenuButton;
   personen: typeof MenuButton;
@@ -1013,6 +1124,7 @@ export const PlasmicMenu = Object.assign(
   {
     // Helper components rendering sub-elements
     start: makeNodeComponent("start"),
+    text: makeNodeComponent("text"),
     services: makeNodeComponent("services"),
     projekte: makeNodeComponent("projekte"),
     personen: makeNodeComponent("personen"),

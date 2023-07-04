@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   width: auto;
-  background: #ffffff;
+  background: var(--token-115P4K5E6);
   cursor: pointer;
   position: relative;
   height: auto;

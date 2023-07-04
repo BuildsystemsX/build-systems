@@ -36,6 +36,7 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
+import BuildSystemsHeadline from "../../BuildSystemsHeadline"; // plasmic-import: k0tLqKtuC3/component
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -43,15 +44,13 @@ import projectcss from "./plasmic_build_systems.module.css"; // plasmic-import: 
 import sty from "./PlasmicCover.module.css"; // plasmic-import: y8WKJEXfAa/css
 
 export type PlasmicCover__VariantMembers = {
-  carousel: "smart" | "sustainable" | "systems";
+  scroll2: "scroll2";
 };
 export type PlasmicCover__VariantsArgs = {
-  carousel?: SingleChoiceArg<"smart" | "sustainable" | "systems">;
+  scroll2?: SingleBooleanChoiceArg<"scroll2">;
 };
 type VariantPropType = keyof PlasmicCover__VariantsArgs;
-export const PlasmicCover__VariantProps = new Array<VariantPropType>(
-  "carousel"
-);
+export const PlasmicCover__VariantProps = new Array<VariantPropType>("scroll2");
 
 export type PlasmicCover__ArgsType = {};
 type ArgPropType = keyof PlasmicCover__ArgsType;
@@ -59,10 +58,11 @@ export const PlasmicCover__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicCover__OverridesType = {
   root?: p.Flex<"div">;
+  buildSystemsHeadline?: p.Flex<typeof BuildSystemsHeadline>;
 };
 
 export interface DefaultCoverProps {
-  carousel?: SingleChoiceArg<"smart" | "sustainable" | "systems">;
+  scroll2?: SingleBooleanChoiceArg<"scroll2">;
   className?: string;
 }
 
@@ -106,10 +106,10 @@ function PlasmicCover__RenderFunc(props: {
   const stateSpecs = React.useMemo(
     () => [
       {
-        path: "carousel",
+        path: "scroll2",
         type: "private",
         variableType: "variant",
-        initFunc: ({ $props, $state, $queries, $ctx }) => $props.carousel
+        initFunc: ({ $props, $state, $queries, $ctx }) => $props.scroll2
       }
     ],
     [$props, $ctx]
@@ -130,45 +130,176 @@ function PlasmicCover__RenderFunc(props: {
           projectcss.plasmic_mixins,
           projectcss.plasmic_tokens,
           sty.root,
-          {
-            [sty.rootcarousel_smart]: hasVariant($state, "carousel", "smart"),
-            [sty.rootcarousel_sustainable]: hasVariant(
-              $state,
-              "carousel",
-              "sustainable"
-            ),
-            [sty.rootcarousel_systems]: hasVariant(
-              $state,
-              "carousel",
-              "systems"
-            )
-          }
+          { [sty.rootscroll2]: hasVariant($state, "scroll2", "scroll2") }
         )}
+        onClick={async event => {
+          const $steps = {};
+          $steps["updateScroll2"] = true
+            ? (() => {
+                const actionArgs = {
+                  vgroup: __wrapUserFunction(
+                    {
+                      type: "InteractionArgLoc",
+                      actionName: "updateVariant",
+                      interactionUuid: "yuAsWi6tI",
+                      componentUuid: "y8WKJEXfAa",
+                      argName: "vgroup"
+                    },
+                    () => "scroll2"
+                  ),
+                  operation: __wrapUserFunction(
+                    {
+                      type: "InteractionArgLoc",
+                      actionName: "updateVariant",
+                      interactionUuid: "yuAsWi6tI",
+                      componentUuid: "y8WKJEXfAa",
+                      argName: "operation"
+                    },
+                    () => 4
+                  ),
+                  value: __wrapUserFunction(
+                    {
+                      type: "InteractionArgLoc",
+                      actionName: "updateVariant",
+                      interactionUuid: "yuAsWi6tI",
+                      componentUuid: "y8WKJEXfAa",
+                      argName: "value"
+                    },
+                    () => "scroll2"
+                  )
+                };
+                return __wrapUserFunction(
+                  {
+                    type: "InteractionLoc",
+                    actionName: "updateVariant",
+                    interactionUuid: "yuAsWi6tI",
+                    componentUuid: "y8WKJEXfAa"
+                  },
+                  () =>
+                    (({ vgroup, value }) => {
+                      if (typeof value === "string") {
+                        value = [value];
+                      }
+
+                      p.set($state, vgroup, true);
+                      return true;
+                    })?.apply(null, [actionArgs]),
+                  actionArgs
+                );
+              })()
+            : undefined;
+          if (
+            typeof $steps["updateScroll2"] === "object" &&
+            typeof $steps["updateScroll2"].then === "function"
+          ) {
+            $steps["updateScroll2"] = await __wrapUserPromise(
+              {
+                type: "InteractionLoc",
+                actionName: "updateVariant",
+                interactionUuid: "yuAsWi6tI",
+                componentUuid: "y8WKJEXfAa"
+              },
+              $steps["updateScroll2"]
+            );
+          }
+        }}
+        onWheel={async event => {
+          const $steps = {};
+          $steps["updateScroll2"] = true
+            ? (() => {
+                const actionArgs = {
+                  vgroup: __wrapUserFunction(
+                    {
+                      type: "InteractionArgLoc",
+                      actionName: "updateVariant",
+                      interactionUuid: "u7ELaVOBl",
+                      componentUuid: "y8WKJEXfAa",
+                      argName: "vgroup"
+                    },
+                    () => "scroll2"
+                  ),
+                  operation: __wrapUserFunction(
+                    {
+                      type: "InteractionArgLoc",
+                      actionName: "updateVariant",
+                      interactionUuid: "u7ELaVOBl",
+                      componentUuid: "y8WKJEXfAa",
+                      argName: "operation"
+                    },
+                    () => 4
+                  ),
+                  value: __wrapUserFunction(
+                    {
+                      type: "InteractionArgLoc",
+                      actionName: "updateVariant",
+                      interactionUuid: "u7ELaVOBl",
+                      componentUuid: "y8WKJEXfAa",
+                      argName: "value"
+                    },
+                    () => "scroll2"
+                  )
+                };
+                return __wrapUserFunction(
+                  {
+                    type: "InteractionLoc",
+                    actionName: "updateVariant",
+                    interactionUuid: "u7ELaVOBl",
+                    componentUuid: "y8WKJEXfAa"
+                  },
+                  () =>
+                    (({ vgroup, value }) => {
+                      if (typeof value === "string") {
+                        value = [value];
+                      }
+
+                      p.set($state, vgroup, true);
+                      return true;
+                    })?.apply(null, [actionArgs]),
+                  actionArgs
+                );
+              })()
+            : undefined;
+          if (
+            typeof $steps["updateScroll2"] === "object" &&
+            typeof $steps["updateScroll2"].then === "function"
+          ) {
+            $steps["updateScroll2"] = await __wrapUserPromise(
+              {
+                type: "InteractionLoc",
+                actionName: "updateVariant",
+                interactionUuid: "u7ELaVOBl",
+                componentUuid: "y8WKJEXfAa"
+              },
+              $steps["updateScroll2"]
+            );
+          }
+        }}
       >
-        {true ? (
+        {(hasVariant($state, "scroll2", "scroll2") ? true : true) ? (
           <div
             className={classNames(
               projectcss.all,
               sty.freeBox__fXbm,
-              hasVariant($state, "carousel", "sustainable")
-                ? ("hiddenScroll" as const)
-                : ("hiddenScroll" as const),
+              "hiddenScroll" as const,
               {
-                [sty.freeBoxcarousel_smart__fXbmras7R]: hasVariant(
+                [sty.freeBoxscroll2__fXbm1OLqA]: hasVariant(
                   $state,
-                  "carousel",
-                  "smart"
-                ),
-                [sty.freeBoxcarousel_sustainable__fXbmMfGii]: hasVariant(
-                  $state,
-                  "carousel",
-                  "sustainable"
+                  "scroll2",
+                  "scroll2"
                 )
               }
             )}
           >
             {true ? (
-              <div className={classNames(projectcss.all, sty.freeBox__hGQhz)}>
+              <div
+                className={classNames(projectcss.all, sty.freeBox__hGQhz, {
+                  [sty.freeBoxscroll2__hGQhz1OLqA]: hasVariant(
+                    $state,
+                    "scroll2",
+                    "scroll2"
+                  )
+                })}
+              >
                 <div
                   className={classNames(
                     projectcss.all,
@@ -185,59 +316,68 @@ function PlasmicCover__RenderFunc(props: {
                 className={classNames(
                   projectcss.all,
                   sty.freeBox___3HFg,
-                  "hiddenScroll" as const
+                  "hiddenScroll" as const,
+                  {
+                    [sty.freeBoxscroll2___3HFg1OLqA]: hasVariant(
+                      $state,
+                      "scroll2",
+                      "scroll2"
+                    )
+                  }
                 )}
               >
-                {true ? (
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__smgW6)}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__tJ69J,
-                        {
-                          [sty.textcarousel_sustainable__tJ69JMfGii]:
-                            hasVariant($state, "carousel", "sustainable")
-                        }
-                      )}
-                    >
-                      {"Smart"}
-                    </div>
-                  </div>
-                ) : null}
-                {true ? (
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__yBoiv)}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__egA8N
-                      )}
-                    >
-                      {"Sustainable"}
-                    </div>
-                  </div>
-                ) : null}
-                {true ? (
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__gHiCi)}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__xspV
-                      )}
-                    >
-                      {"Systems"}
-                    </div>
-                  </div>
-                ) : null}
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__tJ69J,
+                    {
+                      [sty.textscroll2__tJ69J1OLqA]: hasVariant(
+                        $state,
+                        "scroll2",
+                        "scroll2"
+                      )
+                    }
+                  )}
+                >
+                  {"Smart"}
+                </div>
               </div>
+            ) : null}
+          </div>
+        ) : null}
+        {true ? (
+          <div
+            className={classNames(projectcss.all, sty.freeBox__gbWuV, {
+              [sty.freeBoxscroll2__gbWuV1OLqA]: hasVariant(
+                $state,
+                "scroll2",
+                "scroll2"
+              )
+            })}
+          >
+            {(hasVariant($state, "scroll2", "scroll2") ? true : true) ? (
+              <BuildSystemsHeadline
+                data-plasmic-name={"buildSystemsHeadline"}
+                data-plasmic-override={overrides.buildSystemsHeadline}
+                big={
+                  hasVariant($state, "scroll2", "scroll2") ? undefined : true
+                }
+                className={classNames(
+                  "__wab_instance",
+                  sty.buildSystemsHeadline,
+                  {
+                    [sty.buildSystemsHeadlinescroll2]: hasVariant(
+                      $state,
+                      "scroll2",
+                      "scroll2"
+                    )
+                  }
+                )}
+                transparent={
+                  hasVariant($state, "scroll2", "scroll2") ? true : undefined
+                }
+              />
             ) : null}
           </div>
         ) : null}
@@ -247,13 +387,15 @@ function PlasmicCover__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root"]
+  root: ["root", "buildSystemsHeadline"],
+  buildSystemsHeadline: ["buildSystemsHeadline"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
+  buildSystemsHeadline: typeof BuildSystemsHeadline;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -316,6 +458,7 @@ export const PlasmicCover = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    buildSystemsHeadline: makeNodeComponent("buildSystemsHeadline"),
 
     // Metadata about props expected for PlasmicCover
     internalVariantProps: PlasmicCover__VariantProps,

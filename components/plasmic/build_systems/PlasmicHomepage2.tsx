@@ -36,9 +36,9 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
+import BuildSystemsHeadline from "../../BuildSystemsHeadline"; // plasmic-import: k0tLqKtuC3/component
 import Cover from "../../Cover"; // plasmic-import: y8WKJEXfAa/component
 import Menu from "../../Menu"; // plasmic-import: 5tZNLUygwX/component
-import BuildSystemsHeadline from "../../BuildSystemsHeadline"; // plasmic-import: k0tLqKtuC3/component
 import SmallButton from "../../SmallButton"; // plasmic-import: jdWzZYnBO3/component
 import Footer from "../../Footer"; // plasmic-import: hB94XRzTpm/component
 
@@ -60,9 +60,9 @@ export const PlasmicHomepage2__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicHomepage2__OverridesType = {
   root?: p.Flex<"div">;
+  buildSystemsHeadline?: p.Flex<typeof BuildSystemsHeadline>;
   cover?: p.Flex<typeof Cover>;
   menu?: p.Flex<typeof Menu>;
-  buildSystemsHeadline?: p.Flex<typeof BuildSystemsHeadline>;
   img?: p.Flex<typeof p.PlasmicImg>;
   footer?: p.Flex<typeof Footer>;
 };
@@ -163,6 +163,13 @@ function PlasmicHomepage2__RenderFunc(props: {
             sty.root
           )}
         >
+          {true ? (
+            <BuildSystemsHeadline
+              data-plasmic-name={"buildSystemsHeadline"}
+              data-plasmic-override={overrides.buildSystemsHeadline}
+              className={classNames("__wab_instance", sty.buildSystemsHeadline)}
+            />
+          ) : null}
           <Cover
             data-plasmic-name={"cover"}
             data-plasmic-override={overrides.cover}
@@ -176,13 +183,6 @@ function PlasmicHomepage2__RenderFunc(props: {
               className={classNames("__wab_instance", sty.menu)}
             />
           </div>
-          {true ? (
-            <BuildSystemsHeadline
-              data-plasmic-name={"buildSystemsHeadline"}
-              data-plasmic-override={overrides.buildSystemsHeadline}
-              className={classNames("__wab_instance", sty.buildSystemsHeadline)}
-            />
-          ) : null}
           {true ? (
             <div className={classNames(projectcss.all, sty.freeBox__q7Jq, ``)}>
               <div className={classNames(projectcss.all, sty.freeBox__wvlpk)}>
@@ -211,18 +211,22 @@ function PlasmicHomepage2__RenderFunc(props: {
               </div>
             </div>
           ) : null}
-          <div className={classNames(projectcss.all, sty.freeBox__yqM5)}>
+          <div className={classNames(projectcss.all, sty.freeBox__tM9Gj)} />
+
+          <div className={classNames(projectcss.all, sty.freeBox__alDgg)}>
             <div
               className={classNames(
                 projectcss.all,
                 projectcss.__wab_text,
-                sty.text__j0Gti
+                sty.text__ooJwq
               )}
             >
               {
-                "stellt Nachhaltigkeitsanforderungen und \u00f6konomische Indikatoren gegen\u00fcber"
+                "stellt Nachhaltigkeitsanforderungen und \u00f6konomische Indikatoren gegen\u00fcber."
               }
             </div>
+          </div>
+          <div className={classNames(projectcss.all, sty.freeBox__yqM5)}>
             {true ? (
               <div className={classNames(projectcss.all, sty.freeBox__wz786)}>
                 <div
@@ -255,9 +259,9 @@ function PlasmicHomepage2__RenderFunc(props: {
               </div>
             ) : null}
           </div>
-          <div className={classNames(projectcss.all, sty.freeBox__tM9Gj)} />
+          <div className={classNames(projectcss.all, sty.freeBox__kihbZ)} />
 
-          <div className={classNames(projectcss.all, sty.freeBox__s3N)}>
+          <div className={classNames(projectcss.all, sty.freeBox__myJt4)}>
             <div
               className={classNames(
                 projectcss.all,
@@ -267,6 +271,8 @@ function PlasmicHomepage2__RenderFunc(props: {
             >
               {"macht Ihre Projekte gr\u00fcn"}
             </div>
+          </div>
+          <div className={classNames(projectcss.all, sty.freeBox__s3N)}>
             {true ? (
               <div className={classNames(projectcss.all, sty.freeBox__tnKeH)}>
                 <div
@@ -313,10 +319,10 @@ function PlasmicHomepage2__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "cover", "menu", "buildSystemsHeadline", "img", "footer"],
+  root: ["root", "buildSystemsHeadline", "cover", "menu", "img", "footer"],
+  buildSystemsHeadline: ["buildSystemsHeadline"],
   cover: ["cover"],
   menu: ["menu"],
-  buildSystemsHeadline: ["buildSystemsHeadline"],
   img: ["img"],
   footer: ["footer"]
 } as const;
@@ -325,9 +331,9 @@ type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
+  buildSystemsHeadline: typeof BuildSystemsHeadline;
   cover: typeof Cover;
   menu: typeof Menu;
-  buildSystemsHeadline: typeof BuildSystemsHeadline;
   img: typeof p.PlasmicImg;
   footer: typeof Footer;
 };
@@ -392,9 +398,9 @@ export const PlasmicHomepage2 = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    buildSystemsHeadline: makeNodeComponent("buildSystemsHeadline"),
     cover: makeNodeComponent("cover"),
     menu: makeNodeComponent("menu"),
-    buildSystemsHeadline: makeNodeComponent("buildSystemsHeadline"),
     img: makeNodeComponent("img"),
     footer: makeNodeComponent("footer"),
 

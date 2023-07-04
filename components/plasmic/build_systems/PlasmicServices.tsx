@@ -39,6 +39,7 @@ import {
 import Menu from "../../Menu"; // plasmic-import: 5tZNLUygwX/component
 import BuildSystemsHeadline from "../../BuildSystemsHeadline"; // plasmic-import: k0tLqKtuC3/component
 import ImageFooter from "../../ImageFooter"; // plasmic-import: 7Stlw3wb0O/component
+import HiderHeadlines from "../../HiderHeadlines"; // plasmic-import: q6j09HfKP8/component
 
 import { useScreenVariants as useScreenVariantsjnTclXkDzSl7V } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: jnTCLXkDZSl7V/globalVariant
 
@@ -62,7 +63,7 @@ export type PlasmicServices__OverridesType = {
   menu?: p.Flex<typeof Menu>;
   buildSystemsHeadline?: p.Flex<typeof BuildSystemsHeadline>;
   imageFooter?: p.Flex<typeof ImageFooter>;
-  hiderHeadlines?: p.Flex<"div">;
+  hiderHeadlines?: p.Flex<typeof HiderHeadlines>;
 };
 
 export interface DefaultServicesProps {}
@@ -170,7 +171,8 @@ function PlasmicServices__RenderFunc(props: {
               data-plasmic-name={"menu"}
               data-plasmic-override={overrides.menu}
               className={classNames("__wab_instance", sty.menu)}
-              test={["services"]}
+              expand={true}
+              onSubSite={["services"]}
             />
           </div>
           <BuildSystemsHeadline
@@ -338,8 +340,6 @@ function PlasmicServices__RenderFunc(props: {
             </div>
           </div>
           <div className={classNames(projectcss.all, sty.freeBox__cliNj)}>
-            <div className={classNames(projectcss.all, sty.freeBox___8DGj8)} />
-
             {true ? (
               <div className={classNames(projectcss.all, sty.freeBox__sWrzx)}>
                 <div className={classNames(projectcss.all, sty.freeBox__awa6Y)}>
@@ -451,10 +451,10 @@ function PlasmicServices__RenderFunc(props: {
             className={classNames("__wab_instance", sty.imageFooter)}
           />
 
-          <div
+          <HiderHeadlines
             data-plasmic-name={"hiderHeadlines"}
             data-plasmic-override={overrides.hiderHeadlines}
-            className={classNames(projectcss.all, sty.hiderHeadlines)}
+            className={classNames("__wab_instance", sty.hiderHeadlines)}
           />
         </div>
       </div>
@@ -486,7 +486,7 @@ type NodeDefaultElementType = {
   menu: typeof Menu;
   buildSystemsHeadline: typeof BuildSystemsHeadline;
   imageFooter: typeof ImageFooter;
-  hiderHeadlines: "div";
+  hiderHeadlines: typeof HiderHeadlines;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";

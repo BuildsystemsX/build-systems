@@ -75,11 +75,11 @@
   top: auto;
   background: linear-gradient(
       0deg,
-      #2c2c2c4d 0%,
-      #2c2c2c4d 39%,
-      #2c2c2c59 58%,
-      #2c2c2cbf 91%,
-      #2c2c2c 100%
+      #2222224d 0%,
+      #2222224d 39%,
+      #22222259 58%,
+      #222222bf 91%,
+      #222222 100%
     )
     0% 0% / 100% 100% repeat;
   overflow: visible;

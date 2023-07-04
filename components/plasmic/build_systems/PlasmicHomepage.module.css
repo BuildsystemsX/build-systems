@@ -170,10 +170,10 @@
   top: auto;
   background: linear-gradient(
       0deg,
-      #2c2c2c 0%,
+      #222222 0%,
       #2c2c2cd6 24%,
       #2c2c2c00 50%,
-      #2c2c2c00 79%
+      #22222200 79%
     )
     0% 0% / 100% 100% repeat;
   overflow: visible;

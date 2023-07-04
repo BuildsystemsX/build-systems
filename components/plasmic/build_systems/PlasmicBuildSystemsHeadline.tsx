@@ -44,11 +44,17 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_build_systems.module.css"; // plasmic-import: jENqvBHbRPXMByDQmRe4G7/projectcss
 import sty from "./PlasmicBuildSystemsHeadline.module.css"; // plasmic-import: k0tLqKtuC3/css
 
-export type PlasmicBuildSystemsHeadline__VariantMembers = {};
-export type PlasmicBuildSystemsHeadline__VariantsArgs = {};
+export type PlasmicBuildSystemsHeadline__VariantMembers = {
+  transparent: "transparent";
+  big: "big";
+};
+export type PlasmicBuildSystemsHeadline__VariantsArgs = {
+  transparent?: SingleBooleanChoiceArg<"transparent">;
+  big?: SingleBooleanChoiceArg<"big">;
+};
 type VariantPropType = keyof PlasmicBuildSystemsHeadline__VariantsArgs;
 export const PlasmicBuildSystemsHeadline__VariantProps =
-  new Array<VariantPropType>();
+  new Array<VariantPropType>("transparent", "big");
 
 export type PlasmicBuildSystemsHeadline__ArgsType = {};
 type ArgPropType = keyof PlasmicBuildSystemsHeadline__ArgsType;
@@ -59,6 +65,8 @@ export type PlasmicBuildSystemsHeadline__OverridesType = {
 };
 
 export interface DefaultBuildSystemsHeadlineProps {
+  transparent?: SingleBooleanChoiceArg<"transparent">;
+  big?: SingleBooleanChoiceArg<"big">;
   className?: string;
 }
 
@@ -99,6 +107,25 @@ function PlasmicBuildSystemsHeadline__RenderFunc(props: {
 
   const [$queries, setDollarQueries] = React.useState({});
 
+  const stateSpecs = React.useMemo(
+    () => [
+      {
+        path: "transparent",
+        type: "private",
+        variableType: "variant",
+        initFunc: ({ $props, $state, $queries, $ctx }) => $props.transparent
+      },
+      {
+        path: "big",
+        type: "private",
+        variableType: "variant",
+        initFunc: ({ $props, $state, $queries, $ctx }) => $props.big
+      }
+    ],
+    [$props, $ctx]
+  );
+  const $state = p.useDollarState(stateSpecs, { $props, $ctx, $queries });
+
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsjnTclXkDzSl7V()
   });
@@ -117,7 +144,14 @@ function PlasmicBuildSystemsHeadline__RenderFunc(props: {
           projectcss.plasmic_mixins,
           projectcss.plasmic_tokens,
           sty.root,
-          "blend" as const
+          "blend" as const,
+          {
+            [sty.roottransparent]: hasVariant(
+              $state,
+              "transparent",
+              "transparent"
+            )
+          }
         )}
       >
         <div
@@ -125,7 +159,15 @@ function PlasmicBuildSystemsHeadline__RenderFunc(props: {
             projectcss.all,
             projectcss.__wab_text,
             sty.text__hTv1W,
-            "blend" as const
+            "blend" as const,
+            {
+              [sty.textbig__hTv1W9Cpjs]: hasVariant($state, "big", "big"),
+              [sty.texttransparent__hTv1WRxVzc]: hasVariant(
+                $state,
+                "transparent",
+                "transparent"
+              )
+            }
           )}
         >
           {hasVariant(globalVariants, "screen", "mobile") ? "Build " : "Build"}
@@ -135,7 +177,15 @@ function PlasmicBuildSystemsHeadline__RenderFunc(props: {
             projectcss.all,
             projectcss.__wab_text,
             sty.text___6XRo5,
-            ``
+            ``,
+            {
+              [sty.textbig___6XRo59Cpjs]: hasVariant($state, "big", "big"),
+              [sty.texttransparent___6XRo5RxVzc]: hasVariant(
+                $state,
+                "transparent",
+                "transparent"
+              )
+            }
           )}
         >
           {hasVariant(globalVariants, "screen", "mobile")

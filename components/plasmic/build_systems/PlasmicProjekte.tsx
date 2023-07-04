@@ -171,7 +171,8 @@ function PlasmicProjekte__RenderFunc(props: {
               data-plasmic-name={"menu"}
               data-plasmic-override={overrides.menu}
               className={classNames("__wab_instance", sty.menu)}
-              test={["projekte"]}
+              expand={true}
+              onSubSite={["projekte"]}
             />
           </div>
           <BuildSystemsHeadline

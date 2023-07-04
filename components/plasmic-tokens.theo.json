@@ -1,6 +1,26 @@
 {
   "props": [
     {
+      "name": "1 Cell",
+      "type": "spacing",
+      "value": "158px",
+      "category": "spacing",
+      "meta": {
+        "projectId": "jENqvBHbRPXMByDQmRe4G7",
+        "id": "HEUzmGVCS"
+      }
+    },
+    {
+      "name": "2 Cells",
+      "type": "spacing",
+      "value": "315px",
+      "category": "spacing",
+      "meta": {
+        "projectId": "jENqvBHbRPXMByDQmRe4G7",
+        "id": "E903dIBMc"
+      }
+    },
+    {
       "name": "BS Font",
       "type": "fontfamily",
       "value": "ABC Diatype",
@@ -13,7 +33,7 @@
     {
       "name": "Build White",
       "type": "color",
-      "value": "#FFFFFF",
+      "value": "#FAFAFA",
       "category": "color",
       "meta": {
         "projectId": "jENqvBHbRPXMByDQmRe4G7",
@@ -33,7 +53,7 @@
     {
       "name": "Main",
       "type": "color",
-      "value": "#2C2C2C",
+      "value": "#222222",
       "category": "color",
       "meta": {
         "projectId": "jENqvBHbRPXMByDQmRe4G7",
@@ -131,6 +151,16 @@
       }
     },
     {
+      "name": "Second White",
+      "type": "color",
+      "value": "#EBEBEB",
+      "category": "color",
+      "meta": {
+        "projectId": "jENqvBHbRPXMByDQmRe4G7",
+        "id": "115P4K5E6"
+      }
+    },
+    {
       "name": "Small",
       "type": "fontsize",
       "value": "14px",
@@ -183,7 +213,7 @@
     {
       "name": "White",
       "type": "color",
-      "value": "#EEEEEE",
+      "value": "#D9D9D9",
       "category": "color",
       "meta": {
         "projectId": "jENqvBHbRPXMByDQmRe4G7",

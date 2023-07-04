@@ -290,6 +290,32 @@
           "cssFilePath": "plasmic/build_systems/PlasmicCover.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "qfo7886Wwu",
+          "name": "Observable",
+          "type": "managed",
+          "projectId": "jENqvBHbRPXMByDQmRe4G7",
+          "renderModuleFilePath": "plasmic/build_systems/PlasmicObservable.tsx",
+          "importSpec": {
+            "modulePath": "../pages/observable.tsx"
+          },
+          "cssFilePath": "plasmic/build_systems/PlasmicObservable.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "q6j09HfKP8",
+          "name": "HiderHeadlines",
+          "type": "managed",
+          "projectId": "jENqvBHbRPXMByDQmRe4G7",
+          "renderModuleFilePath": "plasmic/build_systems/PlasmicHiderHeadlines.tsx",
+          "importSpec": {
+            "modulePath": "HiderHeadlines.tsx"
+          },
+          "cssFilePath": "plasmic/build_systems/PlasmicHiderHeadlines.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -337,6 +363,11 @@
           "id": "Nn_Pp4GgbS",
           "name": "LineXlSvgrepoComsvgIcon",
           "moduleFilePath": "plasmic/build_systems/icons/PlasmicIcon__LineXlSvgrepoComsvg.tsx"
+        },
+        {
+          "id": "MM12j4JCq_",
+          "name": "IconIcon",
+          "moduleFilePath": "plasmic/build_systems/icons/PlasmicIcon__Icon.tsx"
         }
       ],
       "images": [
