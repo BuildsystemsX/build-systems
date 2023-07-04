@@ -26,6 +26,14 @@
     grid-column: 4;
   }
 }
+.cover:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+  width: 100%;
+  z-index: 10;
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
 .freeBox___332Cd {
   display: flex;
   position: fixed;

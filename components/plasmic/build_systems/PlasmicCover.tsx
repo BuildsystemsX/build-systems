@@ -150,155 +150,95 @@ function PlasmicCover__RenderFunc(props: {
             className={classNames(
               projectcss.all,
               sty.freeBox__fXbm,
-              "hiddenScroll" as const
-            )}
-          >
-            <div
-              className={classNames(projectcss.all, sty.freeBox__ujo40, ``, {
-                [sty.freeBoxcarousel_smart__ujo40Ras7R]: hasVariant(
+              hasVariant($state, "carousel", "sustainable")
+                ? ("hiddenScroll" as const)
+                : ("hiddenScroll" as const),
+              {
+                [sty.freeBoxcarousel_smart__fXbmras7R]: hasVariant(
                   $state,
                   "carousel",
                   "smart"
                 ),
-                [sty.freeBoxcarousel_sustainable__ujo40MfGii]: hasVariant(
+                [sty.freeBoxcarousel_sustainable__fXbmMfGii]: hasVariant(
                   $state,
                   "carousel",
                   "sustainable"
-                ),
-                [sty.freeBoxcarousel_systems__ujo40NbM]: hasVariant(
-                  $state,
-                  "carousel",
-                  "systems"
                 )
-              })}
-              onWheel={async event => {
-                const $steps = {};
-                $steps["updateCarousel"] =
-                  $state.carousel == "Smart"
-                    ? (() => {
-                        const actionArgs = {
-                          vgroup: __wrapUserFunction(
-                            {
-                              type: "InteractionArgLoc",
-                              actionName: "updateVariant",
-                              interactionUuid: "MS22CmbJP",
-                              componentUuid: "y8WKJEXfAa",
-                              argName: "vgroup"
-                            },
-                            () => "carousel"
-                          ),
-                          operation: __wrapUserFunction(
-                            {
-                              type: "InteractionArgLoc",
-                              actionName: "updateVariant",
-                              interactionUuid: "MS22CmbJP",
-                              componentUuid: "y8WKJEXfAa",
-                              argName: "operation"
-                            },
-                            () => 0
-                          ),
-                          value: __wrapUserFunction(
-                            {
-                              type: "InteractionArgLoc",
-                              actionName: "updateVariant",
-                              interactionUuid: "MS22CmbJP",
-                              componentUuid: "y8WKJEXfAa",
-                              argName: "value"
-                            },
-                            () => "sustainable"
-                          )
-                        };
-                        return __wrapUserFunction(
-                          {
-                            type: "InteractionLoc",
-                            actionName: "updateVariant",
-                            interactionUuid: "MS22CmbJP",
-                            componentUuid: "y8WKJEXfAa"
-                          },
-                          () =>
-                            (({ vgroup, value }) => {
-                              if (typeof value === "string") {
-                                value = [value];
-                              }
-
-                              p.set($state, vgroup, value);
-                              return value;
-                            })?.apply(null, [actionArgs]),
-                          actionArgs
-                        );
-                      })()
-                    : undefined;
-                if (
-                  typeof $steps["updateCarousel"] === "object" &&
-                  typeof $steps["updateCarousel"].then === "function"
-                ) {
-                  $steps["updateCarousel"] = await __wrapUserPromise(
-                    {
-                      type: "InteractionLoc",
-                      actionName: "updateVariant",
-                      interactionUuid: "MS22CmbJP",
-                      componentUuid: "y8WKJEXfAa"
-                    },
-                    $steps["updateCarousel"]
-                  );
-                }
-              }}
-            >
-              {(hasVariant($state, "carousel", "smart") ? true : true) ? (
+              }
+            )}
+          >
+            {true ? (
+              <div className={classNames(projectcss.all, sty.freeBox__hGQhz)}>
                 <div
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.text__qJ50B,
-                    {
-                      [sty.textcarousel_smart__qJ50Bras7R]: hasVariant(
-                        $state,
-                        "carousel",
-                        "smart"
-                      )
-                    }
+                    sty.text__hBw0D
                   )}
                 >
-                  {"Smart1"}
+                  {"Build"}
                 </div>
-              ) : null}
-              {(hasVariant($state, "carousel", "sustainable") ? true : true) ? (
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text___6AZvo,
-                    {
-                      [sty.textcarousel_sustainable___6AZvoMfGii]: hasVariant(
-                        $state,
-                        "carousel",
-                        "sustainable"
-                      )
-                    }
-                  )}
-                >
-                  {"Sustainable"}
-                </div>
-              ) : null}
-              {(hasVariant($state, "carousel", "systems") ? true : true) ? (
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__v9WFv,
-                    {
-                      [sty.textcarousel_systems__v9WFvNbM]: hasVariant(
-                        $state,
-                        "carousel",
-                        "systems"
-                      )
-                    }
-                  )}
-                >
-                  {"Systems"}
-                </div>
-              ) : null}
-            </div>
+              </div>
+            ) : null}
+            {true ? (
+              <div
+                className={classNames(
+                  projectcss.all,
+                  sty.freeBox___3HFg,
+                  "hiddenScroll" as const
+                )}
+              >
+                {true ? (
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__smgW6)}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__tJ69J,
+                        {
+                          [sty.textcarousel_sustainable__tJ69JMfGii]:
+                            hasVariant($state, "carousel", "sustainable")
+                        }
+                      )}
+                    >
+                      {"Smart"}
+                    </div>
+                  </div>
+                ) : null}
+                {true ? (
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__yBoiv)}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__egA8N
+                      )}
+                    >
+                      {"Sustainable"}
+                    </div>
+                  </div>
+                ) : null}
+                {true ? (
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__gHiCi)}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__xspV
+                      )}
+                    >
+                      {"Systems"}
+                    </div>
+                  </div>
+                ) : null}
+              </div>
+            ) : null}
           </div>
         ) : null}
       </div>
