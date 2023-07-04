@@ -340,7 +340,7 @@ function PlasmicCover__RenderFunc(props: {
                     }
                   )}
                 >
-                  {"Smart"}
+                  {"Systems"}
                 </div>
               </div>
             ) : null}

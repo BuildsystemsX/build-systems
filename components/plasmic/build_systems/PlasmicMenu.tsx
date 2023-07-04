@@ -346,6 +346,49 @@ function PlasmicMenu__RenderFunc(props: {
                     $steps["updateExpand"]
                   );
                 }
+                $steps["goToHomepage2"] = true
+                  ? (() => {
+                      const actionArgs = {
+                        destination: __wrapUserFunction(
+                          {
+                            type: "InteractionArgLoc",
+                            actionName: "navigation",
+                            interactionUuid: "T_ahSPfnB",
+                            componentUuid: "5tZNLUygwX",
+                            argName: "destination"
+                          },
+                          () => `/New`
+                        )
+                      };
+                      return __wrapUserFunction(
+                        {
+                          type: "InteractionLoc",
+                          actionName: "navigation",
+                          interactionUuid: "T_ahSPfnB",
+                          componentUuid: "5tZNLUygwX"
+                        },
+                        () =>
+                          (({ destination }) => {
+                            __nextRouter?.push(destination);
+                          })?.apply(null, [actionArgs]),
+                        actionArgs
+                      );
+                    })()
+                  : undefined;
+                if (
+                  typeof $steps["goToHomepage2"] === "object" &&
+                  typeof $steps["goToHomepage2"].then === "function"
+                ) {
+                  $steps["goToHomepage2"] = await __wrapUserPromise(
+                    {
+                      type: "InteractionLoc",
+                      actionName: "navigation",
+                      interactionUuid: "T_ahSPfnB",
+                      componentUuid: "5tZNLUygwX"
+                    },
+                    $steps["goToHomepage2"]
+                  );
+                }
               }}
               platform={"nextjs"}
             >
