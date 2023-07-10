@@ -21,12 +21,7 @@
 :where(.root > *) {
   grid-column: 4;
 }
-@media (max-width: 1280px) {
-  :where(.root > *) {
-    grid-column: 4;
-  }
-}
-@media (max-width: 375px) {
+@media (max-width: 768px) {
   :where(.root > *) {
     grid-column: 4;
   }
@@ -81,7 +76,7 @@
   padding: 0px var(--token-E903dIBMc);
   margin: 0px;
 }
-@media (max-width: 375px) {
+@media (max-width: 768px) {
   .freeBox__iedGv {
     padding-left: var(--token-FoMWgon3f);
     padding-right: var(--token-FoMWgon3f);
@@ -109,7 +104,7 @@
   letter-spacing: -0.26px;
   padding: 10px;
 }
-@media (max-width: 375px) {
+@media (max-width: 768px) {
   .text__qrqk5 {
     font-size: var(--token-FjcO7F_7o);
     padding: 0px;
@@ -128,7 +123,7 @@
   grid-column-end: -1;
   padding: 0px 0px 0px var(--token-E903dIBMc);
 }
-@media (max-width: 375px) {
+@media (max-width: 768px) {
   .freeBox__slJFt {
     padding-left: var(--token-FoMWgon3f);
     padding-right: var(--token-FoMWgon3f);
@@ -149,7 +144,7 @@
   position: sticky;
   padding: 5px;
 }
-@media (max-width: 375px) {
+@media (max-width: 768px) {
   .text___8H29R {
     font-size: var(--token-FU8Hni77L);
     padding: 0px;
@@ -188,7 +183,7 @@
   min-width: 0;
   padding: 0px var(--token-HEUzmGVCS);
 }
-@media (max-width: 375px) {
+@media (max-width: 768px) {
   .freeBox___7Ju0Z {
     padding-left: var(--token-FoMWgon3f);
     padding-right: var(--token-FoMWgon3f);
@@ -236,27 +231,7 @@
 .columns___1Rbvf > :global(.__wab_flex-container) > :nth-child(2n + 2) {
   width: calc((100% - 2 * var(--plsmc-rc-col-gap, 0px)) * 6 / 12);
 }
-@media (max-width: 1280px) {
-  .columns___1Rbvf {
-    width: 100%;
-    height: auto;
-    flex-direction: row;
-    min-width: 0;
-  }
-}
-@media (max-width: 1280px) {
-  .columns___1Rbvf > :global(.__wab_flex-container) {
-    flex-direction: row;
-    flex-wrap: wrap;
-    min-width: 0;
-  }
-}
-@media (max-width: 1280px) {
-  .columns___1Rbvf > :global(.__wab_flex-container) > :nth-child(1n + 1) {
-    width: calc((100% - 1 * var(--plsmc-rc-col-gap, 0px)) * 12 / 12);
-  }
-}
-@media (max-width: 375px) {
+@media (max-width: 768px) {
   .columns___1Rbvf {
     padding-right: 0px;
   }
@@ -320,7 +295,7 @@
   line-height: var(--token-F2rqRnqW4);
   letter-spacing: -0.32px;
 }
-@media (max-width: 375px) {
+@media (max-width: 768px) {
   .text___3FqJk {
     font-size: var(--token-aIb04WtoB);
   }
@@ -337,7 +312,7 @@
   margin-top: 10px;
   padding: 0px;
 }
-@media (max-width: 375px) {
+@media (max-width: 768px) {
   .text__zl0Ru {
     font-size: var(--token-gge24vR4_);
   }
@@ -411,7 +386,7 @@
   line-height: var(--token-F2rqRnqW4);
   letter-spacing: -0.32px;
 }
-@media (max-width: 375px) {
+@media (max-width: 768px) {
   .text__gjzQa {
     font-size: var(--token-aIb04WtoB);
   }
@@ -428,7 +403,7 @@
   margin-bottom: 10px;
   padding: 0px;
 }
-@media (max-width: 375px) {
+@media (max-width: 768px) {
   .text___7Soc {
     font-size: var(--token-gge24vR4_);
   }
@@ -485,27 +460,7 @@
 .columns__t2RKz > :global(.__wab_flex-container) > :nth-child(2n + 2) {
   width: calc((100% - 2 * var(--plsmc-rc-col-gap, 0px)) * 6 / 12);
 }
-@media (max-width: 1280px) {
-  .columns__t2RKz {
-    width: 100%;
-    height: auto;
-    flex-direction: row;
-    min-width: 0;
-  }
-}
-@media (max-width: 1280px) {
-  .columns__t2RKz > :global(.__wab_flex-container) {
-    flex-direction: row;
-    flex-wrap: wrap;
-    min-width: 0;
-  }
-}
-@media (max-width: 1280px) {
-  .columns__t2RKz > :global(.__wab_flex-container) > :nth-child(1n + 1) {
-    width: calc((100% - 1 * var(--plsmc-rc-col-gap, 0px)) * 12 / 12);
-  }
-}
-@media (max-width: 375px) {
+@media (max-width: 768px) {
   .columns__t2RKz {
     padding-right: 0px;
   }
@@ -569,7 +524,7 @@
   line-height: var(--token-F2rqRnqW4);
   letter-spacing: -0.32px;
 }
-@media (max-width: 375px) {
+@media (max-width: 768px) {
   .text__apS19 {
     font-size: var(--token-aIb04WtoB);
   }
@@ -586,7 +541,7 @@
   margin-top: 10px;
   padding: 0px;
 }
-@media (max-width: 375px) {
+@media (max-width: 768px) {
   .text__kPioR {
     font-size: var(--token-gge24vR4_);
   }

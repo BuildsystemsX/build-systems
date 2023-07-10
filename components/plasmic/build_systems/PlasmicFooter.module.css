@@ -49,7 +49,7 @@
   letter-spacing: -0.26px;
   line-height: 17px;
 }
-@media (max-width: 375px) {
+@media (max-width: 768px) {
   .text__fCrV {
     font-size: var(--token-c6ppehm7A);
   }
@@ -79,7 +79,7 @@
   line-height: 17px;
   min-width: 0;
 }
-@media (max-width: 375px) {
+@media (max-width: 768px) {
   .text__bhQv5 {
     font-size: var(--token-c6ppehm7A);
   }

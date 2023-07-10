@@ -6,7 +6,7 @@
 import * as React from "react";
 import * as p from "@plasmicapp/react-web";
 
-export type ScreenValue = "desktopSmall" | "iPad" | "iPhone";
+export type ScreenValue = "iPhone";
 export const ScreenContext = React.createContext<ScreenValue[] | undefined>(
   "PLEASE_RENDER_INSIDE_PROVIDER" as any
 );
@@ -24,9 +24,7 @@ export function ScreenVariantProvider(props: React.PropsWithChildren) {
 }
 
 export const useScreenVariants = p.createUseScreenVariants(true, {
-  desktopSmall: "(max-width:1280px)",
-  iPad: "(max-width:768px)",
-  iPhone: "(max-width:375px)",
+  iPhone: "(max-width:768px)",
 });
 
 export default ScreenContext;

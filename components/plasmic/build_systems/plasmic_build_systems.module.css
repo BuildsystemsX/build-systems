@@ -59,7 +59,7 @@
   --plasmic-token-paragraph-medium-mobile: var(--token-gge24vR4_);
 }
 
-@media (max-width: 375px) {
+@media (max-width: 768px) {
   .plasmic_tokens {
     --token-FoMWgon3f: 5px;
     --plasmic-token-mobile-site: var(--token-FoMWgon3f);
