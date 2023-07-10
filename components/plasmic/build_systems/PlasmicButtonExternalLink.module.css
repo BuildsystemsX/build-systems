@@ -9,7 +9,7 @@
   max-width: 100%;
   justify-self: flex-start;
   cursor: pointer;
-  padding: 1px;
+  padding: 0px;
 }
 .freeBox {
   display: flex;
@@ -22,7 +22,7 @@
   cursor: pointer;
   height: auto;
   border-radius: 4px;
-  padding: 4px 8px;
+  padding: 5px 15px;
 }
 .link {
   position: relative;

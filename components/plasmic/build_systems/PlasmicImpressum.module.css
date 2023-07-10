@@ -58,7 +58,7 @@
   position: relative;
   color: var(--token-Y1kFl7CJ7);
   width: 100%;
-  font-family: "ABC Diatype";
+  font-family: var(--token-murZRIrJA);
   line-height: 17px;
   letter-spacing: -0.01em;
   min-width: 0;
@@ -107,7 +107,7 @@
   height: auto;
   max-width: 100%;
   color: var(--token-Y1kFl7CJ7);
-  font-family: "ABC Diatype";
+  font-family: var(--token-murZRIrJA);
   line-height: 17px;
   letter-spacing: -0.01em;
   min-width: 0;

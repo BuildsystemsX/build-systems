@@ -14,7 +14,6 @@ export interface GlobalContextsProviderProps {
   embedCssProps?: Partial<
     Omit<React.ComponentProps<typeof EmbedCss>, "children">
   >;
-
   parallaxProviderWrapperProps?: Partial<
     Omit<React.ComponentProps<typeof ParallaxProviderWrapper>, "children">
   >;
@@ -31,7 +30,7 @@ export default function GlobalContextsProvider(
       css={
         embedCssProps && "css" in embedCssProps
           ? embedCssProps.css!
-          : ("@import url( 'https://assets.buildsystems.de/font.css' );\n\n.blend {\n  mix-blend-mode: difference;\n}\n\n/* Hide scrollbar for Chrome, Safari and Opera */\n.hiddenScroll::-webkit-scrollbar {\n  display: none;\n}" as const)
+          : ("@import url( 'https://assets.buildsystems.de/font.css' );\n\n.blend {\n  mix-blend-mode: difference;\n}\n\n/* Hide scrollbar for Chrome, Safari and Opera */\n.hiddenScroll::-webkit-scrollbar {\n  display: none;\n}\n\n*\n{ -webkit-text-size-adjust: none;\n-webkit-font-smoothing: antialiased;\n-moz-osx-font-smoothing: grayscale; }" as const)
       }
     >
       <ParallaxProviderWrapper

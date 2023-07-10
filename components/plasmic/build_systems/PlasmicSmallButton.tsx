@@ -128,9 +128,14 @@ function PlasmicSmallButton__RenderFunc(props: {
         initFunc: ({ $props, $state, $queries, $ctx }) => $props.plus
       }
     ],
-    [$props, $ctx]
+    [$props, $ctx, $refs]
   );
-  const $state = p.useDollarState(stateSpecs, { $props, $ctx, $queries });
+  const $state = p.useDollarState(stateSpecs, {
+    $props,
+    $ctx,
+    $queries,
+    $refs
+  });
 
   return (
     <div
