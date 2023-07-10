@@ -766,6 +766,11 @@ function PlasmicMenu__RenderFunc(props: {
                   data-plasmic-name={"projekte"}
                   data-plasmic-override={overrides.projekte}
                   className={classNames("__wab_instance", sty.projekte, {
+                    [sty.projekteexpand]: hasVariant(
+                      $state,
+                      "expand",
+                      "expand"
+                    ),
                     [sty.projekteonSubSite_personen]: hasVariant(
                       $state,
                       "onSubSite",
@@ -936,6 +941,11 @@ function PlasmicMenu__RenderFunc(props: {
                   data-plasmic-name={"personen"}
                   data-plasmic-override={overrides.personen}
                   className={classNames("__wab_instance", sty.personen, {
+                    [sty.personenexpand]: hasVariant(
+                      $state,
+                      "expand",
+                      "expand"
+                    ),
                     [sty.personenonSubSite_personen]: hasVariant(
                       $state,
                       "onSubSite",

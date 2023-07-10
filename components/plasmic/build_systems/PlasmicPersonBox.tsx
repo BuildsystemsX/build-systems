@@ -288,6 +288,11 @@ function PlasmicPersonBox__RenderFunc(props: {
                     projectcss.__wab_text,
                     sty.text__zOkqU,
                     {
+                      [sty.textexpanded__zOkqUnnpJu]: hasVariant(
+                        $state,
+                        "expanded",
+                        "expanded"
+                      ),
                       [sty.textpersonen_andreasThoma__zOkqUusA8U]: hasVariant(
                         $state,
                         "personen",

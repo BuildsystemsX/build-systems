@@ -11,7 +11,8 @@
   transition-duration: 0.5s;
   -webkit-transition-property: all;
   -webkit-transition-duration: 0.5s;
-  padding: 10px;
+  padding: 0px;
+  margin: 0px;
 }
 .freeBox__zyI38 {
   display: flex;
@@ -30,6 +31,7 @@
   -webkit-transition-property: all;
   -webkit-transition-duration: 1s;
   padding: 0px;
+  margin: 0px;
 }
 .freeBoxonSubSite_services__zyI387Laf7 {
   z-index: 2;
@@ -69,7 +71,7 @@
   cursor: pointer;
 }
 .linkexpand__tkhkdByE14 {
-  transform: translateX(0px) translateY(209px) translateZ(0px);
+  transform: translateX(0px) translateY(198px) translateZ(0px);
   cursor: pointer;
 }
 .start:global(.__wab_instance) {
@@ -105,7 +107,7 @@
   -webkit-transition-duration: 1s;
 }
 .linkonSubSite_services__n149K7Laf7 {
-  transform: translateX(0px) translateY(179px) translateZ(0px);
+  transform: translateX(0px) translateY(168px) translateZ(0px);
 }
 .linkonSubSite_projekte__n149K0US2U {
   transform: none;
@@ -114,7 +116,7 @@
   transform: none;
 }
 .linkexpand__n149KByE14 {
-  transform: translateX(0px) translateY(209px) translateZ(0px);
+  transform: translateX(0px) translateY(200px) translateZ(0px);
 }
 .services:global(.__wab_instance) {
   max-width: 100%;
@@ -143,13 +145,13 @@
   transform: none;
 }
 .linkonSubSite_projekte__qraVz0US2U {
-  transform: translateX(0px) translateY(149px) translateZ(0px);
+  transform: translateX(0px) translateY(138px) translateZ(0px);
 }
 .linkonSubSite_personen__qraVzUi3Mn {
   transform: none;
 }
 .linkexpand__qraVzByE14 {
-  transform: translateX(0px) translateY(209px) translateZ(0px);
+  transform: translateX(0px) translateY(202px) translateZ(0px);
 }
 .projekte:global(.__wab_instance) {
   max-width: 100%;
@@ -179,10 +181,10 @@
   transform: none;
 }
 .linkonSubSite_personen__h4FSfUi3Mn {
-  transform: translateX(0px) translateY(119px) translateZ(0px);
+  transform: translateX(0px) translateY(108px) translateZ(0px);
 }
 .linkexpand__h4FSfByE14 {
-  transform: translateX(0px) translateY(209px) translateZ(0px);
+  transform: translateX(0px) translateY(204px) translateZ(0px);
 }
 .personen:global(.__wab_instance) {
   max-width: 100%;
@@ -213,7 +215,7 @@
   -webkit-transition-property: all;
   -webkit-transition-duration: 1s;
   padding: 0px;
-  margin: 1px;
+  margin: 0px;
 }
 .freeBox__ptCVk {
   display: flex;
@@ -229,7 +231,7 @@
   flex-shrink: 0;
   border-radius: 25px;
   padding: 0px;
-  margin: 1px;
+  margin: 0px;
 }
 .svg {
   position: relative;

@@ -193,7 +193,7 @@ function PlasmicProjekte__RenderFunc(props: {
                 >
                   {hasVariant(globalVariants, "screen", "mobile")
                     ? "Build Systems entwickelt individuelle Smart Sustainability Roadmaps (Nachhaltigkeits-fahrpl\u00e4ne). Hierf\u00fcr stellen wir Nachhaltigkeitsanforderungen der individuellen Projektentwicklung \u00f6konomischen Indikatoren gegen\u00fcber. Wir unterst\u00fctzen Immobilienentwickler:innen in einer fr\u00fchen Phase der Planung Investitionsentscheidungen zu treffen."
-                    : "Wir sind u\u0308berzeugt: Wenn die Projektentwicklung den Zusammenhang von \u00f6kologischen Ma\u00dfnahmen, Wertbest\u00e4ndigkeit und Zukunftsf\u00e4higkeit nachvollziehen und ebenso darlegen kann, werden Klimaschutzma\u00dfnahmen zur immanenten Motivation. So entsteht neben Reporting-Zw\u00e4ngen und regulatorisch vorgeschriebenen Benchmarks eine inkrementelle Wandlung zur nachhaltigen Baut\u00e4tigkeit."}
+                    : "Wir sind \u00fcberzeugt: Wenn die Projektentwicklung den Zusammenhang von Nachhaltigkeit, Wertbest\u00e4ndigkeit und Zukunftsf\u00e4higkeit nachvollziehen und ebenso darlegen kann, werden Klimaschutzma\u00dfnahmen zur intrinsischen Motivation. So entsteht neben Reporting-Zw\u00e4ngen und regulatorisch vorgeschriebenen Benchmarks ein stetiger Wandel zu einer nachhaltigen Baut\u00e4tigkeit."}
                 </div>
               </div>
             ) : null}
@@ -206,7 +206,9 @@ function PlasmicProjekte__RenderFunc(props: {
                 sty.text___8H29R
               )}
             >
-              {"setzt Projekte von Anfang an #integral auf."}
+              {
+                "setzt Projekte von Anfang an #integral / #systemisch / #transparent / #digital auf. "
+              }
             </div>
           </div>
           {true ? (
