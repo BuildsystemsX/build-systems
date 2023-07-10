@@ -36,12 +36,6 @@
   min-height: 0;
   padding: 8px;
 }
-@media (max-width: 640px) {
-  .freeBox__uLEax {
-    display: flex;
-    flex-direction: column;
-  }
-}
 .freeBox__viB2E {
   display: flex;
   position: relative;

@@ -37,8 +37,6 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 
-import { useScreenVariants as useScreenVariantsjnTclXkDzSl7V } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: jnTCLXkDZSl7V/globalVariant
-
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import projectcss from "./plasmic_build_systems.module.css"; // plasmic-import: jENqvBHbRPXMByDQmRe4G7/projectcss
@@ -99,10 +97,6 @@ function PlasmicImpressum__RenderFunc(props: {
 
   const [$queries, setDollarQueries] = React.useState({});
 
-  const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariantsjnTclXkDzSl7V()
-  });
-
   return (
     <React.Fragment>
       <Head>
@@ -150,79 +144,75 @@ function PlasmicImpressum__RenderFunc(props: {
                   sty.text__mlAuA
                 )}
               >
-                {hasVariant(globalVariants, "screen", "mobile") ? (
-                  "Imprint\n\n\t\tVerantwortlich i.S.d. \u00a7 55 Abs. 2 RStV:\n\t\tMartin Bittmann\n\t\tc/o Venture Lab Built Environment\n\t\tTechnical University of Munich (TUM)\n\t\tArcisstra\u00dfe 21\n\t\tD-80333 Munich\n\t\n\t\tE-Mail: mail(at)buildsystems.com\n\t\n\t\tGrafik- und Kommunikationsdesign: \nalisch berlec h\u00f6now\n\t\n\t\n\n\n\n\n\t\tSchutzrechte Dritter\n\n\t\tBuild Systems nimmt Schutzrechte \nDritter sehr ernst. Selbstverst\u00e4ndlich stellen wir \nbewusst weder rechtsverletzende Inhalte auf \nunseren Seiten ein, noch verlinken wir auf solche. \nDennoch kann es sein, dass sich Inhalte auf \nexternen Seiten ver\u00e4ndern, ohne dass wir hierauf \nEinfluss h\u00e4tten oder dies st\u00e4ndig \u00fcberpr\u00fcfen zu \nk\u00f6nnen. Sollten Sie feststellen, dass einer unserer \nLinks auf ein rechtswidriges Angebot verweist, \nbitten wir darum, uns dies mitzuteilen. Wir \nwerden dies dann umgehend pr\u00fcfen und den Link \ngegebenenfalls entfernen.\n\t\n\t\tInhalt\n\n\t\tDie Inhalte dieser Webseite wurden \nsorgf\u00e4ltig gepr\u00fcft und nach bestem Wissen \nerstellt. Dennoch wird f\u00fcr die hier dargebotenen \nInformationen kein Anspruch auf Vollst\u00e4ndigkeit, \nAktualit\u00e4t, Qualit\u00e4t und Richtigkeit erhoben. F\u00fcr \nSch\u00e4den, die durch das Vertrauen auf die Inhalte \ndieser Website oder deren Gebrauch entstehen, \nhaften wir nicht, es sei denn, sie wurden durch \nBuild Systems oder unsere Mitarbeiter \nvors\u00e4tzlich oder grob fahrl\u00e4ssig verursacht. \nGesetzliche Anspr\u00fcche aus dem \nProdukthaftungsgesetz sind von dieser \nHaftungsbeschr\u00e4nkung ausgenommen.\n\t\n\t\tAlternative Streitbeilegung gem\u00e4\u00df Art. 14 \nAbs. 1 ODR-VO und \u00a7 36 VSBG\n\n\t\tDie Europ\u00e4ische Kommission stellt eine \nPlattform zur Online-Streitbeilegung (OS) bereit, \ndie Sie unter <a class=\u201eprivacy\u201c target=\u201e_blank\u201c \nhref=\u201ehttps://ec.europa.eu/consumers/odr/main/\nindex.cfm?\nevent=main.home.chooseLanguage\u201c>https://\nec.europa.eu/consumers/odr</a> finden. Zur \nTeilnahme an einem Streitbeilegungsverfahren \nvor einer Verbraucherschlichtungsstelle sind wir \nnicht verpflichtet und nicht bereit."
-                ) : (
+                <React.Fragment>
                   <React.Fragment>
-                    <React.Fragment>
-                      {
-                        "Imprint\n\n\t\tVerantwortlich i.S.d. \u00a7 55 Abs. 2 RStV:\n\t\tMartin Bittmann\n\t\tc/o Venture Lab Built Environment\n\t\tTechnical University of Munich (TUM)\n\t\tArcisstra\u00dfe 21\n\t\tD-80333 Munich\n\t\n\t\tE-Mail: "
-                      }
-                    </React.Fragment>
                     {
-                      <p.PlasmicLink
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.a,
-                          projectcss.__wab_text,
-                          projectcss.plasmic_default__inline,
-                          sty.link__mh873
-                        )}
-                        component={Link}
-                        href={"mailto:mail@buildsystems.com" as const}
-                        platform={"nextjs"}
-                      >
-                        {"mail(at)buildsystems.com"}
-                      </p.PlasmicLink>
+                      "Imprint\n\n\t\tVerantwortlich i.S.d. \u00a7 55 Abs. 2 RStV:\n\t\tMartin Bittmann\n\t\tc/o Venture Lab Built Environment\n\t\tTechnical University of Munich (TUM)\n\t\tArcisstra\u00dfe 21\n\t\tD-80333 Munich\n\t\n\t\tE-Mail: "
                     }
-                    <React.Fragment>
-                      {"\n\t\n\t\tGrafik- und Kommunikationsdesign: "}
-                    </React.Fragment>
-                    {
-                      <p.PlasmicLink
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.a,
-                          projectcss.__wab_text,
-                          projectcss.plasmic_default__inline,
-                          sty.link__ydc5C
-                        )}
-                        component={Link}
-                        href={"https://www.abh.eu/" as const}
-                        platform={"nextjs"}
-                      >
-                        {"alisch berlec h\u00f6now"}
-                      </p.PlasmicLink>
-                    }
-                    <React.Fragment>
-                      {
-                        "\n\n\n\n\t\tSchutzrechte Dritter\n\n\t\tBuild Systems nimmt Schutzrechte Dritter sehr ernst. Selbstverst\u00e4ndlich stellen wir bewusst weder rechtsverletzende Inhalte auf unseren Seiten ein, noch verlinken wir auf solche. Dennoch kann es sein, dass sich Inhalte auf externen Seiten ver\u00e4ndern, ohne dass wir hierauf Einfluss h\u00e4tten oder dies st\u00e4ndig \u00fcberpr\u00fcfen zu k\u00f6nnen. Sollten Sie feststellen, dass einer unserer Links auf ein rechtswidriges Angebot verweist, bitten wir darum, uns dies mitzuteilen. Wir werden dies dann umgehend pr\u00fcfen und den Link gegebenenfalls entfernen.\n\t\n\t\tInhalt\n\n\t\tDie Inhalte dieser Webseite wurden sorgf\u00e4ltig gepr\u00fcft und nach bestem Wissen erstellt. Dennoch wird f\u00fcr die hier dargebotenen Informationen kein Anspruch auf Vollst\u00e4ndigkeit, Aktualit\u00e4t, Qualit\u00e4t und Richtigkeit erhoben. F\u00fcr Sch\u00e4den, die durch das Vertrauen auf die Inhalte dieser Website oder deren Gebrauch entstehen, haften wir nicht, es sei denn, sie wurden durch Build Systems oder unsere Mitarbeiter vors\u00e4tzlich oder grob fahrl\u00e4ssig verursacht. Gesetzliche Anspr\u00fcche aus dem Produkthaftungsgesetz sind von dieser Haftungsbeschr\u00e4nkung ausgenommen.\n\t\n\t\tAlternative Streitbeilegung gem\u00e4\u00df Art. 14 Abs. 1 ODR-VO und \u00a7 36 VSBG\n\n\t\tDie Europ\u00e4ische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit, die Sie unter "
-                      }
-                    </React.Fragment>
-                    {
-                      <p.PlasmicLink
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.a,
-                          projectcss.__wab_text,
-                          projectcss.plasmic_default__inline,
-                          sty.link__kMIav
-                        )}
-                        component={Link}
-                        href={"https://ec.europa.eu/consumers/odr" as const}
-                        platform={"nextjs"}
-                        target={"_blank" as const}
-                      >
-                        {"https://ec.europa.eu/consumers/odr"}
-                      </p.PlasmicLink>
-                    }
-                    <React.Fragment>
-                      {
-                        " finden. Zur Teilnahme an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle sind wir nicht verpflichtet und nicht bereit."
-                      }
-                    </React.Fragment>
                   </React.Fragment>
-                )}
+                  {
+                    <p.PlasmicLink
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        projectcss.__wab_text,
+                        projectcss.plasmic_default__inline,
+                        sty.link__mh873
+                      )}
+                      component={Link}
+                      href={"mailto:mail@buildsystems.com" as const}
+                      platform={"nextjs"}
+                    >
+                      {"mail(at)buildsystems.com"}
+                    </p.PlasmicLink>
+                  }
+                  <React.Fragment>
+                    {"\n\t\n\t\tGrafik- und Kommunikationsdesign: "}
+                  </React.Fragment>
+                  {
+                    <p.PlasmicLink
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        projectcss.__wab_text,
+                        projectcss.plasmic_default__inline,
+                        sty.link__ydc5C
+                      )}
+                      component={Link}
+                      href={"https://www.abh.eu/" as const}
+                      platform={"nextjs"}
+                    >
+                      {"alisch berlec h\u00f6now"}
+                    </p.PlasmicLink>
+                  }
+                  <React.Fragment>
+                    {
+                      "\n\n\n\n\t\tSchutzrechte Dritter\n\n\t\tBuild Systems nimmt Schutzrechte Dritter sehr ernst. Selbstverst\u00e4ndlich stellen wir bewusst weder rechtsverletzende Inhalte auf unseren Seiten ein, noch verlinken wir auf solche. Dennoch kann es sein, dass sich Inhalte auf externen Seiten ver\u00e4ndern, ohne dass wir hierauf Einfluss h\u00e4tten oder dies st\u00e4ndig \u00fcberpr\u00fcfen zu k\u00f6nnen. Sollten Sie feststellen, dass einer unserer Links auf ein rechtswidriges Angebot verweist, bitten wir darum, uns dies mitzuteilen. Wir werden dies dann umgehend pr\u00fcfen und den Link gegebenenfalls entfernen.\n\t\n\t\tInhalt\n\n\t\tDie Inhalte dieser Webseite wurden sorgf\u00e4ltig gepr\u00fcft und nach bestem Wissen erstellt. Dennoch wird f\u00fcr die hier dargebotenen Informationen kein Anspruch auf Vollst\u00e4ndigkeit, Aktualit\u00e4t, Qualit\u00e4t und Richtigkeit erhoben. F\u00fcr Sch\u00e4den, die durch das Vertrauen auf die Inhalte dieser Website oder deren Gebrauch entstehen, haften wir nicht, es sei denn, sie wurden durch Build Systems oder unsere Mitarbeiter vors\u00e4tzlich oder grob fahrl\u00e4ssig verursacht. Gesetzliche Anspr\u00fcche aus dem Produkthaftungsgesetz sind von dieser Haftungsbeschr\u00e4nkung ausgenommen.\n\t\n\t\tAlternative Streitbeilegung gem\u00e4\u00df Art. 14 Abs. 1 ODR-VO und \u00a7 36 VSBG\n\n\t\tDie Europ\u00e4ische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit, die Sie unter "
+                    }
+                  </React.Fragment>
+                  {
+                    <p.PlasmicLink
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        projectcss.__wab_text,
+                        projectcss.plasmic_default__inline,
+                        sty.link__kMIav
+                      )}
+                      component={Link}
+                      href={"https://ec.europa.eu/consumers/odr" as const}
+                      platform={"nextjs"}
+                      target={"_blank" as const}
+                    >
+                      {"https://ec.europa.eu/consumers/odr"}
+                    </p.PlasmicLink>
+                  }
+                  <React.Fragment>
+                    {
+                      " finden. Zur Teilnahme an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle sind wir nicht verpflichtet und nicht bereit."
+                    }
+                  </React.Fragment>
+                </React.Fragment>
               </div>
             </div>
             <div className={classNames(projectcss.all, sty.freeBox__cFwm8)}>

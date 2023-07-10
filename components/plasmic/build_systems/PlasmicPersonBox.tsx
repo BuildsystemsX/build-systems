@@ -38,6 +38,8 @@ import {
 } from "@plasmicapp/react-web";
 import SmallButton from "../../SmallButton"; // plasmic-import: jdWzZYnBO3/component
 
+import { useScreenVariants as useScreenVariantsjnTclXkDzSl7V } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: jnTCLXkDZSl7V/globalVariant
+
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import projectcss from "./plasmic_build_systems.module.css"; // plasmic-import: jENqvBHbRPXMByDQmRe4G7/projectcss
@@ -154,6 +156,10 @@ function PlasmicPersonBox__RenderFunc(props: {
     $refs
   });
 
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariantsjnTclXkDzSl7V()
+  });
+
   return (
     true ? (
       <div
@@ -214,7 +220,11 @@ function PlasmicPersonBox__RenderFunc(props: {
                   displayMaxWidth={"100%" as const}
                   displayMinHeight={"0" as const}
                   displayMinWidth={"0" as const}
-                  displayWidth={"135px" as const}
+                  displayWidth={
+                    hasVariant(globalVariants, "screen", "iPhone")
+                      ? ("93px" as const)
+                      : ("135px" as const)
+                  }
                   loading={"lazy" as const}
                   src={{
                     src: "/plasmic/build_systems/images/image2.png",
@@ -330,6 +340,8 @@ function PlasmicPersonBox__RenderFunc(props: {
                     ? "M.Sc. ITECH, Dipl. Architektur\n\nComputational Design, Parametrische Systeme, Entwicklung digitaler Tools und Workflows, Digitale Fabrikation"
                     : hasVariant($state, "personen", "danielDieren")
                     ? "M.Sc. Bauingenieur, M.Sc. Architektur\n\nNachhaltiges Konstruieren, Ingenieurholzbau, Integrale Planung, Lebenszyklusbetrachtung"
+                    : hasVariant(globalVariants, "screen", "iPhone")
+                    ? "Dipl.-Ing. Architektur\n\nArchitekt Bay. Architektenkammer, Energieeffizienz-Experte, Nachhaltiges Bauen in Holz, Energetische Betrachtungen, Projektmanagement & -entwicklung"
                     : "Dipl.-Ing. Architektur\n\nArchitekt Bay. Architektenkammer, Energieeffizienz-Experte, Nachhaltiges Bauen in Holz, Energetische Betrachtungen, Projektmanagement & -entwicklung"}
                 </div>
               </div>

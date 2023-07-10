@@ -21,11 +21,6 @@
 :where(.root > *) {
   grid-column: 4;
 }
-@media (max-width: 640px) {
-  :where(.root > *) {
-    grid-column: 4;
-  }
-}
 .freeBox___2Np4F {
   display: flex;
   position: relative;
@@ -43,11 +38,6 @@
   grid-column-start: 1;
   grid-column-end: -1;
   padding: 0px;
-}
-@media (max-width: 640px) {
-  .freeBox___2Np4F {
-    background: none;
-  }
 }
 .freeBox__uq0Dc {
   display: flex;
@@ -82,13 +72,6 @@
   font-family: "ABC Diatype";
   padding: 20px;
 }
-@media (max-width: 640px) {
-  .text__eOBwI {
-    font-size: 51px;
-    letter-spacing: -0.04em;
-    padding-right: 20px;
-  }
-}
 .text___54D3O {
   display: block;
   font-size: 131px;
@@ -106,12 +89,6 @@
   font-family: "ABC Diatype Mono";
   letter-spacing: -0.02em;
   padding: 20px;
-}
-@media (max-width: 640px) {
-  .text___54D3O {
-    font-size: 51px;
-    padding-left: 0px;
-  }
 }
 .freeBox__lmyxT {
   display: flex;
@@ -145,21 +122,6 @@
 }
 .img > :global(.__wab_img-spacer) > img {
   object-fit: cover;
-}
-@media (max-width: 640px) {
-  .img {
-    object-position: 60% 50%;
-  }
-}
-@media (max-width: 640px) {
-  .img > picture > img {
-    object-position: 60% 50%;
-  }
-}
-@media (max-width: 640px) {
-  .img > :global(.__wab_img-spacer) > img {
-    object-position: 60% 50%;
-  }
 }
 .freeBox__mxjIn {
   display: block;
@@ -203,12 +165,6 @@
   padding: 20px 0px 0px;
   margin: 0px;
 }
-@media (max-width: 640px) {
-  .freeBox__bVlAj {
-    height: 85vh;
-    padding-top: 0px;
-  }
-}
 .svg {
   position: relative;
   object-fit: cover;
@@ -228,11 +184,6 @@
   -webkit-transition-duration: 1s;
   margin: 0px;
 }
-@media (max-width: 640px) {
-  .svg {
-    min-width: 4px;
-  }
-}
 .text___62N6U {
   position: relative;
   color: var(--token-Y1kFl7CJ7);
@@ -244,14 +195,6 @@
   letter-spacing: 0.01em;
   padding: 20px;
   margin: 0px;
-}
-@media (max-width: 640px) {
-  .text___62N6U {
-    width: 100vw;
-    font-size: 16px;
-    color: var(--token-Mq_qSd0gm);
-    line-height: 17px;
-  }
 }
 .freeBox__zqs6K {
   display: flex;
@@ -301,11 +244,6 @@
   font-size: 16px;
   line-height: 24px;
 }
-@media (max-width: 640px) {
-  .text__kxars {
-    font-size: 14px;
-  }
-}
 .oldButtonExternalLink___33Cst:global(.__wab_instance) {
   max-width: 100%;
   position: relative;
@@ -316,11 +254,6 @@
   font-family: "ABC Diatype";
   font-size: 16px;
   line-height: 24px;
-}
-@media (max-width: 640px) {
-  .text__tj8GQ {
-    font-size: 14px;
-  }
 }
 .text___68EJd {
   position: relative;
@@ -339,10 +272,4 @@
   line-height: 21px;
   letter-spacing: -0.01em;
   min-width: 0;
-}
-@media (max-width: 640px) {
-  .text___68EJd {
-    font-size: 12px;
-    margin-top: calc(20px + 5px) !important;
-  }
 }

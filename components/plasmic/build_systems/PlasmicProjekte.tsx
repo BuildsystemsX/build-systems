@@ -191,9 +191,9 @@ function PlasmicProjekte__RenderFunc(props: {
                     sty.text__qrqk5
                   )}
                 >
-                  {hasVariant(globalVariants, "screen", "mobile")
-                    ? "Build Systems entwickelt individuelle Smart Sustainability Roadmaps (Nachhaltigkeits-fahrpl\u00e4ne). Hierf\u00fcr stellen wir Nachhaltigkeitsanforderungen der individuellen Projektentwicklung \u00f6konomischen Indikatoren gegen\u00fcber. Wir unterst\u00fctzen Immobilienentwickler:innen in einer fr\u00fchen Phase der Planung Investitionsentscheidungen zu treffen."
-                    : "Wir sind \u00fcberzeugt: Wenn die Projektentwicklung den Zusammenhang von Nachhaltigkeit, Wertbest\u00e4ndigkeit und Zukunftsf\u00e4higkeit nachvollziehen und ebenso darlegen kann, werden Klimaschutzma\u00dfnahmen zur intrinsischen Motivation. So entsteht neben Reporting-Zw\u00e4ngen und regulatorisch vorgeschriebenen Benchmarks ein stetiger Wandel zu einer nachhaltigen Baut\u00e4tigkeit."}
+                  {
+                    "Wir sind \u00fcberzeugt: Wenn die Projektentwicklung den Zusammenhang von Nachhaltigkeit, Wertbest\u00e4ndigkeit und Zukunftsf\u00e4higkeit nachvollziehen und ebenso darlegen kann, werden Klimaschutzma\u00dfnahmen zur intrinsischen Motivation. So entsteht neben Reporting-Zw\u00e4ngen und regulatorisch vorgeschriebenen Benchmarks ein stetiger Wandel zu einer nachhaltigen Baut\u00e4tigkeit."
+                  }
                 </div>
               </div>
             ) : null}
@@ -206,9 +206,9 @@ function PlasmicProjekte__RenderFunc(props: {
                 sty.text___8H29R
               )}
             >
-              {
-                "setzt Projekte von Anfang an #integral / #systemisch / #transparent / #digital auf. "
-              }
+              {hasVariant(globalVariants, "screen", "iPhone")
+                ? "                                setzt Projekte von Anfang an #integral / #systemisch / #transparent / #digital auf. "
+                : "setzt Projekte von Anfang an #integral / #systemisch / #transparent / #digital auf. "}
             </div>
           </div>
           {true ? (
@@ -218,227 +218,243 @@ function PlasmicProjekte__RenderFunc(props: {
                   <p.Stack
                     as={"div"}
                     hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox___1Rbvf)}
+                    className={classNames(projectcss.all, sty.columns___1Rbvf)}
                   >
                     <div
-                      className={classNames(projectcss.all, sty.freeBox__yDqAx)}
+                      className={classNames(projectcss.all, sty.column__xh4E5)}
                     >
-                      <p.PlasmicImg
-                        alt={""}
-                        className={classNames(sty.img___1IeQk)}
-                        displayHeight={"auto" as const}
-                        displayMaxHeight={"none" as const}
-                        displayMaxWidth={"100%" as const}
-                        displayMinHeight={"0" as const}
-                        displayMinWidth={"0" as const}
-                        displayWidth={"auto" as const}
-                        loading={"lazy" as const}
-                        src={{
-                          src: "/plasmic/build_systems/images/image.png",
-                          fullWidth: 760,
-                          fullHeight: 507,
-                          aspectRatio: undefined
-                        }}
-                      />
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__yDqAx
+                        )}
+                      >
+                        <p.PlasmicImg
+                          alt={""}
+                          className={classNames(sty.img___1IeQk)}
+                          displayHeight={"auto" as const}
+                          displayMaxHeight={"none" as const}
+                          displayMaxWidth={"100%" as const}
+                          displayMinHeight={"0" as const}
+                          displayMinWidth={"0" as const}
+                          displayWidth={"auto" as const}
+                          loading={"lazy" as const}
+                          src={{
+                            src: "/plasmic/build_systems/images/image.png",
+                            fullWidth: 760,
+                            fullHeight: 507,
+                            aspectRatio: undefined
+                          }}
+                        />
 
-                      {true ? (
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            sty.freeBox__ljdEt
-                          )}
-                        >
+                        {true ? (
                           <div
                             className={classNames(
                               projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text___3FqJk
+                              sty.freeBox__ljdEt
                             )}
-                          >
-                            {"Schumacher Quartier"}
-                          </div>
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__zl0Ru
-                            )}
-                          >
-                            {hasVariant(globalVariants, "screen", "mobile")
-                              ? "Build Systems entwickelt individuelle Smart Sustainability Roadmaps (Nachhaltigkeits-fahrpl\u00e4ne). Hierf\u00fcr stellen wir Nachhaltigkeitsanforderungen der individuellen Projektentwicklung \u00f6konomischen Indikatoren gegen\u00fcber. Wir unterst\u00fctzen Immobilienentwickler:innen in einer fr\u00fchen Phase der Planung Investitionsentscheidungen zu treffen."
-                              : "Das Schumacher Quartier soll als reines Holzbauaurtier auf dem Gel\u00e4nde des ehemaligen Flughafen Tegel in Berlin entstehen. Das Modellquartier steht fu\u0308r \u00f6kologischen Neubau, Nutzungsmischung und innovative Mobilita\u0308tskonzepte sowie energetisch vorbildliche Geba\u0308ude innerhalb eines autoarmen Wohngebiets, das die ausreichende Gru\u0308nversorgung sicherstellt. "}
-                          </div>
-                          <SmallButton
-                            className={classNames(
-                              "__wab_instance",
-                              sty.smallButton___4YhS2
-                            )}
-                            noLeftSiteShift={true}
                           >
                             <div
                               className={classNames(
                                 projectcss.all,
                                 projectcss.__wab_text,
-                                sty.text__m4Nso
+                                sty.text___3FqJk
                               )}
                             >
-                              {"mehr Erfahren"}
+                              {"Schumacher Quartier"}
                             </div>
-                          </SmallButton>
-                        </div>
-                      ) : null}
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__zl0Ru
+                              )}
+                            >
+                              {
+                                "Das Schumacher Quartier soll als reines Holzbauaurtier auf dem Gel\u00e4nde des ehemaligen Flughafen Tegel in Berlin entstehen. Das Modellquartier steht fu\u0308r \u00f6kologischen Neubau, Nutzungsmischung und innovative Mobilita\u0308tskonzepte sowie energetisch vorbildliche Geba\u0308ude innerhalb eines autoarmen Wohngebiets, das die ausreichende Gru\u0308nversorgung sicherstellt. "
+                              }
+                            </div>
+                            <SmallButton
+                              className={classNames(
+                                "__wab_instance",
+                                sty.smallButton___4YhS2
+                              )}
+                              noLeftSiteShift={true}
+                            >
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.__wab_text,
+                                  sty.text__m4Nso
+                                )}
+                              >
+                                {"mehr Erfahren"}
+                              </div>
+                            </SmallButton>
+                          </div>
+                        ) : null}
+                      </div>
                     </div>
                     <div
-                      className={classNames(projectcss.all, sty.freeBox__dEzr)}
+                      className={classNames(projectcss.all, sty.column__z0JNf)}
                     >
-                      <p.PlasmicImg
-                        alt={""}
-                        className={classNames(sty.img__uxT6W)}
-                        displayHeight={"auto" as const}
-                        displayMaxHeight={"none" as const}
-                        displayMaxWidth={"100%" as const}
-                        displayMinHeight={"0" as const}
-                        displayMinWidth={"0" as const}
-                        displayWidth={"auto" as const}
-                        loading={"lazy" as const}
-                        src={{
-                          src: "/plasmic/build_systems/images/image.png",
-                          fullWidth: 760,
-                          fullHeight: 507,
-                          aspectRatio: undefined
-                        }}
-                      />
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__dEzr
+                        )}
+                      >
+                        <p.PlasmicImg
+                          alt={""}
+                          className={classNames(sty.img__uxT6W)}
+                          displayHeight={"auto" as const}
+                          displayMaxHeight={"none" as const}
+                          displayMaxWidth={"100%" as const}
+                          displayMinHeight={"0" as const}
+                          displayMinWidth={"0" as const}
+                          displayWidth={"auto" as const}
+                          loading={"lazy" as const}
+                          src={{
+                            src: "/plasmic/build_systems/images/image.png",
+                            fullWidth: 760,
+                            fullHeight: 507,
+                            aspectRatio: undefined
+                          }}
+                        />
 
-                      {true ? (
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            sty.freeBox__u8F0G
-                          )}
-                        >
+                        {true ? (
                           <div
                             className={classNames(
                               projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__gjzQa
+                              sty.freeBox__u8F0G
                             )}
-                          >
-                            {"Urban Scale Timber"}
-                          </div>
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text___7Soc
-                            )}
-                          >
-                            {hasVariant(globalVariants, "screen", "mobile")
-                              ? "Build Systems entwickelt individuelle Smart Sustainability Roadmaps (Nachhaltigkeits-fahrpl\u00e4ne). Hierf\u00fcr stellen wir Nachhaltigkeitsanforderungen der individuellen Projektentwicklung \u00f6konomischen Indikatoren gegen\u00fcber. Wir unterst\u00fctzen Immobilienentwickler:innen in einer fr\u00fchen Phase der Planung Investitionsentscheidungen zu treffen."
-                              : "Der urbane Holzbau ist ein Schlu\u0308sselfaktor auf dem Weg zu klimaneutralen St\u00e4dten. Der Baustoff kann durch sein Potenzial als Kohlenstoffspeicher signifikant zur Reduzierung des 38%-Anteils des Bausektors an den globalen CO2-Emissionen beitragen. Urban Scale Timber bietet ein Tool fu\u0308r automatisierte holzbauspezifische Machbarkeitsstudien fu\u0308r private und \u00f6ffentliche Projektentwickler und Planerinnen und macht entsprechendes Fachwissen greifbar, um den Entwicklungsprozess von Holzbauprojekten zu skalieren, zu verbessern und zu beschleunigen. "}
-                          </div>
-                          <SmallButton
-                            className={classNames(
-                              "__wab_instance",
-                              sty.smallButton__oghGj
-                            )}
-                            noLeftSiteShift={true}
                           >
                             <div
                               className={classNames(
                                 projectcss.all,
                                 projectcss.__wab_text,
-                                sty.text__pMslZ
+                                sty.text__gjzQa
                               )}
                             >
-                              {"mehr Erfahren"}
+                              {"Urban Scale Timber"}
                             </div>
-                          </SmallButton>
-                        </div>
-                      ) : null}
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text___7Soc
+                              )}
+                            >
+                              {
+                                "Der urbane Holzbau ist ein Schlu\u0308sselfaktor auf dem Weg zu klimaneutralen St\u00e4dten. Der Baustoff kann durch sein Potenzial als Kohlenstoffspeicher signifikant zur Reduzierung des 38%-Anteils des Bausektors an den globalen CO2-Emissionen beitragen. Urban Scale Timber bietet ein Tool fu\u0308r automatisierte holzbauspezifische Machbarkeitsstudien fu\u0308r private und \u00f6ffentliche Projektentwickler und Planerinnen und macht entsprechendes Fachwissen greifbar, um den Entwicklungsprozess von Holzbauprojekten zu skalieren, zu verbessern und zu beschleunigen. "
+                              }
+                            </div>
+                            <SmallButton
+                              className={classNames(
+                                "__wab_instance",
+                                sty.smallButton__oghGj
+                              )}
+                              noLeftSiteShift={true}
+                            >
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.__wab_text,
+                                  sty.text__pMslZ
+                                )}
+                              >
+                                {"mehr Erfahren"}
+                              </div>
+                            </SmallButton>
+                          </div>
+                        ) : null}
+                      </div>
                     </div>
                   </p.Stack>
                 ) : null}
-              </div>
-              <div className={classNames(projectcss.all, sty.freeBox__r398)}>
                 {true ? (
                   <p.Stack
                     as={"div"}
                     hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox__tjNfh)}
+                    className={classNames(projectcss.all, sty.columns__t2RKz)}
                   >
                     <div
-                      className={classNames(projectcss.all, sty.freeBox__cNy85)}
+                      className={classNames(projectcss.all, sty.column___3VOlO)}
                     >
-                      <p.PlasmicImg
-                        alt={""}
-                        className={classNames(sty.img__mgHu1)}
-                        displayHeight={"auto" as const}
-                        displayMaxHeight={"none" as const}
-                        displayMaxWidth={"100%" as const}
-                        displayMinHeight={"0" as const}
-                        displayMinWidth={"0" as const}
-                        displayWidth={"auto" as const}
-                        loading={"lazy" as const}
-                        src={{
-                          src: "/plasmic/build_systems/images/image.png",
-                          fullWidth: 760,
-                          fullHeight: 507,
-                          aspectRatio: undefined
-                        }}
-                      />
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__iqkqa
+                        )}
+                      >
+                        <p.PlasmicImg
+                          alt={""}
+                          className={classNames(sty.img___4Qh9Z)}
+                          displayHeight={"auto" as const}
+                          displayMaxHeight={"none" as const}
+                          displayMaxWidth={"100%" as const}
+                          displayMinHeight={"0" as const}
+                          displayMinWidth={"0" as const}
+                          displayWidth={"auto" as const}
+                          loading={"lazy" as const}
+                          src={{
+                            src: "/plasmic/build_systems/images/image.png",
+                            fullWidth: 760,
+                            fullHeight: 507,
+                            aspectRatio: undefined
+                          }}
+                        />
 
-                      {true ? (
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            sty.freeBox___2OhR7
-                          )}
-                        >
+                        {true ? (
                           <div
                             className={classNames(
                               projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__veMxA
+                              sty.freeBox__yGvw8
                             )}
-                          >
-                            {"Schumacher Quartier"}
-                          </div>
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text___5Tc0W
-                            )}
-                          >
-                            {hasVariant(globalVariants, "screen", "mobile")
-                              ? "Build Systems entwickelt individuelle Smart Sustainability Roadmaps (Nachhaltigkeits-fahrpl\u00e4ne). Hierf\u00fcr stellen wir Nachhaltigkeitsanforderungen der individuellen Projektentwicklung \u00f6konomischen Indikatoren gegen\u00fcber. Wir unterst\u00fctzen Immobilienentwickler:innen in einer fr\u00fchen Phase der Planung Investitionsentscheidungen zu treffen."
-                              : "Das Schumacher Quartier soll als reines Holzbauaurtier auf dem Gel\u00e4nde des ehemaligen Flughafen Tegel in Berlin entstehen. Das Modellquartier steht fu\u0308r \u00f6kologischen Neubau, Nutzungsmischung und innovative Mobilita\u0308tskonzepte sowie energetisch vorbildliche Geba\u0308ude innerhalb eines autoarmen Wohngebiets, das die ausreichende Gru\u0308nversorgung sicherstellt. "}
-                          </div>
-                          <SmallButton
-                            className={classNames(
-                              "__wab_instance",
-                              sty.smallButton__phTyw
-                            )}
-                            noLeftSiteShift={true}
                           >
                             <div
                               className={classNames(
                                 projectcss.all,
                                 projectcss.__wab_text,
-                                sty.text__jylPj
+                                sty.text__apS19
                               )}
                             >
-                              {"mehr Erfahren"}
+                              {"Schumacher Quartier"}
                             </div>
-                          </SmallButton>
-                        </div>
-                      ) : null}
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__kPioR
+                              )}
+                            >
+                              {
+                                "Das Schumacher Quartier soll als reines Holzbauaurtier auf dem Gel\u00e4nde des ehemaligen Flughafen Tegel in Berlin entstehen. Das Modellquartier steht fu\u0308r \u00f6kologischen Neubau, Nutzungsmischung und innovative Mobilita\u0308tskonzepte sowie energetisch vorbildliche Geba\u0308ude innerhalb eines autoarmen Wohngebiets, das die ausreichende Gru\u0308nversorgung sicherstellt. "
+                              }
+                            </div>
+                            <SmallButton
+                              className={classNames(
+                                "__wab_instance",
+                                sty.smallButton__xgCC
+                              )}
+                              noLeftSiteShift={true}
+                            >
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.__wab_text,
+                                  sty.text__qqZwk
+                                )}
+                              >
+                                {"mehr Erfahren"}
+                              </div>
+                            </SmallButton>
+                          </div>
+                        ) : null}
+                      </div>
                     </div>
                     <div
-                      className={classNames(
-                        projectcss.all,
-                        sty.freeBox___8JO2Q
-                      )}
+                      className={classNames(projectcss.all, sty.column___2DmMx)}
                     />
                   </p.Stack>
                 ) : null}

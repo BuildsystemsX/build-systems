@@ -61,6 +61,16 @@
       }
     },
     {
+      "name": "Mobile Site",
+      "type": "spacing",
+      "value": "10px",
+      "category": "spacing",
+      "meta": {
+        "projectId": "jENqvBHbRPXMByDQmRe4G7",
+        "id": "FoMWgon3f"
+      }
+    },
+    {
       "name": "Normal",
       "type": "fontsize",
       "value": "26px",
@@ -81,6 +91,16 @@
       }
     },
     {
+      "name": "Normal_Mobile",
+      "type": "fontsize",
+      "value": "15px",
+      "category": "fontsize",
+      "meta": {
+        "projectId": "jENqvBHbRPXMByDQmRe4G7",
+        "id": "FjcO7F_7o"
+      }
+    },
+    {
       "name": "Paragraph Header",
       "type": "fontsize",
       "value": "32px",
@@ -88,6 +108,16 @@
       "meta": {
         "projectId": "jENqvBHbRPXMByDQmRe4G7",
         "id": "QMRM6lPQw"
+      }
+    },
+    {
+      "name": "Paragraph Header Mobile",
+      "type": "fontsize",
+      "value": "18px",
+      "category": "fontsize",
+      "meta": {
+        "projectId": "jENqvBHbRPXMByDQmRe4G7",
+        "id": "aIb04WtoB"
       }
     },
     {
@@ -128,6 +158,16 @@
       "meta": {
         "projectId": "jENqvBHbRPXMByDQmRe4G7",
         "id": "1iVBmJGwv"
+      }
+    },
+    {
+      "name": "Paragraph Medium Mobile",
+      "type": "fontsize",
+      "value": "16px",
+      "category": "fontsize",
+      "meta": {
+        "projectId": "jENqvBHbRPXMByDQmRe4G7",
+        "id": "gge24vR4_"
       }
     },
     {
@@ -181,6 +221,16 @@
       }
     },
     {
+      "name": "Small_M",
+      "type": "fontsize",
+      "value": "10px",
+      "category": "fontsize",
+      "meta": {
+        "projectId": "jENqvBHbRPXMByDQmRe4G7",
+        "id": "c6ppehm7A"
+      }
+    },
+    {
       "name": "Subheader",
       "type": "fontsize",
       "value": "45px",
@@ -198,6 +248,16 @@
       "meta": {
         "projectId": "jENqvBHbRPXMByDQmRe4G7",
         "id": "6GDvSmF-K"
+      }
+    },
+    {
+      "name": "Subheader_H_Mob",
+      "type": "fontsize",
+      "value": "27px",
+      "category": "fontsize",
+      "meta": {
+        "projectId": "jENqvBHbRPXMByDQmRe4G7",
+        "id": "FU8Hni77L"
       }
     },
     {

@@ -10,6 +10,14 @@
   justify-self: flex-start;
   padding: 8px;
 }
+@media (max-width: 375px) {
+  .root {
+    height: 187px;
+    width: 355px;
+    justify-self: flex-start;
+    padding: 8px;
+  }
+}
 .freeBox__xTsx6 {
   display: flex;
   flex-direction: column;
@@ -20,6 +28,13 @@
   background: var(--token-Mq_qSd0gm);
   flex-shrink: 0;
   border-radius: 15px;
+}
+@media (max-width: 375px) {
+  .freeBox__xTsx6 {
+    width: 355px;
+    height: 187px;
+    flex-shrink: 0;
+  }
 }
 .freeBox__q5J1D {
   display: flex;
@@ -33,6 +48,11 @@
   min-width: 0;
   padding: 16px;
 }
+@media (max-width: 375px) {
+  .freeBox__q5J1D {
+    padding: 8px;
+  }
+}
 .freeBox__awoI9 {
   display: flex;
   position: relative;
@@ -44,6 +64,14 @@
   max-width: 100%;
   padding: 8px;
 }
+@media (max-width: 375px) {
+  .freeBox__awoI9 {
+    flex-wrap: nowrap;
+    align-items: stretch;
+    align-content: stretch;
+    padding: 0px 8px;
+  }
+}
 .img {
   object-fit: cover;
   max-width: 100%;
@@ -54,6 +82,11 @@
 }
 .img > :global(.__wab_img-spacer) > img {
   object-fit: cover;
+}
+@media (max-width: 375px) {
+  .img {
+    width: 93px;
+  }
 }
 .freeBox___5Lmv3 {
   display: flex;
@@ -68,6 +101,11 @@
   padding-right: 0px;
   padding-top: 0px;
   min-width: 0;
+}
+@media (max-width: 375px) {
+  .freeBox___5Lmv3 {
+    padding-left: 0px;
+  }
 }
 .freeBox__xqBtG {
   position: relative;
@@ -96,6 +134,12 @@
 }
 .text__zOkqU {
   font-family: var(--token-murZRIrJA);
+}
+@media (max-width: 375px) {
+  .text__zOkqU {
+    font-size: 14px;
+    line-height: 17px;
+  }
 }
 .textpersonen_danielDieren__zOkqU03Qoh {
   padding-top: 0px;

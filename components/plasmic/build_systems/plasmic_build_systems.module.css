@@ -45,6 +45,27 @@
   --plasmic-token-2-cells: var(--token-E903dIBMc);
   --token-115P4K5E6: #ebebeb;
   --plasmic-token-second-white: var(--token-115P4K5E6);
+  --token-FoMWgon3f: 10px;
+  --plasmic-token-mobile-site: var(--token-FoMWgon3f);
+  --token-FU8Hni77L: 27px;
+  --plasmic-token-subheader-h-mob: var(--token-FU8Hni77L);
+  --token-FjcO7F_7o: 15px;
+  --plasmic-token-normal-mobile: var(--token-FjcO7F_7o);
+  --token-c6ppehm7A: 10px;
+  --plasmic-token-small-m: var(--token-c6ppehm7A);
+  --token-aIb04WtoB: 18px;
+  --plasmic-token-paragraph-header-mobile: var(--token-aIb04WtoB);
+  --token-gge24vR4_: 16px;
+  --plasmic-token-paragraph-medium-mobile: var(--token-gge24vR4_);
+}
+
+@media (max-width: 375px) {
+  .plasmic_tokens {
+    --token-FoMWgon3f: 5px;
+    --plasmic-token-mobile-site: var(--token-FoMWgon3f);
+    --token-gge24vR4_: 13px;
+    --plasmic-token-paragraph-medium-mobile: var(--token-gge24vR4_);
+  }
 }
 
 .plasmic_tokens {

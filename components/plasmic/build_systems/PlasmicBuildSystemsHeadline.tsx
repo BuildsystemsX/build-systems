@@ -37,8 +37,6 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 
-import { useScreenVariants as useScreenVariantsjnTclXkDzSl7V } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: jnTCLXkDZSl7V/globalVariant
-
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import projectcss from "./plasmic_build_systems.module.css"; // plasmic-import: jENqvBHbRPXMByDQmRe4G7/projectcss
@@ -131,10 +129,6 @@ function PlasmicBuildSystemsHeadline__RenderFunc(props: {
     $refs
   });
 
-  const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariantsjnTclXkDzSl7V()
-  });
-
   return (
     true ? (
       <div
@@ -175,7 +169,7 @@ function PlasmicBuildSystemsHeadline__RenderFunc(props: {
             }
           )}
         >
-          {hasVariant(globalVariants, "screen", "mobile") ? "Build " : "Build"}
+          {"Build"}
         </div>
         <div
           className={classNames(
@@ -193,9 +187,7 @@ function PlasmicBuildSystemsHeadline__RenderFunc(props: {
             }
           )}
         >
-          {hasVariant(globalVariants, "screen", "mobile")
-            ? "Systems"
-            : "Systems"}
+          {"Systems"}
         </div>
       </div>
     ) : null

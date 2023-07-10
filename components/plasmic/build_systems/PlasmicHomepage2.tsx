@@ -170,12 +170,13 @@ function PlasmicHomepage2__RenderFunc(props: {
               className={classNames("__wab_instance", sty.buildSystemsHeadline)}
             />
           ) : null}
-          <Cover
-            data-plasmic-name={"cover"}
-            data-plasmic-override={overrides.cover}
-            className={classNames("__wab_instance", sty.cover)}
-          />
-
+          {(hasVariant(globalVariants, "screen", "iPhone") ? true : true) ? (
+            <Cover
+              data-plasmic-name={"cover"}
+              data-plasmic-override={overrides.cover}
+              className={classNames("__wab_instance", sty.cover)}
+            />
+          ) : null}
           <div className={classNames(projectcss.all, sty.freeBox___332Cd)}>
             <Menu
               data-plasmic-name={"menu"}
@@ -221,9 +222,23 @@ function PlasmicHomepage2__RenderFunc(props: {
                 sty.text__ooJwq
               )}
             >
-              {
+              {hasVariant(globalVariants, "screen", "iPhone") ? (
+                <React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ color: "transparent" }}
+                  >
+                    {"Build Systems"}
+                  </span>
+                  <React.Fragment>
+                    {
+                      "  erm\u00f6glicht den Nachhaltigkeits- anforderungen von morgen \u00f6konomisch und technisch gerecht zu werden."
+                    }
+                  </React.Fragment>
+                </React.Fragment>
+              ) : (
                 "erm\u00f6glicht den Nachhaltigkeitsanforderungen von morgen \u00f6konomisch und technisch gerecht zu werden."
-              }
+              )}
             </div>
           </div>
           <div className={classNames(projectcss.all, sty.freeBox__yqM5)}>
@@ -236,15 +251,20 @@ function PlasmicHomepage2__RenderFunc(props: {
                     sty.text__fmuY
                   )}
                 >
-                  {hasVariant(globalVariants, "screen", "mobile")
-                    ? "Build Systems entwickelt individuelle Smart Sustainability Roadmaps (Nachhaltigkeits-fahrpl\u00e4ne). Hierf\u00fcr stellen wir Nachhaltigkeitsanforderungen der individuellen Projektentwicklung \u00f6konomischen Indikatoren gegen\u00fcber. Wir unterst\u00fctzen Immobilienentwickler:innen in einer fr\u00fchen Phase der Planung Investitionsentscheidungen zu treffen."
-                    : "Impact Intelligence steht f\u00fcr einen smarten Umgang mit technischen und sozio\u00f6konomischen Ma\u00dfnahmen, die die Zukunftsf\u00e4higkeit des Geb\u00e4udesektors vorantreiben. Unsere Smart Sustainability Roadmaps helfen Ihnen, das Potential Ihrer Assets optimal auszusch\u00f6pfen und Ihren \u00f6kologischen und sozialen Impact in der Geb\u00e4udeentwicklung zu skalieren. "}
+                  {
+                    "Impact Intelligence steht f\u00fcr einen smarten Umgang mit technischen und sozio\u00f6konomischen Ma\u00dfnahmen, die die Zukunftsf\u00e4higkeit des Geb\u00e4udesektors vorantreiben. Unsere Smart Sustainability Roadmaps helfen Ihnen, das Potential Ihrer Assets optimal auszusch\u00f6pfen und Ihren \u00f6kologischen und sozialen Impact in der Geb\u00e4udeentwicklung zu skalieren. "
+                  }
                 </div>
                 <SmallButton
                   className={classNames(
                     "__wab_instance",
                     sty.smallButton___7Kbng
                   )}
+                  noLeftSiteShift={
+                    hasVariant(globalVariants, "screen", "iPhone")
+                      ? true
+                      : undefined
+                  }
                 >
                   <div
                     className={classNames(
@@ -269,9 +289,23 @@ function PlasmicHomepage2__RenderFunc(props: {
                 sty.text__a2N3
               )}
             >
-              {
+              {hasVariant(globalVariants, "screen", "iPhone") ? (
+                <React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ color: "transparent" }}
+                  >
+                    {"Build Systems"}
+                  </span>
+                  <React.Fragment>
+                    {
+                      "  macht Ihre Projekte #gr\u00fcn / #beherrschbar / #zukunftsf\u00e4hig / #risikoarm.\n"
+                    }
+                  </React.Fragment>
+                </React.Fragment>
+              ) : (
                 "macht Ihre Projekte #gr\u00fcn / #beherrschbar / #zukunftsf\u00e4hig / #risikoarm.\n"
-              }
+              )}
             </div>
           </div>
           <div className={classNames(projectcss.all, sty.freeBox__s3N)}>
@@ -284,15 +318,20 @@ function PlasmicHomepage2__RenderFunc(props: {
                     sty.text__gCnjp
                   )}
                 >
-                  {hasVariant(globalVariants, "screen", "mobile")
-                    ? "Build Systems entwickelt individuelle Smart Sustainability Roadmaps (Nachhaltigkeits-fahrpl\u00e4ne). Hierf\u00fcr stellen wir Nachhaltigkeitsanforderungen der individuellen Projektentwicklung \u00f6konomischen Indikatoren gegen\u00fcber. Wir unterst\u00fctzen Immobilienentwickler:innen in einer fr\u00fchen Phase der Planung Investitionsentscheidungen zu treffen."
-                    : "Unsere Nachhaltigkeitsfahrpl\u00e4ne unterst\u00fctzt die individuelle Projektentwicklung in einer fr\u00fchen Phase der Planung, Investitionsentscheidungen zu treffen, Projekte ganzheitlich aufzugleisen und nachhaltige Wertstabilit\u00e4t zu schaffen."}
+                  {
+                    "Unsere Nachhaltigkeitsfahrpl\u00e4ne unterst\u00fctzt die individuelle Projektentwicklung in einer fr\u00fchen Phase der Planung, Investitionsentscheidungen zu treffen, Projekte ganzheitlich aufzugleisen und nachhaltige Wertstabilit\u00e4t zu schaffen."
+                  }
                 </div>
                 <SmallButton
                   className={classNames(
                     "__wab_instance",
                     sty.smallButton___4LqCo
                   )}
+                  noLeftSiteShift={
+                    hasVariant(globalVariants, "screen", "iPhone")
+                      ? true
+                      : undefined
+                  }
                 >
                   <div
                     className={classNames(

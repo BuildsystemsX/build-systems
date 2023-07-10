@@ -38,8 +38,6 @@ import {
 } from "@plasmicapp/react-web";
 import OldButtonExternalLink from "../../OldButtonExternalLink"; // plasmic-import: noJZH-4dRr/component
 
-import { useScreenVariants as useScreenVariantsjnTclXkDzSl7V } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: jnTCLXkDZSl7V/globalVariant
-
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import projectcss from "./plasmic_build_systems.module.css"; // plasmic-import: jENqvBHbRPXMByDQmRe4G7/projectcss
@@ -100,10 +98,6 @@ function PlasmicHomepage__RenderFunc(props: {
   const currentUser = p.useCurrentUser?.() || {};
 
   const [$queries, setDollarQueries] = React.useState({});
-
-  const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariantsjnTclXkDzSl7V()
-  });
 
   return (
     <React.Fragment>
@@ -178,9 +172,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       "blend" as const
                     )}
                   >
-                    {hasVariant(globalVariants, "screen", "mobile")
-                      ? "Build "
-                      : "Build"}
+                    {"Build"}
                   </div>
                   <div
                     className={classNames(
@@ -190,9 +182,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       ``
                     )}
                   >
-                    {hasVariant(globalVariants, "screen", "mobile")
-                      ? "Systems"
-                      : "Systems"}
+                    {"Systems"}
                   </div>
                 </div>
               ) : null}
@@ -237,20 +227,9 @@ function PlasmicHomepage__RenderFunc(props: {
                 sty.text___62N6U
               )}
             >
-              {hasVariant(globalVariants, "screen", "mobile") ? (
-                <React.Fragment>
-                  <span
-                    className={"plasmic_default__all plasmic_default__span"}
-                    style={{ color: "#ECECEC" }}
-                  >
-                    {
-                      "Build Systems entwickelt individuelle Smart Sustainability Roadmaps (Nachhaltigkeits-fahrpl\u00e4ne). Hierf\u00fcr stellen wir Nachhaltigkeitsanforderungen der individuellen Projektentwicklung \u00f6konomischen Indikatoren gegen\u00fcber. Wir unterst\u00fctzen private und \u00f6ffentliche Immobilienentwickler:innen in einer fr\u00fchen Phase der Planung Investitionsentscheidungen zu treffen."
-                    }
-                  </span>
-                </React.Fragment>
-              ) : (
+              {
                 "Build Systems entwickelt individuelle Smart Sustainability Roadmaps (Nachhaltigkeitsfahrpl\u00e4ne). Hierf\u00fcr stellen wir Nachhaltigkeitsanforderungen der individuellen Projektentwicklung \u00f6konomischen Indikatoren gegen\u00fcber. Wir unterst\u00fctzen private und \u00f6ffentliche Immobilienentwickler:innen in einer fr\u00fchen Phase der Planung Investitionsentscheidungen zu treffen."
-              )}
+              }
             </div>
             <div className={classNames(projectcss.all, sty.freeBox__zqs6K)}>
               <p.Stack
@@ -347,9 +326,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     }
                   }}
                 >
-                  {hasVariant(globalVariants, "screen", "mobile")
-                    ? "Imprint, Privacy"
-                    : "Imprint, Privacy"}
+                  {"Imprint, Privacy"}
                 </div>
               </p.Stack>
             </div>

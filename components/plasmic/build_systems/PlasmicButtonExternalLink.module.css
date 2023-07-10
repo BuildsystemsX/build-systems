@@ -34,3 +34,8 @@
   color: var(--token-gvQcXRBmf);
   user-select: none;
 }
+@media (max-width: 375px) {
+  .slotTargetChildren {
+    font-size: 13px;
+  }
+}

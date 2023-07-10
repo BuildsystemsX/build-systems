@@ -189,7 +189,9 @@ function PlasmicPersonen__RenderFunc(props: {
                 sty.text__iVp6
               )}
             >
-              {"denkt #vernetzt / #ganzheitlich / #langfristig."}
+              {hasVariant(globalVariants, "screen", "iPhone")
+                ? "                               denkt #vernetzt / #ganzheitlich / #langfristig."
+                : "denkt #vernetzt / #ganzheitlich / #langfristig."}
             </div>
           </div>
           <div className={classNames(projectcss.all, sty.freeBox__riity)}>
@@ -200,9 +202,9 @@ function PlasmicPersonen__RenderFunc(props: {
                 sty.text__d4KoG
               )}
             >
-              {hasVariant(globalVariants, "screen", "mobile")
-                ? "Build Systems entwickelt individuelle Smart Sustainability Roadmaps (Nachhaltigkeits-fahrpl\u00e4ne). Hierf\u00fcr stellen wir Nachhaltigkeitsanforderungen der individuellen Projektentwicklung \u00f6konomischen Indikatoren gegen\u00fcber. Wir unterst\u00fctzen Immobilienentwickler:innen in einer fr\u00fchen Phase der Planung Investitionsentscheidungen zu treffen."
-                : "Wir vertreten nicht nur einen integralen Prozess in der Planung, wir leben Interdisziplinarit\u00e4t im Team: Jeder bringt einen Baustein der ganzheitlichen Betrachtung mit ein. Gemeinsam erfassen wir \u00f6kologische Anforderungen auf allen Ebenen und setzen die Gesamtwirkung der Ma\u00dfnahmen zur Emissionsreduktion in den sozio\u00f6konomischen Fokus."}
+              {
+                "Wir vertreten nicht nur einen integralen Prozess in der Planung, wir leben Interdisziplinarit\u00e4t im Team: Jeder bringt einen Baustein der ganzheitlichen Betrachtung mit ein. Gemeinsam erfassen wir \u00f6kologische Anforderungen auf allen Ebenen und setzen die Gesamtwirkung der Ma\u00dfnahmen zur Emissionsreduktion in den sozio\u00f6konomischen Fokus."
+              }
             </div>
           </div>
           <div className={classNames(projectcss.all, sty.freeBox__cYVnn)}>
@@ -213,12 +215,18 @@ function PlasmicPersonen__RenderFunc(props: {
                 sty.text__msWiq
               )}
             >
-              {"fu\u0308hrt  #Kompetenzen / #Prozesse / #Tools zusammen."}
+              {hasVariant(globalVariants, "screen", "iPhone")
+                ? "                                 fu\u0308hrt  #Kompetenzen / #Prozesse / #Tools zusammen."
+                : "fu\u0308hrt  #Kompetenzen / #Prozesse / #Tools zusammen."}
             </div>
           </div>
           <div className={classNames(projectcss.all, sty.freeBox___3Ke2E)}>
             {true ? (
-              <div className={classNames(projectcss.all, sty.freeBox___1CKvB)}>
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox___1CKvB)}
+              >
                 <PersonBox
                   className={classNames("__wab_instance", sty.personBox__qjRtW)}
                   personen={"martinBittmann" as const}
@@ -251,7 +259,7 @@ function PlasmicPersonen__RenderFunc(props: {
                   className={classNames("__wab_instance", sty.personBox__vEf5N)}
                   personen={"andreasThoma" as const}
                 />
-              </div>
+              </p.Stack>
             ) : null}
           </div>
           <div className={classNames(projectcss.all, sty.freeBox__l40T)} />
