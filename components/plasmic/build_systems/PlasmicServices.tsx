@@ -193,7 +193,7 @@ function PlasmicServices__RenderFunc(props: {
                 >
                   {hasVariant(globalVariants, "screen", "mobile")
                     ? "Build Systems entwickelt individuelle Smart Sustainability Roadmaps (Nachhaltigkeits-fahrpl\u00e4ne). Hierf\u00fcr stellen wir Nachhaltigkeitsanforderungen der individuellen Projektentwicklung \u00f6konomischen Indikatoren gegen\u00fcber. Wir unterst\u00fctzen Immobilienentwickler:innen in einer fr\u00fchen Phase der Planung Investitionsentscheidungen zu treffen."
-                    : "Wie viel Nachhaltigkeit m\u00f6chten Sie planen und umsetzen?\n       Wir stellen die relevanten Entscheidungsgrundlagen bereit, damit Sie den effizientesten\nEntwicklungspfad w\u00e4hlen, schlagkr\u00e4ftige Ma\u00dfnahmen ansto\u00dfen und Stakeholder koordinieren k\u00f6nnen."}
+                    : "Wie viel Nachhaltigkeit m\u00f6chten bzw. sollten Sie planen und umsetzen?\n      Wir stellen die relevanten Entscheidungsgrundlagen bereit, damit Sie den effizientesten Entwicklungspfad w\u00e4hlen, wirkungsvolle  Ma\u00dfnahmen einleiten und Stakeholder koordinieren k\u00f6nnen."}
                 </div>
               </div>
             ) : null}
@@ -206,7 +206,9 @@ function PlasmicServices__RenderFunc(props: {
                 sty.text___6DS3A
               )}
             >
-              {"beh\u00e4lt Bedarfe im Blick."}
+              {
+                "beh\u00e4lt #Bedarfe, #Funktionalit\u00e4t, #Anforderungen, #Benefits im Blick.\n"
+              }
             </div>
           </div>
           <div className={classNames(projectcss.all, sty.freeBox__wfs2Y)}>
@@ -249,7 +251,9 @@ function PlasmicServices__RenderFunc(props: {
                 sty.text__haXv7
               )}
             >
-              {"arbeitet mit dezidierte Benchmarks die bew\u00e4hrt sind."}
+              {
+                "Build Systems arbeitet mit dezidierten #Benchmarks/#Indikatoren, die #klima-intelligent /#bew\u00e4hrt sind. "
+              }
             </div>
           </div>
           <div className={classNames(projectcss.all, sty.freeBox__tjNMr)}>
@@ -291,7 +295,9 @@ function PlasmicServices__RenderFunc(props: {
                 sty.text___9MnBc
               )}
             >
-              {"erstellt Vordimensionierungen zu #Anlagentechnik."}
+              {
+                "Build Systems erstellt Vordimensionierungen zu #Anlagentechnik / #Konstruktionsmethoden / #Materialwahl / #Wiederverwendungspotential.  "
+              }
             </div>
           </div>
           <div className={classNames(projectcss.all, sty.freeBox___2S9Zv)}>
@@ -322,7 +328,7 @@ function PlasmicServices__RenderFunc(props: {
                   >
                     {hasVariant(globalVariants, "screen", "mobile")
                       ? "Build Systems entwickelt individuelle Smart Sustainability Roadmaps (Nachhaltigkeits-fahrpl\u00e4ne). Hierf\u00fcr stellen wir Nachhaltigkeitsanforderungen der individuellen Projektentwicklung \u00f6konomischen Indikatoren gegen\u00fcber. Wir unterst\u00fctzen Immobilienentwickler:innen in einer fr\u00fchen Phase der Planung Investitionsentscheidungen zu treffen."
-                      : "Sie m\u00f6chten fr\u00fchzeitig im Prozess die entscheidenden Weichen stellen und Umplanungen vermeiden? Durch integrale Planung bilden wir technische Rahmenbedingungen bis zu einer Detailtiefe des Wandaufbaus ab und \u00fcbersetzen Anforderungen und Benchmarks in realistische Umsetzungsstrategien."}
+                      : "Sie m\u00f6chten fr\u00fchzeitig im Prozess die entscheidenden Weichen stellen und Umplanungen vermeiden? Durch integrale Planung bilden wir technische Rahmenbedingungen bis zu einer Detailtiefe des Wandaufbaus ab. Wir \u00fcbersetzen Anforderungen und Benchmarks in realistische Umsetzungsstrategien \u2013 f\u00fcr heute und morgen. "}
                   </div>
                 </div>
               </div>
@@ -371,7 +377,7 @@ function PlasmicServices__RenderFunc(props: {
                       >
                         {hasVariant(globalVariants, "screen", "mobile")
                           ? "Build Systems entwickelt individuelle Smart Sustainability Roadmaps (Nachhaltigkeits-fahrpl\u00e4ne). Hierf\u00fcr stellen wir Nachhaltigkeitsanforderungen der individuellen Projektentwicklung \u00f6konomischen Indikatoren gegen\u00fcber. Wir unterst\u00fctzen Immobilienentwickler:innen in einer fr\u00fchen Phase der Planung Investitionsentscheidungen zu treffen."
-                          : "\u25cf Definieren Sie klare Ziele und Erfolgskriterien. Stellen Sie die Entwicklung zum gru\u0308nen Asset mit Blick auf Reporting-Anforderungen sicher.\n\u25cf Pru\u0308fen Sie anhand der Simulation von Variantenstudien, die Wirkkraft der gew\u00e4hlten Ma\u00dfnahmen und optimieren Sie anhand dezidierter Indikatoren.\n\u25cf Legen Sie Ihren Nachhaltigkeitsfahrplan und entsprechende Benchmarks fu\u0308r den weiteren Planungsverlauf fest."}
+                          : "\u25cf Definieren Sie klare Ziele und Erfolgskriterien. Stellen Sie die Entwicklung zum gru\u0308nen Asset mit Blick auf Reporting-Anforderungen und institutionelle K\u00e4ufer sicher.\n\u25cf Pr\u00fcfen Sie anhand der Simulation von bau-, anlagen und energietechnischen Variantenstudien, die Wirkkraft der gew\u00e4hlten Ma\u00dfnahmen und optimieren Sie anhand dezidierter Indikatoren.\n\u25cf Legen Sie Ihren Nachhaltigkeitsfahrplan und entsprechende Benchmarks fu\u0308r den weiteren Planungsverlauf fest."}
                       </div>
                     </div>
                   </div>
@@ -403,7 +409,7 @@ function PlasmicServices__RenderFunc(props: {
                       >
                         {hasVariant(globalVariants, "screen", "mobile")
                           ? "Build Systems entwickelt individuelle Smart Sustainability Roadmaps (Nachhaltigkeits-fahrpl\u00e4ne). Hierf\u00fcr stellen wir Nachhaltigkeitsanforderungen der individuellen Projektentwicklung \u00f6konomischen Indikatoren gegen\u00fcber. Wir unterst\u00fctzen Immobilienentwickler:innen in einer fr\u00fchen Phase der Planung Investitionsentscheidungen zu treffen."
-                          : "\u25cf Vereinfachen Sie die Kommunikation mit anschaulichen Reports und verantworten Sie Entscheidungen anhand eindeutiger Indikatoren.\n\u25cf Tracken Sie den Fortschritt im weiteren Verlauf und iterieren Sie effizient bei n\u00f6tigen Anpassungen."}
+                          : "\u25cf Vereinfachen Sie die Kommunikation mit anschaulichen Reports und verantworten Sie Entscheidungen anhand eindeutiger Indikatoren.\n\u25cf Tracken Sie den Fortschritt im weiteren Verlauf und iterieren Sie effizient bei n\u00f6tigen Anpassungen.\n\u25cf Gew\u00e4hrleisten Sie durch Lebenszyklusorientierte Kostenbetrachtungen langfristige Wertstabilit\u00e4t."}
                       </div>
                     </div>
                   </div>
@@ -435,7 +441,7 @@ function PlasmicServices__RenderFunc(props: {
                       >
                         {hasVariant(globalVariants, "screen", "mobile")
                           ? "Build Systems entwickelt individuelle Smart Sustainability Roadmaps (Nachhaltigkeits-fahrpl\u00e4ne). Hierf\u00fcr stellen wir Nachhaltigkeitsanforderungen der individuellen Projektentwicklung \u00f6konomischen Indikatoren gegen\u00fcber. Wir unterst\u00fctzen Immobilienentwickler:innen in einer fr\u00fchen Phase der Planung Investitionsentscheidungen zu treffen."
-                          : "\u25cf Stellen Sie die Machbarkeit mit einer integralen Herangehensweise sicher und minimieren Sie planerisches Risiko.\n\u25cf Beherrschen Sie fru\u0308hzeitig Kosten und Finanzbedarf. Gew\u00e4hrleisten Sie Konformit\u00e4t mit F\u00f6rderkriterien durch Vordimensionierung und Real-Time-Bewertung.\n\u25cf Legen Sie anhand der Leitindikatoren"}
+                          : "\u25cf Stellen Sie die Machbarkeit mit einer integralen Herangehensweise sicher und minimieren Sie planerisches Risiko.\n\u25cf Beherrschen Sie fru\u0308hzeitig Kosten und Finanzbedarf. Gew\u00e4hrleisten Sie Konformit\u00e4t mit F\u00f6rderkriterien durch Vordimensionierung und Real-Time-Bewertung.\n\u25cf Legen Sie anhand der Leitindikatoren die Mobilisierung von Finanzmitteln f\u00fcr alle nachvollziehbar dar. "}
                       </div>
                     </div>
                   </div>

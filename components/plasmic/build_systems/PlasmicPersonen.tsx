@@ -189,7 +189,7 @@ function PlasmicPersonen__RenderFunc(props: {
                 sty.text__iVp6
               )}
             >
-              {"denkt #vernetzt."}
+              {"denkt #vernetzt / #ganzheitlich / #langfristig."}
             </div>
           </div>
           <div className={classNames(projectcss.all, sty.freeBox__riity)}>
@@ -213,7 +213,7 @@ function PlasmicPersonen__RenderFunc(props: {
                 sty.text__msWiq
               )}
             >
-              {"fu\u0308hrt #Kompetenzen zusammen"}
+              {"fu\u0308hrt  #Kompetenzen / #Prozesse / #Tools zusammen."}
             </div>
           </div>
           <div className={classNames(projectcss.all, sty.freeBox___3Ke2E)}>
@@ -221,77 +221,36 @@ function PlasmicPersonen__RenderFunc(props: {
               <div className={classNames(projectcss.all, sty.freeBox___1CKvB)}>
                 <PersonBox
                   className={classNames("__wab_instance", sty.personBox__qjRtW)}
-                  slot={"Martin Bittmann"}
-                >
-                  {
-                    "Dipl.-Ing. Architektur\n\nArchitekt Bay. Architektenkammer, Energieeffizienz-Experte, Nachhaltiges Bauen in Holz, Energetische Betrachtungen, Projektmanagement & -entwicklung"
-                  }
-                </PersonBox>
+                  personen={"martinBittmann" as const}
+                />
+
                 <PersonBox
                   className={classNames("__wab_instance", sty.personBox__dOy15)}
-                  slot={"Julia Dorn"}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__dm1D9
-                    )}
-                  >
-                    {
-                      "M.Sc. Urban Design, B.Sc. Architektur\n\nUrbane Transformation, Anforderungen EU Taxonomie und Nachhaltig-\nkeitsreporting, Kommunikation, Akteursmanagement & Moderation"
-                    }
-                  </div>
-                </PersonBox>
+                  personen={"juliaDorn" as const}
+                />
+
                 <PersonBox
                   className={classNames("__wab_instance", sty.personBox__sbHWq)}
-                  slot={"Daniel Dieren"}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text___8YBaf
-                    )}
-                  >
-                    {
-                      "M.Sc. Bauingenieur, M.Sc. Architektur\n\nNachhaltiges Konstruieren, Ingenieurholzbau, Integrale Planung, Lebenszyklusbetrachtung"
-                    }
-                  </div>
-                </PersonBox>
+                  personen={"danielDieren" as const}
+                />
+
                 <PersonBox
                   className={classNames(
                     "__wab_instance",
                     sty.personBox___55Hka
                   )}
-                  slot={"Daniel Locatelli"}
-                >
-                  {
-                    "M.Sc. ITECH, Dipl. Architektur\n\nComputational Design, Parametrische Systeme, Entwicklung digitaler Tools und Workflows, Digitale Fabrikation"
-                  }
-                </PersonBox>
+                  personen={"danielLocatelli" as const}
+                />
+
                 <PersonBox
                   className={classNames("__wab_instance", sty.personBox__cDjn)}
-                  slot={"Vinzenz Trimborn"}
-                >
-                  {
-                    "B.Sc. Wirtschaftsinformatik\n\nSoftwareentwicklung, Digitale Planung, Implementierung digitale Workflows"
-                  }
-                </PersonBox>
+                  personen={"vinzenzTrimborn" as const}
+                />
+
                 <PersonBox
                   className={classNames("__wab_instance", sty.personBox__vEf5N)}
-                  slot={"Andreas Thoma"}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__hgfxB
-                    )}
-                  >
-                    {"M.Sc. Architektur"}
-                  </div>
-                </PersonBox>
+                  personen={"andreasThoma" as const}
+                />
               </div>
             ) : null}
           </div>

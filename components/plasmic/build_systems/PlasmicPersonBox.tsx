@@ -44,39 +44,51 @@ import projectcss from "./plasmic_build_systems.module.css"; // plasmic-import: 
 import sty from "./PlasmicPersonBox.module.css"; // plasmic-import: JED_FSQOoo/css
 
 export type PlasmicPersonBox__VariantMembers = {
+  personen:
+    | "martinBittmann"
+    | "danielDieren"
+    | "danielLocatelli"
+    | "juliaDorn"
+    | "vinzenzTrimborn"
+    | "andreasThoma";
   expanded: "expanded";
 };
 export type PlasmicPersonBox__VariantsArgs = {
+  personen?: SingleChoiceArg<
+    | "martinBittmann"
+    | "danielDieren"
+    | "danielLocatelli"
+    | "juliaDorn"
+    | "vinzenzTrimborn"
+    | "andreasThoma"
+  >;
   expanded?: SingleBooleanChoiceArg<"expanded">;
 };
 type VariantPropType = keyof PlasmicPersonBox__VariantsArgs;
 export const PlasmicPersonBox__VariantProps = new Array<VariantPropType>(
+  "personen",
   "expanded"
 );
 
-export type PlasmicPersonBox__ArgsType = {
-  children?: React.ReactNode;
-  slot?: React.ReactNode;
-  children2?: React.ReactNode;
-};
+export type PlasmicPersonBox__ArgsType = {};
 type ArgPropType = keyof PlasmicPersonBox__ArgsType;
-export const PlasmicPersonBox__ArgProps = new Array<ArgPropType>(
-  "children",
-  "slot",
-  "children2"
-);
+export const PlasmicPersonBox__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicPersonBox__OverridesType = {
   root?: p.Flex<"div">;
   img?: p.Flex<typeof p.PlasmicImg>;
   smallButton?: p.Flex<typeof SmallButton>;
-  text?: p.Flex<"div">;
 };
 
 export interface DefaultPersonBoxProps {
-  children?: React.ReactNode;
-  slot?: React.ReactNode;
-  children2?: React.ReactNode;
+  personen?: SingleChoiceArg<
+    | "martinBittmann"
+    | "danielDieren"
+    | "danielLocatelli"
+    | "juliaDorn"
+    | "vinzenzTrimborn"
+    | "andreasThoma"
+  >;
   expanded?: SingleBooleanChoiceArg<"expanded">;
   className?: string;
 }
@@ -125,6 +137,12 @@ function PlasmicPersonBox__RenderFunc(props: {
         type: "private",
         variableType: "variant",
         initFunc: ({ $props, $state, $queries, $ctx }) => $props.expanded
+      },
+      {
+        path: "personen",
+        type: "private",
+        variableType: "variant",
+        initFunc: ({ $props, $state, $queries, $ctx }) => $props.personen
       }
     ],
     [$props, $ctx, $refs]
@@ -150,18 +168,47 @@ function PlasmicPersonBox__RenderFunc(props: {
           projectcss.plasmic_mixins,
           projectcss.plasmic_tokens,
           sty.root,
-          { [sty.rootexpanded]: hasVariant($state, "expanded", "expanded") }
+          {
+            [sty.rootexpanded]: hasVariant($state, "expanded", "expanded"),
+            [sty.rootpersonen_danielDieren]: hasVariant(
+              $state,
+              "personen",
+              "danielDieren"
+            )
+          }
         )}
       >
-        <div className={classNames(projectcss.all, sty.freeBox__xTsx6)}>
-          <div className={classNames(projectcss.all, sty.freeBox__q5J1D)}>
+        <div
+          className={classNames(projectcss.all, sty.freeBox__xTsx6, {
+            [sty.freeBoxpersonen_vinzenzTrimborn__xTsx6JfChG]: hasVariant(
+              $state,
+              "personen",
+              "vinzenzTrimborn"
+            )
+          })}
+        >
+          <div
+            className={classNames(projectcss.all, sty.freeBox__q5J1D, {
+              [sty.freeBoxpersonen_andreasThoma__q5J1DusA8U]: hasVariant(
+                $state,
+                "personen",
+                "andreasThoma"
+              )
+            })}
+          >
             {true ? (
               <div className={classNames(projectcss.all, sty.freeBox__awoI9)}>
                 <p.PlasmicImg
                   data-plasmic-name={"img"}
                   data-plasmic-override={overrides.img}
                   alt={""}
-                  className={classNames(sty.img)}
+                  className={classNames(sty.img, {
+                    [sty.imgpersonen_juliaDorn]: hasVariant(
+                      $state,
+                      "personen",
+                      "juliaDorn"
+                    )
+                  })}
                   displayHeight={"auto" as const}
                   displayMaxHeight={"none" as const}
                   displayMaxWidth={"100%" as const}
@@ -184,35 +231,102 @@ function PlasmicPersonBox__RenderFunc(props: {
                   $state,
                   "expanded",
                   "expanded"
+                ),
+                [sty.freeBoxpersonen_andreasThoma___5Lmv3UsA8U]: hasVariant(
+                  $state,
+                  "personen",
+                  "andreasThoma"
                 )
               })}
             >
               <div className={classNames(projectcss.all, sty.freeBox__xqBtG)}>
-                {p.renderPlasmicSlot({
-                  defaultContents: "First Name Last Name",
-                  value: args.slot,
-                  className: classNames(sty.slotTargetSlot, {
-                    [sty.slotTargetSlotexpanded]: hasVariant(
-                      $state,
-                      "expanded",
-                      "expanded"
-                    )
-                  })
-                })}
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text___5JEt,
+                    {
+                      [sty.textpersonen_andreasThoma___5JEtusA8U]: hasVariant(
+                        $state,
+                        "personen",
+                        "andreasThoma"
+                      ),
+                      [sty.textpersonen_danielDieren___5JEt03Qoh]: hasVariant(
+                        $state,
+                        "personen",
+                        "danielDieren"
+                      ),
+                      [sty.textpersonen_danielLocatelli___5JEteOoDg]:
+                        hasVariant($state, "personen", "danielLocatelli"),
+                      [sty.textpersonen_juliaDorn___5JEtbja9Y]: hasVariant(
+                        $state,
+                        "personen",
+                        "juliaDorn"
+                      ),
+                      [sty.textpersonen_vinzenzTrimborn___5JEtJfChG]:
+                        hasVariant($state, "personen", "vinzenzTrimborn")
+                    }
+                  )}
+                >
+                  {hasVariant($state, "personen", "andreasThoma")
+                    ? "Andreas Thoma"
+                    : hasVariant($state, "personen", "vinzenzTrimborn")
+                    ? "Vinzenz Trimborn"
+                    : hasVariant($state, "personen", "juliaDorn")
+                    ? "Julia Dorn"
+                    : hasVariant($state, "personen", "danielLocatelli")
+                    ? "Daniel Locatelli"
+                    : hasVariant($state, "personen", "danielDieren")
+                    ? "Daniel Dieren "
+                    : "Martin Bittmann"}
+                </div>
               </div>
               <div className={classNames(projectcss.all, sty.freeBox__dFmZ3)}>
-                {p.renderPlasmicSlot({
-                  defaultContents:
-                    "Title\n\nArchitekt Bay. Architektenkammer, Energieeffizienz-Experte, Nachhaltiges Bauen in Holz, Energetische Betrachtungen, Projektmanagement & -entwicklung",
-                  value: args.children,
-                  className: classNames(sty.slotTargetChildren, {
-                    [sty.slotTargetChildrenexpanded]: hasVariant(
-                      $state,
-                      "expanded",
-                      "expanded"
-                    )
-                  })
-                })}
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__zOkqU,
+                    {
+                      [sty.textpersonen_andreasThoma__zOkqUusA8U]: hasVariant(
+                        $state,
+                        "personen",
+                        "andreasThoma"
+                      ),
+                      [sty.textpersonen_danielDieren__zOkqU03Qoh]: hasVariant(
+                        $state,
+                        "personen",
+                        "danielDieren"
+                      ),
+                      [sty.textpersonen_danielLocatelli__zOkqUeOoDg]:
+                        hasVariant($state, "personen", "danielLocatelli"),
+                      [sty.textpersonen_juliaDorn__zOkqUbja9Y]: hasVariant(
+                        $state,
+                        "personen",
+                        "juliaDorn"
+                      ),
+                      [sty.textpersonen_martinBittmann__zOkqUPf5Wu]: hasVariant(
+                        $state,
+                        "personen",
+                        "martinBittmann"
+                      ),
+                      [sty.textpersonen_vinzenzTrimborn__zOkqUjfChG]:
+                        hasVariant($state, "personen", "vinzenzTrimborn")
+                    }
+                  )}
+                >
+                  {hasVariant($state, "personen", "andreasThoma")
+                    ? "M.Sc. Architektur"
+                    : hasVariant($state, "personen", "vinzenzTrimborn")
+                    ? "B.Sc. Wirtschaftsinformatik\n\nSoftwareentwicklung, Digitale Planung, Implementierung digitale Workflows"
+                    : hasVariant($state, "personen", "juliaDorn")
+                    ? "M.Sc. Urban Design, B.Sc. Architektur\n\nArchitekt Bay. Architektenkammer, Energieeffizienz-Experte, Nachhaltiges Bauen in Holz, Energetische Betrachtungen, Projektmanagement & -entwicklung"
+                    : hasVariant($state, "personen", "danielLocatelli")
+                    ? "M.Sc. ITECH, Dipl. Architektur\n\nComputational Design, Parametrische Systeme, Entwicklung digitaler Tools und Workflows, Digitale Fabrikation"
+                    : hasVariant($state, "personen", "danielDieren")
+                    ? "M.Sc. Bauingenieur, M.Sc. Architektur\n\nNachhaltiges Konstruieren, Ingenieurholzbau, Integrale Planung, Lebenszyklusbetrachtung"
+                    : "Dipl.-Ing. Architektur\n\nArchitekt Bay. Architektenkammer, Energieeffizienz-Experte, Nachhaltiges Bauen in Holz, Energetische Betrachtungen, Projektmanagement & -entwicklung"}
+                </div>
               </div>
               {true ? (
                 <div
@@ -221,12 +335,35 @@ function PlasmicPersonBox__RenderFunc(props: {
                       $state,
                       "expanded",
                       "expanded"
-                    )
+                    ),
+                    [sty.freeBoxpersonen_danielDieren__ppBiU03Qoh]: hasVariant(
+                      $state,
+                      "personen",
+                      "danielDieren"
+                    ),
+                    [sty.freeBoxpersonen_danielLocatelli__ppBiUeOoDg]:
+                      hasVariant($state, "personen", "danielLocatelli"),
+                    [sty.freeBoxpersonen_juliaDorn__ppBiUbja9Y]: hasVariant(
+                      $state,
+                      "personen",
+                      "juliaDorn"
+                    ),
+                    [sty.freeBoxpersonen_martinBittmann__ppBiUPf5Wu]:
+                      hasVariant($state, "personen", "martinBittmann"),
+                    [sty.freeBoxpersonen_vinzenzTrimborn__ppBiUjfChG]:
+                      hasVariant($state, "personen", "vinzenzTrimborn")
                   })}
                 >
                   {true ? (
                     <div
-                      className={classNames(projectcss.all, sty.freeBox__nL7ZG)}
+                      className={classNames(
+                        projectcss.all,
+                        sty.freeBox__nL7ZG,
+                        {
+                          [sty.freeBoxpersonen_juliaDorn__nL7ZGbja9Y]:
+                            hasVariant($state, "personen", "juliaDorn")
+                        }
+                      )}
                       onClick={async event => {
                         const $steps = {};
                         $steps["updateExpanded"] = true
@@ -317,18 +454,24 @@ function PlasmicPersonBox__RenderFunc(props: {
                         plus={true}
                       >
                         <div
-                          data-plasmic-name={"text"}
-                          data-plasmic-override={overrides.text}
                           className={classNames(
                             projectcss.all,
                             projectcss.__wab_text,
-                            sty.text,
+                            sty.text__pQTpi,
                             {
-                              [sty.textexpanded]: hasVariant(
+                              [sty.textexpanded__pQTpinnpJu]: hasVariant(
                                 $state,
                                 "expanded",
                                 "expanded"
-                              )
+                              ),
+                              [sty.textpersonen_juliaDorn__pQTpibja9Y]:
+                                hasVariant($state, "personen", "juliaDorn"),
+                              [sty.textpersonen_vinzenzTrimborn__pQTpiJfChG]:
+                                hasVariant(
+                                  $state,
+                                  "personen",
+                                  "vinzenzTrimborn"
+                                )
                             }
                           )}
                         >
@@ -344,30 +487,101 @@ function PlasmicPersonBox__RenderFunc(props: {
             </div>
           </div>
         </div>
-        {(hasVariant($state, "expanded", "expanded") ? true : true) ? (
+        {(
+          hasVariant($state, "expanded", "expanded")
+            ? true
+            : hasVariant($state, "personen", "andreasThoma")
+            ? true
+            : hasVariant($state, "personen", "vinzenzTrimborn")
+            ? true
+            : hasVariant($state, "personen", "juliaDorn")
+            ? true
+            : hasVariant($state, "personen", "danielLocatelli")
+            ? true
+            : hasVariant($state, "personen", "danielDieren")
+            ? true
+            : true
+        ) ? (
           <div
             className={classNames(projectcss.all, sty.freeBox__gfxOx, {
               [sty.freeBoxexpanded__gfxOxnnpJu]: hasVariant(
                 $state,
                 "expanded",
                 "expanded"
+              ),
+              [sty.freeBoxpersonen_andreasThoma__gfxOxusA8U]: hasVariant(
+                $state,
+                "personen",
+                "andreasThoma"
+              ),
+              [sty.freeBoxpersonen_danielDieren__gfxOx03Qoh]: hasVariant(
+                $state,
+                "personen",
+                "danielDieren"
+              ),
+              [sty.freeBoxpersonen_danielLocatelli__gfxOxeOoDg]: hasVariant(
+                $state,
+                "personen",
+                "danielLocatelli"
+              ),
+              [sty.freeBoxpersonen_juliaDorn__gfxOxbja9Y]: hasVariant(
+                $state,
+                "personen",
+                "juliaDorn"
+              ),
+              [sty.freeBoxpersonen_vinzenzTrimborn__gfxOxJfChG]: hasVariant(
+                $state,
+                "personen",
+                "vinzenzTrimborn"
               )
             })}
           >
-            {(hasVariant($state, "expanded", "expanded") ? true : false)
-              ? p.renderPlasmicSlot({
-                  defaultContents:
-                    "Martin Bittmann studierte Architektur an der TU M\u00fcnchen und der TU\nIstanbul und ist eingetragener Architekt in der Bayerischen\nArchitektenkammer. Bis Ende 2021 war er als selbst\u00e4ndiger Architekt t\u00e4tig und arbeitete parallel am Institut f\u00fcr Nachhaltigkeit, Baukonstruktion und Entwerfen von Prof. Ludloff an der Universit\u00e4t Stuttgart, wo er den Lehr-und Forschungsbereich Bauklasse Holz aufbaute. Zuvor arbeitete er als Projekt- und Wettbewerbsleiter bei Raumstation Architekten und unterrichtete vier Jahre am Lehrstuhl f\u00fcr Entwerfen und Holzbau von Prof.\nKaufmann an der TU M\u00fcnchen. Bei Raumstation Architekten war er an der Konzeptionierung und Ausf\u00fchrung von unterschiedlichen Holzbauprojekten beteiligt und arbeitete eng mit Investoren und Projektentwicklern zusammen. Dar\u00fcber hinaus arbeitete er bei Herzog & De Meuron (Basel) sowie im Bereich Immobilienentwicklung und\n-investment bei Euroboden (M\u00fcnchen). Seit der Initiierung von Urban Scale Timber konzentrierte Martin seinen Fokus auf die notwendige Prozessinnovation in der Planung und Umsetzung von nachhaltiger und resilienter Projektentwicklung.",
-                  value: args.children2,
-                  className: classNames(sty.slotTargetChildren2, {
-                    [sty.slotTargetChildren2expanded]: hasVariant(
-                      $state,
-                      "expanded",
-                      "expanded"
-                    )
-                  })
-                })
-              : null}
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text___7X6Qp,
+                {
+                  [sty.textpersonen_andreasThoma___7X6QPusA8U]: hasVariant(
+                    $state,
+                    "personen",
+                    "andreasThoma"
+                  ),
+                  [sty.textpersonen_danielDieren___7X6Qp03Qoh]: hasVariant(
+                    $state,
+                    "personen",
+                    "danielDieren"
+                  ),
+                  [sty.textpersonen_danielLocatelli___7X6QPeOoDg]: hasVariant(
+                    $state,
+                    "personen",
+                    "danielLocatelli"
+                  ),
+                  [sty.textpersonen_juliaDorn___7X6QPbja9Y]: hasVariant(
+                    $state,
+                    "personen",
+                    "juliaDorn"
+                  ),
+                  [sty.textpersonen_vinzenzTrimborn___7X6QpjfChG]: hasVariant(
+                    $state,
+                    "personen",
+                    "vinzenzTrimborn"
+                  )
+                }
+              )}
+            >
+              {hasVariant($state, "personen", "andreasThoma")
+                ? "Andreas Thoma studierte Architektur an der Bauhaus-Universit\u00e4t Weimar (B.Sc.) und der ETH Z\u00fcrich (M.Sc.) mit einem Fokus auf digitale Fabrikation und Computational Design & Development. Er arbeitete mehrere Jahre freiberuflich u.a. f\u00fcr ERNE Holzbau (Stein, CH) und Toggle (USA). Zudem war er f\u00fcr den Lehrstuhl Gramazio Kohler Research an der ETH Z\u00fcrich und bei Herzog & De Meuron (Basel) t\u00e4tig. Bei Gramazio Kohler Research leitete er die Projekte Iridescence Print, Rock Print und Spatial Timber. Heute ist Andreas Head of Digital Fabrication bei Toggle, einem Robotics-Startup (USA), wo er neuartige Fertigungssysteme sowie einen Algorithmus f\u00fcr die Generierung ma\u00dfgeschneiderter Bauelemente mit entsprechender webbasierte Datenerzeugung zur Roboter-Fertigung entwickelt. Nachdem Andreas aktiv beim Exist-gef\u00f6rderten Forschungstransfer Urban Scale Timber mitgewirkt hat, ist er heute wichtiger Advisor f\u00fcr Build Systems. Dabei bringt er sein Wissen in den Bereichen digitale Fabrikation und die Erstellung parametrischer Workflows bei wichtigen Weichenstellungen mit ein."
+                : hasVariant($state, "personen", "vinzenzTrimborn")
+                ? "Vinzenz Trimborn studierte Wirtschaftsinformatik an der TU M\u00fcnchen und war w\u00e4hrend seines Studiums als Web-Entwickler bei KINEXON in der Entwicklung von IoT L\u00f6sungen f\u00fcr die Logistikbranche t\u00e4tig. Nach seinem Bachelor Studium arbeitete er f\u00fcr das Robotik-spinn-off RobCo der TU M\u00fcnchen. Als einer der ersten Mitarbeitenden des heutigen Start Ups war er ma\u00dfgeblich an der Entwicklung des modularen Roboter-Kits beteiligt, das eine software-gest\u00fctzte Automatisierungsl\u00f6sung f\u00fcr die industrielle Fertigung bietet. Seit 2022 wandte Vinzenz sich der Architektur- und Bauindustrie zu. Im Architekturstudio German Haimerl Architekten \u00fcbernahm er die Verantwortlichkeit f\u00fcr Digitalisierung und die Erarbeitung innovativer BIM-Prozesse. Aktuell studiert er im neuen Studiengang IT for the Built Environment an der TU M\u00fcnchen."
+                : hasVariant($state, "personen", "juliaDorn")
+                ? "W\u00e4hrend ihres Studiums an der TU Berlin (M.Sc.) partizipierte Julia Dorn an den Forschungsprojekten Smart City des Sonderforschungsbereichs 1265 Refiguration von R\u00e4umen und Circular Economy for Citymakers (TU Berlin mit EIT Climate-KIC). 2018 war sie Teil der Kuratierung und Kommunikation des deutschen Pavillons der Architekturbiennale in Venedig. Seither liegt der Fokus ihrer Arbeit auf der Abbildung und Quantifizierung komplexer urbaner Systeme, r\u00e4umlicher Zusammenh\u00e4nge und Nachhaltigkeitsindikatoren. Vorangehend zu Built Systems arbeitete Julia mit Ihren Kollegen an verschiedenen Wissenstransfer-Projekten [\u2192 Projekte] und dem Exist-gef\u00f6rderten Forschungstransfer Urban Scale Timber. Zusammen mit Martin Bittmann betreute sie als Korrekturassistenz das Semesterprojekt des Lehrstuhls Architektur und Design von Prof. Niklas Fanelsa an der TU M\u00fcnchen. Im Austausch mit unseren Kunden definiert Julia Entwicklungsziele und den Bedarf der Entwicklung."
+                : hasVariant($state, "personen", "danielLocatelli")
+                ? "W\u00e4hrend seines Diplomstudiums der Architektur an der Universidade de S\u00e3o Paulo arbeitete Daniel Locatelli als Computational Designer im Atelier Marko Brajovic. Er setzte sich in seiner Arbeit und sp\u00e4ter im Zuge seiner Diplomarbeit intensiv mit der Verbindung von Architektur, Biomimetik und Algorithmen auseinander. Mit dem Schwerpunkt der Integration von Technologie und Architektur absolvierte Daniel den M.Sc. ITECH an der Universit\u00e4t Stuttgart unter der Leitung von Prof. Achim Menges und Prof. Jan Knippers. In seiner Masterarbeit und w\u00e4hrend seiner T\u00e4tigkeit als wissenschaftlicher Mitarbeiter sammelte Daniel Erfahrungen in der digitalen Fabrikation mit Industrierobotern und untersuchte robotergest\u00fctzte Holzverarbeitungssysteme f\u00fcr die In-Situ-Pressverleimung."
+                : hasVariant($state, "personen", "danielDieren")
+                ? "Nach seiner ersten Berufst\u00e4tigkeit als Bauingenieur schloss Daniel Dieren das Architekturstudium an der TU Berlin (B.Sc. und M.Sc.) an. Er arbeitete seit 2014 f\u00fcr das Ingenieurb\u00fcro Bollinger+Grohmann in Berlin, wo er zahlreiche Projekte mit Spezialisierung auf Ingenieurholzbau und Life-Cycle-Assessment leitete und die Sustainability Group initiierte. Die DGNB kollaborierte sp\u00e4ter mit der Nachhaltigkeitsgruppe bei der Entwicklung des Leitfadens zur Implementierung von Nachhaltigkeitsfaktoren in der Tragwerksplanung. Zudem war er als Lehrbeauftragter am Lehrstuhl f\u00fcr konstruktives Entwerfen der Universit\u00e4t der K\u00fcnste in Berlin t\u00e4tig, wo er Baukonstruktion, Holzbau und nachhaltiges Entwerfen lehrte. Zusammen mit Martin Bittmann erarbeitete er im Austausch mit der TU Berlin und dem Fraunhofer Institut eine Holzbau-Matrix, die nun als Messlatte hinsichtlich holzbau-relevanter Kriterien im Vergabeverfahren des Schumacher Quartiers durch die Tegel Projekt GmbH angewendet wird. [\u2192 Projekte] Daniel bringt sein dezidiertes Fachwissen in der Kundenberatung ein, um auf Geb\u00e4udeebene Emissionen zu optimieren und Entwicklungspotenziale zu heben."
+                : "Martin Bittmann studierte Architektur an der TU M\u00fcnchen und der TU\nIstanbul und ist eingetragener Architekt in der Bayerischen\nArchitektenkammer. Bis Ende 2021 war er als selbst\u00e4ndiger Architekt t\u00e4tig und arbeitete parallel am Institut f\u00fcr Nachhaltigkeit, Baukonstruktion und Entwerfen von Prof. Ludloff an der Universit\u00e4t Stuttgart, wo er den Lehr-und Forschungsbereich Bauklasse Holz aufbaute. Zuvor arbeitete er als Projekt- und Wettbewerbsleiter bei Raumstation Architekten und unterrichtete vier Jahre am Lehrstuhl f\u00fcr Entwerfen und Holzbau von Prof. Kaufmann an der TU M\u00fcnchen. Bei Raumstation Architekten war er an der Konzeptionierung und Ausf\u00fchrung von unterschiedlichen Holzbauprojekten beteiligt und arbeitete eng mit Investoren und Projektentwicklern zusammen. Dar\u00fcber hinaus arbeitete er bei Herzog & De Meuron (Basel) sowie im Bereich Immobilienentwicklung und -investment bei Euroboden (M\u00fcnchen). Seit der Initiierung von Urban Scale Timber konzentrierte Martin seinen Fokus auf die notwendige Prozessinnovation in der Planung und Umsetzung von nachhaltiger und resilienter Projektentwicklung."}
+            </div>
           </div>
         ) : null}
       </div>
@@ -376,10 +590,9 @@ function PlasmicPersonBox__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "img", "smallButton", "text"],
+  root: ["root", "img", "smallButton"],
   img: ["img"],
-  smallButton: ["smallButton", "text"],
-  text: ["text"]
+  smallButton: ["smallButton"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -388,7 +601,6 @@ type NodeDefaultElementType = {
   root: "div";
   img: typeof p.PlasmicImg;
   smallButton: typeof SmallButton;
-  text: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -453,7 +665,6 @@ export const PlasmicPersonBox = Object.assign(
     // Helper components rendering sub-elements
     img: makeNodeComponent("img"),
     smallButton: makeNodeComponent("smallButton"),
-    text: makeNodeComponent("text"),
 
     // Metadata about props expected for PlasmicPersonBox
     internalVariantProps: PlasmicPersonBox__VariantProps,

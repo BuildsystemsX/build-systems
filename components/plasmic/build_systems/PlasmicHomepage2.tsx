@@ -222,7 +222,7 @@ function PlasmicHomepage2__RenderFunc(props: {
               )}
             >
               {
-                "stellt Nachhaltigkeitsanforderungen und \u00f6konomische Indikatoren gegen\u00fcber."
+                "erm\u00f6glicht den Nachhaltigkeitsanforderungen von morgen \u00f6konomisch und technisch gerecht zu werden."
               }
             </div>
           </div>
@@ -238,7 +238,7 @@ function PlasmicHomepage2__RenderFunc(props: {
                 >
                   {hasVariant(globalVariants, "screen", "mobile")
                     ? "Build Systems entwickelt individuelle Smart Sustainability Roadmaps (Nachhaltigkeits-fahrpl\u00e4ne). Hierf\u00fcr stellen wir Nachhaltigkeitsanforderungen der individuellen Projektentwicklung \u00f6konomischen Indikatoren gegen\u00fcber. Wir unterst\u00fctzen Immobilienentwickler:innen in einer fr\u00fchen Phase der Planung Investitionsentscheidungen zu treffen."
-                    : "Impact Intelligence steht f\u00fcr einen smarten Umgang mit technischen und sozio\u00f6konomischen Ma\u00dfnahmen, die nachhaltigen Impact schaffen. Unsere Smart Sustainability Roadmaps helfen, Ihre Wirkkraft intelligent auszusch\u00f6pfen und Ihren Impact in der Geb\u00e4udeentwicklung zu skalieren."}
+                    : "Impact Intelligence steht f\u00fcr einen smarten Umgang mit technischen und sozio\u00f6konomischen Ma\u00dfnahmen, die die Zukunftsf\u00e4higkeit des Geb\u00e4udesektors vorantreiben. Unsere Smart Sustainability Roadmaps helfen Ihnen, das Potential Ihrer Assets optimal auszusch\u00f6pfen und Ihren \u00f6kologischen und sozialen Impact in der Geb\u00e4udeentwicklung zu skalieren. "}
                 </div>
                 <SmallButton
                   className={classNames(
@@ -269,7 +269,9 @@ function PlasmicHomepage2__RenderFunc(props: {
                 sty.text__a2N3
               )}
             >
-              {"macht Ihre Projekte gr\u00fcn"}
+              {
+                "macht Ihre Projekte #gr\u00fcn / #beherrschbar / #zukunftsf\u00e4hig / #risikoarm.\n"
+              }
             </div>
           </div>
           <div className={classNames(projectcss.all, sty.freeBox__s3N)}>

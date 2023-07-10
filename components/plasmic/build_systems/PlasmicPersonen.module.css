@@ -210,16 +210,9 @@
   max-width: 100%;
   position: relative;
 }
-.text__dm1D9 {
-  height: auto;
-}
 .personBox__sbHWq:global(.__wab_instance) {
   max-width: 100%;
   position: relative;
-}
-.text___8YBaf {
-  line-height: 21px;
-  letter-spacing: 0.01em;
 }
 .personBox___55Hka:global(.__wab_instance) {
   max-width: 100%;
@@ -232,9 +225,6 @@
 .personBox__vEf5N:global(.__wab_instance) {
   max-width: 100%;
   position: relative;
-}
-.text__hgfxB {
-  padding-left: 0px;
 }
 .freeBox__l40T {
   display: flex;
