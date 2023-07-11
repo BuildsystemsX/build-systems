@@ -30983,7 +30983,7 @@ function PlasmicHomepage2__RenderFunc(props: {
                   }}
                   autoplay={true}
                   className={classNames("__wab_instance", sty.lottie)}
-                  loop={false}
+                  loop={true}
                   preview={true}
                 />
               </div>

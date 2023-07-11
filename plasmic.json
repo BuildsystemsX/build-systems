@@ -547,7 +547,8 @@
           "displayName": "hostless-lottie-react",
           "componentImportPath": "@plasmicpkgs/lottie-react"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     }
   ],
   "globalVariants": {
