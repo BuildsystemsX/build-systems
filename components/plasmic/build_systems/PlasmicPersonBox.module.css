@@ -2,7 +2,7 @@
   display: flex;
   position: relative;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
   width: auto;
   height: auto;
@@ -15,7 +15,16 @@
     height: 187px;
     width: 355px;
     justify-self: flex-start;
-    padding: 8px;
+    padding: 0px;
+  }
+}
+.rootexpanded {
+  padding: 0px;
+}
+@media (max-width: 768px) {
+  .rootexpanded {
+    align-items: flex-start;
+    justify-content: flex-start;
   }
 }
 .freeBox__xTsx6 {
@@ -35,6 +44,9 @@
     height: 187px;
     flex-shrink: 0;
   }
+}
+.freeBoxexpanded__xTsx6NnpJu {
+  box-shadow: 0px 4px 16px 0px #000000;
 }
 .freeBox__q5J1D {
   display: flex;
@@ -177,7 +189,7 @@
   z-index: 1;
 }
 .freeBoxexpanded__ppBiUnnpJu {
-  z-index: 1;
+  z-index: 3;
 }
 .freeBox__nL7ZG {
   display: flex;
@@ -212,8 +224,12 @@
   padding-left: 174px;
   padding-top: 32px;
   padding-bottom: 16px;
+  z-index: 2;
   display: none;
   border-radius: 15px;
+}
+.freeBoxpersonen_martinBittmann__gfxOxPf5Wu {
+  display: none;
 }
 .freeBoxpersonen_danielDieren__gfxOx03Qoh {
   display: none;
@@ -231,8 +247,29 @@
   display: none;
 }
 .freeBoxexpanded__gfxOxnnpJu {
+  z-index: 2;
+  box-shadow: 0px 15px 16px 0px #0000008a;
+  width: 781px;
+  left: 0px;
+  margin-right: 0px;
   display: flex;
+}
+@media (max-width: 768px) {
+  .freeBoxexpanded__gfxOxnnpJu {
+    padding-left: 113px;
+    width: 355px;
+    align-items: center;
+    justify-content: flex-start;
+    left: 0px;
+    box-shadow: 0px 20px 16px 0px #0000008a;
+  }
 }
 .text___7X6Qp {
   padding-right: 20px;
+}
+@media (max-width: 768px) {
+  .textexpanded___7X6QPnnpJu {
+    font-size: 14px;
+    line-height: 17px;
+  }
 }

@@ -36,11 +36,12 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
-import BuildSystemsHeadline from "../../BuildSystemsHeadline"; // plasmic-import: k0tLqKtuC3/component
 import Cover from "../../Cover"; // plasmic-import: y8WKJEXfAa/component
+import BuildSystemsHeadline from "../../BuildSystemsHeadline"; // plasmic-import: k0tLqKtuC3/component
 import Menu from "../../Menu"; // plasmic-import: 5tZNLUygwX/component
 import SmallButton from "../../SmallButton"; // plasmic-import: jdWzZYnBO3/component
 import Footer from "../../Footer"; // plasmic-import: hB94XRzTpm/component
+import HiderHeadlines from "../../HiderHeadlines"; // plasmic-import: q6j09HfKP8/component
 
 import { useScreenVariants as useScreenVariantsjnTclXkDzSl7V } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: jnTCLXkDZSl7V/globalVariant
 
@@ -60,11 +61,12 @@ export const PlasmicHomepage2__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicHomepage2__OverridesType = {
   root?: p.Flex<"div">;
-  buildSystemsHeadline?: p.Flex<typeof BuildSystemsHeadline>;
   cover?: p.Flex<typeof Cover>;
+  buildSystemsHeadline?: p.Flex<typeof BuildSystemsHeadline>;
   menu?: p.Flex<typeof Menu>;
   img?: p.Flex<typeof p.PlasmicImg>;
   footer?: p.Flex<typeof Footer>;
+  hiderHeadlines?: p.Flex<typeof HiderHeadlines>;
 };
 
 export interface DefaultHomepage2Props {}
@@ -164,18 +166,18 @@ function PlasmicHomepage2__RenderFunc(props: {
             sty.root
           )}
         >
-          {true ? (
-            <BuildSystemsHeadline
-              data-plasmic-name={"buildSystemsHeadline"}
-              data-plasmic-override={overrides.buildSystemsHeadline}
-              className={classNames("__wab_instance", sty.buildSystemsHeadline)}
-            />
-          ) : null}
           {(hasVariant(globalVariants, "screen", "iPhone") ? true : true) ? (
             <Cover
               data-plasmic-name={"cover"}
               data-plasmic-override={overrides.cover}
               className={classNames("__wab_instance", sty.cover)}
+            />
+          ) : null}
+          {true ? (
+            <BuildSystemsHeadline
+              data-plasmic-name={"buildSystemsHeadline"}
+              data-plasmic-override={overrides.buildSystemsHeadline}
+              className={classNames("__wab_instance", sty.buildSystemsHeadline)}
             />
           ) : null}
           <div className={classNames(projectcss.all, sty.freeBox___332Cd)}>
@@ -213,8 +215,9 @@ function PlasmicHomepage2__RenderFunc(props: {
               </div>
             </div>
           ) : null}
-          <div className={classNames(projectcss.all, sty.freeBox__tM9Gj)} />
-
+          {(hasVariant(globalVariants, "screen", "iPhone") ? true : true) ? (
+            <div className={classNames(projectcss.all, sty.freeBox__tM9Gj)} />
+          ) : null}
           <div className={classNames(projectcss.all, sty.freeBox__alDgg)}>
             <div
               className={classNames(
@@ -233,7 +236,7 @@ function PlasmicHomepage2__RenderFunc(props: {
                   </span>
                   <React.Fragment>
                     {
-                      "  erm\u00f6glicht den Nachhaltigkeits- anforderungen von morgen \u00f6konomisch und technisch gerecht zu werden."
+                      " erm\u00f6glicht den Nachhaltigkeits- anforderungen von morgen \u00f6konomisch und technisch gerecht zu werden."
                     }
                   </React.Fragment>
                 </React.Fragment>
@@ -243,6 +246,9 @@ function PlasmicHomepage2__RenderFunc(props: {
             </div>
           </div>
           <div className={classNames(projectcss.all, sty.freeBox__yqM5)}>
+            {(hasVariant(globalVariants, "screen", "iPhone") ? true : true) ? (
+              <div className={classNames(projectcss.all, sty.freeBox__ghXc)} />
+            ) : null}
             {true ? (
               <div className={classNames(projectcss.all, sty.freeBox__wz786)}>
                 <div
@@ -352,7 +358,7 @@ function PlasmicHomepage2__RenderFunc(props: {
                   </span>
                   <React.Fragment>
                     {
-                      "  macht Ihre Projekte #gr\u00fcn / #beherrschbar / #zukunftsf\u00e4hig / #risikoarm.\n"
+                      " macht Ihre Projekte #gr\u00fcn / #beherrschbar / #zukunftsf\u00e4hig / #risikoarm.\n"
                     }
                   </React.Fragment>
                 </React.Fragment>
@@ -362,6 +368,9 @@ function PlasmicHomepage2__RenderFunc(props: {
             </div>
           </div>
           <div className={classNames(projectcss.all, sty.freeBox__s3N)}>
+            {(hasVariant(globalVariants, "screen", "iPhone") ? true : true) ? (
+              <div className={classNames(projectcss.all, sty.freeBox__hTdH)} />
+            ) : null}
             {true ? (
               <div className={classNames(projectcss.all, sty.freeBox__tnKeH)}>
                 <div
@@ -458,6 +467,14 @@ function PlasmicHomepage2__RenderFunc(props: {
             data-plasmic-override={overrides.footer}
             className={classNames("__wab_instance", sty.footer)}
           />
+
+          {(hasVariant(globalVariants, "screen", "iPhone") ? true : true) ? (
+            <HiderHeadlines
+              data-plasmic-name={"hiderHeadlines"}
+              data-plasmic-override={overrides.hiderHeadlines}
+              className={classNames("__wab_instance", sty.hiderHeadlines)}
+            />
+          ) : null}
         </div>
       </div>
     </React.Fragment>
@@ -465,23 +482,33 @@ function PlasmicHomepage2__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "buildSystemsHeadline", "cover", "menu", "img", "footer"],
-  buildSystemsHeadline: ["buildSystemsHeadline"],
+  root: [
+    "root",
+    "cover",
+    "buildSystemsHeadline",
+    "menu",
+    "img",
+    "footer",
+    "hiderHeadlines"
+  ],
   cover: ["cover"],
+  buildSystemsHeadline: ["buildSystemsHeadline"],
   menu: ["menu"],
   img: ["img"],
-  footer: ["footer"]
+  footer: ["footer"],
+  hiderHeadlines: ["hiderHeadlines"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: "div";
-  buildSystemsHeadline: typeof BuildSystemsHeadline;
   cover: typeof Cover;
+  buildSystemsHeadline: typeof BuildSystemsHeadline;
   menu: typeof Menu;
   img: typeof p.PlasmicImg;
   footer: typeof Footer;
+  hiderHeadlines: typeof HiderHeadlines;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -544,11 +571,12 @@ export const PlasmicHomepage2 = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    buildSystemsHeadline: makeNodeComponent("buildSystemsHeadline"),
     cover: makeNodeComponent("cover"),
+    buildSystemsHeadline: makeNodeComponent("buildSystemsHeadline"),
     menu: makeNodeComponent("menu"),
     img: makeNodeComponent("img"),
     footer: makeNodeComponent("footer"),
+    hiderHeadlines: makeNodeComponent("hiderHeadlines"),
 
     // Metadata about props expected for PlasmicHomepage2
     internalVariantProps: PlasmicHomepage2__VariantProps,

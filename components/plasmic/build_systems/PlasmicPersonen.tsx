@@ -40,6 +40,7 @@ import Menu from "../../Menu"; // plasmic-import: 5tZNLUygwX/component
 import BuildSystemsHeadline from "../../BuildSystemsHeadline"; // plasmic-import: k0tLqKtuC3/component
 import PersonBox from "../../PersonBox"; // plasmic-import: JED_FSQOoo/component
 import ImageFooter from "../../ImageFooter"; // plasmic-import: 7Stlw3wb0O/component
+import HiderHeadlines from "../../HiderHeadlines"; // plasmic-import: q6j09HfKP8/component
 
 import { useScreenVariants as useScreenVariantsjnTclXkDzSl7V } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: jnTCLXkDZSl7V/globalVariant
 
@@ -62,8 +63,9 @@ export type PlasmicPersonen__OverridesType = {
   menuStack?: p.Flex<"div">;
   menu?: p.Flex<typeof Menu>;
   buildSystemsHeadline?: p.Flex<typeof BuildSystemsHeadline>;
+  columns?: p.Flex<"div">;
   imageFooter?: p.Flex<typeof ImageFooter>;
-  hiderHeadlines?: p.Flex<"div">;
+  hiderHeadlines?: p.Flex<typeof HiderHeadlines>;
 };
 
 export interface DefaultPersonenProps {}
@@ -190,19 +192,23 @@ function PlasmicPersonen__RenderFunc(props: {
             className={classNames("__wab_instance", sty.buildSystemsHeadline)}
           />
 
-          <div className={classNames(projectcss.all, sty.freeBox__u3Rk)}>
-            <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text__iVp6
-              )}
-            >
-              {hasVariant(globalVariants, "screen", "iPhone")
-                ? "                               denkt #vernetzt / #ganzheitlich / #langfristig."
-                : "denkt #vernetzt / #ganzheitlich / #langfristig."}
+          {true ? (
+            <div className={classNames(projectcss.all, sty.freeBox__u3Rk)}>
+              {true ? (
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__iVp6
+                  )}
+                >
+                  {hasVariant(globalVariants, "screen", "iPhone")
+                    ? "                              denkt #vernetzt / #ganzheitlich / #langfristig."
+                    : "denkt #vernetzt / #ganzheitlich / #langfristig."}
+                </div>
+              ) : null}
             </div>
-          </div>
+          ) : null}
           <div className={classNames(projectcss.all, sty.freeBox__riity)}>
             <div
               className={classNames(
@@ -225,7 +231,7 @@ function PlasmicPersonen__RenderFunc(props: {
               )}
             >
               {hasVariant(globalVariants, "screen", "iPhone")
-                ? "                                 fu\u0308hrt  #Kompetenzen / #Prozesse / #Tools zusammen."
+                ? "                              fu\u0308hrt  #Kompetenzen / #Prozesse / #Tools zusammen."
                 : "fu\u0308hrt  #Kompetenzen / #Prozesse / #Tools zusammen."}
             </div>
           </div>
@@ -233,56 +239,81 @@ function PlasmicPersonen__RenderFunc(props: {
             {true ? (
               <p.Stack
                 as={"div"}
+                data-plasmic-name={"columns"}
+                data-plasmic-override={overrides.columns}
                 hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox___1CKvB)}
+                className={classNames(projectcss.all, sty.columns)}
               >
-                <PersonBox
-                  className={classNames("__wab_instance", sty.personBox__qjRtW)}
-                  personen={"martinBittmann" as const}
-                />
-
-                <PersonBox
-                  className={classNames("__wab_instance", sty.personBox__dOy15)}
-                  personen={"juliaDorn" as const}
-                />
-
-                <PersonBox
-                  className={classNames("__wab_instance", sty.personBox__sbHWq)}
-                  personen={"danielDieren" as const}
-                />
-
-                <PersonBox
-                  className={classNames(
-                    "__wab_instance",
-                    sty.personBox___55Hka
-                  )}
-                  personen={"danielLocatelli" as const}
-                />
-
-                <PersonBox
-                  className={classNames("__wab_instance", sty.personBox__cDjn)}
-                  personen={"vinzenzTrimborn" as const}
-                />
-
-                <PersonBox
-                  className={classNames("__wab_instance", sty.personBox__vEf5N)}
-                  personen={"andreasThoma" as const}
-                />
+                <div className={classNames(projectcss.all, sty.column__qUoPh)}>
+                  <PersonBox
+                    className={classNames(
+                      "__wab_instance",
+                      sty.personBox__qjRtW
+                    )}
+                    personen={"martinBittmann" as const}
+                  />
+                </div>
+                <div className={classNames(projectcss.all, sty.column__li3T2)}>
+                  <PersonBox
+                    className={classNames(
+                      "__wab_instance",
+                      sty.personBox__dOy15
+                    )}
+                    personen={"juliaDorn" as const}
+                  />
+                </div>
+                <div className={classNames(projectcss.all, sty.column___9UtCi)}>
+                  <PersonBox
+                    className={classNames(
+                      "__wab_instance",
+                      sty.personBox__sbHWq
+                    )}
+                    personen={"danielDieren" as const}
+                  />
+                </div>
+                <div className={classNames(projectcss.all, sty.column__dhhL6)}>
+                  <PersonBox
+                    className={classNames(
+                      "__wab_instance",
+                      sty.personBox___55Hka
+                    )}
+                    personen={"danielLocatelli" as const}
+                  />
+                </div>
+                <div className={classNames(projectcss.all, sty.column__kvPk2)}>
+                  <PersonBox
+                    className={classNames(
+                      "__wab_instance",
+                      sty.personBox__cDjn
+                    )}
+                    personen={"vinzenzTrimborn" as const}
+                  />
+                </div>
+                <div className={classNames(projectcss.all, sty.column___7F0Ix)}>
+                  <PersonBox
+                    className={classNames(
+                      "__wab_instance",
+                      sty.personBox__vEf5N
+                    )}
+                    personen={"andreasThoma" as const}
+                  />
+                </div>
               </p.Stack>
             ) : null}
           </div>
-          <div className={classNames(projectcss.all, sty.freeBox__l40T)} />
-
+          {(hasVariant(globalVariants, "screen", "iPhone") ? true : true) ? (
+            <div className={classNames(projectcss.all, sty.freeBox__l40T)} />
+          ) : null}
           <ImageFooter
             data-plasmic-name={"imageFooter"}
             data-plasmic-override={overrides.imageFooter}
             className={classNames("__wab_instance", sty.imageFooter)}
           />
 
-          <div
+          <HiderHeadlines
             data-plasmic-name={"hiderHeadlines"}
             data-plasmic-override={overrides.hiderHeadlines}
-            className={classNames(projectcss.all, sty.hiderHeadlines)}
+            className={classNames("__wab_instance", sty.hiderHeadlines)}
           />
         </div>
       </div>
@@ -296,12 +327,14 @@ const PlasmicDescendants = {
     "menuStack",
     "menu",
     "buildSystemsHeadline",
+    "columns",
     "imageFooter",
     "hiderHeadlines"
   ],
   menuStack: ["menuStack", "menu"],
   menu: ["menu"],
   buildSystemsHeadline: ["buildSystemsHeadline"],
+  columns: ["columns"],
   imageFooter: ["imageFooter"],
   hiderHeadlines: ["hiderHeadlines"]
 } as const;
@@ -313,8 +346,9 @@ type NodeDefaultElementType = {
   menuStack: "div";
   menu: typeof Menu;
   buildSystemsHeadline: typeof BuildSystemsHeadline;
+  columns: "div";
   imageFooter: typeof ImageFooter;
-  hiderHeadlines: "div";
+  hiderHeadlines: typeof HiderHeadlines;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -380,6 +414,7 @@ export const PlasmicPersonen = Object.assign(
     menuStack: makeNodeComponent("menuStack"),
     menu: makeNodeComponent("menu"),
     buildSystemsHeadline: makeNodeComponent("buildSystemsHeadline"),
+    columns: makeNodeComponent("columns"),
     imageFooter: makeNodeComponent("imageFooter"),
     hiderHeadlines: makeNodeComponent("hiderHeadlines"),
 

@@ -40,6 +40,7 @@ import Menu from "../../Menu"; // plasmic-import: 5tZNLUygwX/component
 import BuildSystemsHeadline from "../../BuildSystemsHeadline"; // plasmic-import: k0tLqKtuC3/component
 import SmallButton from "../../SmallButton"; // plasmic-import: jdWzZYnBO3/component
 import ImageFooter from "../../ImageFooter"; // plasmic-import: 7Stlw3wb0O/component
+import HiderHeadlines from "../../HiderHeadlines"; // plasmic-import: q6j09HfKP8/component
 
 import { useScreenVariants as useScreenVariantsjnTclXkDzSl7V } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: jnTCLXkDZSl7V/globalVariant
 
@@ -64,7 +65,7 @@ export type PlasmicProjekte__OverridesType = {
   buildSystemsHeadline?: p.Flex<typeof BuildSystemsHeadline>;
   columns?: p.Flex<"div">;
   imageFooter?: p.Flex<typeof ImageFooter>;
-  hiderHeadlines?: p.Flex<"div">;
+  hiderHeadlines?: p.Flex<typeof HiderHeadlines>;
 };
 
 export interface DefaultProjekteProps {}
@@ -208,6 +209,9 @@ function PlasmicProjekte__RenderFunc(props: {
               </div>
             ) : null}
           </div>
+          {(hasVariant(globalVariants, "screen", "iPhone") ? true : true) ? (
+            <div className={classNames(projectcss.all, sty.freeBox___0ZUjb)} />
+          ) : null}
           <div className={classNames(projectcss.all, sty.freeBox__slJFt)}>
             <div
               className={classNames(
@@ -469,10 +473,10 @@ function PlasmicProjekte__RenderFunc(props: {
               className={classNames("__wab_instance", sty.imageFooter)}
             />
           ) : null}
-          <div
+          <HiderHeadlines
             data-plasmic-name={"hiderHeadlines"}
             data-plasmic-override={overrides.hiderHeadlines}
-            className={classNames(projectcss.all, sty.hiderHeadlines)}
+            className={classNames("__wab_instance", sty.hiderHeadlines)}
           />
         </div>
       </div>
@@ -507,7 +511,7 @@ type NodeDefaultElementType = {
   buildSystemsHeadline: typeof BuildSystemsHeadline;
   columns: "div";
   imageFooter: typeof ImageFooter;
-  hiderHeadlines: "div";
+  hiderHeadlines: typeof HiderHeadlines;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";

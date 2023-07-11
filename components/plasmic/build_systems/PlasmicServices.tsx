@@ -207,6 +207,9 @@ function PlasmicServices__RenderFunc(props: {
               </div>
             ) : null}
           </div>
+          {(hasVariant(globalVariants, "screen", "iPhone") ? true : false) ? (
+            <div className={classNames(projectcss.all, sty.freeBox__futF)} />
+          ) : null}
           <div className={classNames(projectcss.all, sty.freeBox__wGxOd)}>
             <div
               className={classNames(
@@ -216,18 +219,19 @@ function PlasmicServices__RenderFunc(props: {
               )}
             >
               {hasVariant(globalVariants, "screen", "iPhone")
-                ? "                                beh\u00e4lt #Bedarfe, #Funktionalit\u00e4t, #Anforderungen, #Benefits im Blick.\n"
+                ? "                              beh\u00e4lt #Bedarfe, #Funktionalit\u00e4t, #Anforderungen, #Benefits im Blick.\n"
                 : "beh\u00e4lt #Bedarfe, #Funktionalit\u00e4t, #Anforderungen, #Benefits im Blick.\n"}
             </div>
           </div>
           <div className={classNames(projectcss.all, sty.freeBox__wfs2Y)}>
             {true ? (
               <div className={classNames(projectcss.all, sty.columns__cjEXv)}>
-                <div className={classNames(projectcss.all, sty.column__dFiLk)}>
+                <div className={classNames(projectcss.all, sty.column__quwAa)}>
                   <div
                     className={classNames(projectcss.all, sty.freeBox__dg8Ve)}
                   />
-
+                </div>
+                <div className={classNames(projectcss.all, sty.column__dFiLk)}>
                   <div
                     className={classNames(projectcss.all, sty.freeBox__yQr6T)}
                   >
@@ -265,7 +269,7 @@ function PlasmicServices__RenderFunc(props: {
               )}
             >
               {hasVariant(globalVariants, "screen", "iPhone")
-                ? "                                arbeitet mit dezidierten #Benchmarks/#Indikatoren, die #klima-intelligent /#bew\u00e4hrt sind. "
+                ? "                              arbeitet mit dezidierten #Benchmarks/#Indikatoren, die #klima-intelligent /#bew\u00e4hrt sind. "
                 : "arbeitet mit dezidierten #Benchmarks/#Indikatoren, die #klima-intelligent /#bew\u00e4hrt sind. "}
             </div>
           </div>

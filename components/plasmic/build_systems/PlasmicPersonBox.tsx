@@ -181,12 +181,22 @@ function PlasmicPersonBox__RenderFunc(props: {
               $state,
               "personen",
               "danielDieren"
+            ),
+            [sty.rootpersonen_martinBittmann]: hasVariant(
+              $state,
+              "personen",
+              "martinBittmann"
             )
           }
         )}
       >
         <div
           className={classNames(projectcss.all, sty.freeBox__xTsx6, {
+            [sty.freeBoxexpanded__xTsx6NnpJu]: hasVariant(
+              $state,
+              "expanded",
+              "expanded"
+            ),
             [sty.freeBoxpersonen_vinzenzTrimborn__xTsx6JfChG]: hasVariant(
               $state,
               "personen",
@@ -196,6 +206,11 @@ function PlasmicPersonBox__RenderFunc(props: {
         >
           <div
             className={classNames(projectcss.all, sty.freeBox__q5J1D, {
+              [sty.freeBoxexpanded__q5J1DnnpJu]: hasVariant(
+                $state,
+                "expanded",
+                "expanded"
+              ),
               [sty.freeBoxpersonen_andreasThoma__q5J1DusA8U]: hasVariant(
                 $state,
                 "personen",
@@ -518,6 +533,8 @@ function PlasmicPersonBox__RenderFunc(props: {
             ? true
             : hasVariant($state, "personen", "danielDieren")
             ? true
+            : hasVariant($state, "personen", "martinBittmann")
+            ? true
             : true
         ) ? (
           <div
@@ -547,6 +564,11 @@ function PlasmicPersonBox__RenderFunc(props: {
                 "personen",
                 "juliaDorn"
               ),
+              [sty.freeBoxpersonen_martinBittmann__gfxOxPf5Wu]: hasVariant(
+                $state,
+                "personen",
+                "martinBittmann"
+              ),
               [sty.freeBoxpersonen_vinzenzTrimborn__gfxOxJfChG]: hasVariant(
                 $state,
                 "personen",
@@ -560,6 +582,11 @@ function PlasmicPersonBox__RenderFunc(props: {
                 projectcss.__wab_text,
                 sty.text___7X6Qp,
                 {
+                  [sty.textexpanded___7X6QPnnpJu]: hasVariant(
+                    $state,
+                    "expanded",
+                    "expanded"
+                  ),
                   [sty.textpersonen_andreasThoma___7X6QPusA8U]: hasVariant(
                     $state,
                     "personen",
@@ -580,6 +607,11 @@ function PlasmicPersonBox__RenderFunc(props: {
                     "personen",
                     "juliaDorn"
                   ),
+                  [sty.textpersonen_martinBittmann___7X6QpPf5Wu]: hasVariant(
+                    $state,
+                    "personen",
+                    "martinBittmann"
+                  ),
                   [sty.textpersonen_vinzenzTrimborn___7X6QpjfChG]: hasVariant(
                     $state,
                     "personen",
@@ -588,7 +620,10 @@ function PlasmicPersonBox__RenderFunc(props: {
                 }
               )}
             >
-              {hasVariant($state, "personen", "andreasThoma")
+              {hasVariant($state, "expanded", "expanded") &&
+              hasVariant(globalVariants, "screen", "iPhone")
+                ? "Martin Bittmann studierte Architektur an der TU M\u00fcnchen und der TU Istanbul und ist eingetragener Architekt in der Bayerischen\nArchitektenkammer. Bis Ende 2021 war er als selbst\u00e4ndiger Architekt t\u00e4tig und arbeitete parallel am Institut f\u00fcr Nachhaltigkeit, Baukonstruktion und Entwerfen von Prof. Ludloff an der Universit\u00e4t Stuttgart, wo er den Lehr-und Forschungsbereich Bauklasse Holz aufbaute. Zuvor arbeitete er als Projekt- und Wettbewerbsleiter bei Raumstation Architekten und unterrichtete vier Jahre am Lehrstuhl f\u00fcr Entwerfen und Holzbau von Prof. Kaufmann an der TU M\u00fcnchen. Bei Raumstation Architekten war er an der Konzeptionierung und Ausf\u00fchrung von unterschiedlichen Holzbauprojekten beteiligt und arbeitete eng mit Investoren und Projektentwicklern zusammen. Dar\u00fcber hinaus arbeitete er bei Herzog & De Meuron (Basel) sowie im Bereich Immobilienentwicklung und -investment bei Euroboden (M\u00fcnchen). Seit der Initiierung von Urban Scale Timber konzentrierte Martin seinen Fokus auf die notwendige Prozessinnovation in der Planung und Umsetzung von nachhaltiger und resilienter Projektentwicklung."
+                : hasVariant($state, "personen", "andreasThoma")
                 ? "Andreas Thoma studierte Architektur an der Bauhaus-Universit\u00e4t Weimar (B.Sc.) und der ETH Z\u00fcrich (M.Sc.) mit einem Fokus auf digitale Fabrikation und Computational Design & Development. Er arbeitete mehrere Jahre freiberuflich u.a. f\u00fcr ERNE Holzbau (Stein, CH) und Toggle (USA). Zudem war er f\u00fcr den Lehrstuhl Gramazio Kohler Research an der ETH Z\u00fcrich und bei Herzog & De Meuron (Basel) t\u00e4tig. Bei Gramazio Kohler Research leitete er die Projekte Iridescence Print, Rock Print und Spatial Timber. Heute ist Andreas Head of Digital Fabrication bei Toggle, einem Robotics-Startup (USA), wo er neuartige Fertigungssysteme sowie einen Algorithmus f\u00fcr die Generierung ma\u00dfgeschneiderter Bauelemente mit entsprechender webbasierte Datenerzeugung zur Roboter-Fertigung entwickelt. Nachdem Andreas aktiv beim Exist-gef\u00f6rderten Forschungstransfer Urban Scale Timber mitgewirkt hat, ist er heute wichtiger Advisor f\u00fcr Build Systems. Dabei bringt er sein Wissen in den Bereichen digitale Fabrikation und die Erstellung parametrischer Workflows bei wichtigen Weichenstellungen mit ein."
                 : hasVariant($state, "personen", "vinzenzTrimborn")
                 ? "Vinzenz Trimborn studierte Wirtschaftsinformatik an der TU M\u00fcnchen und war w\u00e4hrend seines Studiums als Web-Entwickler bei KINEXON in der Entwicklung von IoT L\u00f6sungen f\u00fcr die Logistikbranche t\u00e4tig. Nach seinem Bachelor Studium arbeitete er f\u00fcr das Robotik-spinn-off RobCo der TU M\u00fcnchen. Als einer der ersten Mitarbeitenden des heutigen Start Ups war er ma\u00dfgeblich an der Entwicklung des modularen Roboter-Kits beteiligt, das eine software-gest\u00fctzte Automatisierungsl\u00f6sung f\u00fcr die industrielle Fertigung bietet. Seit 2022 wandte Vinzenz sich der Architektur- und Bauindustrie zu. Im Architekturstudio German Haimerl Architekten \u00fcbernahm er die Verantwortlichkeit f\u00fcr Digitalisierung und die Erarbeitung innovativer BIM-Prozesse. Aktuell studiert er im neuen Studiengang IT for the Built Environment an der TU M\u00fcnchen."
@@ -598,7 +633,9 @@ function PlasmicPersonBox__RenderFunc(props: {
                 ? "W\u00e4hrend seines Diplomstudiums der Architektur an der Universidade de S\u00e3o Paulo arbeitete Daniel Locatelli als Computational Designer im Atelier Marko Brajovic. Er setzte sich in seiner Arbeit und sp\u00e4ter im Zuge seiner Diplomarbeit intensiv mit der Verbindung von Architektur, Biomimetik und Algorithmen auseinander. Mit dem Schwerpunkt der Integration von Technologie und Architektur absolvierte Daniel den M.Sc. ITECH an der Universit\u00e4t Stuttgart unter der Leitung von Prof. Achim Menges und Prof. Jan Knippers. In seiner Masterarbeit und w\u00e4hrend seiner T\u00e4tigkeit als wissenschaftlicher Mitarbeiter sammelte Daniel Erfahrungen in der digitalen Fabrikation mit Industrierobotern und untersuchte robotergest\u00fctzte Holzverarbeitungssysteme f\u00fcr die In-Situ-Pressverleimung."
                 : hasVariant($state, "personen", "danielDieren")
                 ? "Nach seiner ersten Berufst\u00e4tigkeit als Bauingenieur schloss Daniel Dieren das Architekturstudium an der TU Berlin (B.Sc. und M.Sc.) an. Er arbeitete seit 2014 f\u00fcr das Ingenieurb\u00fcro Bollinger+Grohmann in Berlin, wo er zahlreiche Projekte mit Spezialisierung auf Ingenieurholzbau und Life-Cycle-Assessment leitete und die Sustainability Group initiierte. Die DGNB kollaborierte sp\u00e4ter mit der Nachhaltigkeitsgruppe bei der Entwicklung des Leitfadens zur Implementierung von Nachhaltigkeitsfaktoren in der Tragwerksplanung. Zudem war er als Lehrbeauftragter am Lehrstuhl f\u00fcr konstruktives Entwerfen der Universit\u00e4t der K\u00fcnste in Berlin t\u00e4tig, wo er Baukonstruktion, Holzbau und nachhaltiges Entwerfen lehrte. Zusammen mit Martin Bittmann erarbeitete er im Austausch mit der TU Berlin und dem Fraunhofer Institut eine Holzbau-Matrix, die nun als Messlatte hinsichtlich holzbau-relevanter Kriterien im Vergabeverfahren des Schumacher Quartiers durch die Tegel Projekt GmbH angewendet wird. [\u2192 Projekte] Daniel bringt sein dezidiertes Fachwissen in der Kundenberatung ein, um auf Geb\u00e4udeebene Emissionen zu optimieren und Entwicklungspotenziale zu heben."
-                : "Martin Bittmann studierte Architektur an der TU M\u00fcnchen und der TU\nIstanbul und ist eingetragener Architekt in der Bayerischen\nArchitektenkammer. Bis Ende 2021 war er als selbst\u00e4ndiger Architekt t\u00e4tig und arbeitete parallel am Institut f\u00fcr Nachhaltigkeit, Baukonstruktion und Entwerfen von Prof. Ludloff an der Universit\u00e4t Stuttgart, wo er den Lehr-und Forschungsbereich Bauklasse Holz aufbaute. Zuvor arbeitete er als Projekt- und Wettbewerbsleiter bei Raumstation Architekten und unterrichtete vier Jahre am Lehrstuhl f\u00fcr Entwerfen und Holzbau von Prof. Kaufmann an der TU M\u00fcnchen. Bei Raumstation Architekten war er an der Konzeptionierung und Ausf\u00fchrung von unterschiedlichen Holzbauprojekten beteiligt und arbeitete eng mit Investoren und Projektentwicklern zusammen. Dar\u00fcber hinaus arbeitete er bei Herzog & De Meuron (Basel) sowie im Bereich Immobilienentwicklung und -investment bei Euroboden (M\u00fcnchen). Seit der Initiierung von Urban Scale Timber konzentrierte Martin seinen Fokus auf die notwendige Prozessinnovation in der Planung und Umsetzung von nachhaltiger und resilienter Projektentwicklung."}
+                : hasVariant($state, "personen", "martinBittmann")
+                ? "Martin Bittmann studierte Architektur an der TU M\u00fcnchen und der TU Istanbul und ist eingetragener Architekt in der Bayerischen\nArchitektenkammer. Bis Ende 2021 war er als selbst\u00e4ndiger Architekt t\u00e4tig und arbeitete parallel am Institut f\u00fcr Nachhaltigkeit, Baukonstruktion und Entwerfen von Prof. Ludloff an der Universit\u00e4t Stuttgart, wo er den Lehr-und Forschungsbereich Bauklasse Holz aufbaute. Zuvor arbeitete er als Projekt- und Wettbewerbsleiter bei Raumstation Architekten und unterrichtete vier Jahre am Lehrstuhl f\u00fcr Entwerfen und Holzbau von Prof. Kaufmann an der TU M\u00fcnchen. Bei Raumstation Architekten war er an der Konzeptionierung und Ausf\u00fchrung von unterschiedlichen Holzbauprojekten beteiligt und arbeitete eng mit Investoren und Projektentwicklern zusammen. Dar\u00fcber hinaus arbeitete er bei Herzog & De Meuron (Basel) sowie im Bereich Immobilienentwicklung und -investment bei Euroboden (M\u00fcnchen). Seit der Initiierung von Urban Scale Timber konzentrierte Martin seinen Fokus auf die notwendige Prozessinnovation in der Planung und Umsetzung von nachhaltiger und resilienter Projektentwicklung."
+                : "Martin Bittmann studierte Architektur an der TU M\u00fcnchen und der TU Istanbul und ist eingetragener Architekt in der Bayerischen\nArchitektenkammer. Bis Ende 2021 war er als selbst\u00e4ndiger Architekt t\u00e4tig und arbeitete parallel am Institut f\u00fcr Nachhaltigkeit, Baukonstruktion und Entwerfen von Prof. Ludloff an der Universit\u00e4t Stuttgart, wo er den Lehr-und Forschungsbereich Bauklasse Holz aufbaute. Zuvor arbeitete er als Projekt- und Wettbewerbsleiter bei Raumstation Architekten und unterrichtete vier Jahre am Lehrstuhl f\u00fcr Entwerfen und Holzbau von Prof. Kaufmann an der TU M\u00fcnchen. Bei Raumstation Architekten war er an der Konzeptionierung und Ausf\u00fchrung von unterschiedlichen Holzbauprojekten beteiligt und arbeitete eng mit Investoren und Projektentwicklern zusammen. Dar\u00fcber hinaus arbeitete er bei Herzog & De Meuron (Basel) sowie im Bereich Immobilienentwicklung und -investment bei Euroboden (M\u00fcnchen). Seit der Initiierung von Urban Scale Timber konzentrierte Martin seinen Fokus auf die notwendige Prozessinnovation in der Planung und Umsetzung von nachhaltiger und resilienter Projektentwicklung."}
             </div>
           </div>
         ) : null}
