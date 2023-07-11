@@ -57,6 +57,14 @@
   --plasmic-token-paragraph-header-mobile: var(--token-aIb04WtoB);
   --token-gge24vR4_: 16px;
   --plasmic-token-paragraph-medium-mobile: var(--token-gge24vR4_);
+  --token-v2KdNz0YD: 1.5;
+  --plasmic-token-subheader-h-m: var(--token-v2KdNz0YD);
+  --token-TlsAXG78b: 16.5px;
+  --plasmic-token-normal-m: var(--token-TlsAXG78b);
+  --token-7EA8_v9fc: 1.5;
+  --plasmic-token-paragraph-medium-h-m: var(--token-7EA8_v9fc);
+  --token-5AUTsTCQi: 1.5;
+  --plasmic-token-paragraph-header-h-m: var(--token-5AUTsTCQi);
 }
 
 @media (max-width: 768px) {
@@ -65,6 +73,12 @@
     --plasmic-token-mobile-site: var(--token-FoMWgon3f);
     --token-gge24vR4_: 13px;
     --plasmic-token-paragraph-medium-mobile: var(--token-gge24vR4_);
+    --token-v2KdNz0YD: 29.7px;
+    --plasmic-token-subheader-h-m: var(--token-v2KdNz0YD);
+    --token-7EA8_v9fc: 14.3px;
+    --plasmic-token-paragraph-medium-h-m: var(--token-7EA8_v9fc);
+    --token-5AUTsTCQi: 18.7px;
+    --plasmic-token-paragraph-header-h-m: var(--token-5AUTsTCQi);
   }
 }
 

@@ -62,6 +62,7 @@ export type PlasmicProjekte__OverridesType = {
   menuStack?: p.Flex<"div">;
   menu?: p.Flex<typeof Menu>;
   buildSystemsHeadline?: p.Flex<typeof BuildSystemsHeadline>;
+  columns?: p.Flex<"div">;
   imageFooter?: p.Flex<typeof ImageFooter>;
   hiderHeadlines?: p.Flex<"div">;
 };
@@ -94,6 +95,7 @@ function PlasmicProjekte__RenderFunc(props: {
 
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+
   const $props = {
     ...args,
     ...variants
@@ -171,8 +173,16 @@ function PlasmicProjekte__RenderFunc(props: {
               data-plasmic-name={"menu"}
               data-plasmic-override={overrides.menu}
               className={classNames("__wab_instance", sty.menu)}
-              expand={true}
-              onSubSite={["projekte"]}
+              expand={
+                hasVariant(globalVariants, "screen", "iPhone")
+                  ? undefined
+                  : true
+              }
+              onSubSite={
+                hasVariant(globalVariants, "screen", "iPhone")
+                  ? []
+                  : ["projekte"]
+              }
             />
           </div>
           <BuildSystemsHeadline
@@ -217,8 +227,10 @@ function PlasmicProjekte__RenderFunc(props: {
                 {true ? (
                   <p.Stack
                     as={"div"}
+                    data-plasmic-name={"columns"}
+                    data-plasmic-override={overrides.columns}
                     hasGap={true}
-                    className={classNames(projectcss.all, sty.columns___1Rbvf)}
+                    className={classNames(projectcss.all, sty.columns)}
                   >
                     <div
                       className={classNames(projectcss.all, sty.column__xh4E5)}
@@ -296,7 +308,7 @@ function PlasmicProjekte__RenderFunc(props: {
                       </div>
                     </div>
                     <div
-                      className={classNames(projectcss.all, sty.column__z0JNf)}
+                      className={classNames(projectcss.all, sty.column__i9Zqv)}
                     >
                       <div
                         className={classNames(
@@ -370,16 +382,8 @@ function PlasmicProjekte__RenderFunc(props: {
                         ) : null}
                       </div>
                     </div>
-                  </p.Stack>
-                ) : null}
-                {true ? (
-                  <p.Stack
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.columns__t2RKz)}
-                  >
                     <div
-                      className={classNames(projectcss.all, sty.column___3VOlO)}
+                      className={classNames(projectcss.all, sty.column___9LDDs)}
                     >
                       <div
                         className={classNames(
@@ -453,9 +457,6 @@ function PlasmicProjekte__RenderFunc(props: {
                         ) : null}
                       </div>
                     </div>
-                    <div
-                      className={classNames(projectcss.all, sty.column___2DmMx)}
-                    />
                   </p.Stack>
                 ) : null}
               </div>
@@ -485,23 +486,26 @@ const PlasmicDescendants = {
     "menuStack",
     "menu",
     "buildSystemsHeadline",
+    "columns",
     "imageFooter",
     "hiderHeadlines"
   ],
   menuStack: ["menuStack", "menu"],
   menu: ["menu"],
   buildSystemsHeadline: ["buildSystemsHeadline"],
+  columns: ["columns"],
   imageFooter: ["imageFooter"],
   hiderHeadlines: ["hiderHeadlines"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
-  (typeof PlasmicDescendants)[T][number];
+  typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: "div";
   menuStack: "div";
   menu: typeof Menu;
   buildSystemsHeadline: typeof BuildSystemsHeadline;
+  columns: "div";
   imageFooter: typeof ImageFooter;
   hiderHeadlines: "div";
 };
@@ -569,6 +573,7 @@ export const PlasmicProjekte = Object.assign(
     menuStack: makeNodeComponent("menuStack"),
     menu: makeNodeComponent("menu"),
     buildSystemsHeadline: makeNodeComponent("buildSystemsHeadline"),
+    columns: makeNodeComponent("columns"),
     imageFooter: makeNodeComponent("imageFooter"),
     hiderHeadlines: makeNodeComponent("hiderHeadlines"),
 

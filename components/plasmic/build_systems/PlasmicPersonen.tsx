@@ -94,6 +94,7 @@ function PlasmicPersonen__RenderFunc(props: {
 
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+
   const $props = {
     ...args,
     ...variants
@@ -171,8 +172,16 @@ function PlasmicPersonen__RenderFunc(props: {
               data-plasmic-name={"menu"}
               data-plasmic-override={overrides.menu}
               className={classNames("__wab_instance", sty.menu)}
-              expand={true}
-              onSubSite={["personen"]}
+              expand={
+                hasVariant(globalVariants, "screen", "iPhone")
+                  ? undefined
+                  : true
+              }
+              onSubSite={
+                hasVariant(globalVariants, "screen", "iPhone")
+                  ? []
+                  : ["personen"]
+              }
             />
           </div>
           <BuildSystemsHeadline
@@ -298,7 +307,7 @@ const PlasmicDescendants = {
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
-  (typeof PlasmicDescendants)[T][number];
+  typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: "div";
   menuStack: "div";

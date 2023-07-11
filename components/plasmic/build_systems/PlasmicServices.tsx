@@ -94,6 +94,7 @@ function PlasmicServices__RenderFunc(props: {
 
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+
   const $props = {
     ...args,
     ...variants
@@ -171,8 +172,16 @@ function PlasmicServices__RenderFunc(props: {
               data-plasmic-name={"menu"}
               data-plasmic-override={overrides.menu}
               className={classNames("__wab_instance", sty.menu)}
-              expand={true}
-              onSubSite={["services"]}
+              expand={
+                hasVariant(globalVariants, "screen", "iPhone")
+                  ? undefined
+                  : true
+              }
+              onSubSite={
+                hasVariant(globalVariants, "screen", "iPhone")
+                  ? []
+                  : ["services"]
+              }
             />
           </div>
           <BuildSystemsHeadline
@@ -218,8 +227,7 @@ function PlasmicServices__RenderFunc(props: {
                   <div
                     className={classNames(projectcss.all, sty.freeBox__dg8Ve)}
                   />
-                </div>
-                <div className={classNames(projectcss.all, sty.column__pyGF)}>
+
                   <div
                     className={classNames(projectcss.all, sty.freeBox__yQr6T)}
                   >
@@ -257,8 +265,8 @@ function PlasmicServices__RenderFunc(props: {
               )}
             >
               {hasVariant(globalVariants, "screen", "iPhone")
-                ? "                                Build Systems arbeitet mit dezidierten #Benchmarks/#Indikatoren, die #klima-intelligent /#bew\u00e4hrt sind. "
-                : "Build Systems arbeitet mit dezidierten #Benchmarks/#Indikatoren, die #klima-intelligent /#bew\u00e4hrt sind. "}
+                ? "                                arbeitet mit dezidierten #Benchmarks/#Indikatoren, die #klima-intelligent /#bew\u00e4hrt sind. "
+                : "arbeitet mit dezidierten #Benchmarks/#Indikatoren, die #klima-intelligent /#bew\u00e4hrt sind. "}
             </div>
           </div>
           <div className={classNames(projectcss.all, sty.freeBox__tjNMr)}>
@@ -290,11 +298,26 @@ function PlasmicServices__RenderFunc(props: {
                     </div>
                   </div>
                 </div>
-                <div className={classNames(projectcss.all, sty.column___5Ck85)}>
+                {(
+                  hasVariant(globalVariants, "screen", "iPhone") ? true : true
+                ) ? (
                   <div
-                    className={classNames(projectcss.all, sty.freeBox__vwcX)}
-                  />
-                </div>
+                    className={classNames(projectcss.all, sty.column__pZHoZ)}
+                  >
+                    {(
+                      hasVariant(globalVariants, "screen", "iPhone")
+                        ? true
+                        : true
+                    ) ? (
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__utQ0
+                        )}
+                      />
+                    ) : null}
+                  </div>
+                ) : null}
               </div>
             ) : null}
           </div>
@@ -306,9 +329,9 @@ function PlasmicServices__RenderFunc(props: {
                 sty.text___9MnBc
               )}
             >
-              {
-                "Build Systems erstellt Vordimensionierungen zu #Anlagentechnik / #Konstruktionsmethoden / #Materialwahl / #Wiederverwendungspotential.  "
-              }
+              {hasVariant(globalVariants, "screen", "iPhone")
+                ? "                                erstellt Vordimensionierungen zu #Anlagentechnik / #Konstruktionsmethoden / #Materialwahl / #Wiederverwendungspotential.  "
+                : "erstellt Vordimensionierungen zu #Anlagentechnik / #Konstruktionsmethoden / #Materialwahl / #Wiederverwendungspotential.  "}
             </div>
           </div>
           <div className={classNames(projectcss.all, sty.freeBox___2S9Zv)}>
@@ -501,7 +524,7 @@ const PlasmicDescendants = {
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
-  (typeof PlasmicDescendants)[T][number];
+  typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: "div";
   menuStack: "div";

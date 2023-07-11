@@ -95,6 +95,7 @@ function PlasmicHomepage2__RenderFunc(props: {
 
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+
   const $props = {
     ...args,
     ...variants
@@ -255,27 +256,79 @@ function PlasmicHomepage2__RenderFunc(props: {
                     "Impact Intelligence steht f\u00fcr einen smarten Umgang mit technischen und sozio\u00f6konomischen Ma\u00dfnahmen, die die Zukunftsf\u00e4higkeit des Geb\u00e4udesektors vorantreiben. Unsere Smart Sustainability Roadmaps helfen Ihnen, das Potential Ihrer Assets optimal auszusch\u00f6pfen und Ihren \u00f6kologischen und sozialen Impact in der Geb\u00e4udeentwicklung zu skalieren. "
                   }
                 </div>
-                <SmallButton
-                  className={classNames(
-                    "__wab_instance",
-                    sty.smallButton___7Kbng
-                  )}
-                  noLeftSiteShift={
-                    hasVariant(globalVariants, "screen", "iPhone")
-                      ? true
-                      : undefined
-                  }
-                >
+                {true ? (
                   <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__uPqsL
-                    )}
+                    className={classNames(projectcss.all, sty.freeBox__vtZnr)}
+                    onClick={async event => {
+                      const $steps = {};
+                      $steps["goToServices"] = true
+                        ? (() => {
+                            const actionArgs = {
+                              destination: __wrapUserFunction(
+                                {
+                                  type: "InteractionArgLoc",
+                                  actionName: "navigation",
+                                  interactionUuid: "GavIeUxHZ",
+                                  componentUuid: "MxT9ttJsa--",
+                                  argName: "destination"
+                                },
+                                () => `/services`
+                              )
+                            };
+                            return __wrapUserFunction(
+                              {
+                                type: "InteractionLoc",
+                                actionName: "navigation",
+                                interactionUuid: "GavIeUxHZ",
+                                componentUuid: "MxT9ttJsa--"
+                              },
+                              () =>
+                                (({ destination }) => {
+                                  __nextRouter?.push(destination);
+                                })?.apply(null, [actionArgs]),
+                              actionArgs
+                            );
+                          })()
+                        : undefined;
+                      if (
+                        typeof $steps["goToServices"] === "object" &&
+                        typeof $steps["goToServices"].then === "function"
+                      ) {
+                        $steps["goToServices"] = await __wrapUserPromise(
+                          {
+                            type: "InteractionLoc",
+                            actionName: "navigation",
+                            interactionUuid: "GavIeUxHZ",
+                            componentUuid: "MxT9ttJsa--"
+                          },
+                          $steps["goToServices"]
+                        );
+                      }
+                    }}
                   >
-                    {"Services"}
+                    <SmallButton
+                      className={classNames(
+                        "__wab_instance",
+                        sty.smallButton___7Kbng
+                      )}
+                      noLeftSiteShift={
+                        hasVariant(globalVariants, "screen", "iPhone")
+                          ? true
+                          : true
+                      }
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__uPqsL
+                        )}
+                      >
+                        {"Services"}
+                      </div>
+                    </SmallButton>
                   </div>
-                </SmallButton>
+                ) : null}
               </div>
             ) : null}
           </div>
@@ -322,27 +375,79 @@ function PlasmicHomepage2__RenderFunc(props: {
                     "Unsere Nachhaltigkeitsfahrpl\u00e4ne unterst\u00fctzt die individuelle Projektentwicklung in einer fr\u00fchen Phase der Planung, Investitionsentscheidungen zu treffen, Projekte ganzheitlich aufzugleisen und nachhaltige Wertstabilit\u00e4t zu schaffen."
                   }
                 </div>
-                <SmallButton
-                  className={classNames(
-                    "__wab_instance",
-                    sty.smallButton___4LqCo
-                  )}
-                  noLeftSiteShift={
-                    hasVariant(globalVariants, "screen", "iPhone")
-                      ? true
-                      : undefined
-                  }
-                >
+                {true ? (
                   <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__nDzhi
-                    )}
+                    className={classNames(projectcss.all, sty.freeBox__abYxU)}
+                    onClick={async event => {
+                      const $steps = {};
+                      $steps["goToProjekte"] = true
+                        ? (() => {
+                            const actionArgs = {
+                              destination: __wrapUserFunction(
+                                {
+                                  type: "InteractionArgLoc",
+                                  actionName: "navigation",
+                                  interactionUuid: "90zI0bnSv",
+                                  componentUuid: "MxT9ttJsa--",
+                                  argName: "destination"
+                                },
+                                () => `/projekte`
+                              )
+                            };
+                            return __wrapUserFunction(
+                              {
+                                type: "InteractionLoc",
+                                actionName: "navigation",
+                                interactionUuid: "90zI0bnSv",
+                                componentUuid: "MxT9ttJsa--"
+                              },
+                              () =>
+                                (({ destination }) => {
+                                  __nextRouter?.push(destination);
+                                })?.apply(null, [actionArgs]),
+                              actionArgs
+                            );
+                          })()
+                        : undefined;
+                      if (
+                        typeof $steps["goToProjekte"] === "object" &&
+                        typeof $steps["goToProjekte"].then === "function"
+                      ) {
+                        $steps["goToProjekte"] = await __wrapUserPromise(
+                          {
+                            type: "InteractionLoc",
+                            actionName: "navigation",
+                            interactionUuid: "90zI0bnSv",
+                            componentUuid: "MxT9ttJsa--"
+                          },
+                          $steps["goToProjekte"]
+                        );
+                      }
+                    }}
                   >
-                    {"Projekte"}
+                    <SmallButton
+                      className={classNames(
+                        "__wab_instance",
+                        sty.smallButton___4LqCo
+                      )}
+                      noLeftSiteShift={
+                        hasVariant(globalVariants, "screen", "iPhone")
+                          ? true
+                          : true
+                      }
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__nDzhi
+                        )}
+                      >
+                        {"Projekte"}
+                      </div>
+                    </SmallButton>
                   </div>
-                </SmallButton>
+                ) : null}
               </div>
             ) : null}
           </div>
@@ -369,7 +474,7 @@ const PlasmicDescendants = {
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
-  (typeof PlasmicDescendants)[T][number];
+  typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: "div";
   buildSystemsHeadline: typeof BuildSystemsHeadline;

@@ -66,6 +66,7 @@ export const PlasmicSmallButton__ArgProps = new Array<ArgPropType>("children");
 
 export type PlasmicSmallButton__OverridesType = {
   root?: p.Flex<"div">;
+  freeBox?: p.Flex<"div">;
   svg?: p.Flex<"svg">;
 };
 
@@ -102,6 +103,7 @@ function PlasmicSmallButton__RenderFunc(props: {
 
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+
   const $props = {
     ...args,
     ...variants
@@ -138,63 +140,80 @@ function PlasmicSmallButton__RenderFunc(props: {
   });
 
   return (
-    <div
-      data-plasmic-name={"root"}
-      data-plasmic-override={overrides.root}
-      data-plasmic-root={true}
-      data-plasmic-for-node={forNode}
-      className={classNames(
-        projectcss.all,
-        projectcss.root_reset,
-        projectcss.plasmic_default_styles,
-        projectcss.plasmic_mixins,
-        projectcss.plasmic_tokens,
-        sty.root,
-        {
-          [sty.rootnoLeftSiteShift]: hasVariant(
-            $state,
-            "noLeftSiteShift",
-            "noLeftSiteShift"
-          ),
-          [sty.rootplus]: hasVariant($state, "plus", "plus")
-        }
-      )}
-    >
-      {(hasVariant($state, "plus", "plus") ? true : true) ? (
-        <ArrowRightAltSvgrepoComsvgIcon
-          data-plasmic-name={"svg"}
-          data-plasmic-override={overrides.svg}
-          className={classNames(projectcss.all, sty.svg, {
-            [sty.svgplus]: hasVariant($state, "plus", "plus")
+    true ? (
+      <div
+        data-plasmic-name={"root"}
+        data-plasmic-override={overrides.root}
+        data-plasmic-root={true}
+        data-plasmic-for-node={forNode}
+        className={classNames(
+          projectcss.all,
+          projectcss.root_reset,
+          projectcss.plasmic_default_styles,
+          projectcss.plasmic_mixins,
+          projectcss.plasmic_tokens,
+          sty.root,
+          {
+            [sty.rootnoLeftSiteShift]: hasVariant(
+              $state,
+              "noLeftSiteShift",
+              "noLeftSiteShift"
+            ),
+            [sty.rootplus]: hasVariant($state, "plus", "plus")
+          }
+        )}
+      >
+        <div
+          data-plasmic-name={"freeBox"}
+          data-plasmic-override={overrides.freeBox}
+          className={classNames(projectcss.all, sty.freeBox, {
+            [sty.freeBoxnoLeftSiteShift]: hasVariant(
+              $state,
+              "noLeftSiteShift",
+              "noLeftSiteShift"
+            ),
+            [sty.freeBoxplus]: hasVariant($state, "plus", "plus")
           })}
-          role={"img"}
-        />
-      ) : null}
-      {p.renderPlasmicSlot({
-        defaultContents: "+   mehr ",
-        value: args.children,
-        className: classNames(sty.slotTargetChildren, {
-          [sty.slotTargetChildrennoLeftSiteShift]: hasVariant(
-            $state,
-            "noLeftSiteShift",
-            "noLeftSiteShift"
-          ),
-          [sty.slotTargetChildrenplus]: hasVariant($state, "plus", "plus")
-        })
-      })}
-    </div>
+        >
+          {(hasVariant($state, "plus", "plus") ? true : true) ? (
+            <ArrowRightAltSvgrepoComsvgIcon
+              data-plasmic-name={"svg"}
+              data-plasmic-override={overrides.svg}
+              className={classNames(projectcss.all, sty.svg, {
+                [sty.svgplus]: hasVariant($state, "plus", "plus")
+              })}
+              role={"img"}
+            />
+          ) : null}
+          {p.renderPlasmicSlot({
+            defaultContents: "+   mehr ",
+            value: args.children,
+            className: classNames(sty.slotTargetChildren, {
+              [sty.slotTargetChildrennoLeftSiteShift]: hasVariant(
+                $state,
+                "noLeftSiteShift",
+                "noLeftSiteShift"
+              ),
+              [sty.slotTargetChildrenplus]: hasVariant($state, "plus", "plus")
+            })
+          })}
+        </div>
+      </div>
+    ) : null
   ) as React.ReactElement | null;
 }
 
 const PlasmicDescendants = {
-  root: ["root", "svg"],
+  root: ["root", "freeBox", "svg"],
+  freeBox: ["freeBox", "svg"],
   svg: ["svg"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
-  (typeof PlasmicDescendants)[T][number];
+  typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: "div";
+  freeBox: "div";
   svg: "svg";
 };
 
@@ -258,6 +277,7 @@ export const PlasmicSmallButton = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    freeBox: makeNodeComponent("freeBox"),
     svg: makeNodeComponent("svg"),
 
     // Metadata about props expected for PlasmicSmallButton

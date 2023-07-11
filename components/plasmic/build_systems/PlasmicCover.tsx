@@ -92,6 +92,7 @@ function PlasmicCover__RenderFunc(props: {
 
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+
   const $props = {
     ...args,
     ...variants
@@ -202,6 +203,77 @@ function PlasmicCover__RenderFunc(props: {
                 type: "InteractionLoc",
                 actionName: "updateVariant",
                 interactionUuid: "yuAsWi6tI",
+                componentUuid: "y8WKJEXfAa"
+              },
+              $steps["updateScroll2"]
+            );
+          }
+        }}
+        onTouchStart={async event => {
+          const $steps = {};
+          $steps["updateScroll2"] = true
+            ? (() => {
+                const actionArgs = {
+                  vgroup: __wrapUserFunction(
+                    {
+                      type: "InteractionArgLoc",
+                      actionName: "updateVariant",
+                      interactionUuid: "1YIWn7RGx",
+                      componentUuid: "y8WKJEXfAa",
+                      argName: "vgroup"
+                    },
+                    () => "scroll2"
+                  ),
+                  operation: __wrapUserFunction(
+                    {
+                      type: "InteractionArgLoc",
+                      actionName: "updateVariant",
+                      interactionUuid: "1YIWn7RGx",
+                      componentUuid: "y8WKJEXfAa",
+                      argName: "operation"
+                    },
+                    () => 4
+                  ),
+                  value: __wrapUserFunction(
+                    {
+                      type: "InteractionArgLoc",
+                      actionName: "updateVariant",
+                      interactionUuid: "1YIWn7RGx",
+                      componentUuid: "y8WKJEXfAa",
+                      argName: "value"
+                    },
+                    () => "scroll2"
+                  )
+                };
+                return __wrapUserFunction(
+                  {
+                    type: "InteractionLoc",
+                    actionName: "updateVariant",
+                    interactionUuid: "1YIWn7RGx",
+                    componentUuid: "y8WKJEXfAa"
+                  },
+                  () =>
+                    (({ vgroup, value }) => {
+                      if (typeof value === "string") {
+                        value = [value];
+                      }
+
+                      p.set($state, vgroup, true);
+                      return true;
+                    })?.apply(null, [actionArgs]),
+                  actionArgs
+                );
+              })()
+            : undefined;
+          if (
+            typeof $steps["updateScroll2"] === "object" &&
+            typeof $steps["updateScroll2"].then === "function"
+          ) {
+            $steps["updateScroll2"] = await __wrapUserPromise(
+              {
+                type: "InteractionLoc",
+                actionName: "updateVariant",
+                interactionUuid: "1YIWn7RGx",
                 componentUuid: "y8WKJEXfAa"
               },
               $steps["updateScroll2"]
@@ -397,7 +469,7 @@ const PlasmicDescendants = {
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
-  (typeof PlasmicDescendants)[T][number];
+  typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: "div";
   buildSystemsHeadline: typeof BuildSystemsHeadline;
