@@ -385,7 +385,7 @@ function PlasmicServices__RenderFunc(props: {
             >
               {hasVariant(globalVariants, "screen", "iPhone")
                 ? "                                steigerte durch abgestimmte Prozesse baulichen Mehrwert"
-                : "steigerte durch abgestimmte Prozesse baulichen Mehrwert"}
+                : "steigert durch abgestimmte Prozesse baulichen Mehrwert"}
             </div>
           </div>
           <div className={classNames(projectcss.all, sty.freeBox__cliNj)}>

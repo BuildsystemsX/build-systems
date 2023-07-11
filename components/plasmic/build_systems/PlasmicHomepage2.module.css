@@ -206,7 +206,7 @@
   z-index: 2;
   grid-column-start: 1;
   grid-column-end: -1;
-  padding: 0px 0px 0px var(--token-E903dIBMc);
+  padding: 0px var(--token-HEUzmGVCS) 0px var(--token-E903dIBMc);
 }
 @media (max-width: 768px) {
   .freeBox__alDgg {
@@ -385,7 +385,7 @@
   z-index: 2;
   grid-column-start: 1;
   grid-column-end: -1;
-  padding: 0px 0px 0px var(--token-E903dIBMc);
+  padding: 0px var(--token-HEUzmGVCS) 0px var(--token-E903dIBMc);
 }
 @media (max-width: 768px) {
   .freeBox__myJt4 {

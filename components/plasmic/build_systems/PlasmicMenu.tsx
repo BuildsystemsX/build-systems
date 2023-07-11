@@ -175,6 +175,67 @@ function PlasmicMenu__RenderFunc(props: {
             )
           }
         )}
+        onLoad={async event => {
+          const $steps = {};
+          $steps["updateExpand"] = true
+            ? (() => {
+                const actionArgs = {
+                  vgroup: __wrapUserFunction(
+                    {
+                      type: "InteractionArgLoc",
+                      actionName: "updateVariant",
+                      interactionUuid: "5xOPcqMqK",
+                      componentUuid: "5tZNLUygwX",
+                      argName: "vgroup"
+                    },
+                    () => "expand"
+                  ),
+                  operation: __wrapUserFunction(
+                    {
+                      type: "InteractionArgLoc",
+                      actionName: "updateVariant",
+                      interactionUuid: "5xOPcqMqK",
+                      componentUuid: "5tZNLUygwX",
+                      argName: "operation"
+                    },
+                    () => 6
+                  )
+                };
+                return __wrapUserFunction(
+                  {
+                    type: "InteractionLoc",
+                    actionName: "updateVariant",
+                    interactionUuid: "5xOPcqMqK",
+                    componentUuid: "5tZNLUygwX"
+                  },
+                  () =>
+                    (({ vgroup, value }) => {
+                      if (typeof value === "string") {
+                        value = [value];
+                      }
+
+                      p.set($state, vgroup, false);
+                      return false;
+                    })?.apply(null, [actionArgs]),
+                  actionArgs
+                );
+              })()
+            : undefined;
+          if (
+            typeof $steps["updateExpand"] === "object" &&
+            typeof $steps["updateExpand"].then === "function"
+          ) {
+            $steps["updateExpand"] = await __wrapUserPromise(
+              {
+                type: "InteractionLoc",
+                actionName: "updateVariant",
+                interactionUuid: "5xOPcqMqK",
+                componentUuid: "5tZNLUygwX"
+              },
+              $steps["updateExpand"]
+            );
+          }
+        }}
         onMouseLeave={async event => {
           const $steps = {};
           $steps["updateExpand"] = true
