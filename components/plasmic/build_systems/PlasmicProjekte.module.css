@@ -57,6 +57,11 @@
   position: relative;
   flex-shrink: 0;
 }
+@media (max-width: 768px) {
+  .menu:global(.__wab_instance) {
+    flex-shrink: 0;
+  }
+}
 @media (max-width: 375px) {
   .menu:global(.__wab_instance) {
     flex-shrink: 0;

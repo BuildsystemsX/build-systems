@@ -179,10 +179,14 @@ function PlasmicProjekte__RenderFunc(props: {
               expand={
                 hasVariant(globalVariants, "screen", "iPhone")
                   ? undefined
+                  : hasVariant(globalVariants, "screen", "iPad")
+                  ? undefined
                   : true
               }
               onSubSite={
                 hasVariant(globalVariants, "screen", "iPhone")
+                  ? []
+                  : hasVariant(globalVariants, "screen", "iPad")
                   ? []
                   : ["projekte"]
               }
