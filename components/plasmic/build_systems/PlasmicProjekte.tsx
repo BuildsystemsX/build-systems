@@ -38,7 +38,7 @@ import {
 } from "@plasmicapp/react-web";
 import Menu from "../../Menu"; // plasmic-import: 5tZNLUygwX/component
 import BuildSystemsHeadline from "../../BuildSystemsHeadline"; // plasmic-import: k0tLqKtuC3/component
-import SmallButton from "../../SmallButton"; // plasmic-import: jdWzZYnBO3/component
+import Projekt from "../../Projekt"; // plasmic-import: IKbj2OkZcR/component
 import ImageFooter from "../../ImageFooter"; // plasmic-import: 7Stlw3wb0O/component
 import HiderHeadlines from "../../HiderHeadlines"; // plasmic-import: q6j09HfKP8/component
 
@@ -245,228 +245,39 @@ function PlasmicProjekte__RenderFunc(props: {
                     <div
                       className={classNames(projectcss.all, sty.column__xh4E5)}
                     >
-                      <div
+                      <Projekt
                         className={classNames(
-                          projectcss.all,
-                          sty.freeBox__yDqAx
+                          "__wab_instance",
+                          sty.projekt__lzDDs
                         )}
-                      >
-                        <p.PlasmicImg
-                          alt={""}
-                          className={classNames(sty.img___1IeQk)}
-                          displayHeight={"auto" as const}
-                          displayMaxHeight={"none" as const}
-                          displayMaxWidth={"100%" as const}
-                          displayMinHeight={"0" as const}
-                          displayMinWidth={"0" as const}
-                          displayWidth={"auto" as const}
-                          loading={"lazy" as const}
-                          src={{
-                            src: "/plasmic/build_systems/images/image.png",
-                            fullWidth: 760,
-                            fullHeight: 507,
-                            aspectRatio: undefined
-                          }}
-                        />
-
-                        {true ? (
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              sty.freeBox__ljdEt
-                            )}
-                          >
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text___3FqJk
-                              )}
-                            >
-                              {"Schumacher Quartier"}
-                            </div>
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__zl0Ru
-                              )}
-                            >
-                              {
-                                "Das Schumacher Quartier soll als reines Holzbauaurtier auf dem Gel\u00e4nde des ehemaligen Flughafen Tegel in Berlin entstehen. Das Modellquartier steht fu\u0308r \u00f6kologischen Neubau, Nutzungsmischung und innovative Mobilita\u0308tskonzepte sowie energetisch vorbildliche Geba\u0308ude innerhalb eines autoarmen Wohngebiets, das die ausreichende Gru\u0308nversorgung sicherstellt. "
-                              }
-                            </div>
-                            <SmallButton
-                              className={classNames(
-                                "__wab_instance",
-                                sty.smallButton___4YhS2
-                              )}
-                              noLeftSiteShift={true}
-                            >
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__m4Nso
-                                )}
-                              >
-                                {"mehr Erfahren"}
-                              </div>
-                            </SmallButton>
-                          </div>
-                        ) : null}
-                      </div>
+                      />
                     </div>
                     <div
                       className={classNames(projectcss.all, sty.column__i9Zqv)}
                     >
+                      <Projekt
+                        className={classNames(
+                          "__wab_instance",
+                          sty.projekt__e7GYh
+                        )}
+                        projekte={"urbanScaleTimber" as const}
+                      />
+                    </div>
+                    {true ? (
                       <div
                         className={classNames(
                           projectcss.all,
-                          sty.freeBox__dEzr
+                          sty.column___9LDDs
                         )}
                       >
-                        <p.PlasmicImg
-                          alt={""}
-                          className={classNames(sty.img__uxT6W)}
-                          displayHeight={"auto" as const}
-                          displayMaxHeight={"none" as const}
-                          displayMaxWidth={"100%" as const}
-                          displayMinHeight={"0" as const}
-                          displayMinWidth={"0" as const}
-                          displayWidth={"auto" as const}
-                          loading={"lazy" as const}
-                          src={{
-                            src: "/plasmic/build_systems/images/image.png",
-                            fullWidth: 760,
-                            fullHeight: 507,
-                            aspectRatio: undefined
-                          }}
+                        <Projekt
+                          className={classNames(
+                            "__wab_instance",
+                            sty.projekt__xsm00
+                          )}
                         />
-
-                        {true ? (
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              sty.freeBox__u8F0G
-                            )}
-                          >
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__gjzQa
-                              )}
-                            >
-                              {"Urban Scale Timber"}
-                            </div>
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text___7Soc
-                              )}
-                            >
-                              {
-                                "Der urbane Holzbau ist ein Schlu\u0308sselfaktor auf dem Weg zu klimaneutralen St\u00e4dten. Der Baustoff kann durch sein Potenzial als Kohlenstoffspeicher signifikant zur Reduzierung des 38%-Anteils des Bausektors an den globalen CO2-Emissionen beitragen. Urban Scale Timber bietet ein Tool fu\u0308r automatisierte holzbauspezifische Machbarkeitsstudien fu\u0308r private und \u00f6ffentliche Projektentwickler und Planerinnen und macht entsprechendes Fachwissen greifbar, um den Entwicklungsprozess von Holzbauprojekten zu skalieren, zu verbessern und zu beschleunigen. "
-                              }
-                            </div>
-                            <SmallButton
-                              className={classNames(
-                                "__wab_instance",
-                                sty.smallButton__oghGj
-                              )}
-                              noLeftSiteShift={true}
-                            >
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__pMslZ
-                                )}
-                              >
-                                {"mehr Erfahren"}
-                              </div>
-                            </SmallButton>
-                          </div>
-                        ) : null}
                       </div>
-                    </div>
-                    <div
-                      className={classNames(projectcss.all, sty.column___9LDDs)}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__iqkqa
-                        )}
-                      >
-                        <p.PlasmicImg
-                          alt={""}
-                          className={classNames(sty.img___4Qh9Z)}
-                          displayHeight={"auto" as const}
-                          displayMaxHeight={"none" as const}
-                          displayMaxWidth={"100%" as const}
-                          displayMinHeight={"0" as const}
-                          displayMinWidth={"0" as const}
-                          displayWidth={"auto" as const}
-                          loading={"lazy" as const}
-                          src={{
-                            src: "/plasmic/build_systems/images/image.png",
-                            fullWidth: 760,
-                            fullHeight: 507,
-                            aspectRatio: undefined
-                          }}
-                        />
-
-                        {true ? (
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              sty.freeBox__yGvw8
-                            )}
-                          >
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__apS19
-                              )}
-                            >
-                              {"Schumacher Quartier"}
-                            </div>
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__kPioR
-                              )}
-                            >
-                              {
-                                "Das Schumacher Quartier soll als reines Holzbauaurtier auf dem Gel\u00e4nde des ehemaligen Flughafen Tegel in Berlin entstehen. Das Modellquartier steht fu\u0308r \u00f6kologischen Neubau, Nutzungsmischung und innovative Mobilita\u0308tskonzepte sowie energetisch vorbildliche Geba\u0308ude innerhalb eines autoarmen Wohngebiets, das die ausreichende Gru\u0308nversorgung sicherstellt. "
-                              }
-                            </div>
-                            <SmallButton
-                              className={classNames(
-                                "__wab_instance",
-                                sty.smallButton__xgCC
-                              )}
-                              noLeftSiteShift={true}
-                            >
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__qqZwk
-                                )}
-                              >
-                                {"mehr Erfahren"}
-                              </div>
-                            </SmallButton>
-                          </div>
-                        ) : null}
-                      </div>
-                    </div>
+                    ) : null}
                   </p.Stack>
                 ) : null}
               </div>

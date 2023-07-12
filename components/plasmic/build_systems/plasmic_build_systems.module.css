@@ -97,6 +97,8 @@
   --plasmic-token-paragraph-medium-sd: var(--token-3lvkjUKih);
   --token-C5R7CuvCY: 1.5;
   --plasmic-token-paragraph-medium-sd-2: var(--token-C5R7CuvCY);
+  --token-cX1GSsJHn: 1px;
+  --plasmic-token-2-cells-i-pad: var(--token-cX1GSsJHn);
 }
 
 @media (max-width: 1280px) {
@@ -142,6 +144,8 @@
     --plasmic-token-normal-i-pad: var(--token-7nxbZRFJ2);
     --token-qwONIKZlU: 18.7px;
     --plasmic-token-normal-i-pad-h: var(--token-qwONIKZlU);
+    --token-cX1GSsJHn: 140px;
+    --plasmic-token-2-cells-i-pad: var(--token-cX1GSsJHn);
   }
 }
 

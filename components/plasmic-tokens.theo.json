@@ -41,6 +41,16 @@
       }
     },
     {
+      "name": "2 Cells IPad",
+      "type": "spacing",
+      "value": "1px",
+      "category": "spacing",
+      "meta": {
+        "projectId": "jENqvBHbRPXMByDQmRe4G7",
+        "id": "cX1GSsJHn"
+      }
+    },
+    {
       "name": "2 Cells SD",
       "type": "spacing",
       "value": "1px",

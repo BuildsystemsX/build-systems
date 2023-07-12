@@ -1,0 +1,255 @@
+.root {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  position: relative;
+  justify-self: flex-start;
+  background: var(--token-gvQcXRBmf);
+  transition-property: all;
+  transition-duration: 1s;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 1s;
+  padding: 0px;
+}
+@media (max-width: 375px) {
+  .root {
+    height: auto;
+  }
+}
+.img {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+}
+.img > picture > img {
+  object-fit: cover;
+}
+.img > :global(.__wab_img-spacer) > img {
+  object-fit: cover;
+}
+.freeBox__duP2I {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 16px 0px 8px;
+}
+@media (max-width: 375px) {
+  .freeBox__duP2I {
+    padding-top: 30px;
+  }
+}
+.text__dF02L {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  font-family: var(--token-murZRIrJA);
+  font-size: var(--token-QMRM6lPQw);
+  padding-left: 0px;
+  color: var(--token-Y1kFl7CJ7);
+  line-height: var(--token-F2rqRnqW4);
+  letter-spacing: -0.32px;
+}
+@media (max-width: 1280px) {
+  .text__dF02L {
+    letter-spacing: -0.24px;
+    font-size: var(--token-wv2PUjFfA);
+    line-height: var(--token-EvssYruvG);
+  }
+}
+@media (max-width: 375px) {
+  .text__dF02L {
+    font-size: var(--token-aIb04WtoB);
+    letter-spacing: -0.18px;
+    line-height: var(--token-5AUTsTCQi);
+  }
+}
+.text___71TmL {
+  color: var(--token-Y1kFl7CJ7);
+  text-align: left;
+  font-size: var(--token-1iVBmJGwv);
+  font-family: var(--token-murZRIrJA);
+  line-height: var(--token-iHG0XeWrr);
+  letter-spacing: -0.18px;
+  width: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 0px;
+}
+@media (max-width: 1280px) {
+  .text___71TmL {
+    font-size: var(--token-3lvkjUKih);
+    letter-spacing: -0.14px;
+    line-height: var(--token-C5R7CuvCY);
+    margin-top: 0px;
+  }
+}
+@media (max-width: 375px) {
+  .text___71TmL {
+    font-size: var(--token-gge24vR4_);
+    letter-spacing: -0.13px;
+    line-height: var(--token-7EA8_v9fc);
+  }
+}
+.freeBox__tjgj0 {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  padding: 0px;
+}
+.freeBoxexpanded__tjgj0Gsrcc {
+  width: 74px;
+}
+.smallButton__xnyS3:global(.__wab_instance) {
+  max-width: 100%;
+  width: 124px;
+}
+@media (max-width: 1280px) {
+  .smallButton__xnyS3:global(.__wab_instance) {
+    width: auto;
+  }
+}
+@media (max-width: 375px) {
+  .smallButton__xnyS3:global(.__wab_instance) {
+    width: auto;
+  }
+}
+.text__qTlb {
+  max-width: 111px;
+  width: 100%;
+  min-width: 0;
+}
+.freeBox__peFiP {
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  background: var(--token-gvQcXRBmf);
+  min-width: 0;
+  display: none;
+  padding: 0px;
+}
+@media (max-width: 1280px) {
+  .freeBox__peFiP {
+    top: 630px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}
+@media (max-width: 768px) {
+  .freeBox__peFiP {
+    top: 639px;
+  }
+}
+@media (max-width: 375px) {
+  .freeBox__peFiP {
+    top: 402px;
+  }
+}
+.freeBoxexpanded__peFiPgsrcc {
+  left: auto;
+  top: auto;
+  z-index: 1;
+  position: relative;
+  height: auto;
+  width: auto;
+  align-items: flex-start;
+  justify-content: flex-start;
+  display: flex;
+}
+.freeBoxprojekte_schumacherQuartier__peFiPpFtCh {
+  display: none;
+}
+.text___2HiNw {
+  color: var(--token-Y1kFl7CJ7);
+  text-align: left;
+  font-size: var(--token-1iVBmJGwv);
+  font-family: var(--token-murZRIrJA);
+  line-height: var(--token-iHG0XeWrr);
+  letter-spacing: -0.18px;
+  width: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 0px;
+}
+@media (max-width: 1280px) {
+  .text___2HiNw {
+    font-size: var(--token-3lvkjUKih);
+    letter-spacing: -0.14px;
+    line-height: var(--token-C5R7CuvCY);
+    margin-top: 0px;
+  }
+}
+@media (max-width: 375px) {
+  .text___2HiNw {
+    font-size: var(--token-gge24vR4_);
+    letter-spacing: -0.13px;
+    line-height: var(--token-7EA8_v9fc);
+  }
+}
+.textprojekte_schumacherQuartier___2HiNwpFtCh {
+  display: block;
+}
+.textprojekte_urbanScaleTimber___2HiNwrme5U {
+  display: block;
+}
+.linkAufProjektseite {
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  display: none;
+  padding: 0px;
+}
+.linkAufProjektseiteexpanded {
+  width: 220px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  display: none;
+}
+.linkAufProjektseiteprojekte_schumacherQuartier {
+  display: none;
+}
+.smallButton__an8NU:global(.__wab_instance) {
+  max-width: 100%;
+  width: 124px;
+  display: none;
+}
+@media (max-width: 1280px) {
+  .smallButton__an8NU:global(.__wab_instance) {
+    width: auto;
+  }
+}
+@media (max-width: 375px) {
+  .smallButton__an8NU:global(.__wab_instance) {
+    width: auto;
+  }
+}
+.smallButtonexpanded__an8NUgsrcc:global(.__wab_instance) {
+  width: auto;
+}
+.text__yZk8 {
+  max-width: 111px;
+  width: 100%;
+  min-width: 0;
+}

@@ -316,6 +316,19 @@
           "cssFilePath": "plasmic/build_systems/PlasmicHiderHeadlines.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "IKbj2OkZcR",
+          "name": "Projekt",
+          "type": "managed",
+          "projectId": "jENqvBHbRPXMByDQmRe4G7",
+          "renderModuleFilePath": "plasmic/build_systems/PlasmicProjekt.tsx",
+          "importSpec": {
+            "modulePath": "Projekt.tsx"
+          },
+          "cssFilePath": "plasmic/build_systems/PlasmicProjekt.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
