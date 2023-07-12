@@ -225,6 +225,7 @@
     font-size: var(--token-iSOd27vCw);
     line-height: var(--token-Oaedkq7zb);
     letter-spacing: -0.45px;
+    padding: 11px 0px 0px;
   }
 }
 @media (max-width: 768px) {
@@ -238,7 +239,7 @@
     font-size: var(--token-FU8Hni77L);
     letter-spacing: -0.27px;
     line-height: var(--token-v2KdNz0YD);
-    padding: 12px 0px 0px;
+    padding: 11px 0px 0px;
   }
 }
 .freeBox__ck3TH {

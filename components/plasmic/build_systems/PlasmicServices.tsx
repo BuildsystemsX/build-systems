@@ -165,6 +165,23 @@ function PlasmicServices__RenderFunc(props: {
             sty.root
           )}
         >
+          <div className={classNames(projectcss.all, sty.freeBox___12MOm)}>
+            {true ? (
+              <div className={classNames(projectcss.all, sty.freeBox__shUan)}>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text___2Rbld
+                  )}
+                >
+                  {
+                    "Wie viel Nachhaltigkeit m\u00f6chten bzw. sollten Sie planen und umsetzen?\n      Wir stellen die relevanten Entscheidungsgrundlagen bereit, damit Sie den effizientesten Entwicklungspfad w\u00e4hlen, wirkungsvolle  Ma\u00dfnahmen einleiten und Stakeholder koordinieren k\u00f6nnen."
+                  }
+                </div>
+              </div>
+            ) : null}
+          </div>
           <div
             data-plasmic-name={"menuStack"}
             data-plasmic-override={overrides.menuStack}
@@ -192,23 +209,6 @@ function PlasmicServices__RenderFunc(props: {
             className={classNames("__wab_instance", sty.buildSystemsHeadline)}
           />
 
-          <div className={classNames(projectcss.all, sty.freeBox___12MOm)}>
-            {true ? (
-              <div className={classNames(projectcss.all, sty.freeBox__shUan)}>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text___2Rbld
-                  )}
-                >
-                  {
-                    "Wie viel Nachhaltigkeit m\u00f6chten bzw. sollten Sie planen und umsetzen?\n      Wir stellen die relevanten Entscheidungsgrundlagen bereit, damit Sie den effizientesten Entwicklungspfad w\u00e4hlen, wirkungsvolle  Ma\u00dfnahmen einleiten und Stakeholder koordinieren k\u00f6nnen."
-                  }
-                </div>
-              </div>
-            ) : null}
-          </div>
           {(hasVariant(globalVariants, "screen", "iPhone") ? true : false) ? (
             <div className={classNames(projectcss.all, sty.freeBox__futF)} />
           ) : null}
