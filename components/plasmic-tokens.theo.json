@@ -221,6 +221,26 @@
       }
     },
     {
+      "name": "Paragraph Header SD",
+      "type": "fontsize",
+      "value": "16px",
+      "category": "fontsize",
+      "meta": {
+        "projectId": "jENqvBHbRPXMByDQmRe4G7",
+        "id": "wv2PUjFfA"
+      }
+    },
+    {
+      "name": "Paragraph Header SD 2",
+      "type": "lineheight",
+      "value": "1.5",
+      "category": "lineheight",
+      "meta": {
+        "projectId": "jENqvBHbRPXMByDQmRe4G7",
+        "id": "EvssYruvG"
+      }
+    },
+    {
       "name": "Paragraph Header_H",
       "type": "lineheight",
       "value": "36px",
@@ -268,6 +288,26 @@
       "meta": {
         "projectId": "jENqvBHbRPXMByDQmRe4G7",
         "id": "gge24vR4_"
+      }
+    },
+    {
+      "name": "Paragraph Medium SD",
+      "type": "fontsize",
+      "value": "16px",
+      "category": "fontsize",
+      "meta": {
+        "projectId": "jENqvBHbRPXMByDQmRe4G7",
+        "id": "3lvkjUKih"
+      }
+    },
+    {
+      "name": "Paragraph Medium SD 2",
+      "type": "lineheight",
+      "value": "1.5",
+      "category": "lineheight",
+      "meta": {
+        "projectId": "jENqvBHbRPXMByDQmRe4G7",
+        "id": "C5R7CuvCY"
       }
     },
     {
