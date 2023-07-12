@@ -44,6 +44,8 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_build_systems.module.css"; // plasmic-import: jENqvBHbRPXMByDQmRe4G7/projectcss
 import sty from "./PlasmicImageFooter.module.css"; // plasmic-import: 7Stlw3wb0O/css
 
+createPlasmicElementProxy;
+
 export type PlasmicImageFooter__VariantMembers = {};
 export type PlasmicImageFooter__VariantsArgs = {};
 type VariantPropType = keyof PlasmicImageFooter__VariantsArgs;

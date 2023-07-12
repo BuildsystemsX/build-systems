@@ -51,6 +51,8 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_build_systems.module.css"; // plasmic-import: jENqvBHbRPXMByDQmRe4G7/projectcss
 import sty from "./PlasmicHomepage2.module.css"; // plasmic-import: MxT9ttJsa--/css
 
+createPlasmicElementProxy;
+
 export type PlasmicHomepage2__VariantMembers = {};
 export type PlasmicHomepage2__VariantsArgs = {};
 type VariantPropType = keyof PlasmicHomepage2__VariantsArgs;
@@ -168,7 +170,13 @@ function PlasmicHomepage2__RenderFunc(props: {
             sty.root
           )}
         >
-          {(hasVariant(globalVariants, "screen", "iPhone") ? true : true) ? (
+          {(
+            hasVariant(globalVariants, "screen", "iPhone")
+              ? true
+              : hasVariant(globalVariants, "screen", "desktopNormal")
+              ? true
+              : true
+          ) ? (
             <Cover
               data-plasmic-name={"cover"}
               data-plasmic-override={overrides.cover}
@@ -30984,7 +30992,7 @@ function PlasmicHomepage2__RenderFunc(props: {
                   autoplay={true}
                   className={classNames("__wab_instance", sty.lottie)}
                   loop={true}
-                  preview={true}
+                  preview={false}
                 />
               </div>
             ) : null}

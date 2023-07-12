@@ -46,6 +46,8 @@ import sty from "./PlasmicObservable.module.css"; // plasmic-import: qfo7886Wwu/
 
 import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: MM12j4JCq_/icon
 
+createPlasmicElementProxy;
+
 export type PlasmicObservable__VariantMembers = {};
 export type PlasmicObservable__VariantsArgs = {};
 type VariantPropType = keyof PlasmicObservable__VariantsArgs;

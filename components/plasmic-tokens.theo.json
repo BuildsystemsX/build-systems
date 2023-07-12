@@ -11,6 +11,26 @@
       }
     },
     {
+      "name": "1 Cell IPad",
+      "type": "spacing",
+      "value": "1ch",
+      "category": "spacing",
+      "meta": {
+        "projectId": "jENqvBHbRPXMByDQmRe4G7",
+        "id": "PMepkn9qf"
+      }
+    },
+    {
+      "name": "1 Cell SD",
+      "type": "spacing",
+      "value": "1px",
+      "category": "spacing",
+      "meta": {
+        "projectId": "jENqvBHbRPXMByDQmRe4G7",
+        "id": "Jku9Krk26"
+      }
+    },
+    {
       "name": "2 Cells",
       "type": "spacing",
       "value": "315px",
@@ -18,6 +38,26 @@
       "meta": {
         "projectId": "jENqvBHbRPXMByDQmRe4G7",
         "id": "E903dIBMc"
+      }
+    },
+    {
+      "name": "2 Cells SD",
+      "type": "spacing",
+      "value": "1px",
+      "category": "spacing",
+      "meta": {
+        "projectId": "jENqvBHbRPXMByDQmRe4G7",
+        "id": "bmnU--xfN"
+      }
+    },
+    {
+      "name": "3 Cells IPad",
+      "type": "spacing",
+      "value": "2ch",
+      "category": "spacing",
+      "meta": {
+        "projectId": "jENqvBHbRPXMByDQmRe4G7",
+        "id": "kdOpqIkzK"
       }
     },
     {
@@ -78,6 +118,46 @@
       "meta": {
         "projectId": "jENqvBHbRPXMByDQmRe4G7",
         "id": "8Bjial1Fj"
+      }
+    },
+    {
+      "name": "Normal IPad",
+      "type": "fontsize",
+      "value": "16px",
+      "category": "fontsize",
+      "meta": {
+        "projectId": "jENqvBHbRPXMByDQmRe4G7",
+        "id": "7nxbZRFJ2"
+      }
+    },
+    {
+      "name": "Normal IPad H",
+      "type": "lineheight",
+      "value": "1.5",
+      "category": "lineheight",
+      "meta": {
+        "projectId": "jENqvBHbRPXMByDQmRe4G7",
+        "id": "qwONIKZlU"
+      }
+    },
+    {
+      "name": "Normal SD",
+      "type": "fontsize",
+      "value": "16px",
+      "category": "fontsize",
+      "meta": {
+        "projectId": "jENqvBHbRPXMByDQmRe4G7",
+        "id": "-sZFyuQ2-"
+      }
+    },
+    {
+      "name": "Normal SD H",
+      "type": "lineheight",
+      "value": "1.5",
+      "category": "lineheight",
+      "meta": {
+        "projectId": "jENqvBHbRPXMByDQmRe4G7",
+        "id": "wLZ1RMZfP"
       }
     },
     {
@@ -268,6 +348,46 @@
       "meta": {
         "projectId": "jENqvBHbRPXMByDQmRe4G7",
         "id": "fJm1K7aY_"
+      }
+    },
+    {
+      "name": "Subheader IPad",
+      "type": "fontsize",
+      "value": "16px",
+      "category": "fontsize",
+      "meta": {
+        "projectId": "jENqvBHbRPXMByDQmRe4G7",
+        "id": "5L-YzuaeW"
+      }
+    },
+    {
+      "name": "Subheader IPad H",
+      "type": "lineheight",
+      "value": "1.5",
+      "category": "lineheight",
+      "meta": {
+        "projectId": "jENqvBHbRPXMByDQmRe4G7",
+        "id": "T9ROFPJPN"
+      }
+    },
+    {
+      "name": "Subheader SD",
+      "type": "fontsize",
+      "value": "16px",
+      "category": "fontsize",
+      "meta": {
+        "projectId": "jENqvBHbRPXMByDQmRe4G7",
+        "id": "iSOd27vCw"
+      }
+    },
+    {
+      "name": "Subheader SD H",
+      "type": "lineheight",
+      "value": "1.5",
+      "category": "lineheight",
+      "meta": {
+        "projectId": "jENqvBHbRPXMByDQmRe4G7",
+        "id": "Oaedkq7zb"
       }
     },
     {

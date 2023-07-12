@@ -45,6 +45,8 @@ import sty from "./PlasmicHomepage.module.css"; // plasmic-import: ElJN5a6f1p8n/
 
 import Linie65Icon from "./icons/PlasmicIcon__Linie65"; // plasmic-import: BTPZhvPYEY/icon
 
+createPlasmicElementProxy;
+
 export type PlasmicHomepage__VariantMembers = {};
 export type PlasmicHomepage__VariantsArgs = {};
 type VariantPropType = keyof PlasmicHomepage__VariantsArgs;

@@ -49,6 +49,8 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_build_systems.module.css"; // plasmic-import: jENqvBHbRPXMByDQmRe4G7/projectcss
 import sty from "./PlasmicPersonen.module.css"; // plasmic-import: 9BsVqBrtAT1/css
 
+createPlasmicElementProxy;
+
 export type PlasmicPersonen__VariantMembers = {};
 export type PlasmicPersonen__VariantsArgs = {};
 type VariantPropType = keyof PlasmicPersonen__VariantsArgs;
@@ -177,10 +179,14 @@ function PlasmicPersonen__RenderFunc(props: {
               expand={
                 hasVariant(globalVariants, "screen", "iPhone")
                   ? undefined
+                  : hasVariant(globalVariants, "screen", "iPad")
+                  ? undefined
                   : true
               }
               onSubSite={
                 hasVariant(globalVariants, "screen", "iPhone")
+                  ? []
+                  : hasVariant(globalVariants, "screen", "iPad")
                   ? []
                   : ["personen"]
               }
@@ -289,15 +295,19 @@ function PlasmicPersonen__RenderFunc(props: {
                     personen={"vinzenzTrimborn" as const}
                   />
                 </div>
-                <div className={classNames(projectcss.all, sty.column___7F0Ix)}>
-                  <PersonBox
-                    className={classNames(
-                      "__wab_instance",
-                      sty.personBox__vEf5N
-                    )}
-                    personen={"andreasThoma" as const}
-                  />
-                </div>
+                {true ? (
+                  <div
+                    className={classNames(projectcss.all, sty.column___7F0Ix)}
+                  >
+                    <PersonBox
+                      className={classNames(
+                        "__wab_instance",
+                        sty.personBox__vEf5N
+                      )}
+                      personen={"andreasThoma" as const}
+                    />
+                  </div>
+                ) : null}
               </p.Stack>
             ) : null}
           </div>

@@ -42,6 +42,8 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_build_systems.module.css"; // plasmic-import: jENqvBHbRPXMByDQmRe4G7/projectcss
 import sty from "./PlasmicMenuButton.module.css"; // plasmic-import: SCcSFruGPD/css
 
+createPlasmicElementProxy;
+
 export type PlasmicMenuButton__VariantMembers = {};
 export type PlasmicMenuButton__VariantsArgs = {};
 type VariantPropType = keyof PlasmicMenuButton__VariantsArgs;

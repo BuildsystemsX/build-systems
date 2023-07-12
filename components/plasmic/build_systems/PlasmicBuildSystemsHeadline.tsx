@@ -42,6 +42,8 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_build_systems.module.css"; // plasmic-import: jENqvBHbRPXMByDQmRe4G7/projectcss
 import sty from "./PlasmicBuildSystemsHeadline.module.css"; // plasmic-import: k0tLqKtuC3/css
 
+createPlasmicElementProxy;
+
 export type PlasmicBuildSystemsHeadline__VariantMembers = {
   transparent: "transparent";
   big: "big";

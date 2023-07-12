@@ -33,9 +33,19 @@
   font-family: var(--token-murZRIrJA);
   color: var(--token-gvQcXRBmf);
   user-select: none;
+  letter-spacing: -0.2px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1280px) {
+  .slotTargetChildren {
+    letter-spacing: -0.14px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+@media (max-width: 375px) {
   .slotTargetChildren {
     font-size: 13px;
+    letter-spacing: -0.13px;
+    line-height: 16px;
   }
 }

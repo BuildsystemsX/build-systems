@@ -8,9 +8,14 @@
   height: auto;
   max-width: 100%;
   justify-self: flex-start;
-  padding: 8px;
+  padding: 0px;
 }
 @media (max-width: 768px) {
+  .root {
+    padding: 0px;
+  }
+}
+@media (max-width: 375px) {
   .root {
     height: 187px;
     width: 355px;
@@ -21,7 +26,7 @@
 .rootexpanded {
   padding: 0px;
 }
-@media (max-width: 768px) {
+@media (max-width: 375px) {
   .rootexpanded {
     align-items: flex-start;
     justify-content: flex-start;
@@ -30,19 +35,35 @@
 .freeBox__xTsx6 {
   display: flex;
   flex-direction: column;
-  width: 780px;
-  height: 213px;
+  width: 100%;
+  height: auto;
   justify-content: flex-start;
   align-items: center;
   background: var(--token-Mq_qSd0gm);
-  flex-shrink: 0;
+  flex-grow: 1;
+  min-height: 199px;
+  min-width: 0;
   border-radius: 15px;
+}
+@media (max-width: 1280px) {
+  .freeBox__xTsx6 {
+    width: 515px;
+    height: auto;
+    min-height: 169px;
+  }
 }
 @media (max-width: 768px) {
   .freeBox__xTsx6 {
+    width: 600px;
+    height: auto;
+    min-height: 153px;
+  }
+}
+@media (max-width: 375px) {
+  .freeBox__xTsx6 {
     width: 355px;
-    height: 187px;
-    flex-shrink: 0;
+    height: auto;
+    min-height: 187px;
   }
 }
 .freeBoxexpanded__xTsx6NnpJu {
@@ -60,7 +81,7 @@
   min-width: 0;
   padding: 16px;
 }
-@media (max-width: 768px) {
+@media (max-width: 375px) {
   .freeBox__q5J1D {
     padding: 8px;
   }
@@ -76,7 +97,12 @@
   max-width: 100%;
   padding: 8px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1280px) {
+  .freeBox__awoI9 {
+    z-index: 3;
+  }
+}
+@media (max-width: 375px) {
   .freeBox__awoI9 {
     flex-wrap: nowrap;
     align-items: stretch;
@@ -100,6 +126,11 @@
     width: 93px;
   }
 }
+@media (max-width: 375px) {
+  .img {
+    width: 93px;
+  }
+}
 .freeBox___5Lmv3 {
   display: flex;
   position: relative;
@@ -114,7 +145,7 @@
   padding-top: 0px;
   min-width: 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 375px) {
   .freeBox___5Lmv3 {
     padding-left: 0px;
   }
@@ -130,6 +161,12 @@
 }
 .text___5JEt {
   font-family: var(--token-murZRIrJA);
+}
+@media (max-width: 1280px) {
+  .text___5JEt {
+    letter-spacing: -0.2px;
+    line-height: 21px;
+  }
 }
 .textpersonen_danielLocatelli___5JEteOoDg {
   font-family: var(--token-murZRIrJA);
@@ -147,10 +184,17 @@
 .text__zOkqU {
   font-family: var(--token-murZRIrJA);
 }
-@media (max-width: 768px) {
+@media (max-width: 1280px) {
   .text__zOkqU {
     font-size: 14px;
-    line-height: 17px;
+    letter-spacing: -0.14px;
+    line-height: 15.4px;
+  }
+}
+@media (max-width: 375px) {
+  .text__zOkqU {
+    font-size: 14px;
+    line-height: 15.4px;
   }
 }
 .textpersonen_danielDieren__zOkqU03Qoh {
@@ -175,6 +219,11 @@
   z-index: 1;
   min-width: 0;
   padding: 8px 8px 8px 0px;
+}
+@media (max-width: 1280px) {
+  .freeBox__ppBiU {
+    z-index: 20;
+  }
 }
 .freeBoxpersonen_martinBittmann__ppBiUPf5Wu {
   z-index: 1;
@@ -202,6 +251,11 @@
   max-width: 100%;
   padding: 0px;
 }
+@media (max-width: 1280px) {
+  .freeBox__nL7ZG {
+    z-index: 20;
+  }
+}
 .freeBoxpersonen_juliaDorn__nL7ZGbja9Y {
   z-index: 1;
 }
@@ -213,20 +267,51 @@
 }
 .freeBox__gfxOx {
   flex-direction: column;
-  width: 780px;
+  width: 100%;
   height: auto;
   justify-content: flex-start;
   align-items: center;
   background: var(--token-Mq_qSd0gm);
   position: absolute;
-  left: 8px;
+  left: 0px;
   top: 162px;
   padding-left: 174px;
   padding-top: 32px;
   padding-bottom: 16px;
   z-index: 2;
+  min-width: 0;
   display: none;
   border-radius: 15px;
+}
+@media (max-width: 1280px) {
+  .freeBox__gfxOx {
+    width: 515px;
+    padding-top: 16px;
+    top: 148px;
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .freeBox__gfxOx {
+    width: 600px;
+    top: 139px;
+    padding-top: 26px;
+    padding-left: 134px;
+    z-index: 4;
+    display: none;
+  }
+}
+@media (max-width: 375px) {
+  .freeBox__gfxOx {
+    left: 0px;
+    padding-left: 117px;
+    padding-top: 30px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-right: 0px;
+    width: 355px;
+    display: none;
+  }
 }
 .freeBoxpersonen_martinBittmann__gfxOxPf5Wu {
   display: none;
@@ -249,12 +334,13 @@
 .freeBoxexpanded__gfxOxnnpJu {
   z-index: 2;
   box-shadow: 0px 15px 16px 0px #0000008a;
-  width: 781px;
+  width: 100%;
   left: 0px;
   margin-right: 0px;
+  min-width: 0;
   display: flex;
 }
-@media (max-width: 768px) {
+@media (max-width: 375px) {
   .freeBoxexpanded__gfxOxnnpJu {
     padding-left: 113px;
     width: 355px;
@@ -266,8 +352,23 @@
 }
 .text___7X6Qp {
   padding-right: 20px;
+  font-family: var(--token-murZRIrJA);
 }
-@media (max-width: 768px) {
+@media (max-width: 1280px) {
+  .text___7X6Qp {
+    font-size: 14px;
+    line-height: 15.4px;
+    letter-spacing: -0.14px;
+  }
+}
+@media (max-width: 375px) {
+  .text___7X6Qp {
+    max-width: 237px;
+    width: 100%;
+    min-width: 0;
+  }
+}
+@media (max-width: 375px) {
   .textexpanded___7X6QPnnpJu {
     font-size: 14px;
     line-height: 17px;

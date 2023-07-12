@@ -44,6 +44,8 @@ import sty from "./PlasmicImpressum.module.css"; // plasmic-import: JDL-U0BO7f/c
 
 import CloseSvgrepoComsvgIcon from "./icons/PlasmicIcon__CloseSvgrepoComsvg"; // plasmic-import: jhsDipGX05/icon
 
+createPlasmicElementProxy;
+
 export type PlasmicImpressum__VariantMembers = {};
 export type PlasmicImpressum__VariantsArgs = {};
 type VariantPropType = keyof PlasmicImpressum__VariantsArgs;

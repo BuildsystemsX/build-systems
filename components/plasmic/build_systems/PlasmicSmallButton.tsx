@@ -44,6 +44,8 @@ import sty from "./PlasmicSmallButton.module.css"; // plasmic-import: jdWzZYnBO3
 
 import ArrowRightAltSvgrepoComsvgIcon from "./icons/PlasmicIcon__ArrowRightAltSvgrepoComsvg"; // plasmic-import: Lch1PnsAGx/icon
 
+createPlasmicElementProxy;
+
 export type PlasmicSmallButton__VariantMembers = {
   noLeftSiteShift: "noLeftSiteShift";
   plus: "plus";

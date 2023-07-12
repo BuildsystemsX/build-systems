@@ -46,6 +46,8 @@ import Facebook176SvgrepoComsvgIcon from "./icons/PlasmicIcon__Facebook176Svgrep
 import InstagramSvgrepoComsvgIcon from "./icons/PlasmicIcon__InstagramSvgrepoComsvg"; // plasmic-import: blaBQ4s2ob/icon
 import Twitter154SvgrepoComsvgIcon from "./icons/PlasmicIcon__Twitter154SvgrepoComsvg"; // plasmic-import: 56N_B3O5B9/icon
 
+createPlasmicElementProxy;
+
 export type PlasmicFooter__VariantMembers = {};
 export type PlasmicFooter__VariantsArgs = {};
 type VariantPropType = keyof PlasmicFooter__VariantsArgs;

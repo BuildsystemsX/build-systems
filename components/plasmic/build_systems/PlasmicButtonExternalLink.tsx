@@ -42,6 +42,8 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_build_systems.module.css"; // plasmic-import: jENqvBHbRPXMByDQmRe4G7/projectcss
 import sty from "./PlasmicButtonExternalLink.module.css"; // plasmic-import: zlKX0iG_vm/css
 
+createPlasmicElementProxy;
+
 export type PlasmicButtonExternalLink__VariantMembers = {};
 export type PlasmicButtonExternalLink__VariantsArgs = {};
 type VariantPropType = keyof PlasmicButtonExternalLink__VariantsArgs;

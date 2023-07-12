@@ -42,6 +42,8 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_build_systems.module.css"; // plasmic-import: jENqvBHbRPXMByDQmRe4G7/projectcss
 import sty from "./PlasmicHiderHeadlines.module.css"; // plasmic-import: q6j09HfKP8/css
 
+createPlasmicElementProxy;
+
 export type PlasmicHiderHeadlines__VariantMembers = {};
 export type PlasmicHiderHeadlines__VariantsArgs = {};
 type VariantPropType = keyof PlasmicHiderHeadlines__VariantsArgs;

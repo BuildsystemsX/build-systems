@@ -46,6 +46,8 @@ import sty from "./PlasmicMenu.module.css"; // plasmic-import: 5tZNLUygwX/css
 import BurgerSimpleSvgrepoComsvgIcon from "./icons/PlasmicIcon__BurgerSimpleSvgrepoComsvg"; // plasmic-import: Hj5vDQofk6/icon
 import LineXlSvgrepoComsvgIcon from "./icons/PlasmicIcon__LineXlSvgrepoComsvg"; // plasmic-import: Nn_Pp4GgbS/icon
 
+createPlasmicElementProxy;
+
 export type PlasmicMenu__VariantMembers = {
   onSubSite: "services" | "projekte" | "personen";
   expand: "expand";

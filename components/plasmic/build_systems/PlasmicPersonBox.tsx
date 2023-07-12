@@ -45,6 +45,8 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_build_systems.module.css"; // plasmic-import: jENqvBHbRPXMByDQmRe4G7/projectcss
 import sty from "./PlasmicPersonBox.module.css"; // plasmic-import: JED_FSQOoo/css
 
+createPlasmicElementProxy;
+
 export type PlasmicPersonBox__VariantMembers = {
   personen:
     | "martinBittmann"
@@ -215,6 +217,11 @@ function PlasmicPersonBox__RenderFunc(props: {
                 $state,
                 "personen",
                 "andreasThoma"
+              ),
+              [sty.freeBoxpersonen_danielDieren__q5J1D03Qoh]: hasVariant(
+                $state,
+                "personen",
+                "danielDieren"
               )
             })}
           >
@@ -225,6 +232,11 @@ function PlasmicPersonBox__RenderFunc(props: {
                   data-plasmic-override={overrides.img}
                   alt={""}
                   className={classNames(sty.img, {
+                    [sty.imgexpanded]: hasVariant(
+                      $state,
+                      "expanded",
+                      "expanded"
+                    ),
                     [sty.imgpersonen_juliaDorn]: hasVariant(
                       $state,
                       "personen",
@@ -238,6 +250,8 @@ function PlasmicPersonBox__RenderFunc(props: {
                   displayMinWidth={"0" as const}
                   displayWidth={
                     hasVariant(globalVariants, "screen", "iPhone")
+                      ? ("93px" as const)
+                      : hasVariant(globalVariants, "screen", "iPad")
                       ? ("93px" as const)
                       : ("135px" as const)
                   }
@@ -351,13 +365,11 @@ function PlasmicPersonBox__RenderFunc(props: {
                     : hasVariant($state, "personen", "vinzenzTrimborn")
                     ? "B.Sc. Wirtschaftsinformatik\n\nSoftwareentwicklung, Digitale Planung, Implementierung digitale Workflows"
                     : hasVariant($state, "personen", "juliaDorn")
-                    ? "M.Sc. Urban Design, B.Sc. Architektur\n\nArchitekt Bay. Architektenkammer, Energieeffizienz-Experte, Nachhaltiges Bauen in Holz, Energetische Betrachtungen, Projektmanagement & -entwicklung"
+                    ? "M.Sc. Urban Design, B.Sc. Architektur\n\nUrbane Transformation, Anforderungen EU Taxonomie und Nachhaltigkeitsreporting, Kommunikation, Akteursmanagement & Moderation "
                     : hasVariant($state, "personen", "danielLocatelli")
                     ? "M.Sc. ITECH, Dipl. Architektur\n\nComputational Design, Parametrische Systeme, Entwicklung digitaler Tools und Workflows, Digitale Fabrikation"
                     : hasVariant($state, "personen", "danielDieren")
                     ? "M.Sc. Bauingenieur, M.Sc. Architektur\n\nNachhaltiges Konstruieren, Ingenieurholzbau, Integrale Planung, Lebenszyklusbetrachtung"
-                    : hasVariant(globalVariants, "screen", "iPhone")
-                    ? "Dipl.-Ing. Architektur\n\nArchitekt Bay. Architektenkammer, Energieeffizienz-Experte, Nachhaltiges Bauen in Holz, Energetische Betrachtungen, Projektmanagement & -entwicklung"
                     : "Dipl.-Ing. Architektur\n\nArchitekt Bay. Architektenkammer, Energieeffizienz-Experte, Nachhaltiges Bauen in Holz, Energetische Betrachtungen, Projektmanagement & -entwicklung"}
                 </div>
               </div>
@@ -481,9 +493,16 @@ function PlasmicPersonBox__RenderFunc(props: {
                               $state,
                               "expanded",
                               "expanded"
-                            )
+                            ),
+                            [sty.smallButtonpersonen_martinBittmann]:
+                              hasVariant($state, "personen", "martinBittmann")
                           }
                         )}
+                        noLeftSiteShift={
+                          hasVariant($state, "personen", "martinBittmann")
+                            ? true
+                            : true
+                        }
                         plus={true}
                       >
                         <div
@@ -534,6 +553,12 @@ function PlasmicPersonBox__RenderFunc(props: {
             : hasVariant($state, "personen", "danielDieren")
             ? true
             : hasVariant($state, "personen", "martinBittmann")
+            ? true
+            : hasVariant(globalVariants, "screen", "iPhone")
+            ? true
+            : hasVariant(globalVariants, "screen", "iPad")
+            ? true
+            : hasVariant(globalVariants, "screen", "desktopNormal")
             ? true
             : true
         ) ? (
@@ -635,7 +660,9 @@ function PlasmicPersonBox__RenderFunc(props: {
                 ? "Nach seiner ersten Berufst\u00e4tigkeit als Bauingenieur schloss Daniel Dieren das Architekturstudium an der TU Berlin (B.Sc. und M.Sc.) an. Er arbeitete seit 2014 f\u00fcr das Ingenieurb\u00fcro Bollinger+Grohmann in Berlin, wo er zahlreiche Projekte mit Spezialisierung auf Ingenieurholzbau und Life-Cycle-Assessment leitete und die Sustainability Group initiierte. Die DGNB kollaborierte sp\u00e4ter mit der Nachhaltigkeitsgruppe bei der Entwicklung des Leitfadens zur Implementierung von Nachhaltigkeitsfaktoren in der Tragwerksplanung. Zudem war er als Lehrbeauftragter am Lehrstuhl f\u00fcr konstruktives Entwerfen der Universit\u00e4t der K\u00fcnste in Berlin t\u00e4tig, wo er Baukonstruktion, Holzbau und nachhaltiges Entwerfen lehrte. Zusammen mit Martin Bittmann erarbeitete er im Austausch mit der TU Berlin und dem Fraunhofer Institut eine Holzbau-Matrix, die nun als Messlatte hinsichtlich holzbau-relevanter Kriterien im Vergabeverfahren des Schumacher Quartiers durch die Tegel Projekt GmbH angewendet wird. [\u2192 Projekte] Daniel bringt sein dezidiertes Fachwissen in der Kundenberatung ein, um auf Geb\u00e4udeebene Emissionen zu optimieren und Entwicklungspotenziale zu heben."
                 : hasVariant($state, "personen", "martinBittmann")
                 ? "Martin Bittmann studierte Architektur an der TU M\u00fcnchen und der TU Istanbul und ist eingetragener Architekt in der Bayerischen\nArchitektenkammer. Bis Ende 2021 war er als selbst\u00e4ndiger Architekt t\u00e4tig und arbeitete parallel am Institut f\u00fcr Nachhaltigkeit, Baukonstruktion und Entwerfen von Prof. Ludloff an der Universit\u00e4t Stuttgart, wo er den Lehr-und Forschungsbereich Bauklasse Holz aufbaute. Zuvor arbeitete er als Projekt- und Wettbewerbsleiter bei Raumstation Architekten und unterrichtete vier Jahre am Lehrstuhl f\u00fcr Entwerfen und Holzbau von Prof. Kaufmann an der TU M\u00fcnchen. Bei Raumstation Architekten war er an der Konzeptionierung und Ausf\u00fchrung von unterschiedlichen Holzbauprojekten beteiligt und arbeitete eng mit Investoren und Projektentwicklern zusammen. Dar\u00fcber hinaus arbeitete er bei Herzog & De Meuron (Basel) sowie im Bereich Immobilienentwicklung und -investment bei Euroboden (M\u00fcnchen). Seit der Initiierung von Urban Scale Timber konzentrierte Martin seinen Fokus auf die notwendige Prozessinnovation in der Planung und Umsetzung von nachhaltiger und resilienter Projektentwicklung."
-                : "Martin Bittmann studierte Architektur an der TU M\u00fcnchen und der TU Istanbul und ist eingetragener Architekt in der Bayerischen\nArchitektenkammer. Bis Ende 2021 war er als selbst\u00e4ndiger Architekt t\u00e4tig und arbeitete parallel am Institut f\u00fcr Nachhaltigkeit, Baukonstruktion und Entwerfen von Prof. Ludloff an der Universit\u00e4t Stuttgart, wo er den Lehr-und Forschungsbereich Bauklasse Holz aufbaute. Zuvor arbeitete er als Projekt- und Wettbewerbsleiter bei Raumstation Architekten und unterrichtete vier Jahre am Lehrstuhl f\u00fcr Entwerfen und Holzbau von Prof. Kaufmann an der TU M\u00fcnchen. Bei Raumstation Architekten war er an der Konzeptionierung und Ausf\u00fchrung von unterschiedlichen Holzbauprojekten beteiligt und arbeitete eng mit Investoren und Projektentwicklern zusammen. Dar\u00fcber hinaus arbeitete er bei Herzog & De Meuron (Basel) sowie im Bereich Immobilienentwicklung und -investment bei Euroboden (M\u00fcnchen). Seit der Initiierung von Urban Scale Timber konzentrierte Martin seinen Fokus auf die notwendige Prozessinnovation in der Planung und Umsetzung von nachhaltiger und resilienter Projektentwicklung."}
+                : hasVariant(globalVariants, "screen", "iPhone")
+                ? "Martin Bittmann studierte Architektur an der TU M\u00fcnchen und der TU Istanbul und ist eingetragener Architekt in der Bayerischen Architektenkammer. Bis Ende 2021 war er als selbst\u00e4ndiger Architekt t\u00e4tig und arbeitete parallel am Institut f\u00fcr Nachhaltigkeit, Baukonstruktion und Entwerfen von Prof. Ludloff an der Universit\u00e4t Stuttgart, wo er den Lehr-und Forschungsbereich Bauklasse Holz aufbaute. Zuvor arbeitete er als Projekt- und Wettbewerbsleiter bei Raumstation Architekten und unterrichtete vier Jahre am Lehrstuhl f\u00fcr Entwerfen und Holzbau von Prof. Kaufmann an der TU M\u00fcnchen. Bei Raumstation Architekten war er an der Konzeptionierung und Ausf\u00fchrung von unterschiedlichen Holzbauprojekten beteiligt und arbeitete eng mit Investoren und Projektentwicklern zusammen. Dar\u00fcber hinaus arbeitete er bei Herzog & De Meuron (Basel) sowie im Bereich Immobilienentwicklung und -investment bei Euroboden (M\u00fcnchen). Seit der Initiierung von Urban Scale Timber konzentrierte Martin seinen Fokus auf die notwendige Prozessinnovation in der Planung und Umsetzung von nachhaltiger und resilienter Projektentwicklung."
+                : "Martin Bittmann studierte Architektur an der TU M\u00fcnchen und der TU Istanbul und ist eingetragener Architekt in der Bayerischen Architektenkammer. Bis Ende 2021 war er als selbst\u00e4ndiger Architekt t\u00e4tig und arbeitete parallel am Institut f\u00fcr Nachhaltigkeit, Baukonstruktion und Entwerfen von Prof. Ludloff an der Universit\u00e4t Stuttgart, wo er den Lehr-und Forschungsbereich Bauklasse Holz aufbaute. Zuvor arbeitete er als Projekt- und Wettbewerbsleiter bei Raumstation Architekten und unterrichtete vier Jahre am Lehrstuhl f\u00fcr Entwerfen und Holzbau von Prof. Kaufmann an der TU M\u00fcnchen. Bei Raumstation Architekten war er an der Konzeptionierung und Ausf\u00fchrung von unterschiedlichen Holzbauprojekten beteiligt und arbeitete eng mit Investoren und Projektentwicklern zusammen. Dar\u00fcber hinaus arbeitete er bei Herzog & De Meuron (Basel) sowie im Bereich Immobilienentwicklung und -investment bei Euroboden (M\u00fcnchen). Seit der Initiierung von Urban Scale Timber konzentrierte Martin seinen Fokus auf die notwendige Prozessinnovation in der Planung und Umsetzung von nachhaltiger und resilienter Projektentwicklung."}
             </div>
           </div>
         ) : null}

@@ -97,7 +97,7 @@
 }
 .text__zRpag {
   position: relative;
-  width: 100%;
+  width: auto;
   height: auto;
   max-width: 100%;
   color: var(--token-Y1kFl7CJ7);
@@ -105,10 +105,16 @@
   font-family: var(--token-murZRIrJA);
   letter-spacing: -0.24px;
   line-height: 26.4px;
-  min-width: 0;
   padding: 0px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1280px) {
+  .text__zRpag {
+    font-size: 18px;
+    letter-spacing: -0.18px;
+    text-align: left;
+  }
+}
+@media (max-width: 375px) {
   .text__zRpag {
     font-size: 14px;
     text-align: center;
@@ -121,7 +127,7 @@
 .text__paGq3 {
   font-family: var(--token-murZRIrJA);
 }
-@media (max-width: 768px) {
+@media (max-width: 375px) {
   .text__paGq3 {
     font-size: 13px;
   }

@@ -43,6 +43,8 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_build_systems.module.css"; // plasmic-import: jENqvBHbRPXMByDQmRe4G7/projectcss
 import sty from "./PlasmicCover.module.css"; // plasmic-import: y8WKJEXfAa/css
 
+createPlasmicElementProxy;
+
 export type PlasmicCover__VariantMembers = {
   scroll2: "scroll2";
 };
