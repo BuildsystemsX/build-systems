@@ -228,7 +228,7 @@ function PlasmicServices__RenderFunc(props: {
               )}
             >
               {hasVariant(globalVariants, "screen", "iPhone")
-                ? "                              beh\u00e4lt #Bedarfe, #Funktionalit\u00e4t, #Anforderungen, #Benefits im Blick.\n"
+                ? "                                beh\u00e4lt neben Bedarfen, Anforderungen und Funktionalit\u00e4t auch Ihre Benefits im Blick."
                 : "beh\u00e4lt neben Bedarfen, Anforderungen und Funktionalit\u00e4t auch Ihre Benefits im Blick."}
             </div>
           </div>
@@ -309,7 +309,7 @@ function PlasmicServices__RenderFunc(props: {
               )}
             >
               {hasVariant(globalVariants, "screen", "iPhone")
-                ? "                              arbeitet mit dezidierten #Benchmarks/#Indikatoren, die #klima-intelligent /#bew\u00e4hrt sind. "
+                ? "                                arbeitet mit dezidierten Benchmarks und Indikatoren, die klima-intelligent und bew\u00e4hrt sind."
                 : "arbeitet mit dezidierten Benchmarks und Indikatoren, die klima-intelligent und bew\u00e4hrt sind."}
             </div>
           </div>
@@ -463,7 +463,7 @@ function PlasmicServices__RenderFunc(props: {
               )}
             >
               {hasVariant(globalVariants, "screen", "iPhone")
-                ? "                                erstellt Vordimensionierungen zu #Anlagentechnik / #Konstruktionsmethoden / #Materialwahl / #Wiederverwendungspotential.  "
+                ? "                                erstellt Vordimensionierungen zu Anlagentechnik, Konstruktionsmethoden, Materialwahl und Wiederverwendungspotential."
                 : "erstellt Vordimensionierungen zu Anlagentechnik, Konstruktionsmethoden, Materialwahl und Wiederverwendungspotential."}
             </div>
           </div>
@@ -479,7 +479,11 @@ function PlasmicServices__RenderFunc(props: {
                       className={classNames(sty.img__lEtNb)}
                       displayHeight={"auto" as const}
                       displayMaxHeight={"none" as const}
-                      displayMaxWidth={"100%" as const}
+                      displayMaxWidth={
+                        hasVariant(globalVariants, "screen", "iPhone")
+                          ? ("80%" as const)
+                          : ("100%" as const)
+                      }
                       displayMinHeight={"0" as const}
                       displayMinWidth={"0" as const}
                       displayWidth={"auto" as const}
@@ -533,7 +537,7 @@ function PlasmicServices__RenderFunc(props: {
               )}
             >
               {hasVariant(globalVariants, "screen", "iPhone")
-                ? "                                steigerte durch abgestimmte Prozesse baulichen Mehrwert"
+                ? "                                steigert durch abgestimmte Prozesse baulichen Mehrwert."
                 : "steigert durch abgestimmte Prozesse baulichen Mehrwert."}
             </div>
           </div>

@@ -473,7 +473,7 @@
   .freeBox__myJt4 {
     padding-left: var(--token-FoMWgon3f);
     padding-right: var(--token-FoMWgon3f);
-    height: 30vh;
+    height: 40vh;
     z-index: 1;
   }
 }
@@ -526,7 +526,7 @@
   max-width: 100%;
   grid-column-start: 1;
   grid-column-end: -1;
-  padding: 0px var(--token-E903dIBMc);
+  padding: 8px var(--token-E903dIBMc) 0px;
 }
 @media (max-width: 1280px) {
   .freeBox__hTdH {

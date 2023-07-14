@@ -985,7 +985,7 @@
 }
 @media (max-width: 414px) {
   .freeBox__lzG30 {
-    height: 2vh;
+    height: 20vh;
     flex-shrink: 0;
   }
 }
@@ -1173,8 +1173,7 @@
 }
 @media (max-width: 414px) {
   .freeBox__br76G {
-    height: 40vh;
-    flex-shrink: 0;
+    height: auto;
   }
 }
 .img__lEtNb {
@@ -1187,6 +1186,11 @@
 }
 .img__lEtNb > :global(.__wab_img-spacer) > img {
   object-fit: cover;
+}
+@media (max-width: 414px) {
+  .img__lEtNb {
+    max-width: 80%;
+  }
 }
 .column__iQ7 {
   display: flex;
@@ -1292,7 +1296,7 @@
 }
 @media (max-width: 414px) {
   .freeBox___3A3If {
-    height: 2vh;
+    height: 20vh;
     flex-shrink: 0;
   }
 }
@@ -1812,7 +1816,6 @@
 }
 @media (max-width: 414px) {
   .hiderHeadlines:global(.__wab_instance) {
-    height: 450px;
     flex-shrink: 0;
   }
 }

@@ -245,7 +245,7 @@ function PlasmicHomepage2__RenderFunc(props: {
                   </span>
                   <React.Fragment>
                     {
-                      " erm\u00f6glicht den Nachhaltigkeits- anforderungen von morgen \u00f6konomisch und technisch gerecht zu werden."
+                      " erm\u00f6glicht den Nachhaltigkeitsanforderungen von morgen \u00f6konomisch und technisch gerecht zu werden."
                     }
                   </React.Fragment>
                 </React.Fragment>
@@ -31094,23 +31094,9 @@ function PlasmicHomepage2__RenderFunc(props: {
                 sty.text__a2N3
               )}
             >
-              {hasVariant(globalVariants, "screen", "iPhone") ? (
-                <React.Fragment>
-                  <span
-                    className={"plasmic_default__all plasmic_default__span"}
-                    style={{ color: "transparent" }}
-                  >
-                    {"Build Systems"}
-                  </span>
-                  <React.Fragment>
-                    {
-                      " macht Ihre Projekte #gr\u00fcn / #beherrschbar / #zukunftsf\u00e4hig / #risikoarm.\n"
-                    }
-                  </React.Fragment>
-                </React.Fragment>
-              ) : (
-                "macht Ihre Projekte gr\u00fcn, zukunftsf\u00e4hig sowie beherrschbar und risikoarm."
-              )}
+              {hasVariant(globalVariants, "screen", "iPhone")
+                ? "                                macht Ihre Projekte gr\u00fcn, zukunftsf\u00e4hig sowie beherrschbar und risikoarm."
+                : "macht Ihre Projekte gr\u00fcn, zukunftsf\u00e4hig sowie beherrschbar und risikoarm."}
             </div>
           </div>
           {(hasVariant(globalVariants, "screen", "iPhone") ? true : true) ? (
