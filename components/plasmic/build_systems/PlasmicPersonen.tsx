@@ -239,7 +239,7 @@ function PlasmicPersonen__RenderFunc(props: {
             >
               {hasVariant(globalVariants, "screen", "iPhone")
                 ? "                              fu\u0308hrt  #Kompetenzen / #Prozesse / #Tools zusammen."
-                : "fu\u0308hrt  #Kompetenzen / #Prozesse / #Tools zusammen."}
+                : "f\u00fchrt Kompetenzen, Prozesse und Tools zusammen."}
             </div>
           </div>
           <div className={classNames(projectcss.all, sty.freeBox___3Ke2E)}>
@@ -332,7 +332,7 @@ function PlasmicPersonen__RenderFunc(props: {
               >
                 {hasVariant(globalVariants, "screen", "iPhone")
                   ? "                              fu\u0308hrt  #Kompetenzen / #Prozesse / #Tools zusammen."
-                  : "fu\u0308hrt  #Kompetenzen / #Prozesse / #Tools zusammen."}
+                  : "denkt vernetzt, ganzheitlich und langfristig."}
               </div>
             </div>
           ) : null}

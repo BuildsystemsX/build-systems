@@ -228,7 +228,7 @@ function PlasmicProjekte__RenderFunc(props: {
             >
               {hasVariant(globalVariants, "screen", "iPhone")
                 ? "                              setzt Projekte von Anfang an #integral / #systemisch / #transparent / #digital auf. "
-                : "setzt Projekte von Anfang an #integral / #systemisch / #transparent / #digital auf. "}
+                : "setzt Projekte von Anfang an integral, systemisch, transparent und digital auf."}
             </div>
           </div>
           {true ? (
@@ -282,6 +282,21 @@ function PlasmicProjekte__RenderFunc(props: {
                     ) : null}
                   </p.Stack>
                 ) : null}
+              </div>
+            </div>
+          ) : null}
+          {true ? (
+            <div className={classNames(projectcss.all, sty.freeBox__qGhBn)}>
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__yeopn
+                )}
+              >
+                {hasVariant(globalVariants, "screen", "iPhone")
+                  ? "                              setzt Projekte von Anfang an #integral / #systemisch / #transparent / #digital auf. "
+                  : "stellt der Projektentwicklung mehr fortschrittliche Modellierung und Early Insights zur Verf\u00fcgung."}
               </div>
             </div>
           ) : null}

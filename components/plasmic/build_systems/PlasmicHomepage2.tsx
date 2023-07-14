@@ -27788,7 +27788,7 @@ function PlasmicHomepage2__RenderFunc(props: {
                 </React.Fragment>
               </React.Fragment>
             ) : (
-              "Build Systems macht Ihre Projekte gr\u00fcn, zukunftsf\u00e4hig sowie beherrschbar und risikoarm."
+              "macht Ihre Projekte gr\u00fcn, zukunftsf\u00e4hig sowie beherrschbar und risikoarm."
             )}
           </div>
         </div>

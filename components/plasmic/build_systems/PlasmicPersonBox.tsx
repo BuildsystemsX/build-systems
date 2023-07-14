@@ -252,6 +252,11 @@ function PlasmicPersonBox__RenderFunc(props: {
                     $state,
                     "personen",
                     "vinzenzTrimborn"
+                  ),
+                  [sty.freeBoxshrinked__awoI9NnpJu]: hasVariant(
+                    $state,
+                    "shrinked",
+                    "shrinked"
                   )
                 })}
               >

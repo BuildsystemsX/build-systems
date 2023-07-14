@@ -227,7 +227,7 @@ function PlasmicServices__RenderFunc(props: {
             >
               {hasVariant(globalVariants, "screen", "iPhone")
                 ? "                              beh\u00e4lt #Bedarfe, #Funktionalit\u00e4t, #Anforderungen, #Benefits im Blick.\n"
-                : "beh\u00e4lt #Bedarfe, #Funktionalit\u00e4t, #Anforderungen, #Benefits im Blick.\n"}
+                : "beh\u00e4lt neben Bedarfen, Anforderungen und Funktionalit\u00e4t auch Ihre Benefits im Blick."}
             </div>
           </div>
           <div className={classNames(projectcss.all, sty.freeBox__wfs2Y)}>
@@ -304,7 +304,7 @@ function PlasmicServices__RenderFunc(props: {
             >
               {hasVariant(globalVariants, "screen", "iPhone")
                 ? "                              arbeitet mit dezidierten #Benchmarks/#Indikatoren, die #klima-intelligent /#bew\u00e4hrt sind. "
-                : "arbeitet mit dezidierten #Benchmarks/#Indikatoren, die #klima-intelligent /#bew\u00e4hrt sind. "}
+                : "arbeitet mit dezidierten Benchmarks und Indikatoren, die klima-intelligent und bew\u00e4hrt sind."}
             </div>
           </div>
           <div className={classNames(projectcss.all, sty.freeBox__tjNMr)}>
@@ -389,7 +389,7 @@ function PlasmicServices__RenderFunc(props: {
             >
               {hasVariant(globalVariants, "screen", "iPhone")
                 ? "                                erstellt Vordimensionierungen zu #Anlagentechnik / #Konstruktionsmethoden / #Materialwahl / #Wiederverwendungspotential.  "
-                : "erstellt Vordimensionierungen zu #Anlagentechnik / #Konstruktionsmethoden / #Materialwahl / #Wiederverwendungspotential.  "}
+                : "erstellt Vordimensionierungen zu Anlagentechnik, Konstruktionsmethoden, Materialwahl und Wiederverwendungspotential."}
             </div>
           </div>
           <div className={classNames(projectcss.all, sty.freeBox___2S9Zv)}>
@@ -459,7 +459,7 @@ function PlasmicServices__RenderFunc(props: {
             >
               {hasVariant(globalVariants, "screen", "iPhone")
                 ? "                                steigerte durch abgestimmte Prozesse baulichen Mehrwert"
-                : "steigert durch abgestimmte Prozesse baulichen Mehrwert"}
+                : "steigert durch abgestimmte Prozesse baulichen Mehrwert."}
             </div>
           </div>
           <div className={classNames(projectcss.all, sty.freeBox__cliNj)}>
