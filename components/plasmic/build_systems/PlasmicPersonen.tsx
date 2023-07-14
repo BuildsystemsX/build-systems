@@ -66,6 +66,7 @@ export type PlasmicPersonen__OverridesType = {
   menu?: p.Flex<typeof Menu>;
   buildSystemsHeadline?: p.Flex<typeof BuildSystemsHeadline>;
   columns?: p.Flex<"div">;
+  versteckterHeader?: p.Flex<"div">;
   imageFooter?: p.Flex<typeof ImageFooter>;
   hiderHeadlines?: p.Flex<typeof HiderHeadlines>;
 };
@@ -316,6 +317,25 @@ function PlasmicPersonen__RenderFunc(props: {
               </p.Stack>
             ) : null}
           </div>
+          {true ? (
+            <div
+              data-plasmic-name={"versteckterHeader"}
+              data-plasmic-override={overrides.versteckterHeader}
+              className={classNames(projectcss.all, sty.versteckterHeader)}
+            >
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__wT5VW
+                )}
+              >
+                {hasVariant(globalVariants, "screen", "iPhone")
+                  ? "                              fu\u0308hrt  #Kompetenzen / #Prozesse / #Tools zusammen."
+                  : "fu\u0308hrt  #Kompetenzen / #Prozesse / #Tools zusammen."}
+              </div>
+            </div>
+          ) : null}
           {(hasVariant(globalVariants, "screen", "iPhone") ? true : true) ? (
             <div className={classNames(projectcss.all, sty.freeBox__l40T)} />
           ) : null}
@@ -343,6 +363,7 @@ const PlasmicDescendants = {
     "menu",
     "buildSystemsHeadline",
     "columns",
+    "versteckterHeader",
     "imageFooter",
     "hiderHeadlines"
   ],
@@ -350,6 +371,7 @@ const PlasmicDescendants = {
   menu: ["menu"],
   buildSystemsHeadline: ["buildSystemsHeadline"],
   columns: ["columns"],
+  versteckterHeader: ["versteckterHeader"],
   imageFooter: ["imageFooter"],
   hiderHeadlines: ["hiderHeadlines"]
 } as const;
@@ -362,6 +384,7 @@ type NodeDefaultElementType = {
   menu: typeof Menu;
   buildSystemsHeadline: typeof BuildSystemsHeadline;
   columns: "div";
+  versteckterHeader: "div";
   imageFooter: typeof ImageFooter;
   hiderHeadlines: typeof HiderHeadlines;
 };
@@ -430,6 +453,7 @@ export const PlasmicPersonen = Object.assign(
     menu: makeNodeComponent("menu"),
     buildSystemsHeadline: makeNodeComponent("buildSystemsHeadline"),
     columns: makeNodeComponent("columns"),
+    versteckterHeader: makeNodeComponent("versteckterHeader"),
     imageFooter: makeNodeComponent("imageFooter"),
     hiderHeadlines: makeNodeComponent("hiderHeadlines"),
 
