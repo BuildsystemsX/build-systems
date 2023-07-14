@@ -149,6 +149,7 @@
   max-width: 100%;
   color: var(--token-Y1kFl7CJ7);
   width: 16px;
+  cursor: pointer;
   flex-shrink: 0;
   height: 1em;
 }

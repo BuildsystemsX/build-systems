@@ -300,6 +300,8 @@ function PlasmicProjekte__RenderFunc(props: {
               </div>
             </div>
           ) : null}
+          <div className={classNames(projectcss.all, sty.freeBox__cx7Yv)} />
+
           {true ? (
             <ImageFooter
               data-plasmic-name={"imageFooter"}
