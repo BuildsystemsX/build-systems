@@ -26,7 +26,7 @@ export function ScreenVariantProvider(props: React.PropsWithChildren) {
 export const useScreenVariants = p.createUseScreenVariants(true, {
   iPhone: "(max-width:414px)",
   desktopNormal: "(max-width:1280px)",
-  iPad: "(max-width:768px)",
+  iPad: "(max-width:834px)",
 });
 
 export default ScreenContext;

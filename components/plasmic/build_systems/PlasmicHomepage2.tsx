@@ -31095,7 +31095,7 @@ function PlasmicHomepage2__RenderFunc(props: {
               )}
             >
               {hasVariant(globalVariants, "screen", "iPhone")
-                ? "                                macht Ihre Projekte gr\u00fcn, zukunftsf\u00e4hig sowie beherrschbar und risikoarm."
+                ? "                               macht Ihre Projekte gr\u00fcn, zukunftsf\u00e4hig sowie beherrschbar und risikoarm."
                 : "macht Ihre Projekte gr\u00fcn, zukunftsf\u00e4hig sowie beherrschbar und risikoarm."}
             </div>
           </div>

@@ -43,7 +43,7 @@
     letter-spacing: -0.62px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 834px) {
   .text__hTv1W {
     font-size: 27px;
     letter-spacing: -0.54px;
@@ -89,7 +89,7 @@
     font-size: 31px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 834px) {
   .text___6XRo5 {
     font-size: 27px;
     line-height: 11px;

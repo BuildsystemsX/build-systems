@@ -12,7 +12,7 @@
   border-radius: 15px;
   padding: 0px;
 }
-@media (max-width: 768px) {
+@media (max-width: 834px) {
   .root {
     padding: 0px;
   }
@@ -44,7 +44,7 @@
     min-height: 169px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 834px) {
   .freeBox__xTsx6 {
     width: 600px;
     height: auto;
@@ -109,7 +109,7 @@
 .img > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
-@media (max-width: 768px) {
+@media (max-width: 834px) {
   .img {
     width: 93px;
   }
@@ -274,7 +274,7 @@
     left: auto;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 834px) {
   .freeBox__gfxOx {
     top: auto;
     left: auto;

@@ -59,7 +59,7 @@
   letter-spacing: -0.26px;
   line-height: 17px;
 }
-@media (max-width: 768px) {
+@media (max-width: 834px) {
   .text__fCrV {
     font-size: 12px;
     letter-spacing: 0px;
@@ -98,7 +98,7 @@
   line-height: 17px;
   min-width: 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 834px) {
   .text__bhQv5 {
     font-size: 12px;
     letter-spacing: 0px;

@@ -363,25 +363,6 @@ function PlasmicServices__RenderFunc(props: {
                           sty.freeBox__utQ0
                         )}
                       >
-                        {true ? (
-                          <p.PlasmicImg
-                            alt={""}
-                            className={classNames(sty.img__hePwA)}
-                            displayHeight={"auto" as const}
-                            displayMaxHeight={"none" as const}
-                            displayMaxWidth={"100%" as const}
-                            displayMinHeight={"0" as const}
-                            displayMinWidth={"0" as const}
-                            displayWidth={"auto" as const}
-                            loading={"lazy" as const}
-                            src={{
-                              src: "/plasmic/build_systems/images/bildschirmfoto20230714Um081442Png.png",
-                              fullWidth: 678,
-                              fullHeight: 520,
-                              aspectRatio: undefined
-                            }}
-                          />
-                        ) : null}
                         <p.PlasmicImg
                           alt={""}
                           className={classNames(sty.img__kBbO)}
