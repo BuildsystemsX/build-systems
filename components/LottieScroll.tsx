@@ -30,7 +30,7 @@ function LottieScroll_(props: LottieScrollProps, ref: HTMLElementRefOf<"div">) {
     const options = {
         animationData: animation,
     };
-    const Example = () => {
+   /* const Example = () => {
         const lottieObj = useLottie(options);
         const Animation = useLottieInteractivity({
             lottieObj,
@@ -50,11 +50,11 @@ function LottieScroll_(props: LottieScrollProps, ref: HTMLElementRefOf<"div">) {
         });
 
         return Animation;
-    };
+    };*/
 
     return (
         <PlasmicLottieScroll root={{ ref }} {...props}>
-            <Example />
+
         </PlasmicLottieScroll>
     );
 }
