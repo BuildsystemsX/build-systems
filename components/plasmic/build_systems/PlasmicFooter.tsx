@@ -42,9 +42,7 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_build_systems.module.css"; // plasmic-import: jENqvBHbRPXMByDQmRe4G7/projectcss
 import sty from "./PlasmicFooter.module.css"; // plasmic-import: hB94XRzTpm/css
 
-import Facebook176SvgrepoComsvgIcon from "./icons/PlasmicIcon__Facebook176SvgrepoComsvg"; // plasmic-import: I72ZslMU-N/icon
-import InstagramSvgrepoComsvgIcon from "./icons/PlasmicIcon__InstagramSvgrepoComsvg"; // plasmic-import: blaBQ4s2ob/icon
-import Twitter154SvgrepoComsvgIcon from "./icons/PlasmicIcon__Twitter154SvgrepoComsvg"; // plasmic-import: 56N_B3O5B9/icon
+import LinkedinSvgrepoComsvgIcon from "./icons/PlasmicIcon__LinkedinSvgrepoComsvg"; // plasmic-import: AVpaEyvva2/icon
 
 createPlasmicElementProxy;
 
@@ -59,6 +57,7 @@ export const PlasmicFooter__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicFooter__OverridesType = {
   root?: p.Flex<"div">;
+  svg?: p.Flex<"svg">;
 };
 
 export interface DefaultFooterProps {
@@ -192,19 +191,63 @@ function PlasmicFooter__RenderFunc(props: {
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.freeBox__loqXr)}
+                onClick={async event => {
+                  const $steps = {};
+                  $steps["goToHttpswwwlinkedincomcompanybuildSystemsDe"] = true
+                    ? (() => {
+                        const actionArgs = {
+                          destination: __wrapUserFunction(
+                            {
+                              type: "InteractionArgLoc",
+                              actionName: "navigation",
+                              interactionUuid: "wJ7kzFg-7",
+                              componentUuid: "hB94XRzTpm",
+                              argName: "destination"
+                            },
+                            () =>
+                              "https://www.linkedin.com/company/build-systems-de/"
+                          )
+                        };
+                        return __wrapUserFunction(
+                          {
+                            type: "InteractionLoc",
+                            actionName: "navigation",
+                            interactionUuid: "wJ7kzFg-7",
+                            componentUuid: "hB94XRzTpm"
+                          },
+                          () =>
+                            (({ destination }) => {
+                              __nextRouter?.push(destination);
+                            })?.apply(null, [actionArgs]),
+                          actionArgs
+                        );
+                      })()
+                    : undefined;
+                  if (
+                    typeof $steps[
+                      "goToHttpswwwlinkedincomcompanybuildSystemsDe"
+                    ] === "object" &&
+                    typeof $steps[
+                      "goToHttpswwwlinkedincomcompanybuildSystemsDe"
+                    ].then === "function"
+                  ) {
+                    $steps["goToHttpswwwlinkedincomcompanybuildSystemsDe"] =
+                      await __wrapUserPromise(
+                        {
+                          type: "InteractionLoc",
+                          actionName: "navigation",
+                          interactionUuid: "wJ7kzFg-7",
+                          componentUuid: "hB94XRzTpm"
+                        },
+                        $steps["goToHttpswwwlinkedincomcompanybuildSystemsDe"]
+                      );
+                  }
+                }}
               >
-                <Facebook176SvgrepoComsvgIcon
-                  className={classNames(projectcss.all, sty.svg__pTa8X)}
-                  role={"img"}
-                />
-
-                <InstagramSvgrepoComsvgIcon
-                  className={classNames(projectcss.all, sty.svg__mop6U)}
-                  role={"img"}
-                />
-
-                <Twitter154SvgrepoComsvgIcon
-                  className={classNames(projectcss.all, sty.svg__x3VTx)}
+                <LinkedinSvgrepoComsvgIcon
+                  data-plasmic-name={"svg"}
+                  data-plasmic-override={overrides.svg}
+                  className={classNames(projectcss.all, sty.svg)}
                   role={"img"}
                 />
               </p.Stack>
@@ -217,13 +260,15 @@ function PlasmicFooter__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root"]
+  root: ["root", "svg"],
+  svg: ["svg"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: "div";
+  svg: "svg";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -286,6 +331,7 @@ export const PlasmicFooter = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    svg: makeNodeComponent("svg"),
 
     // Metadata about props expected for PlasmicFooter
     internalVariantProps: PlasmicFooter__VariantProps,

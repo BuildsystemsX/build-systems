@@ -143,53 +143,19 @@
     margin-top: 6px;
   }
 }
-.svg__pTa8X {
+.svg {
   position: relative;
   object-fit: cover;
   max-width: 100%;
   color: var(--token-Y1kFl7CJ7);
-  width: 10px;
+  width: 16px;
   flex-shrink: 0;
   height: 1em;
 }
 @media (max-width: 375px) {
-  .svg__pTa8X {
+  .svg {
     width: 10px;
     height: 14px;
-    flex-shrink: 0;
-  }
-}
-.svg__mop6U {
-  position: relative;
-  object-fit: cover;
-  max-width: 100%;
-  color: var(--token-Y1kFl7CJ7);
-  width: 1em;
-  flex-shrink: 0;
-  height: 1em;
-}
-@media (max-width: 375px) {
-  .svg__mop6U {
-    width: 15px;
-    height: 15px;
-    flex-shrink: 0;
-  }
-}
-.svg__x3VTx {
-  position: relative;
-  object-fit: cover;
-  max-width: 100%;
-  color: var(--token-Y1kFl7CJ7);
-  margin-left: calc(2px + 4px) !important;
-  width: 1em;
-  flex-shrink: 0;
-  height: 1em;
-}
-@media (max-width: 375px) {
-  .svg__x3VTx {
-    width: 15px;
-    height: 15px;
-    margin-left: calc(2px + 4px) !important;
     flex-shrink: 0;
   }
 }

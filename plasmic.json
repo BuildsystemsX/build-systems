@@ -394,6 +394,11 @@
           "id": "MM12j4JCq_",
           "name": "IconIcon",
           "moduleFilePath": "plasmic/build_systems/icons/PlasmicIcon__Icon.tsx"
+        },
+        {
+          "id": "AVpaEyvva2",
+          "name": "LinkedinSvgrepoComsvgIcon",
+          "moduleFilePath": "plasmic/build_systems/icons/PlasmicIcon__LinkedinSvgrepoComsvg.tsx"
         }
       ],
       "images": [
