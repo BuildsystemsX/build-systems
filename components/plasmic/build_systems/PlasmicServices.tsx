@@ -242,7 +242,7 @@ function PlasmicServices__RenderFunc(props: {
                       className={classNames(sty.img__ou26J)}
                       displayHeight={"auto" as const}
                       displayMaxHeight={"none" as const}
-                      displayMaxWidth={"40%" as const}
+                      displayMaxWidth={"100%" as const}
                       displayMinHeight={"0" as const}
                       displayMinWidth={"0" as const}
                       displayWidth={"auto" as const}
@@ -256,13 +256,17 @@ function PlasmicServices__RenderFunc(props: {
                     />
                   </div>
                 </div>
-                <div className={classNames(projectcss.all, sty.column___86KiF)}>
+                {true ? (
                   <div
-                    data-plasmic-name={"space"}
-                    data-plasmic-override={overrides.space}
-                    className={classNames(projectcss.all, sty.space)}
-                  />
-                </div>
+                    className={classNames(projectcss.all, sty.column___86KiF)}
+                  >
+                    <div
+                      data-plasmic-name={"space"}
+                      data-plasmic-override={overrides.space}
+                      className={classNames(projectcss.all, sty.space)}
+                    />
+                  </div>
+                ) : null}
                 <div className={classNames(projectcss.all, sty.column__dFiLk)}>
                   <div
                     className={classNames(projectcss.all, sty.freeBox__yQr6T)}

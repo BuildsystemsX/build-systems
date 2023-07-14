@@ -329,6 +329,19 @@
           "cssFilePath": "plasmic/build_systems/PlasmicProjekt.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "UXGMrWajUF",
+          "name": "LottieScroll",
+          "type": "managed",
+          "projectId": "jENqvBHbRPXMByDQmRe4G7",
+          "renderModuleFilePath": "plasmic/build_systems/PlasmicLottieScroll.tsx",
+          "importSpec": {
+            "modulePath": "LottieScroll.tsx"
+          },
+          "cssFilePath": "plasmic/build_systems/PlasmicLottieScroll.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [

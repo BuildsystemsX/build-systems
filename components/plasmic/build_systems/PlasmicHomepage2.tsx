@@ -41,6 +41,7 @@ import BuildSystemsHeadline from "../../BuildSystemsHeadline"; // plasmic-import
 import Menu from "../../Menu"; // plasmic-import: 5tZNLUygwX/component
 import { LottieWrapper } from "@plasmicpkgs/lottie-react"; // plasmic-import: BPNsJ2qis6/codeComponent
 import SmallButton from "../../SmallButton"; // plasmic-import: jdWzZYnBO3/component
+import LottieScroll from "../../LottieScroll"; // plasmic-import: UXGMrWajUF/component
 import Footer from "../../Footer"; // plasmic-import: hB94XRzTpm/component
 import HiderHeadlines from "../../HiderHeadlines"; // plasmic-import: q6j09HfKP8/component
 
@@ -68,6 +69,7 @@ export type PlasmicHomepage2__OverridesType = {
   buildSystemsHeadline?: p.Flex<typeof BuildSystemsHeadline>;
   menu?: p.Flex<typeof Menu>;
   lottie?: p.Flex<typeof LottieWrapper>;
+  lottieScroll?: p.Flex<typeof LottieScroll>;
   footer?: p.Flex<typeof Footer>;
   hiderHeadlines?: p.Flex<typeof HiderHeadlines>;
 };
@@ -31225,6 +31227,13 @@ function PlasmicHomepage2__RenderFunc(props: {
           {(hasVariant(globalVariants, "screen", "iPhone") ? true : true) ? (
             <div className={classNames(projectcss.all, sty.freeBox__lZfyq)} />
           ) : null}
+          {(hasVariant(globalVariants, "screen", "iPhone") ? true : true) ? (
+            <LottieScroll
+              data-plasmic-name={"lottieScroll"}
+              data-plasmic-override={overrides.lottieScroll}
+              className={classNames("__wab_instance", sty.lottieScroll)}
+            />
+          ) : null}
           <Footer
             data-plasmic-name={"footer"}
             data-plasmic-override={overrides.footer}
@@ -31251,6 +31260,7 @@ const PlasmicDescendants = {
     "buildSystemsHeadline",
     "menu",
     "lottie",
+    "lottieScroll",
     "footer",
     "hiderHeadlines"
   ],
@@ -31258,6 +31268,7 @@ const PlasmicDescendants = {
   buildSystemsHeadline: ["buildSystemsHeadline"],
   menu: ["menu"],
   lottie: ["lottie"],
+  lottieScroll: ["lottieScroll"],
   footer: ["footer"],
   hiderHeadlines: ["hiderHeadlines"]
 } as const;
@@ -31270,6 +31281,7 @@ type NodeDefaultElementType = {
   buildSystemsHeadline: typeof BuildSystemsHeadline;
   menu: typeof Menu;
   lottie: typeof LottieWrapper;
+  lottieScroll: typeof LottieScroll;
   footer: typeof Footer;
   hiderHeadlines: typeof HiderHeadlines;
 };
@@ -31338,6 +31350,7 @@ export const PlasmicHomepage2 = Object.assign(
     buildSystemsHeadline: makeNodeComponent("buildSystemsHeadline"),
     menu: makeNodeComponent("menu"),
     lottie: makeNodeComponent("lottie"),
+    lottieScroll: makeNodeComponent("lottieScroll"),
     footer: makeNodeComponent("footer"),
     hiderHeadlines: makeNodeComponent("hiderHeadlines"),
 

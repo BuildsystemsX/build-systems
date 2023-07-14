@@ -691,6 +691,17 @@
     display: none;
   }
 }
+.lottieScroll:global(.__wab_instance) {
+  position: relative;
+  z-index: 2;
+  display: none;
+}
+@media (max-width: 375px) {
+  .lottieScroll:global(.__wab_instance) {
+    z-index: 2;
+    display: none;
+  }
+}
 .footer:global(.__wab_instance) {
   max-width: 100%;
   position: relative;

@@ -241,14 +241,16 @@
   max-width: 100%;
   font-family: var(--token-murZRIrJA);
   font-size: var(--token-fJm1K7aY_);
+  padding-left: 5px;
   color: var(--token-Y1kFl7CJ7);
   line-height: var(--token-6GDvSmF-K);
   letter-spacing: -0.45px;
   transform: none;
+  padding-top: 5px;
+  padding-right: 5px;
   left: 0px;
   top: 0px;
   z-index: 1;
-  padding: 5px;
 }
 @media (max-width: 1280px) {
   .text___6DS3A {
@@ -298,6 +300,7 @@
   .freeBox__wfs2Y {
     padding-left: var(--token-bmnU--xfN);
     padding-right: var(--token-bmnU--xfN);
+    height: auto;
   }
 }
 @media (max-width: 768px) {
@@ -325,16 +328,55 @@
   align-items: stretch;
   justify-content: center;
   width: auto;
-  height: auto;
+  height: 100%;
   max-width: 100%;
   flex-shrink: 1;
   flex-wrap: wrap;
   flex-grow: 0;
-  padding: 8px;
+  min-height: 0;
+  padding: 0px;
   margin: 0px;
 }
-.columns__cjEXv > :nth-child(1n + 1) {
-  width: calc((100% - 1 * var(--plsmc-rc-col-gap, 0px)) * 12 / 12);
+.columns__cjEXv > :nth-child(3n + 1) {
+  width: calc((100% - 3 * var(--plsmc-rc-col-gap, 0px)) * 5 / 12);
+}
+.columns__cjEXv > :nth-child(3n + 2) {
+  width: calc((100% - 3 * var(--plsmc-rc-col-gap, 0px)) * 1 / 12);
+}
+.columns__cjEXv > :nth-child(3n + 3) {
+  width: calc((100% - 3 * var(--plsmc-rc-col-gap, 0px)) * 6 / 12);
+}
+@media (max-width: 1280px) {
+  .columns__cjEXv {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 1280px) {
+  .columns__cjEXv > :nth-child(3n + 1) {
+    width: calc((100% - 3 * var(--plsmc-rc-col-gap, 0px)) * 5 / 12);
+  }
+}
+@media (max-width: 1280px) {
+  .columns__cjEXv > :nth-child(3n + 2) {
+    width: calc((100% - 3 * var(--plsmc-rc-col-gap, 0px)) * 1 / 12);
+  }
+}
+@media (max-width: 1280px) {
+  .columns__cjEXv > :nth-child(3n + 3) {
+    width: calc((100% - 3 * var(--plsmc-rc-col-gap, 0px)) * 6 / 12);
+  }
+}
+@media (max-width: 768px) {
+  .columns__cjEXv {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 768px) {
+  .columns__cjEXv > :nth-child(1n + 1) {
+    width: calc((100% - 1 * var(--plsmc-rc-col-gap, 0px)) * 12 / 12);
+  }
 }
 @media (max-width: 375px) {
   .columns__cjEXv {
@@ -356,12 +398,18 @@
   min-width: 0;
   padding: 0px;
 }
+@media (max-width: 1280px) {
+  .column__quwAa {
+    align-items: center;
+    justify-content: center;
+  }
+}
 .freeBox__dg8Ve {
   display: flex;
   position: relative;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   width: 100%;
   height: 100%;
   max-width: 100%;
@@ -378,7 +426,7 @@
 .img__ou26J {
   position: relative;
   object-fit: cover;
-  max-width: 40%;
+  max-width: 100%;
   width: auto;
   height: auto;
 }
@@ -412,6 +460,18 @@
   min-width: 0;
   flex-shrink: 0;
   padding: 8px;
+}
+@media (max-width: 768px) {
+  .space {
+    height: 5vh;
+    flex-shrink: 0;
+  }
+}
+@media (max-width: 375px) {
+  .space {
+    height: 0vh;
+    flex-shrink: 0;
+  }
 }
 .column__dFiLk {
   display: flex;
@@ -450,8 +510,9 @@
 }
 @media (max-width: 375px) {
   .freeBox__yQr6T {
-    height: 30vh;
-    flex-shrink: 0;
+    height: auto;
+    align-items: flex-start;
+    justify-content: flex-start;
     padding: 0px;
   }
 }
@@ -512,15 +573,20 @@
   align-items: center;
   justify-content: flex-start;
   width: 100%;
-  height: 10vh;
+  height: 5vh;
   max-width: 100%;
   grid-column-start: 1;
   grid-column-end: -1;
   padding: 0px;
 }
+@media (max-width: 1280px) {
+  .freeBox__lTRpW {
+    height: 10vh;
+  }
+}
 @media (max-width: 375px) {
   .freeBox__lTRpW {
-    height: 2vh;
+    height: 10vh;
     flex-shrink: 0;
   }
 }
@@ -839,7 +905,7 @@
   align-items: center;
   justify-content: flex-start;
   width: 100%;
-  height: 10vh;
+  height: 5vh;
   max-width: 100%;
   grid-column-start: 1;
   grid-column-end: -1;
@@ -1231,7 +1297,7 @@
 .freeBox__cliNj {
   background: none;
   width: 100%;
-  height: 80vh;
+  height: auto;
   display: flex;
   position: relative;
   top: auto;
@@ -1298,7 +1364,7 @@
   position: relative;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: flex-start;
   width: 100%;
   height: 100%;
   max-width: 100%;
