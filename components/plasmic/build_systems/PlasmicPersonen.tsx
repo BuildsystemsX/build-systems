@@ -238,7 +238,7 @@ function PlasmicPersonen__RenderFunc(props: {
               )}
             >
               {hasVariant(globalVariants, "screen", "iPhone")
-                ? "                                f\u00fchrt Kompetenzen, Prozesse und Tools zusammen."
+                ? "                               f\u00fchrt Kompetenzen, Prozesse und Tools zusammen."
                 : "f\u00fchrt Kompetenzen, Prozesse und Tools zusammen."}
             </div>
           </div>

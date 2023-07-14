@@ -227,7 +227,7 @@ function PlasmicProjekte__RenderFunc(props: {
               )}
             >
               {hasVariant(globalVariants, "screen", "iPhone")
-                ? "                                setzt Projekte von Anfang an integral, systemisch, transparent und digital auf."
+                ? "                               setzt Projekte von Anfang an integral, systemisch, transparent und digital auf."
                 : "setzt Projekte von Anfang an integral, systemisch, transparent und digital auf."}
             </div>
           </div>

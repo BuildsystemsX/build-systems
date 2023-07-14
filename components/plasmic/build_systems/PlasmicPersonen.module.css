@@ -106,7 +106,7 @@
   .freeBox__u3Rk {
     padding-left: var(--token-FoMWgon3f);
     padding-right: var(--token-FoMWgon3f);
-    height: 30vh;
+    height: 40vh;
     flex-shrink: 0;
   }
 }
@@ -593,13 +593,6 @@
 @media (max-width: 1280px) {
   .freeBox__l40T {
     padding: 0px;
-  }
-}
-@media (max-width: 414px) {
-  .freeBox__l40T {
-    height: 5vh;
-    flex-shrink: 0;
-    display: none;
   }
 }
 .imageFooter:global(.__wab_instance) {

@@ -228,7 +228,7 @@ function PlasmicServices__RenderFunc(props: {
               )}
             >
               {hasVariant(globalVariants, "screen", "iPhone")
-                ? "                                beh\u00e4lt neben Bedarfen, Anforderungen und Funktionalit\u00e4t auch Ihre Benefits im Blick."
+                ? "                               beh\u00e4lt neben Bedarfen, Anforderungen und Funktionalit\u00e4t auch Ihre Benefits im Blick."
                 : "beh\u00e4lt neben Bedarfen, Anforderungen und Funktionalit\u00e4t auch Ihre Benefits im Blick."}
             </div>
           </div>
@@ -309,7 +309,7 @@ function PlasmicServices__RenderFunc(props: {
               )}
             >
               {hasVariant(globalVariants, "screen", "iPhone")
-                ? "                                arbeitet mit dezidierten Benchmarks und Indikatoren, die klima-intelligent und bew\u00e4hrt sind."
+                ? "                               arbeitet mit dezidierten Benchmarks und Indikatoren, die klima-intelligent und bew\u00e4hrt sind."
                 : "arbeitet mit dezidierten Benchmarks und Indikatoren, die klima-intelligent und bew\u00e4hrt sind."}
             </div>
           </div>
@@ -444,7 +444,7 @@ function PlasmicServices__RenderFunc(props: {
               )}
             >
               {hasVariant(globalVariants, "screen", "iPhone")
-                ? "                                erstellt Vordimensionierungen zu Anlagentechnik, Konstruktionsmethoden, Materialwahl und Wiederverwendungspotential."
+                ? "                               erstellt Vordimensionierungen zu Anlagentechnik, Konstruktionsmethoden, Materialwahl und Wiederverwendungspotential."
                 : "erstellt Vordimensionierungen zu Anlagentechnik, Konstruktionsmethoden, Materialwahl und Wiederverwendungspotential."}
             </div>
           </div>
@@ -518,7 +518,7 @@ function PlasmicServices__RenderFunc(props: {
               )}
             >
               {hasVariant(globalVariants, "screen", "iPhone")
-                ? "                                steigert durch abgestimmte Prozesse baulichen Mehrwert."
+                ? "                               steigert durch abgestimmte Prozesse baulichen Mehrwert."
                 : "steigert durch abgestimmte Prozesse baulichen Mehrwert."}
             </div>
           </div>
