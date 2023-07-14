@@ -2,10 +2,13 @@
 // This file is owned by you, feel free to edit as you see fit.
 import * as React from "react";
 import {
-  PlasmicLottieScroll,
-  DefaultLottieScrollProps
+    PlasmicLottieScroll,
+    DefaultLottieScrollProps
 } from "./plasmic/build_systems/PlasmicLottieScroll";
-import { HTMLElementRefOf } from "@plasmicapp/react-web";
+import {HTMLElementRefOf} from "@plasmicapp/react-web";
+import Lottie, {useLottie, useLottieInteractivity} from "lottie-react";
+// import the likeButton.json form the public folder
+import animation from "../public/likeButton.json";
 
 // Your component props start with props for variants and slots you defined
 // in Plasmic, but you can add more here, like event handlers that you can
@@ -20,25 +23,40 @@ import { HTMLElementRefOf } from "@plasmicapp/react-web";
 //
 // You can also stop extending from DefaultLottieScrollProps altogether and have
 // total control over the props for your component.
-export interface LottieScrollProps extends DefaultLottieScrollProps {}
+export interface LottieScrollProps extends DefaultLottieScrollProps {
+}
 
 function LottieScroll_(props: LottieScrollProps, ref: HTMLElementRefOf<"div">) {
-  // Use PlasmicLottieScroll to render this component as it was
-  // designed in Plasmic, by activating the appropriate variants,
-  // attaching the appropriate event handlers, etc.  You
-  // can also install whatever React hooks you need here to manage state or
-  // fetch data.
-  //
-  // Props you can pass into PlasmicLottieScroll are:
-  // 1. Variants you want to activate,
-  // 2. Contents for slots you want to fill,
-  // 3. Overrides for any named node in the component to attach behavior and data,
-  // 4. Props to set on the root node.
-  //
-  // By default, we are just piping all LottieScrollProps here, but feel free
-  // to do whatever works for you.
+    const options = {
+        animationData: animation,
+    };
+    const Example = () => {
+        const lottieObj = useLottie(options);
+        const Animation = useLottieInteractivity({
+            lottieObj,
+            mode: "scroll",
+            actions: [
+                {
+                    visibility: [0, 0.45],
+                    type: "stop",
+                    frames: [0],
+                },
+                {
+                    visibility: [0.45, 1],
+                    type: "seek",
+                    frames: [0, 38],
+                },
+            ],
+        });
 
-  return <PlasmicLottieScroll root={{ ref }} {...props} />;
+        return Animation;
+    };
+
+    return (
+        <PlasmicLottieScroll root={{ ref }} {...props}>
+            <Example />
+        </PlasmicLottieScroll>
+    );
 }
 
 const LottieScroll = React.forwardRef(LottieScroll_);
