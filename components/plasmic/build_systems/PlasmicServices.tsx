@@ -64,6 +64,7 @@ export type PlasmicServices__OverridesType = {
   menuStack?: p.Flex<"div">;
   menu?: p.Flex<typeof Menu>;
   buildSystemsHeadline?: p.Flex<typeof BuildSystemsHeadline>;
+  space?: p.Flex<"div">;
   imageFooter?: p.Flex<typeof ImageFooter>;
   hiderHeadlines?: p.Flex<typeof HiderHeadlines>;
 };
@@ -235,6 +236,31 @@ function PlasmicServices__RenderFunc(props: {
                 <div className={classNames(projectcss.all, sty.column__quwAa)}>
                   <div
                     className={classNames(projectcss.all, sty.freeBox__dg8Ve)}
+                  >
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__ou26J)}
+                      displayHeight={"auto" as const}
+                      displayMaxHeight={"none" as const}
+                      displayMaxWidth={"40%" as const}
+                      displayMinHeight={"0" as const}
+                      displayMinWidth={"0" as const}
+                      displayWidth={"auto" as const}
+                      loading={"lazy" as const}
+                      src={{
+                        src: "/plasmic/build_systems/images/komponente2810Svg.svg",
+                        fullWidth: 203,
+                        fullHeight: 150,
+                        aspectRatio: 1.352542
+                      }}
+                    />
+                  </div>
+                </div>
+                <div className={classNames(projectcss.all, sty.column___86KiF)}>
+                  <div
+                    data-plasmic-name={"space"}
+                    data-plasmic-override={overrides.space}
+                    className={classNames(projectcss.all, sty.space)}
                   />
                 </div>
                 <div className={classNames(projectcss.all, sty.column__dFiLk)}>
@@ -266,6 +292,8 @@ function PlasmicServices__RenderFunc(props: {
               </div>
             ) : null}
           </div>
+          <div className={classNames(projectcss.all, sty.freeBox__lTRpW)} />
+
           <div className={classNames(projectcss.all, sty.freeBox__p9DFd)}>
             <div
               className={classNames(
@@ -324,13 +352,33 @@ function PlasmicServices__RenderFunc(props: {
                           projectcss.all,
                           sty.freeBox__utQ0
                         )}
-                      />
+                      >
+                        <p.PlasmicImg
+                          alt={""}
+                          className={classNames(sty.img__hePwA)}
+                          displayHeight={"auto" as const}
+                          displayMaxHeight={"none" as const}
+                          displayMaxWidth={"100%" as const}
+                          displayMinHeight={"0" as const}
+                          displayMinWidth={"0" as const}
+                          displayWidth={"auto" as const}
+                          loading={"lazy" as const}
+                          src={{
+                            src: "/plasmic/build_systems/images/bildschirmfoto20230714Um081442Png.png",
+                            fullWidth: 678,
+                            fullHeight: 520,
+                            aspectRatio: undefined
+                          }}
+                        />
+                      </div>
                     ) : null}
                   </div>
                 ) : null}
               </div>
             ) : null}
           </div>
+          <div className={classNames(projectcss.all, sty.freeBox__lzG30)} />
+
           <div className={classNames(projectcss.all, sty.freeBox__hRhT)}>
             <div
               className={classNames(
@@ -350,7 +398,25 @@ function PlasmicServices__RenderFunc(props: {
                 <div className={classNames(projectcss.all, sty.column__lSVdr)}>
                   <div
                     className={classNames(projectcss.all, sty.freeBox__br76G)}
-                  />
+                  >
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__lEtNb)}
+                      displayHeight={"auto" as const}
+                      displayMaxHeight={"none" as const}
+                      displayMaxWidth={"100%" as const}
+                      displayMinHeight={"0" as const}
+                      displayMinWidth={"0" as const}
+                      displayWidth={"auto" as const}
+                      loading={"lazy" as const}
+                      src={{
+                        src: "/plasmic/build_systems/images/gkl247Png.png",
+                        fullWidth: 389,
+                        fullHeight: 389,
+                        aspectRatio: undefined
+                      }}
+                    />
+                  </div>
                 </div>
                 <div className={classNames(projectcss.all, sty.column__iQ7)}>
                   <div
@@ -381,6 +447,8 @@ function PlasmicServices__RenderFunc(props: {
               </div>
             ) : null}
           </div>
+          <div className={classNames(projectcss.all, sty.freeBox___3A3If)} />
+
           <div className={classNames(projectcss.all, sty.freeBox__ccPsu)}>
             <div
               className={classNames(
@@ -498,7 +566,7 @@ function PlasmicServices__RenderFunc(props: {
               </div>
             ) : null}
           </div>
-          <div className={classNames(projectcss.all, sty.freeBox___3A3If)} />
+          <div className={classNames(projectcss.all, sty.freeBox___1C0Wu)} />
 
           <ImageFooter
             data-plasmic-name={"imageFooter"}
@@ -523,12 +591,14 @@ const PlasmicDescendants = {
     "menuStack",
     "menu",
     "buildSystemsHeadline",
+    "space",
     "imageFooter",
     "hiderHeadlines"
   ],
   menuStack: ["menuStack", "menu"],
   menu: ["menu"],
   buildSystemsHeadline: ["buildSystemsHeadline"],
+  space: ["space"],
   imageFooter: ["imageFooter"],
   hiderHeadlines: ["hiderHeadlines"]
 } as const;
@@ -540,6 +610,7 @@ type NodeDefaultElementType = {
   menuStack: "div";
   menu: typeof Menu;
   buildSystemsHeadline: typeof BuildSystemsHeadline;
+  space: "div";
   imageFooter: typeof ImageFooter;
   hiderHeadlines: typeof HiderHeadlines;
 };
@@ -607,6 +678,7 @@ export const PlasmicServices = Object.assign(
     menuStack: makeNodeComponent("menuStack"),
     menu: makeNodeComponent("menu"),
     buildSystemsHeadline: makeNodeComponent("buildSystemsHeadline"),
+    space: makeNodeComponent("space"),
     imageFooter: makeNodeComponent("imageFooter"),
     hiderHeadlines: makeNodeComponent("hiderHeadlines"),
 
