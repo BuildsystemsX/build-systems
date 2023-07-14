@@ -114,7 +114,7 @@
     text-align: left;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 414px) {
   .text__zRpag {
     font-size: 14px;
     text-align: center;
@@ -127,7 +127,7 @@
 .text__paGq3 {
   font-family: var(--token-murZRIrJA);
 }
-@media (max-width: 375px) {
+@media (max-width: 414px) {
   .text__paGq3 {
     font-size: 13px;
   }

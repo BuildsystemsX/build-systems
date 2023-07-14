@@ -149,7 +149,7 @@
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 414px) {
   .plasmic_tokens {
     --token-FoMWgon3f: 10px;
     --plasmic-token-mobile-site: var(--token-FoMWgon3f);
