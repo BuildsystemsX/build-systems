@@ -250,6 +250,7 @@ function PlasmicProjekte__RenderFunc(props: {
                           "__wab_instance",
                           sty.projekt__lzDDs
                         )}
+                        shrinked={true}
                       />
                     </div>
                     <div
@@ -261,6 +262,7 @@ function PlasmicProjekte__RenderFunc(props: {
                           sty.projekt__e7GYh
                         )}
                         projekte={"urbanScaleTimber" as const}
+                        shrinked={true}
                       />
                     </div>
                     {true ? (

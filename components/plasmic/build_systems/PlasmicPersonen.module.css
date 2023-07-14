@@ -433,11 +433,6 @@
 .personBox__qjRtW:global(.__wab_instance) {
   position: relative;
 }
-@media (max-width: 375px) {
-  .personBox__qjRtW:global(.__wab_instance) {
-    flex-shrink: 0;
-  }
-}
 .column__li3T2 {
   display: flex;
   position: relative;
@@ -470,11 +465,6 @@
   max-width: 100%;
   position: relative;
 }
-@media (max-width: 375px) {
-  .personBox__sbHWq:global(.__wab_instance) {
-    flex-shrink: 0;
-  }
-}
 .column__dhhL6 {
   display: flex;
   position: relative;
@@ -506,11 +496,6 @@
 .personBox__cDjn:global(.__wab_instance) {
   max-width: 100%;
   position: relative;
-}
-@media (max-width: 375px) {
-  .personBox__cDjn:global(.__wab_instance) {
-    flex-shrink: 0;
-  }
 }
 .column___7F0Ix {
   position: relative;

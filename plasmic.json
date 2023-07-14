@@ -403,6 +403,21 @@
           "id": "NMBIj8QaV",
           "name": "image 2",
           "filePath": "../public/plasmic/build_systems/images/image2.png"
+        },
+        {
+          "id": "13iychJlu",
+          "name": "Gruppe 393.png",
+          "filePath": "../public/plasmic/build_systems/images/gruppe393Png.png"
+        },
+        {
+          "id": "CvbvkkM8a",
+          "name": "Gruppe 393.svg",
+          "filePath": "../public/plasmic/build_systems/images/gruppe393Svg.svg"
+        },
+        {
+          "id": "7Qq_rpJiD",
+          "name": "Komponente 29 – 19.svg",
+          "filePath": "../public/plasmic/build_systems/images/komponente2919Svg.svg"
         }
       ],
       "indirect": false,

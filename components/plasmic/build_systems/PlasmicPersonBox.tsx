@@ -55,7 +55,7 @@ export type PlasmicPersonBox__VariantMembers = {
     | "juliaDorn"
     | "vinzenzTrimborn"
     | "andreasThoma";
-  expanded: "expanded";
+  shrinked: "shrinked";
 };
 export type PlasmicPersonBox__VariantsArgs = {
   personen?: SingleChoiceArg<
@@ -66,12 +66,12 @@ export type PlasmicPersonBox__VariantsArgs = {
     | "vinzenzTrimborn"
     | "andreasThoma"
   >;
-  expanded?: SingleBooleanChoiceArg<"expanded">;
+  shrinked?: SingleBooleanChoiceArg<"shrinked">;
 };
 type VariantPropType = keyof PlasmicPersonBox__VariantsArgs;
 export const PlasmicPersonBox__VariantProps = new Array<VariantPropType>(
   "personen",
-  "expanded"
+  "shrinked"
 );
 
 export type PlasmicPersonBox__ArgsType = {};
@@ -93,7 +93,7 @@ export interface DefaultPersonBoxProps {
     | "vinzenzTrimborn"
     | "andreasThoma"
   >;
-  expanded?: SingleBooleanChoiceArg<"expanded">;
+  shrinked?: SingleBooleanChoiceArg<"shrinked">;
   className?: string;
 }
 
@@ -138,10 +138,10 @@ function PlasmicPersonBox__RenderFunc(props: {
   const stateSpecs = React.useMemo(
     () => [
       {
-        path: "expanded",
+        path: "shrinked",
         type: "private",
         variableType: "variant",
-        initFunc: ({ $props, $state, $queries, $ctx }) => $props.expanded
+        initFunc: ({ $props, $state, $queries, $ctx }) => $props.shrinked
       },
       {
         path: "personen",
@@ -178,7 +178,6 @@ function PlasmicPersonBox__RenderFunc(props: {
           projectcss.plasmic_tokens,
           sty.root,
           {
-            [sty.rootexpanded]: hasVariant($state, "expanded", "expanded"),
             [sty.rootpersonen_danielDieren]: hasVariant(
               $state,
               "personen",
@@ -188,31 +187,37 @@ function PlasmicPersonBox__RenderFunc(props: {
               $state,
               "personen",
               "martinBittmann"
-            )
+            ),
+            [sty.rootshrinked]: hasVariant($state, "shrinked", "shrinked")
           }
         )}
       >
         <div
           className={classNames(projectcss.all, sty.freeBox__xTsx6, {
-            [sty.freeBoxexpanded__xTsx6NnpJu]: hasVariant(
+            [sty.freeBoxpersonen_danielDieren__xTsx603Qoh]: hasVariant(
               $state,
-              "expanded",
-              "expanded"
+              "personen",
+              "danielDieren"
+            ),
+            [sty.freeBoxpersonen_martinBittmann__xTsx6Pf5Wu]: hasVariant(
+              $state,
+              "personen",
+              "martinBittmann"
             ),
             [sty.freeBoxpersonen_vinzenzTrimborn__xTsx6JfChG]: hasVariant(
               $state,
               "personen",
               "vinzenzTrimborn"
+            ),
+            [sty.freeBoxshrinked__xTsx6NnpJu]: hasVariant(
+              $state,
+              "shrinked",
+              "shrinked"
             )
           })}
         >
           <div
             className={classNames(projectcss.all, sty.freeBox__q5J1D, {
-              [sty.freeBoxexpanded__q5J1DnnpJu]: hasVariant(
-                $state,
-                "expanded",
-                "expanded"
-              ),
               [sty.freeBoxpersonen_andreasThoma__q5J1DusA8U]: hasVariant(
                 $state,
                 "personen",
@@ -222,25 +227,53 @@ function PlasmicPersonBox__RenderFunc(props: {
                 $state,
                 "personen",
                 "danielDieren"
+              ),
+              [sty.freeBoxpersonen_danielLocatelli__q5J1DeOoDg]: hasVariant(
+                $state,
+                "personen",
+                "danielLocatelli"
+              ),
+              [sty.freeBoxpersonen_juliaDorn__q5J1Dbja9Y]: hasVariant(
+                $state,
+                "personen",
+                "juliaDorn"
+              ),
+              [sty.freeBoxshrinked__q5J1DnnpJu]: hasVariant(
+                $state,
+                "shrinked",
+                "shrinked"
               )
             })}
           >
             {true ? (
-              <div className={classNames(projectcss.all, sty.freeBox__awoI9)}>
+              <div
+                className={classNames(projectcss.all, sty.freeBox__awoI9, {
+                  [sty.freeBoxpersonen_vinzenzTrimborn__awoI9JfChG]: hasVariant(
+                    $state,
+                    "personen",
+                    "vinzenzTrimborn"
+                  )
+                })}
+              >
                 <p.PlasmicImg
                   data-plasmic-name={"img"}
                   data-plasmic-override={overrides.img}
                   alt={""}
                   className={classNames(sty.img, {
-                    [sty.imgexpanded]: hasVariant(
+                    [sty.imgpersonen_andreasThoma]: hasVariant(
                       $state,
-                      "expanded",
-                      "expanded"
+                      "personen",
+                      "andreasThoma"
                     ),
                     [sty.imgpersonen_juliaDorn]: hasVariant(
                       $state,
                       "personen",
                       "juliaDorn"
+                    ),
+                    [sty.imgshrinked]: hasVariant(
+                      $state,
+                      "shrinked",
+                      "shrinked"
                     )
                   })}
                   displayHeight={"auto" as const}
@@ -267,15 +300,30 @@ function PlasmicPersonBox__RenderFunc(props: {
             ) : null}
             <div
               className={classNames(projectcss.all, sty.freeBox___5Lmv3, {
-                [sty.freeBoxexpanded___5Lmv3NnpJu]: hasVariant(
-                  $state,
-                  "expanded",
-                  "expanded"
-                ),
                 [sty.freeBoxpersonen_andreasThoma___5Lmv3UsA8U]: hasVariant(
                   $state,
                   "personen",
                   "andreasThoma"
+                ),
+                [sty.freeBoxpersonen_danielLocatelli___5Lmv3EOoDg]: hasVariant(
+                  $state,
+                  "personen",
+                  "danielLocatelli"
+                ),
+                [sty.freeBoxpersonen_juliaDorn___5Lmv3Bja9Y]: hasVariant(
+                  $state,
+                  "personen",
+                  "juliaDorn"
+                ),
+                [sty.freeBoxpersonen_vinzenzTrimborn___5Lmv3JfChG]: hasVariant(
+                  $state,
+                  "personen",
+                  "vinzenzTrimborn"
+                ),
+                [sty.freeBoxshrinked___5Lmv3NnpJu]: hasVariant(
+                  $state,
+                  "shrinked",
+                  "shrinked"
                 )
               })}
             >
@@ -328,11 +376,6 @@ function PlasmicPersonBox__RenderFunc(props: {
                     projectcss.__wab_text,
                     sty.text__zOkqU,
                     {
-                      [sty.textexpanded__zOkqUnnpJu]: hasVariant(
-                        $state,
-                        "expanded",
-                        "expanded"
-                      ),
                       [sty.textpersonen_andreasThoma__zOkqUusA8U]: hasVariant(
                         $state,
                         "personen",
@@ -356,7 +399,12 @@ function PlasmicPersonBox__RenderFunc(props: {
                         "martinBittmann"
                       ),
                       [sty.textpersonen_vinzenzTrimborn__zOkqUjfChG]:
-                        hasVariant($state, "personen", "vinzenzTrimborn")
+                        hasVariant($state, "personen", "vinzenzTrimborn"),
+                      [sty.textshrinked__zOkqUnnpJu]: hasVariant(
+                        $state,
+                        "shrinked",
+                        "shrinked"
+                      )
                     }
                   )}
                 >
@@ -376,11 +424,6 @@ function PlasmicPersonBox__RenderFunc(props: {
               {true ? (
                 <div
                   className={classNames(projectcss.all, sty.freeBox__ppBiU, {
-                    [sty.freeBoxexpanded__ppBiUnnpJu]: hasVariant(
-                      $state,
-                      "expanded",
-                      "expanded"
-                    ),
                     [sty.freeBoxpersonen_danielDieren__ppBiU03Qoh]: hasVariant(
                       $state,
                       "personen",
@@ -396,7 +439,12 @@ function PlasmicPersonBox__RenderFunc(props: {
                     [sty.freeBoxpersonen_martinBittmann__ppBiUPf5Wu]:
                       hasVariant($state, "personen", "martinBittmann"),
                     [sty.freeBoxpersonen_vinzenzTrimborn__ppBiUjfChG]:
-                      hasVariant($state, "personen", "vinzenzTrimborn")
+                      hasVariant($state, "personen", "vinzenzTrimborn"),
+                    [sty.freeBoxshrinked__ppBiUnnpJu]: hasVariant(
+                      $state,
+                      "shrinked",
+                      "shrinked"
+                    )
                   })}
                 >
                   {true ? (
@@ -422,7 +470,7 @@ function PlasmicPersonBox__RenderFunc(props: {
                                     componentUuid: "JED_FSQOoo",
                                     argName: "vgroup"
                                   },
-                                  () => "expanded"
+                                  () => "shrinked"
                                 ),
                                 operation: __wrapUserFunction(
                                   {
@@ -442,7 +490,7 @@ function PlasmicPersonBox__RenderFunc(props: {
                                     componentUuid: "JED_FSQOoo",
                                     argName: "value"
                                   },
-                                  () => "expanded"
+                                  () => "shrinked"
                                 )
                               };
                               return __wrapUserFunction(
@@ -489,13 +537,13 @@ function PlasmicPersonBox__RenderFunc(props: {
                           "__wab_instance",
                           sty.smallButton,
                           {
-                            [sty.smallButtonexpanded]: hasVariant(
-                              $state,
-                              "expanded",
-                              "expanded"
-                            ),
                             [sty.smallButtonpersonen_martinBittmann]:
-                              hasVariant($state, "personen", "martinBittmann")
+                              hasVariant($state, "personen", "martinBittmann"),
+                            [sty.smallButtonshrinked]: hasVariant(
+                              $state,
+                              "shrinked",
+                              "shrinked"
+                            )
                           }
                         )}
                         noLeftSiteShift={
@@ -511,11 +559,6 @@ function PlasmicPersonBox__RenderFunc(props: {
                             projectcss.__wab_text,
                             sty.text__pQTpi,
                             {
-                              [sty.textexpanded__pQTpinnpJu]: hasVariant(
-                                $state,
-                                "expanded",
-                                "expanded"
-                              ),
                               [sty.textpersonen_juliaDorn__pQTpibja9Y]:
                                 hasVariant($state, "personen", "juliaDorn"),
                               [sty.textpersonen_vinzenzTrimborn__pQTpiJfChG]:
@@ -523,149 +566,127 @@ function PlasmicPersonBox__RenderFunc(props: {
                                   $state,
                                   "personen",
                                   "vinzenzTrimborn"
-                                )
+                                ),
+                              [sty.textshrinked__pQTpinnpJu]: hasVariant(
+                                $state,
+                                "shrinked",
+                                "shrinked"
+                              )
                             }
                           )}
                         >
-                          {hasVariant($state, "expanded", "expanded")
-                            ? "-   weniger "
-                            : "+   mehr "}
+                          {hasVariant($state, "shrinked", "shrinked")
+                            ? "+ mehr"
+                            : "-   weniger "}
                         </div>
                       </SmallButton>
                     </div>
                   ) : null}
                 </div>
               ) : null}
+              {(
+                hasVariant($state, "shrinked", "shrinked")
+                  ? true
+                  : hasVariant($state, "personen", "andreasThoma")
+                  ? true
+                  : hasVariant($state, "personen", "vinzenzTrimborn")
+                  ? true
+                  : hasVariant($state, "personen", "juliaDorn")
+                  ? true
+                  : hasVariant($state, "personen", "danielLocatelli")
+                  ? true
+                  : hasVariant($state, "personen", "danielDieren")
+                  ? true
+                  : hasVariant($state, "personen", "martinBittmann")
+                  ? true
+                  : hasVariant(globalVariants, "screen", "iPhone")
+                  ? true
+                  : hasVariant(globalVariants, "screen", "iPad")
+                  ? true
+                  : hasVariant(globalVariants, "screen", "desktopNormal")
+                  ? true
+                  : true
+              ) ? (
+                <div
+                  className={classNames(projectcss.all, sty.freeBox__gfxOx, {
+                    [sty.freeBoxpersonen_andreasThoma__gfxOxusA8U]: hasVariant(
+                      $state,
+                      "personen",
+                      "andreasThoma"
+                    ),
+                    [sty.freeBoxpersonen_danielDieren__gfxOx03Qoh]: hasVariant(
+                      $state,
+                      "personen",
+                      "danielDieren"
+                    ),
+                    [sty.freeBoxpersonen_danielLocatelli__gfxOxeOoDg]:
+                      hasVariant($state, "personen", "danielLocatelli"),
+                    [sty.freeBoxpersonen_juliaDorn__gfxOxbja9Y]: hasVariant(
+                      $state,
+                      "personen",
+                      "juliaDorn"
+                    ),
+                    [sty.freeBoxpersonen_martinBittmann__gfxOxPf5Wu]:
+                      hasVariant($state, "personen", "martinBittmann"),
+                    [sty.freeBoxpersonen_vinzenzTrimborn__gfxOxJfChG]:
+                      hasVariant($state, "personen", "vinzenzTrimborn"),
+                    [sty.freeBoxshrinked__gfxOxnnpJu]: hasVariant(
+                      $state,
+                      "shrinked",
+                      "shrinked"
+                    )
+                  })}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text___7X6Qp,
+                      {
+                        [sty.textpersonen_andreasThoma___7X6QPusA8U]:
+                          hasVariant($state, "personen", "andreasThoma"),
+                        [sty.textpersonen_danielDieren___7X6Qp03Qoh]:
+                          hasVariant($state, "personen", "danielDieren"),
+                        [sty.textpersonen_danielLocatelli___7X6QPeOoDg]:
+                          hasVariant($state, "personen", "danielLocatelli"),
+                        [sty.textpersonen_juliaDorn___7X6QPbja9Y]: hasVariant(
+                          $state,
+                          "personen",
+                          "juliaDorn"
+                        ),
+                        [sty.textpersonen_martinBittmann___7X6QpPf5Wu]:
+                          hasVariant($state, "personen", "martinBittmann"),
+                        [sty.textpersonen_vinzenzTrimborn___7X6QpjfChG]:
+                          hasVariant($state, "personen", "vinzenzTrimborn"),
+                        [sty.textshrinked___7X6QPnnpJu]: hasVariant(
+                          $state,
+                          "shrinked",
+                          "shrinked"
+                        )
+                      }
+                    )}
+                  >
+                    {hasVariant($state, "personen", "andreasThoma")
+                      ? "Andreas Thoma studierte Architektur an der Bauhaus-Universit\u00e4t Weimar (B.Sc.) und der ETH Z\u00fcrich (M.Sc.) mit einem Fokus auf digitale Fabrikation und Computational Design & Development. Er arbeitete mehrere Jahre freiberuflich u.a. f\u00fcr ERNE Holzbau (Stein, CH) und Toggle (USA). Zudem war er f\u00fcr den Lehrstuhl Gramazio Kohler Research an der ETH Z\u00fcrich und bei Herzog & De Meuron (Basel) t\u00e4tig. Bei Gramazio Kohler Research leitete er die Projekte Iridescence Print, Rock Print und Spatial Timber. Heute ist Andreas Head of Digital Fabrication bei Toggle, einem Robotics-Startup (USA), wo er neuartige Fertigungssysteme sowie einen Algorithmus f\u00fcr die Generierung ma\u00dfgeschneiderter Bauelemente mit entsprechender webbasierte Datenerzeugung zur Roboter-Fertigung entwickelt. Nachdem Andreas aktiv beim Exist-gef\u00f6rderten Forschungstransfer Urban Scale Timber mitgewirkt hat, ist er heute wichtiger Advisor f\u00fcr Build Systems. Dabei bringt er sein Wissen in den Bereichen digitale Fabrikation und die Erstellung parametrischer Workflows bei wichtigen Weichenstellungen mit ein."
+                      : hasVariant($state, "personen", "vinzenzTrimborn")
+                      ? "Vinzenz Trimborn studierte Wirtschaftsinformatik an der TU M\u00fcnchen und war w\u00e4hrend seines Studiums als Web-Entwickler bei KINEXON in der Entwicklung von IoT L\u00f6sungen f\u00fcr die Logistikbranche t\u00e4tig. Nach seinem Bachelor Studium arbeitete er f\u00fcr das Robotik-spinn-off RobCo der TU M\u00fcnchen. Als einer der ersten Mitarbeitenden des heutigen Start Ups war er ma\u00dfgeblich an der Entwicklung des modularen Roboter-Kits beteiligt, das eine software-gest\u00fctzte Automatisierungsl\u00f6sung f\u00fcr die industrielle Fertigung bietet. Seit 2022 wandte Vinzenz sich der Architektur- und Bauindustrie zu. Im Architekturstudio German Haimerl Architekten \u00fcbernahm er die Verantwortlichkeit f\u00fcr Digitalisierung und die Erarbeitung innovativer BIM-Prozesse. Aktuell studiert er im neuen Studiengang IT for the Built Environment an der TU M\u00fcnchen."
+                      : hasVariant($state, "personen", "juliaDorn")
+                      ? "W\u00e4hrend ihres Studiums an der TU Berlin (M.Sc.) partizipierte Julia Dorn an den Forschungsprojekten Smart City des Sonderforschungsbereichs 1265 Refiguration von R\u00e4umen und Circular Economy for Citymakers (TU Berlin mit EIT Climate-KIC). 2018 war sie Teil der Kuratierung und Kommunikation des deutschen Pavillons der Architekturbiennale in Venedig. Seither liegt der Fokus ihrer Arbeit auf der Abbildung und Quantifizierung komplexer urbaner Systeme, r\u00e4umlicher Zusammenh\u00e4nge und Nachhaltigkeitsindikatoren. Vorangehend zu Built Systems arbeitete Julia mit Ihren Kollegen an verschiedenen Wissenstransfer-Projekten [\u2192 Projekte] und dem Exist-gef\u00f6rderten Forschungstransfer Urban Scale Timber. Zusammen mit Martin Bittmann betreute sie als Korrekturassistenz das Semesterprojekt des Lehrstuhls Architektur und Design von Prof. Niklas Fanelsa an der TU M\u00fcnchen. Im Austausch mit unseren Kunden definiert Julia Entwicklungsziele und den Bedarf der Entwicklung."
+                      : hasVariant($state, "personen", "danielLocatelli")
+                      ? "W\u00e4hrend seines Diplomstudiums der Architektur an der Universidade de S\u00e3o Paulo arbeitete Daniel Locatelli als Computational Designer im Atelier Marko Brajovic. Er setzte sich in seiner Arbeit und sp\u00e4ter im Zuge seiner Diplomarbeit intensiv mit der Verbindung von Architektur, Biomimetik und Algorithmen auseinander. Mit dem Schwerpunkt der Integration von Technologie und Architektur absolvierte Daniel den M.Sc. ITECH an der Universit\u00e4t Stuttgart unter der Leitung von Prof. Achim Menges und Prof. Jan Knippers. In seiner Masterarbeit und w\u00e4hrend seiner T\u00e4tigkeit als wissenschaftlicher Mitarbeiter sammelte Daniel Erfahrungen in der digitalen Fabrikation mit Industrierobotern und untersuchte robotergest\u00fctzte Holzverarbeitungssysteme f\u00fcr die In-Situ-Pressverleimung."
+                      : hasVariant($state, "personen", "danielDieren")
+                      ? "Nach seiner ersten Berufst\u00e4tigkeit als Bauingenieur schloss Daniel Dieren das Architekturstudium an der TU Berlin (B.Sc. und M.Sc.) an. Er arbeitete seit 2014 f\u00fcr das Ingenieurb\u00fcro Bollinger+Grohmann in Berlin, wo er zahlreiche Projekte mit Spezialisierung auf Ingenieurholzbau und Life-Cycle-Assessment leitete und die Sustainability Group initiierte. Die DGNB kollaborierte sp\u00e4ter mit der Nachhaltigkeitsgruppe bei der Entwicklung des Leitfadens zur Implementierung von Nachhaltigkeitsfaktoren in der Tragwerksplanung. Zudem war er als Lehrbeauftragter am Lehrstuhl f\u00fcr konstruktives Entwerfen der Universit\u00e4t der K\u00fcnste in Berlin t\u00e4tig, wo er Baukonstruktion, Holzbau und nachhaltiges Entwerfen lehrte. Zusammen mit Martin Bittmann erarbeitete er im Austausch mit der TU Berlin und dem Fraunhofer Institut eine Holzbau-Matrix, die nun als Messlatte hinsichtlich holzbau-relevanter Kriterien im Vergabeverfahren des Schumacher Quartiers durch die Tegel Projekt GmbH angewendet wird. [\u2192 Projekte] Daniel bringt sein dezidiertes Fachwissen in der Kundenberatung ein, um auf Geb\u00e4udeebene Emissionen zu optimieren und Entwicklungspotenziale zu heben."
+                      : hasVariant($state, "personen", "martinBittmann")
+                      ? "Martin Bittmann studierte Architektur an der TU M\u00fcnchen und der TU Istanbul und ist eingetragener Architekt in der Bayerischen\nArchitektenkammer. Bis Ende 2021 war er als selbst\u00e4ndiger Architekt t\u00e4tig und arbeitete parallel am Institut f\u00fcr Nachhaltigkeit, Baukonstruktion und Entwerfen von Prof. Ludloff an der Universit\u00e4t Stuttgart, wo er den Lehr-und Forschungsbereich Bauklasse Holz aufbaute. Zuvor arbeitete er als Projekt- und Wettbewerbsleiter bei Raumstation Architekten und unterrichtete vier Jahre am Lehrstuhl f\u00fcr Entwerfen und Holzbau von Prof. Kaufmann an der TU M\u00fcnchen. Bei Raumstation Architekten war er an der Konzeptionierung und Ausf\u00fchrung von unterschiedlichen Holzbauprojekten beteiligt und arbeitete eng mit Investoren und Projektentwicklern zusammen. Dar\u00fcber hinaus arbeitete er bei Herzog & De Meuron (Basel) sowie im Bereich Immobilienentwicklung und -investment bei Euroboden (M\u00fcnchen). Seit der Initiierung von Urban Scale Timber konzentrierte Martin seinen Fokus auf die notwendige Prozessinnovation in der Planung und Umsetzung von nachhaltiger und resilienter Projektentwicklung."
+                      : hasVariant(globalVariants, "screen", "iPhone")
+                      ? "Martin Bittmann studierte Architektur an der TU M\u00fcnchen und der TU Istanbul und ist eingetragener Architekt in der Bayerischen Architektenkammer. Bis Ende 2021 war er als selbst\u00e4ndiger Architekt t\u00e4tig und arbeitete parallel am Institut f\u00fcr Nachhaltigkeit, Baukonstruktion und Entwerfen von Prof. Ludloff an der Universit\u00e4t Stuttgart, wo er den Lehr-und Forschungsbereich Bauklasse Holz aufbaute. Zuvor arbeitete er als Projekt- und Wettbewerbsleiter bei Raumstation Architekten und unterrichtete vier Jahre am Lehrstuhl f\u00fcr Entwerfen und Holzbau von Prof. Kaufmann an der TU M\u00fcnchen. Bei Raumstation Architekten war er an der Konzeptionierung und Ausf\u00fchrung von unterschiedlichen Holzbauprojekten beteiligt und arbeitete eng mit Investoren und Projektentwicklern zusammen. Dar\u00fcber hinaus arbeitete er bei Herzog & De Meuron (Basel) sowie im Bereich Immobilienentwicklung und -investment bei Euroboden (M\u00fcnchen). Seit der Initiierung von Urban Scale Timber konzentrierte Martin seinen Fokus auf die notwendige Prozessinnovation in der Planung und Umsetzung von nachhaltiger und resilienter Projektentwicklung."
+                      : "Martin Bittmann studierte Architektur an der TU M\u00fcnchen und der TU Istanbul und ist eingetragener Architekt in der Bayerischen Architektenkammer. Bis Ende 2021 war er als selbst\u00e4ndiger Architekt t\u00e4tig und arbeitete parallel am Institut f\u00fcr Nachhaltigkeit, Baukonstruktion und Entwerfen von Prof. Ludloff an der Universit\u00e4t Stuttgart, wo er den Lehr-und Forschungsbereich Bauklasse Holz aufbaute. Zuvor arbeitete er als Projekt- und Wettbewerbsleiter bei Raumstation Architekten und unterrichtete vier Jahre am Lehrstuhl f\u00fcr Entwerfen und Holzbau von Prof. Kaufmann an der TU M\u00fcnchen. Bei Raumstation Architekten war er an der Konzeptionierung und Ausf\u00fchrung von unterschiedlichen Holzbauprojekten beteiligt und arbeitete eng mit Investoren und Projektentwicklern zusammen. Dar\u00fcber hinaus arbeitete er bei Herzog & De Meuron (Basel) sowie im Bereich Immobilienentwicklung und -investment bei Euroboden (M\u00fcnchen). Seit der Initiierung von Urban Scale Timber konzentrierte Martin seinen Fokus auf die notwendige Prozessinnovation in der Planung und Umsetzung von nachhaltiger und resilienter Projektentwicklung."}
+                  </div>
+                </div>
+              ) : null}
             </div>
           </div>
         </div>
-        {(
-          hasVariant($state, "expanded", "expanded")
-            ? true
-            : hasVariant($state, "personen", "andreasThoma")
-            ? true
-            : hasVariant($state, "personen", "vinzenzTrimborn")
-            ? true
-            : hasVariant($state, "personen", "juliaDorn")
-            ? true
-            : hasVariant($state, "personen", "danielLocatelli")
-            ? true
-            : hasVariant($state, "personen", "danielDieren")
-            ? true
-            : hasVariant($state, "personen", "martinBittmann")
-            ? true
-            : hasVariant(globalVariants, "screen", "iPhone")
-            ? true
-            : hasVariant(globalVariants, "screen", "iPad")
-            ? true
-            : hasVariant(globalVariants, "screen", "desktopNormal")
-            ? true
-            : true
-        ) ? (
-          <div
-            className={classNames(projectcss.all, sty.freeBox__gfxOx, {
-              [sty.freeBoxexpanded__gfxOxnnpJu]: hasVariant(
-                $state,
-                "expanded",
-                "expanded"
-              ),
-              [sty.freeBoxpersonen_andreasThoma__gfxOxusA8U]: hasVariant(
-                $state,
-                "personen",
-                "andreasThoma"
-              ),
-              [sty.freeBoxpersonen_danielDieren__gfxOx03Qoh]: hasVariant(
-                $state,
-                "personen",
-                "danielDieren"
-              ),
-              [sty.freeBoxpersonen_danielLocatelli__gfxOxeOoDg]: hasVariant(
-                $state,
-                "personen",
-                "danielLocatelli"
-              ),
-              [sty.freeBoxpersonen_juliaDorn__gfxOxbja9Y]: hasVariant(
-                $state,
-                "personen",
-                "juliaDorn"
-              ),
-              [sty.freeBoxpersonen_martinBittmann__gfxOxPf5Wu]: hasVariant(
-                $state,
-                "personen",
-                "martinBittmann"
-              ),
-              [sty.freeBoxpersonen_vinzenzTrimborn__gfxOxJfChG]: hasVariant(
-                $state,
-                "personen",
-                "vinzenzTrimborn"
-              )
-            })}
-          >
-            <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text___7X6Qp,
-                {
-                  [sty.textexpanded___7X6QPnnpJu]: hasVariant(
-                    $state,
-                    "expanded",
-                    "expanded"
-                  ),
-                  [sty.textpersonen_andreasThoma___7X6QPusA8U]: hasVariant(
-                    $state,
-                    "personen",
-                    "andreasThoma"
-                  ),
-                  [sty.textpersonen_danielDieren___7X6Qp03Qoh]: hasVariant(
-                    $state,
-                    "personen",
-                    "danielDieren"
-                  ),
-                  [sty.textpersonen_danielLocatelli___7X6QPeOoDg]: hasVariant(
-                    $state,
-                    "personen",
-                    "danielLocatelli"
-                  ),
-                  [sty.textpersonen_juliaDorn___7X6QPbja9Y]: hasVariant(
-                    $state,
-                    "personen",
-                    "juliaDorn"
-                  ),
-                  [sty.textpersonen_martinBittmann___7X6QpPf5Wu]: hasVariant(
-                    $state,
-                    "personen",
-                    "martinBittmann"
-                  ),
-                  [sty.textpersonen_vinzenzTrimborn___7X6QpjfChG]: hasVariant(
-                    $state,
-                    "personen",
-                    "vinzenzTrimborn"
-                  )
-                }
-              )}
-            >
-              {hasVariant($state, "expanded", "expanded") &&
-              hasVariant(globalVariants, "screen", "iPhone")
-                ? "Martin Bittmann studierte Architektur an der TU M\u00fcnchen und der TU Istanbul und ist eingetragener Architekt in der Bayerischen\nArchitektenkammer. Bis Ende 2021 war er als selbst\u00e4ndiger Architekt t\u00e4tig und arbeitete parallel am Institut f\u00fcr Nachhaltigkeit, Baukonstruktion und Entwerfen von Prof. Ludloff an der Universit\u00e4t Stuttgart, wo er den Lehr-und Forschungsbereich Bauklasse Holz aufbaute. Zuvor arbeitete er als Projekt- und Wettbewerbsleiter bei Raumstation Architekten und unterrichtete vier Jahre am Lehrstuhl f\u00fcr Entwerfen und Holzbau von Prof. Kaufmann an der TU M\u00fcnchen. Bei Raumstation Architekten war er an der Konzeptionierung und Ausf\u00fchrung von unterschiedlichen Holzbauprojekten beteiligt und arbeitete eng mit Investoren und Projektentwicklern zusammen. Dar\u00fcber hinaus arbeitete er bei Herzog & De Meuron (Basel) sowie im Bereich Immobilienentwicklung und -investment bei Euroboden (M\u00fcnchen). Seit der Initiierung von Urban Scale Timber konzentrierte Martin seinen Fokus auf die notwendige Prozessinnovation in der Planung und Umsetzung von nachhaltiger und resilienter Projektentwicklung."
-                : hasVariant($state, "personen", "andreasThoma")
-                ? "Andreas Thoma studierte Architektur an der Bauhaus-Universit\u00e4t Weimar (B.Sc.) und der ETH Z\u00fcrich (M.Sc.) mit einem Fokus auf digitale Fabrikation und Computational Design & Development. Er arbeitete mehrere Jahre freiberuflich u.a. f\u00fcr ERNE Holzbau (Stein, CH) und Toggle (USA). Zudem war er f\u00fcr den Lehrstuhl Gramazio Kohler Research an der ETH Z\u00fcrich und bei Herzog & De Meuron (Basel) t\u00e4tig. Bei Gramazio Kohler Research leitete er die Projekte Iridescence Print, Rock Print und Spatial Timber. Heute ist Andreas Head of Digital Fabrication bei Toggle, einem Robotics-Startup (USA), wo er neuartige Fertigungssysteme sowie einen Algorithmus f\u00fcr die Generierung ma\u00dfgeschneiderter Bauelemente mit entsprechender webbasierte Datenerzeugung zur Roboter-Fertigung entwickelt. Nachdem Andreas aktiv beim Exist-gef\u00f6rderten Forschungstransfer Urban Scale Timber mitgewirkt hat, ist er heute wichtiger Advisor f\u00fcr Build Systems. Dabei bringt er sein Wissen in den Bereichen digitale Fabrikation und die Erstellung parametrischer Workflows bei wichtigen Weichenstellungen mit ein."
-                : hasVariant($state, "personen", "vinzenzTrimborn")
-                ? "Vinzenz Trimborn studierte Wirtschaftsinformatik an der TU M\u00fcnchen und war w\u00e4hrend seines Studiums als Web-Entwickler bei KINEXON in der Entwicklung von IoT L\u00f6sungen f\u00fcr die Logistikbranche t\u00e4tig. Nach seinem Bachelor Studium arbeitete er f\u00fcr das Robotik-spinn-off RobCo der TU M\u00fcnchen. Als einer der ersten Mitarbeitenden des heutigen Start Ups war er ma\u00dfgeblich an der Entwicklung des modularen Roboter-Kits beteiligt, das eine software-gest\u00fctzte Automatisierungsl\u00f6sung f\u00fcr die industrielle Fertigung bietet. Seit 2022 wandte Vinzenz sich der Architektur- und Bauindustrie zu. Im Architekturstudio German Haimerl Architekten \u00fcbernahm er die Verantwortlichkeit f\u00fcr Digitalisierung und die Erarbeitung innovativer BIM-Prozesse. Aktuell studiert er im neuen Studiengang IT for the Built Environment an der TU M\u00fcnchen."
-                : hasVariant($state, "personen", "juliaDorn")
-                ? "W\u00e4hrend ihres Studiums an der TU Berlin (M.Sc.) partizipierte Julia Dorn an den Forschungsprojekten Smart City des Sonderforschungsbereichs 1265 Refiguration von R\u00e4umen und Circular Economy for Citymakers (TU Berlin mit EIT Climate-KIC). 2018 war sie Teil der Kuratierung und Kommunikation des deutschen Pavillons der Architekturbiennale in Venedig. Seither liegt der Fokus ihrer Arbeit auf der Abbildung und Quantifizierung komplexer urbaner Systeme, r\u00e4umlicher Zusammenh\u00e4nge und Nachhaltigkeitsindikatoren. Vorangehend zu Built Systems arbeitete Julia mit Ihren Kollegen an verschiedenen Wissenstransfer-Projekten [\u2192 Projekte] und dem Exist-gef\u00f6rderten Forschungstransfer Urban Scale Timber. Zusammen mit Martin Bittmann betreute sie als Korrekturassistenz das Semesterprojekt des Lehrstuhls Architektur und Design von Prof. Niklas Fanelsa an der TU M\u00fcnchen. Im Austausch mit unseren Kunden definiert Julia Entwicklungsziele und den Bedarf der Entwicklung."
-                : hasVariant($state, "personen", "danielLocatelli")
-                ? "W\u00e4hrend seines Diplomstudiums der Architektur an der Universidade de S\u00e3o Paulo arbeitete Daniel Locatelli als Computational Designer im Atelier Marko Brajovic. Er setzte sich in seiner Arbeit und sp\u00e4ter im Zuge seiner Diplomarbeit intensiv mit der Verbindung von Architektur, Biomimetik und Algorithmen auseinander. Mit dem Schwerpunkt der Integration von Technologie und Architektur absolvierte Daniel den M.Sc. ITECH an der Universit\u00e4t Stuttgart unter der Leitung von Prof. Achim Menges und Prof. Jan Knippers. In seiner Masterarbeit und w\u00e4hrend seiner T\u00e4tigkeit als wissenschaftlicher Mitarbeiter sammelte Daniel Erfahrungen in der digitalen Fabrikation mit Industrierobotern und untersuchte robotergest\u00fctzte Holzverarbeitungssysteme f\u00fcr die In-Situ-Pressverleimung."
-                : hasVariant($state, "personen", "danielDieren")
-                ? "Nach seiner ersten Berufst\u00e4tigkeit als Bauingenieur schloss Daniel Dieren das Architekturstudium an der TU Berlin (B.Sc. und M.Sc.) an. Er arbeitete seit 2014 f\u00fcr das Ingenieurb\u00fcro Bollinger+Grohmann in Berlin, wo er zahlreiche Projekte mit Spezialisierung auf Ingenieurholzbau und Life-Cycle-Assessment leitete und die Sustainability Group initiierte. Die DGNB kollaborierte sp\u00e4ter mit der Nachhaltigkeitsgruppe bei der Entwicklung des Leitfadens zur Implementierung von Nachhaltigkeitsfaktoren in der Tragwerksplanung. Zudem war er als Lehrbeauftragter am Lehrstuhl f\u00fcr konstruktives Entwerfen der Universit\u00e4t der K\u00fcnste in Berlin t\u00e4tig, wo er Baukonstruktion, Holzbau und nachhaltiges Entwerfen lehrte. Zusammen mit Martin Bittmann erarbeitete er im Austausch mit der TU Berlin und dem Fraunhofer Institut eine Holzbau-Matrix, die nun als Messlatte hinsichtlich holzbau-relevanter Kriterien im Vergabeverfahren des Schumacher Quartiers durch die Tegel Projekt GmbH angewendet wird. [\u2192 Projekte] Daniel bringt sein dezidiertes Fachwissen in der Kundenberatung ein, um auf Geb\u00e4udeebene Emissionen zu optimieren und Entwicklungspotenziale zu heben."
-                : hasVariant($state, "personen", "martinBittmann")
-                ? "Martin Bittmann studierte Architektur an der TU M\u00fcnchen und der TU Istanbul und ist eingetragener Architekt in der Bayerischen\nArchitektenkammer. Bis Ende 2021 war er als selbst\u00e4ndiger Architekt t\u00e4tig und arbeitete parallel am Institut f\u00fcr Nachhaltigkeit, Baukonstruktion und Entwerfen von Prof. Ludloff an der Universit\u00e4t Stuttgart, wo er den Lehr-und Forschungsbereich Bauklasse Holz aufbaute. Zuvor arbeitete er als Projekt- und Wettbewerbsleiter bei Raumstation Architekten und unterrichtete vier Jahre am Lehrstuhl f\u00fcr Entwerfen und Holzbau von Prof. Kaufmann an der TU M\u00fcnchen. Bei Raumstation Architekten war er an der Konzeptionierung und Ausf\u00fchrung von unterschiedlichen Holzbauprojekten beteiligt und arbeitete eng mit Investoren und Projektentwicklern zusammen. Dar\u00fcber hinaus arbeitete er bei Herzog & De Meuron (Basel) sowie im Bereich Immobilienentwicklung und -investment bei Euroboden (M\u00fcnchen). Seit der Initiierung von Urban Scale Timber konzentrierte Martin seinen Fokus auf die notwendige Prozessinnovation in der Planung und Umsetzung von nachhaltiger und resilienter Projektentwicklung."
-                : hasVariant(globalVariants, "screen", "iPhone")
-                ? "Martin Bittmann studierte Architektur an der TU M\u00fcnchen und der TU Istanbul und ist eingetragener Architekt in der Bayerischen Architektenkammer. Bis Ende 2021 war er als selbst\u00e4ndiger Architekt t\u00e4tig und arbeitete parallel am Institut f\u00fcr Nachhaltigkeit, Baukonstruktion und Entwerfen von Prof. Ludloff an der Universit\u00e4t Stuttgart, wo er den Lehr-und Forschungsbereich Bauklasse Holz aufbaute. Zuvor arbeitete er als Projekt- und Wettbewerbsleiter bei Raumstation Architekten und unterrichtete vier Jahre am Lehrstuhl f\u00fcr Entwerfen und Holzbau von Prof. Kaufmann an der TU M\u00fcnchen. Bei Raumstation Architekten war er an der Konzeptionierung und Ausf\u00fchrung von unterschiedlichen Holzbauprojekten beteiligt und arbeitete eng mit Investoren und Projektentwicklern zusammen. Dar\u00fcber hinaus arbeitete er bei Herzog & De Meuron (Basel) sowie im Bereich Immobilienentwicklung und -investment bei Euroboden (M\u00fcnchen). Seit der Initiierung von Urban Scale Timber konzentrierte Martin seinen Fokus auf die notwendige Prozessinnovation in der Planung und Umsetzung von nachhaltiger und resilienter Projektentwicklung."
-                : "Martin Bittmann studierte Architektur an der TU M\u00fcnchen und der TU Istanbul und ist eingetragener Architekt in der Bayerischen Architektenkammer. Bis Ende 2021 war er als selbst\u00e4ndiger Architekt t\u00e4tig und arbeitete parallel am Institut f\u00fcr Nachhaltigkeit, Baukonstruktion und Entwerfen von Prof. Ludloff an der Universit\u00e4t Stuttgart, wo er den Lehr-und Forschungsbereich Bauklasse Holz aufbaute. Zuvor arbeitete er als Projekt- und Wettbewerbsleiter bei Raumstation Architekten und unterrichtete vier Jahre am Lehrstuhl f\u00fcr Entwerfen und Holzbau von Prof. Kaufmann an der TU M\u00fcnchen. Bei Raumstation Architekten war er an der Konzeptionierung und Ausf\u00fchrung von unterschiedlichen Holzbauprojekten beteiligt und arbeitete eng mit Investoren und Projektentwicklern zusammen. Dar\u00fcber hinaus arbeitete er bei Herzog & De Meuron (Basel) sowie im Bereich Immobilienentwicklung und -investment bei Euroboden (M\u00fcnchen). Seit der Initiierung von Urban Scale Timber konzentrierte Martin seinen Fokus auf die notwendige Prozessinnovation in der Planung und Umsetzung von nachhaltiger und resilienter Projektentwicklung."}
-            </div>
-          </div>
-        ) : null}
       </div>
     ) : null
   ) as React.ReactElement | null;

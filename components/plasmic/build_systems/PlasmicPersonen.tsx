@@ -257,6 +257,7 @@ function PlasmicPersonen__RenderFunc(props: {
                       sty.personBox__qjRtW
                     )}
                     personen={"martinBittmann" as const}
+                    shrinked={true}
                   />
                 </div>
                 <div className={classNames(projectcss.all, sty.column__li3T2)}>
@@ -266,6 +267,7 @@ function PlasmicPersonen__RenderFunc(props: {
                       sty.personBox__dOy15
                     )}
                     personen={"juliaDorn" as const}
+                    shrinked={true}
                   />
                 </div>
                 <div className={classNames(projectcss.all, sty.column___9UtCi)}>
@@ -275,6 +277,7 @@ function PlasmicPersonen__RenderFunc(props: {
                       sty.personBox__sbHWq
                     )}
                     personen={"danielDieren" as const}
+                    shrinked={true}
                   />
                 </div>
                 <div className={classNames(projectcss.all, sty.column__dhhL6)}>
@@ -284,6 +287,7 @@ function PlasmicPersonen__RenderFunc(props: {
                       sty.personBox___55Hka
                     )}
                     personen={"danielLocatelli" as const}
+                    shrinked={true}
                   />
                 </div>
                 <div className={classNames(projectcss.all, sty.column__kvPk2)}>
@@ -293,6 +297,7 @@ function PlasmicPersonen__RenderFunc(props: {
                       sty.personBox__cDjn
                     )}
                     personen={"vinzenzTrimborn" as const}
+                    shrinked={true}
                   />
                 </div>
                 {true ? (

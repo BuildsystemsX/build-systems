@@ -67,7 +67,6 @@ export type PlasmicHomepage2__OverridesType = {
   cover?: p.Flex<typeof Cover>;
   buildSystemsHeadline?: p.Flex<typeof BuildSystemsHeadline>;
   menu?: p.Flex<typeof Menu>;
-  img?: p.Flex<typeof p.PlasmicImg>;
   lottie?: p.Flex<typeof LottieWrapper>;
   footer?: p.Flex<typeof Footer>;
   hiderHeadlines?: p.Flex<typeof HiderHeadlines>;
@@ -201,10 +200,8 @@ function PlasmicHomepage2__RenderFunc(props: {
             <div className={classNames(projectcss.all, sty.freeBox__q7Jq, ``)}>
               <div className={classNames(projectcss.all, sty.freeBox__wvlpk)}>
                 <p.PlasmicImg
-                  data-plasmic-name={"img"}
-                  data-plasmic-override={overrides.img}
                   alt={""}
-                  className={classNames(sty.img)}
+                  className={classNames(sty.img__d5Qv)}
                   displayHeight={"auto" as const}
                   displayMaxHeight={"none" as const}
                   displayMaxWidth={"none" as const}
@@ -31114,10 +31111,28 @@ function PlasmicHomepage2__RenderFunc(props: {
               )}
             </div>
           </div>
+          {(hasVariant(globalVariants, "screen", "iPhone") ? true : true) ? (
+            <div className={classNames(projectcss.all, sty.freeBox__hTdH)}>
+              <p.PlasmicImg
+                alt={""}
+                className={classNames(sty.img__v4HjB)}
+                displayHeight={"auto" as const}
+                displayMaxHeight={"none" as const}
+                displayMaxWidth={"100%" as const}
+                displayMinHeight={"0" as const}
+                displayMinWidth={"0" as const}
+                displayWidth={"auto" as const}
+                loading={"lazy" as const}
+                src={{
+                  src: "/plasmic/build_systems/images/komponente2919Svg.svg",
+                  fullWidth: 300,
+                  fullHeight: 71,
+                  aspectRatio: 4.222725
+                }}
+              />
+            </div>
+          ) : null}
           <div className={classNames(projectcss.all, sty.freeBox__s3N)}>
-            {(hasVariant(globalVariants, "screen", "iPhone") ? true : true) ? (
-              <div className={classNames(projectcss.all, sty.freeBox__hTdH)} />
-            ) : null}
             {true ? (
               <div className={classNames(projectcss.all, sty.freeBox__tnKeH)}>
                 <div
@@ -31207,8 +31222,9 @@ function PlasmicHomepage2__RenderFunc(props: {
               </div>
             ) : null}
           </div>
-          <div className={classNames(projectcss.all, sty.freeBox__lZfyq)} />
-
+          {(hasVariant(globalVariants, "screen", "iPhone") ? true : true) ? (
+            <div className={classNames(projectcss.all, sty.freeBox__lZfyq)} />
+          ) : null}
           <Footer
             data-plasmic-name={"footer"}
             data-plasmic-override={overrides.footer}
@@ -31234,7 +31250,6 @@ const PlasmicDescendants = {
     "cover",
     "buildSystemsHeadline",
     "menu",
-    "img",
     "lottie",
     "footer",
     "hiderHeadlines"
@@ -31242,7 +31257,6 @@ const PlasmicDescendants = {
   cover: ["cover"],
   buildSystemsHeadline: ["buildSystemsHeadline"],
   menu: ["menu"],
-  img: ["img"],
   lottie: ["lottie"],
   footer: ["footer"],
   hiderHeadlines: ["hiderHeadlines"]
@@ -31255,7 +31269,6 @@ type NodeDefaultElementType = {
   cover: typeof Cover;
   buildSystemsHeadline: typeof BuildSystemsHeadline;
   menu: typeof Menu;
-  img: typeof p.PlasmicImg;
   lottie: typeof LottieWrapper;
   footer: typeof Footer;
   hiderHeadlines: typeof HiderHeadlines;
@@ -31324,7 +31337,6 @@ export const PlasmicHomepage2 = Object.assign(
     cover: makeNodeComponent("cover"),
     buildSystemsHeadline: makeNodeComponent("buildSystemsHeadline"),
     menu: makeNodeComponent("menu"),
-    img: makeNodeComponent("img"),
     lottie: makeNodeComponent("lottie"),
     footer: makeNodeComponent("footer"),
     hiderHeadlines: makeNodeComponent("hiderHeadlines"),

@@ -48,16 +48,16 @@ import sty from "./PlasmicProjekt.module.css"; // plasmic-import: IKbj2OkZcR/css
 createPlasmicElementProxy;
 
 export type PlasmicProjekt__VariantMembers = {
-  expanded: "expanded";
+  shrinked: "shrinked";
   projekte: "schumacherQuartier" | "urbanScaleTimber";
 };
 export type PlasmicProjekt__VariantsArgs = {
-  expanded?: SingleBooleanChoiceArg<"expanded">;
+  shrinked?: SingleBooleanChoiceArg<"shrinked">;
   projekte?: SingleChoiceArg<"schumacherQuartier" | "urbanScaleTimber">;
 };
 type VariantPropType = keyof PlasmicProjekt__VariantsArgs;
 export const PlasmicProjekt__VariantProps = new Array<VariantPropType>(
-  "expanded",
+  "shrinked",
   "projekte"
 );
 
@@ -72,7 +72,7 @@ export type PlasmicProjekt__OverridesType = {
 };
 
 export interface DefaultProjektProps {
-  expanded?: SingleBooleanChoiceArg<"expanded">;
+  shrinked?: SingleBooleanChoiceArg<"shrinked">;
   projekte?: SingleChoiceArg<"schumacherQuartier" | "urbanScaleTimber">;
   className?: string;
 }
@@ -118,10 +118,10 @@ function PlasmicProjekt__RenderFunc(props: {
   const stateSpecs = React.useMemo(
     () => [
       {
-        path: "expanded",
+        path: "shrinked",
         type: "private",
         variableType: "variant",
-        initFunc: ({ $props, $state, $queries, $ctx }) => $props.expanded
+        initFunc: ({ $props, $state, $queries, $ctx }) => $props.shrinked
       },
       {
         path: "projekte",
@@ -156,7 +156,14 @@ function PlasmicProjekt__RenderFunc(props: {
         projectcss.plasmic_mixins,
         projectcss.plasmic_tokens,
         sty.root,
-        { [sty.rootexpanded]: hasVariant($state, "expanded", "expanded") }
+        {
+          [sty.rootprojekte_urbanScaleTimber]: hasVariant(
+            $state,
+            "projekte",
+            "urbanScaleTimber"
+          ),
+          [sty.rootshrinked]: hasVariant($state, "shrinked", "shrinked")
+        }
       )}
     >
       <p.PlasmicImg
@@ -164,7 +171,17 @@ function PlasmicProjekt__RenderFunc(props: {
         data-plasmic-override={overrides.img}
         alt={""}
         className={classNames(sty.img, {
-          [sty.imgexpanded]: hasVariant($state, "expanded", "expanded")
+          [sty.imgprojekte_schumacherQuartier]: hasVariant(
+            $state,
+            "projekte",
+            "schumacherQuartier"
+          ),
+          [sty.imgprojekte_urbanScaleTimber]: hasVariant(
+            $state,
+            "projekte",
+            "urbanScaleTimber"
+          ),
+          [sty.imgshrinked]: hasVariant($state, "shrinked", "shrinked")
         })}
         displayHeight={"auto" as const}
         displayMaxHeight={"none" as const}
@@ -173,22 +190,26 @@ function PlasmicProjekt__RenderFunc(props: {
         displayMinWidth={"0" as const}
         displayWidth={"auto" as const}
         loading={"lazy" as const}
-        src={{
-          src: "/plasmic/build_systems/images/image.png",
-          fullWidth: 760,
-          fullHeight: 507,
-          aspectRatio: undefined
-        }}
+        src={
+          hasVariant($state, "projekte", "urbanScaleTimber")
+            ? {
+                src: "/plasmic/build_systems/images/image.png",
+                fullWidth: 760,
+                fullHeight: 507,
+                aspectRatio: undefined
+              }
+            : {
+                src: "/plasmic/build_systems/images/gruppe393Png.png",
+                fullWidth: 597,
+                fullHeight: 397,
+                aspectRatio: undefined
+              }
+        }
       />
 
       {true ? (
         <div
           className={classNames(projectcss.all, sty.freeBox__duP2I, {
-            [sty.freeBoxexpanded__duP2Igsrcc]: hasVariant(
-              $state,
-              "expanded",
-              "expanded"
-            ),
             [sty.freeBoxprojekte_schumacherQuartier__duP2IpFtCh]: hasVariant(
               $state,
               "projekte",
@@ -198,6 +219,11 @@ function PlasmicProjekt__RenderFunc(props: {
               $state,
               "projekte",
               "urbanScaleTimber"
+            ),
+            [sty.freeBoxshrinked__duP2Igsrcc]: hasVariant(
+              $state,
+              "shrinked",
+              "shrinked"
             )
           })}
         >
@@ -207,15 +233,15 @@ function PlasmicProjekt__RenderFunc(props: {
               projectcss.__wab_text,
               sty.text__dF02L,
               {
-                [sty.textexpanded__dF02Lgsrcc]: hasVariant(
-                  $state,
-                  "expanded",
-                  "expanded"
-                ),
                 [sty.textprojekte_urbanScaleTimber__dF02Lrme5U]: hasVariant(
                   $state,
                   "projekte",
                   "urbanScaleTimber"
+                ),
+                [sty.textshrinked__dF02Lgsrcc]: hasVariant(
+                  $state,
+                  "shrinked",
+                  "shrinked"
                 )
               }
             )}
@@ -230,11 +256,6 @@ function PlasmicProjekt__RenderFunc(props: {
               projectcss.__wab_text,
               sty.text___71TmL,
               {
-                [sty.textexpanded___71TmLgsrcc]: hasVariant(
-                  $state,
-                  "expanded",
-                  "expanded"
-                ),
                 [sty.textprojekte_schumacherQuartier___71TmLpFtCh]: hasVariant(
                   $state,
                   "projekte",
@@ -244,6 +265,11 @@ function PlasmicProjekt__RenderFunc(props: {
                   $state,
                   "projekte",
                   "urbanScaleTimber"
+                ),
+                [sty.textshrinked___71TmLgsrcc]: hasVariant(
+                  $state,
+                  "shrinked",
+                  "shrinked"
                 )
               }
             )}
@@ -255,10 +281,10 @@ function PlasmicProjekt__RenderFunc(props: {
           {true ? (
             <div
               className={classNames(projectcss.all, sty.freeBox__tjgj0, {
-                [sty.freeBoxexpanded__tjgj0Gsrcc]: hasVariant(
+                [sty.freeBoxshrinked__tjgj0Gsrcc]: hasVariant(
                   $state,
-                  "expanded",
-                  "expanded"
+                  "shrinked",
+                  "shrinked"
                 )
               })}
               onClick={async event => {
@@ -274,7 +300,7 @@ function PlasmicProjekt__RenderFunc(props: {
                             componentUuid: "IKbj2OkZcR",
                             argName: "vgroup"
                           },
-                          () => "expanded"
+                          () => "shrinked"
                         ),
                         operation: __wrapUserFunction(
                           {
@@ -294,7 +320,7 @@ function PlasmicProjekt__RenderFunc(props: {
                             componentUuid: "IKbj2OkZcR",
                             argName: "value"
                           },
-                          () => "expanded"
+                          () => "shrinked"
                         )
                       };
                       return __wrapUserFunction(
@@ -339,18 +365,15 @@ function PlasmicProjekt__RenderFunc(props: {
                   "__wab_instance",
                   sty.smallButton__xnyS3,
                   {
-                    [sty.smallButtonexpanded__xnyS3Gsrcc]: hasVariant(
+                    [sty.smallButtonshrinked__xnyS3Gsrcc]: hasVariant(
                       $state,
-                      "expanded",
-                      "expanded"
+                      "shrinked",
+                      "shrinked"
                     )
                   }
                 )}
                 noLeftSiteShift={
-                  hasVariant($state, "expanded", "expanded") ? true : true
-                }
-                plus={
-                  hasVariant($state, "expanded", "expanded") ? true : undefined
+                  hasVariant($state, "shrinked", "shrinked") ? true : true
                 }
               >
                 <div
@@ -359,17 +382,15 @@ function PlasmicProjekt__RenderFunc(props: {
                     projectcss.__wab_text,
                     sty.text__qTlb,
                     {
-                      [sty.textexpanded__qTlbgsrcc]: hasVariant(
+                      [sty.textshrinked__qTlbgsrcc]: hasVariant(
                         $state,
-                        "expanded",
-                        "expanded"
+                        "shrinked",
+                        "shrinked"
                       )
                     }
                   )}
                 >
-                  {hasVariant($state, "expanded", "expanded")
-                    ? "-   weniger "
-                    : "mehr Erfahren"}
+                  {"mehr Erfahren"}
                 </div>
               </SmallButton>
             </div>
@@ -379,17 +400,12 @@ function PlasmicProjekt__RenderFunc(props: {
       {(
         hasVariant($state, "projekte", "schumacherQuartier")
           ? true
-          : hasVariant($state, "expanded", "expanded")
+          : hasVariant($state, "shrinked", "shrinked")
           ? true
           : true
       ) ? (
         <div
           className={classNames(projectcss.all, sty.freeBox__peFiP, {
-            [sty.freeBoxexpanded__peFiPgsrcc]: hasVariant(
-              $state,
-              "expanded",
-              "expanded"
-            ),
             [sty.freeBoxprojekte_schumacherQuartier__peFiPpFtCh]: hasVariant(
               $state,
               "projekte",
@@ -399,6 +415,11 @@ function PlasmicProjekt__RenderFunc(props: {
               $state,
               "projekte",
               "urbanScaleTimber"
+            ),
+            [sty.freeBoxshrinked__peFiPgsrcc]: hasVariant(
+              $state,
+              "shrinked",
+              "shrinked"
             )
           })}
         >
@@ -415,17 +436,17 @@ function PlasmicProjekt__RenderFunc(props: {
                 projectcss.__wab_text,
                 sty.text___2HiNw,
                 {
-                  [sty.textexpanded___2HiNwgsrcc]: hasVariant(
-                    $state,
-                    "expanded",
-                    "expanded"
-                  ),
                   [sty.textprojekte_schumacherQuartier___2HiNwpFtCh]:
                     hasVariant($state, "projekte", "schumacherQuartier"),
                   [sty.textprojekte_urbanScaleTimber___2HiNwrme5U]: hasVariant(
                     $state,
                     "projekte",
                     "urbanScaleTimber"
+                  ),
+                  [sty.textshrinked___2HiNwgsrcc]: hasVariant(
+                    $state,
+                    "shrinked",
+                    "shrinked"
                   )
                 }
               )}
@@ -438,7 +459,7 @@ function PlasmicProjekt__RenderFunc(props: {
           {(
             hasVariant($state, "projekte", "schumacherQuartier")
               ? true
-              : hasVariant($state, "expanded", "expanded")
+              : hasVariant($state, "shrinked", "shrinked")
               ? true
               : true
           ) ? (
@@ -446,13 +467,13 @@ function PlasmicProjekt__RenderFunc(props: {
               data-plasmic-name={"linkAufProjektseite"}
               data-plasmic-override={overrides.linkAufProjektseite}
               className={classNames(projectcss.all, sty.linkAufProjektseite, {
-                [sty.linkAufProjektseiteexpanded]: hasVariant(
-                  $state,
-                  "expanded",
-                  "expanded"
-                ),
                 [sty.linkAufProjektseiteprojekte_schumacherQuartier]:
-                  hasVariant($state, "projekte", "schumacherQuartier")
+                  hasVariant($state, "projekte", "schumacherQuartier"),
+                [sty.linkAufProjektseiteshrinked]: hasVariant(
+                  $state,
+                  "shrinked",
+                  "shrinked"
+                )
               })}
               onClick={async event => {
                 const $steps = {};
@@ -496,18 +517,18 @@ function PlasmicProjekt__RenderFunc(props: {
                     "__wab_instance",
                     sty.smallButton__an8NU,
                     {
-                      [sty.smallButtonexpanded__an8NUgsrcc]: hasVariant(
+                      [sty.smallButtonshrinked__an8NUgsrcc]: hasVariant(
                         $state,
-                        "expanded",
-                        "expanded"
+                        "shrinked",
+                        "shrinked"
                       )
                     }
                   )}
                   noLeftSiteShift={
-                    hasVariant($state, "expanded", "expanded") ? true : true
+                    hasVariant($state, "shrinked", "shrinked") ? true : true
                   }
                   plus={
-                    hasVariant($state, "expanded", "expanded")
+                    hasVariant($state, "shrinked", "shrinked")
                       ? true
                       : undefined
                   }
@@ -518,15 +539,15 @@ function PlasmicProjekt__RenderFunc(props: {
                       projectcss.__wab_text,
                       sty.text__yZk8,
                       {
-                        [sty.textexpanded__yZk8Gsrcc]: hasVariant(
+                        [sty.textshrinked__yZk8Gsrcc]: hasVariant(
                           $state,
-                          "expanded",
-                          "expanded"
+                          "shrinked",
+                          "shrinked"
                         )
                       }
                     )}
                   >
-                    {hasVariant($state, "expanded", "expanded")
+                    {hasVariant($state, "shrinked", "shrinked")
                       ? "Projektseite"
                       : "mehr Erfahren"}
                   </div>
