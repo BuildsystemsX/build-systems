@@ -136,5 +136,11 @@
   max-width: 100%;
   position: relative;
   width: 100%;
+  z-index: 3;
   min-width: 0;
+}
+@media (max-width: 1280px) {
+  .footer:global(.__wab_instance) {
+    z-index: 3;
+  }
 }
