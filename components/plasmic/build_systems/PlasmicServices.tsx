@@ -382,67 +382,69 @@ function PlasmicServices__RenderFunc(props: {
                             }}
                           />
                         ) : null}
-                        <Slider
-                          data-plasmic-name={"slider"}
-                          data-plasmic-override={overrides.slider}
-                          autoplay={true}
-                          autoplaySpeed={4000 as const}
-                          centerMode={false}
-                          className={classNames("__wab_instance", sty.slider)}
-                          dots={true}
-                          speed={1000 as const}
-                        >
-                          <p.PlasmicImg
-                            alt={""}
-                            className={classNames(sty.img__kBbO)}
-                            displayHeight={"auto" as const}
-                            displayMaxHeight={"none" as const}
-                            displayMaxWidth={"100%" as const}
-                            displayMinHeight={"0" as const}
-                            displayMinWidth={"0" as const}
-                            displayWidth={"auto" as const}
-                            src={{
-                              src: "/plasmic/build_systems/images/bildschirmfoto20230714Um081442Png.png",
-                              fullWidth: 678,
-                              fullHeight: 520,
-                              aspectRatio: undefined
-                            }}
-                          />
+                        <p.PlasmicImg
+                          alt={""}
+                          className={classNames(sty.img__kBbO)}
+                          displayHeight={"auto" as const}
+                          displayMaxHeight={"none" as const}
+                          displayMaxWidth={"100%" as const}
+                          displayMinHeight={"0" as const}
+                          displayMinWidth={"0" as const}
+                          displayWidth={"auto" as const}
+                          src={{
+                            src: "/plasmic/build_systems/images/bildschirmfoto20230714Um081442Png.png",
+                            fullWidth: 678,
+                            fullHeight: 520,
+                            aspectRatio: undefined
+                          }}
+                        />
 
-                          <p.PlasmicImg
-                            alt={""}
-                            className={classNames(sty.img___4Twe5)}
-                            displayHeight={"auto" as const}
-                            displayMaxHeight={"none" as const}
-                            displayMaxWidth={"100%" as const}
-                            displayMinHeight={"0" as const}
-                            displayMinWidth={"0" as const}
-                            displayWidth={"auto" as const}
-                            src={{
-                              src: "/plasmic/build_systems/images/bildschirmfoto20230714Um091502Png.png",
-                              fullWidth: 652,
-                              fullHeight: 576,
-                              aspectRatio: undefined
-                            }}
-                          />
+                        {true ? (
+                          <Slider
+                            data-plasmic-name={"slider"}
+                            data-plasmic-override={overrides.slider}
+                            autoplay={true}
+                            autoplaySpeed={4000 as const}
+                            centerMode={false}
+                            className={classNames("__wab_instance", sty.slider)}
+                            dots={true}
+                            speed={1000 as const}
+                          >
+                            <p.PlasmicImg
+                              alt={""}
+                              className={classNames(sty.img___4Twe5)}
+                              displayHeight={"auto" as const}
+                              displayMaxHeight={"none" as const}
+                              displayMaxWidth={"100%" as const}
+                              displayMinHeight={"0" as const}
+                              displayMinWidth={"0" as const}
+                              displayWidth={"auto" as const}
+                              src={{
+                                src: "/plasmic/build_systems/images/bildschirmfoto20230714Um091502Png.png",
+                                fullWidth: 652,
+                                fullHeight: 576,
+                                aspectRatio: undefined
+                              }}
+                            />
 
-                          <p.PlasmicImg
-                            alt={""}
-                            className={classNames(sty.img___6Yyi)}
-                            displayHeight={"auto" as const}
-                            displayMaxHeight={"none" as const}
-                            displayMaxWidth={"100%" as const}
-                            displayMinHeight={"0" as const}
-                            displayMinWidth={"0" as const}
-                            displayWidth={"auto" as const}
-                            src={{
-                              src: "/plasmic/build_systems/images/bildschirmfoto20230714Um091529Png.png",
-                              fullWidth: 694,
-                              fullHeight: 616,
-                              aspectRatio: undefined
-                            }}
-                          />
-                        </Slider>
+                            <p.PlasmicImg
+                              alt={""}
+                              className={classNames(sty.img___6Yyi)}
+                              displayHeight={"auto" as const}
+                              displayMaxHeight={"none" as const}
+                              displayMaxWidth={"100%" as const}
+                              displayMinHeight={"0" as const}
+                              displayMinWidth={"0" as const}
+                              displayWidth={"auto" as const}
+                              src={{
+                                src: "/plasmic/build_systems/images/bildschirmfoto20230714Um091529Png.png",
+                                fullWidth: 694,
+                                fullHeight: 616,
+                                aspectRatio: undefined
+                              }}
+                            />
+                          </Slider>
+                        ) : null}
                       </div>
                     ) : null}
                   </div>
