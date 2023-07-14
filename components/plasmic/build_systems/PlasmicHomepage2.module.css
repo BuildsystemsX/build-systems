@@ -221,7 +221,7 @@
   z-index: 2;
   grid-column-start: 1;
   grid-column-end: -1;
-  padding: 0px var(--token-HEUzmGVCS) 0px var(--token-E903dIBMc);
+  padding: 0px var(--token-E903dIBMc);
 }
 @media (max-width: 1280px) {
   .freeBox__alDgg {
@@ -300,18 +300,18 @@
   z-index: 2;
   grid-column-start: 1;
   grid-column-end: -1;
-  padding: 0px var(--token-HEUzmGVCS) 0px var(--token-E903dIBMc);
+  padding: 0px var(--token-E903dIBMc);
   margin: 0px;
 }
 @media (max-width: 1280px) {
   .freeBox__yqM5 {
-    padding-left: var(--token-bmnU--xfN);
+    padding-left: var(--token-Jku9Krk26);
     padding-right: var(--token-Jku9Krk26);
   }
 }
 @media (max-width: 768px) {
   .freeBox__yqM5 {
-    padding-left: var(--token-kdOpqIkzK);
+    padding-left: var(--token-PMepkn9qf);
     padding-right: var(--token-PMepkn9qf);
   }
 }
@@ -407,7 +407,7 @@
   width: auto;
   height: auto;
   max-width: 100%;
-  margin-left: 100px;
+  margin-left: 0px;
   padding: 0px;
 }
 @media (max-width: 375px) {
@@ -455,7 +455,7 @@
   z-index: 2;
   grid-column-start: 1;
   grid-column-end: -1;
-  padding: 0px var(--token-HEUzmGVCS) 0px var(--token-E903dIBMc);
+  padding: 0px var(--token-E903dIBMc);
 }
 @media (max-width: 1280px) {
   .freeBox__myJt4 {
@@ -526,7 +526,7 @@
   max-width: 100%;
   grid-column-start: 1;
   grid-column-end: -1;
-  padding: 0px var(--token-HEUzmGVCS);
+  padding: 0px var(--token-E903dIBMc);
 }
 @media (max-width: 1280px) {
   .freeBox__hTdH {
@@ -577,18 +577,18 @@
   z-index: 2;
   grid-column-start: 1;
   grid-column-end: -1;
-  padding: 0px 0px 0px var(--token-E903dIBMc);
+  padding: 0px var(--token-E903dIBMc);
   margin: 0px;
 }
 @media (max-width: 1280px) {
   .freeBox__s3N {
-    padding-left: var(--token-bmnU--xfN);
+    padding-left: var(--token-Jku9Krk26);
     padding-right: var(--token-Jku9Krk26);
   }
 }
 @media (max-width: 768px) {
   .freeBox__s3N {
-    padding-left: var(--token-kdOpqIkzK);
+    padding-left: var(--token-PMepkn9qf);
     padding-right: var(--token-PMepkn9qf);
   }
 }
@@ -654,8 +654,8 @@
   width: auto;
   height: auto;
   max-width: 100%;
-  margin-left: 100px;
   padding: 0px;
+  margin: 0px;
 }
 @media (max-width: 375px) {
   .freeBox__abYxU {

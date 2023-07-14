@@ -104,8 +104,7 @@
 }
 @media (max-width: 768px) {
   .freeBox__iedGv {
-    padding-left: var(--token-Jku9Krk26);
-    padding-right: var(--token-Jku9Krk26);
+    padding: 0px var(--token-PMepkn9qf);
   }
 }
 @media (max-width: 375px) {
