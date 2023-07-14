@@ -89,7 +89,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   width: 100%;
-  height: 40vh;
+  height: 30vh;
   max-width: 100%;
   margin-bottom: 0px;
   grid-column-start: 1;
@@ -184,7 +184,7 @@
   font-family: var(--token-murZRIrJA);
   letter-spacing: -0.26px;
   line-height: var(--token-ud4wo3PCm);
-  padding: 10px;
+  padding: 0px;
 }
 @media (max-width: 1280px) {
   .text__d4KoG {
