@@ -38,6 +38,7 @@ import {
 } from "@plasmicapp/react-web";
 import Menu from "../../Menu"; // plasmic-import: 5tZNLUygwX/component
 import BuildSystemsHeadline from "../../BuildSystemsHeadline"; // plasmic-import: k0tLqKtuC3/component
+import Slider from "react-slick"; // plasmic-import: HOQUyOpClJ/codeComponent
 import ImageFooter from "../../ImageFooter"; // plasmic-import: 7Stlw3wb0O/component
 import HiderHeadlines from "../../HiderHeadlines"; // plasmic-import: q6j09HfKP8/component
 
@@ -65,6 +66,7 @@ export type PlasmicServices__OverridesType = {
   menu?: p.Flex<typeof Menu>;
   buildSystemsHeadline?: p.Flex<typeof BuildSystemsHeadline>;
   space?: p.Flex<"div">;
+  slider?: p.Flex<typeof Slider>;
   imageFooter?: p.Flex<typeof ImageFooter>;
   hiderHeadlines?: p.Flex<typeof HiderHeadlines>;
 };
@@ -313,7 +315,11 @@ function PlasmicServices__RenderFunc(props: {
           </div>
           <div className={classNames(projectcss.all, sty.freeBox__tjNMr)}>
             {true ? (
-              <div className={classNames(projectcss.all, sty.columns__onbqv)}>
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.columns__onbqv)}
+              >
                 <div className={classNames(projectcss.all, sty.column__w2CFq)}>
                   <div
                     className={classNames(projectcss.all, sty.freeBox__ysm2R)}
@@ -357,28 +363,91 @@ function PlasmicServices__RenderFunc(props: {
                           sty.freeBox__utQ0
                         )}
                       >
-                        <p.PlasmicImg
-                          alt={""}
-                          className={classNames(sty.img__hePwA)}
-                          displayHeight={"auto" as const}
-                          displayMaxHeight={"none" as const}
-                          displayMaxWidth={"100%" as const}
-                          displayMinHeight={"0" as const}
-                          displayMinWidth={"0" as const}
-                          displayWidth={"auto" as const}
-                          loading={"lazy" as const}
-                          src={{
-                            src: "/plasmic/build_systems/images/bildschirmfoto20230714Um081442Png.png",
-                            fullWidth: 678,
-                            fullHeight: 520,
-                            aspectRatio: undefined
-                          }}
-                        />
+                        {true ? (
+                          <p.PlasmicImg
+                            alt={""}
+                            className={classNames(sty.img__hePwA)}
+                            displayHeight={"auto" as const}
+                            displayMaxHeight={"none" as const}
+                            displayMaxWidth={"100%" as const}
+                            displayMinHeight={"0" as const}
+                            displayMinWidth={"0" as const}
+                            displayWidth={"auto" as const}
+                            loading={"lazy" as const}
+                            src={{
+                              src: "/plasmic/build_systems/images/bildschirmfoto20230714Um081442Png.png",
+                              fullWidth: 678,
+                              fullHeight: 520,
+                              aspectRatio: undefined
+                            }}
+                          />
+                        ) : null}
+                        <Slider
+                          data-plasmic-name={"slider"}
+                          data-plasmic-override={overrides.slider}
+                          autoplay={true}
+                          autoplaySpeed={4000 as const}
+                          centerMode={false}
+                          className={classNames("__wab_instance", sty.slider)}
+                          dots={true}
+                          speed={1000 as const}
+                        >
+                          <p.PlasmicImg
+                            alt={""}
+                            className={classNames(sty.img__kBbO)}
+                            displayHeight={"auto" as const}
+                            displayMaxHeight={"none" as const}
+                            displayMaxWidth={"100%" as const}
+                            displayMinHeight={"0" as const}
+                            displayMinWidth={"0" as const}
+                            displayWidth={"auto" as const}
+                            src={{
+                              src: "/plasmic/build_systems/images/bildschirmfoto20230714Um081442Png.png",
+                              fullWidth: 678,
+                              fullHeight: 520,
+                              aspectRatio: undefined
+                            }}
+                          />
+
+                          <p.PlasmicImg
+                            alt={""}
+                            className={classNames(sty.img___4Twe5)}
+                            displayHeight={"auto" as const}
+                            displayMaxHeight={"none" as const}
+                            displayMaxWidth={"100%" as const}
+                            displayMinHeight={"0" as const}
+                            displayMinWidth={"0" as const}
+                            displayWidth={"auto" as const}
+                            src={{
+                              src: "/plasmic/build_systems/images/bildschirmfoto20230714Um091502Png.png",
+                              fullWidth: 652,
+                              fullHeight: 576,
+                              aspectRatio: undefined
+                            }}
+                          />
+
+                          <p.PlasmicImg
+                            alt={""}
+                            className={classNames(sty.img___6Yyi)}
+                            displayHeight={"auto" as const}
+                            displayMaxHeight={"none" as const}
+                            displayMaxWidth={"100%" as const}
+                            displayMinHeight={"0" as const}
+                            displayMinWidth={"0" as const}
+                            displayWidth={"auto" as const}
+                            src={{
+                              src: "/plasmic/build_systems/images/bildschirmfoto20230714Um091529Png.png",
+                              fullWidth: 694,
+                              fullHeight: 616,
+                              aspectRatio: undefined
+                            }}
+                          />
+                        </Slider>
                       </div>
                     ) : null}
                   </div>
                 ) : null}
-              </div>
+              </p.Stack>
             ) : null}
           </div>
           <div className={classNames(projectcss.all, sty.freeBox__lzG30)} />
@@ -596,6 +665,7 @@ const PlasmicDescendants = {
     "menu",
     "buildSystemsHeadline",
     "space",
+    "slider",
     "imageFooter",
     "hiderHeadlines"
   ],
@@ -603,6 +673,7 @@ const PlasmicDescendants = {
   menu: ["menu"],
   buildSystemsHeadline: ["buildSystemsHeadline"],
   space: ["space"],
+  slider: ["slider"],
   imageFooter: ["imageFooter"],
   hiderHeadlines: ["hiderHeadlines"]
 } as const;
@@ -615,6 +686,7 @@ type NodeDefaultElementType = {
   menu: typeof Menu;
   buildSystemsHeadline: typeof BuildSystemsHeadline;
   space: "div";
+  slider: typeof Slider;
   imageFooter: typeof ImageFooter;
   hiderHeadlines: typeof HiderHeadlines;
 };
@@ -683,6 +755,7 @@ export const PlasmicServices = Object.assign(
     menu: makeNodeComponent("menu"),
     buildSystemsHeadline: makeNodeComponent("buildSystemsHeadline"),
     space: makeNodeComponent("space"),
+    slider: makeNodeComponent("slider"),
     imageFooter: makeNodeComponent("imageFooter"),
     hiderHeadlines: makeNodeComponent("hiderHeadlines"),
 
